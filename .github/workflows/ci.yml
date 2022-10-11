@@ -9,7 +9,7 @@ jobs:
       matrix:
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
-    if: secrets.GH_PAT != ""
+    if: ${{secrets.GH_PAT}} != ""
     steps:
       - name: Checkout main repo
         uses: actions/checkout@v2
