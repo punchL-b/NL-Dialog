@@ -224,6 +224,6 @@ You drink and eat some bar food, smooth jazz plays in the background. The bar sl
 - You’re “harshing the vibes”, Sir. (2)
     `kuzan`: -He laughs lowly and finishes his drink.- Alright `name` thanks for the day, I’ll see you around. => END
 - Yeah okay, no more drinks for you. Let’s get you home. (1)
-    `kuzan`: Home, been a long time since I’ve been there… -He looks into the bottom of his glass, eyes far away.- You’re right `name`, I’m heading out. See ya later. -Throws some money on the counter and heads out. What a strange guy.- => END
+    `kuzan`: Home, been a long time since I’ve been there… -He looks into the bottom of his glass, eyes far away.- You’re right `name`, I’m heading out. See ya later. He tosses some money on the counter and heads out. What a strange guy.- => END
 
 => END
