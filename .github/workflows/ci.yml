@@ -10,7 +10,7 @@ jobs:
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-       - name: "check is GH_PAT exists"
+      - name: "check is GH_PAT exists"
         env: 
             pat: ${{ secrets.GH_PAT }}
         if: ${{ env.pat == '' }}
