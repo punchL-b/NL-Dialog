@@ -9,8 +9,12 @@ jobs:
       matrix:
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
-    if: ${{ secrets.GH_PAT != "" }}
     steps:
+       - name: "check is GH_PAT exists"
+        env: 
+            pat: ${{ secrets.GH_PAT }}
+        if: ${{ env.pat == '' }}
+        run: 'echo "echo the secret \"GH_PAT\" has not been made; echo please go to \"settings \> secrets \> actions\" to create it"'
       - name: Checkout main repo
         uses: actions/checkout@v2
         with:
