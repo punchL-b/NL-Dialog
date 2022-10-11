@@ -1,6 +1,6 @@
 :: start
 do set_background("park", show)
-It’s a nice day, the sun is shining, the fog has just blown out. And best of all,  you have a bit of free time! The largest garden on base has been calling your name since you arrived, and now you’re finally here! Wow, look at that view…
+It’s a nice day, the sun is shining, the fog has just blown out. And best of all, you have a bit of free time! The largest garden on base has been calling your name since you arrived, and now you’re finally here! Wow, look at that view…
 Suddenly, you feel a weird tugging near your waist. Startled, you look down-!
 do show_character(goat, left, show)
 A…goat?
