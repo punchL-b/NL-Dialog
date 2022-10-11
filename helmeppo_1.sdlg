@@ -1,0 +1,287 @@
+:: start
+do set_background("training-grounds", show)
+The training grounds are quiet. Everyone was likely busy getting food, given the time of day. However, you do see one person there.
+do show_character(helmeppo, center, show)
+Helmeppo is walking across the grounds, looking more like he is just passing through rather than planning to do any training. He spots you and gives a small wave, changing directions enough to pass where you are standing.
+Helmeppo: `name`, what are you doing out here? I figured you’d be in the mess hall with everyone else.
+`name`: I could ask you the same thing.
+Helmeppo: I just need to run some errands in town before it gets too late. Figured I’d just get something to eat while I’m there.
+- Do you want any company?
+    Helmeppo: I guess. Can’t really stop you from tagging along.
+    Helmeppo: Come on. Let’s go before things close. => Helmeppo_travel1
+- Oh. Well, have fun.
+    Helmeppo: I’ll try. => End_date
+
+:: Helmeppo_travel1
+do set_background("town", show)
+The weather is beautiful for your walk into town. Helmeppo is very quiet. It seems like if you want to talk, you’ll have to start.
+- **Stay Silent** => Helmeppo_bath_store1
+- Does the goat get into the filing room often?
+    Helmeppo: Unfortunately. A lot of times people just don’t close the door properly.
+    Helmeppo: But the goat’s a master of emotional manipulation, so sometimes people let it in. => Helmeppo_bath_store1
+- Aren’t you related to Axe Hand Morgan?
+    do get("KnowsAboutMorgan")
+    Helmeppo: …
+    Helmeppo: I’d rather not talk about *him*... => Helmeppo_bath_store1
+- Huh. I didn’t know there was a pet store here. => Helmeppo_petshop
+
+:: Helmeppo_petshop
+do get("KnowsAboutWolf")
+Helmeppo: Yeah. Can’t say I’ve been in that one. I’ve sort of avoided them since my wolf… died.
+do increment("hd1.points_possible")
+- I’m so sorry. That must have been tough.
+    Helmeppo: Oh, uh, thanks.
+    Helmeppo: It was a menace, but for a while he was my only friend.
+    do increment("hd1.points")
+    => Helmeppo_bath_store1
+- What happened to it?
+    Helmeppo: Roronoa Zoro happened.
+    Helmeppo:.....
+    Helmeppo: It’s a *long* story… => Helmeppo_bath_store1
+- What kind of freak has a pet wolf…
+    do decrement("hd1.points")
+    Helmeppo: *This* kind. => Helmeppo_bath_store1
+
+:: Helmeppo_bath_store1
+As you pass a small store with soaps and other bath items on display in the window, Helmeppo stops short.
+Helmeppo: Hold on, I want to look in here real quick.
+`name`: A soap store?
+Helmeppo: Yeah. Been meaning to for a while, but it was closed last time I was down here. You can wait out here if you want.
+- **Follow him in** => Helmeppo_bath_store2
+- I’ll wait here for you. => Helmeppo_wait1
+- Actually, I’m going to head back to base. => End_date
+
+:: Helmeppo_bath_store2
+The store is small, but surprisingly full. Everywhere you turn you see some kind of soap, sugar scrub, bath bomb, or other bath product. The air smells of perfume.
+do increment("hd1.points_possible")
+- This place smells so nice.
+    do increment("hd1.points")
+    Helmeppo: Doesn’t it? It’s like lavender and citrus. => Helmeppo_bath_store3
+- Is there something specific you’re looking for? => Helmeppo_bath_store3
+- Ugh. This place is making my head hurt.
+    do decrement("hd1.points")
+    => Helmeppo_bathstore_choice
+
+:: Helmeppo_bathstore_choice
+Helmeppo: Hey, you didn't have to come in.
+- You’re right. I’m going back outside. => Helmeppo_wait1
+- I’m fine, it just caught me off guard => Helmeppo_bath_store3
+
+:: Helmeppo_bath_store3
+Helmeppo: I’m just looking at the bar soaps. Local places make their own stuff, so it’s always so unique. And it changes pretty regularly so I stop in when I can.
+do increment("hd1.points_possible")
+- Huh. In that case I should get some myself.
+    do increment("hd1.points")
+    => Helmeppo_bath_store5
+- Oh, that’s cool. => Helmeppo_bath_store4
+- I can’t believe you’re into something so girly.
+    Helmeppo: I’d rather be considered ‘girly’ than smell like *some* of the people I know. => Helmeppo_bath_store4
+
+:: Helmeppo_bath_store4
+Helmeppo: I’m just going to grab a few then we can go. => Helmeppo_travel2
+
+:: Helmeppo_bath_store5
+Helmeppo: You should! Hell, I’ll buy it for you if you want.
+do increment("hd1.points_possible")
+- Really? That would be great!
+    do increment("hd1.points")
+    Helmeppo: What are you waiting for? Go on and pick some things out.
+- That’s alright, I’ll buy it myself.
+    Helmeppo: No worries. Let’s go.
+- What, do I really look that broke to you?
+    do decrement("hd1.points")
+    Helmeppo: Fine, forget I asked.
+=> Helmeppo_bath_store5
+
+:: Helmeppo_bath_store5
+You both wander the store for a while, each picking out a few items before checking out. After you’re both finished, you step back outside.
+=> Helmeppo_travel2
+
+:: Helmeppo_wait1
+You wait outside the store, enjoying the fresh air. Helmeppo is gone for a while, but eventually steps out of the store with a bag in his hand.
+Helmeppo: I’m back. Sorry it took so long.
+do increment("hd1.points_possible")
+- There you are! I was about to send in a search party.
+    do increment("hd1.points")
+    Helmeppo: I wasn’t gone that long, was I? => Helmeppo_travel2
+- It’s alright, I didn’t mind the wait. => Helmeppo_travel2
+- You should be. I was close to leaving
+    do decrement("hd1.points")
+    Helmeppo: … => Helmeppo_travel2
+
+:: Helmeppo_travel2
+`name`: So where are we going next?
+Helmeppo: I need to stop by the weaponsmith, if you still want to tag along.
+do increment("hd1.points_possible")
+- Of course I’ll come. I’m having fun walking with you.
+    do increment("hd1.points")
+    Helmeppo: Yeah, uh. Me too. => Helmeppo_travel3
+- Sure. It’s been nice to stretch my legs. => Helmeppo_travel3
+- It’s not like I have anything better to do.
+    do decrement("hd1.points")
+    => Helmeppo_travel3
+- Actually I’m going to head back to the base.
+    Helmeppo :Alright. See you some other time, then. => End_date
+
+:: Helmeppo_travel3
+You both set off again in silence. Your companion is looking around the town, seemingly unbothered by the lack of conversation.
+- **Stay Silent** => Helmeppo_weaponsmith1
+- What do you need at the weaponsmith? => Helmeppo_kukri1
+- You don’t talk much, do you.
+    Helmeppo: Yeah… Coby generally talks enough for us both so people don’t usually notice… => Helmeppo_weaponsmith1
+- So… What was it like training under Garp? => Helmeppo_Garp
+- So about that pet wolf… [if has_item("KnowsAboutWolf")] => Helmeppo_wolf
+- Are you sure you don’t want to talk about your dad? [if has_item("KnowsAboutMorgan")] => Helmeppo_Morgan
+
+:: Helmeppo_Morgan
+Helmeppo: Yes. I’m very sure.
+- Come on, nothing? It’s not like I don’t know the story, I just want to hear it from you.
+    do decrement("hd1.points")
+    do decrement("hd1.points")
+    Helmeppo: Well you’re not getting it.
+    Helmeppo: You know what? I can run my errand tomorrow. I’m going back to the base. => End_date
+- Alright. I’m sorry I asked again.
+    Helmeppo: Thanks for dropping it. => Helmeppo_weaponsmith1
+
+:: Helmeppo_wolf
+Helmeppo: What about him?
+- How did you even end up with a pet wolf?
+    Helmeppo: That’s a *great* question.
+    `name`: And?
+    Helmeppo: And I have no idea. => Helmeppo_weaponsmith1
+- Why a wolf and not some other animal?
+    Helmeppo: You can’t terrorize people with a cat.
+    Helmeppo: I haven’t done that in a while though, so don’t worry. => Helmeppo_weaponsmith1
+- I can’t get over how weird that is. I mean, a pet goat’s strange but a wolf is on another level.
+    Helmeppo: If you’re trying to insult me you’ll have to do better than calling me weird.
+    => Helmeppo_weaponsmith1
+
+:: Helmeppo_Garp
+Helmeppo shudders.
+Helmeppo: Painful. More so for me than Coby.
+Helmeppo: Word of advice, don’t let him pat you on the back if you value your spine.
+- I guess he really lives up to ‘Garp the Fist’ then…
+    Helmeppo: More than you know… => Helmeppo_weaponsmith1
+- What do you mean it was more painful for you?
+    Helmeppo: Coby’s sturdy and built to take a hit.
+    Helmeppo: I am not. => Helmeppo_weaponsmith1
+- Aw, too weak to handle something so simple?
+    Helmeppo: If it’s anyone else, no. But that man doesn’t know his own strength.
+    => Helmeppo_weaponsmith1
+
+:: Helmeppo_kukri1
+Helmeppo: I’m picking up my kukri. The grips cracked during my last sparring session with Coby, so I needed to get them replaced.
+- You were sparring with real blades?!
+    Helmeppo: No! No, I had them off to the side. Honestly I’m glad it was just the grips.
+    Helmeppo: For a second I’d thought it was my back… => Helmeppo_weaponsmith1
+- Why not get the Marines’ in-house weaponsmith to fix them?
+    Helmeppo: I like this one’s work better.
+    Helmeppo: Besides, she’s actually willing to just put on new grips. Our guy wanted to just replace the blades entirely. => Helmeppo_weaponsmith1
+- I don’t get why you don’t just get new knives.
+    Helmeppo: Coby gave them to me. I’d rather not replace them if I don’t have to.
+    => Helmeppo_weaponsmith1
+
+:: Helmeppo_weaponsmith1
+You both finally stop in front of the weaponsmith’s shop. It’s a small place, but you can see a workshop behind the store.
+Helmeppo: I’m just going to go in real quick, wait here. => Helmeppo_weaponsmith2
+
+:: Helmeppo_weaponsmith2
+You don’t have to wait long before he’s back, his kukri blades back in his belt.
+Helmeppo: Alright. Ready to head back? We can get something to eat on the way.
+- No, I’m going to look around a bit more. => Helmeppo_parting
+- Sure, let’s go. => Helmeppo_travel4
+- Yeah, but I’m going to go my own way.
+    Helmeppo: Well. Alright then. => End_date
+
+:: Helmeppo_parting
+Helmeppo: Right. Well, I guess I’ll see you later then?
+do increment("hd1.points_possible")
+do increment("hd1.points_possible")
+- Not if I see you first.
+    do increment("hd1.points")
+    do increment("hd1.points")
+    Helmeppo: Ha! Good one. => End_date
+- Yeah. See you around. => End_date
+- Only if I have no choice in the matter.
+    do decrement("hd1.points")
+    do decrement("hd1.points")
+    Helmeppo: …
+    => End_date
+
+:: Helmeppo_travel4
+Once again you start walking together. You suppose it’s time to-
+Helmeppo: So… You’re from the South Blue, right? What was it like?
+- It was nice. The Grand Line is nice, but I miss my home. And my parents.
+    Helmeppo: Yeah? It must be nice to have something to miss…
+- It was alright. It’s much more interesting here than it was at home.
+    Helmeppo: Yeah, the Grand Line has no shortage of bizarre things going on. Even without leaving the base.
+- Honestly I’m glad to be out of there. With any luck I’ll never have to go back.
+    Helmeppo: I know how that feels…
+=> Helmeppo_travel5
+
+:: Helmeppo_travel5
+He falls quiet again. It’s not as peaceful as last time. You notice the almost troubled look on Helmeppo’s face. The talk of your home seems to have brought up some less than pleasant thoughts for him…
+- (Stay Silent) => Date_Ending
+- What is there to eat around here? => Helmeppo_food_choice
+- So, you and Coby go way back right? => Helmeppo_Coby
+- What made you choose to fight with kukri? => Helmeppo_kukri2
+
+:: Helmeppo_kukri2
+Helmeppo: Huh? Oh. Well I chose them because I got hit in the head with a practice sword when I first got to Marineford as a chore boy.
+`name`: Really?
+Helmeppo: No. I mean, that *did* happen, but I started using kukri because they fit the fighting style I was going for.
+=> Date_Ending
+
+:: Helmeppo_Coby
+Helmeppo: We actually only met about two years ago. It’s funny. We didn’t get along at all when we first met, but now I can’t imagine *not* having him as a friend.
+do increment("hd1.points_possible")
+- It must be nice to have a friend like that.
+    do increment("hd1.points")
+    Helmeppo: It is. Coby’s a great guy to get to know better, if you get the chance.
+- You two didn’t get along? That sounds like a story I need to hear.
+    Helmeppo: With your position I’m surprised you haven’t.
+    Helmeppo: It seems like all the Shells Town transfers try to ‘warn’ people about my past… But I’ll tell you the story some other time.
+- I can see how you didn’t get along at first.
+    do decrement("hd1.points")
+    Helmeppo: At least I used to *actually* deserve it.
+=> Helmeppo_food_choice
+
+:: Helmeppo_food_choice
+Helmeppo: There are a few places, but the one I know best is this sandwich place closer to the base. They’ve got a good selection, and it’s easy to eat on the go.
+do increment("hd1.points_possible")
+- Sure. If you enjoy it, it must be good.
+    do increment("hd1.points")
+    Helmeppo: I think you’re the only one who’s ever taken my taste in things as a good thing. => Helmeppo_sandwiches
+- Yeah I could go for a sandwich.
+    Helmeppo: Cool. Let’s go, then. => Helmeppo_sandwiches
+- Do they have anything *other* than sandwiches?
+    Helmeppo: Yeah, they have a bunch of other stuff.
+    `name`: Oh. Well then. => Helmeppo_sandwiches
+
+:: Helmeppo_sandwiches
+You let him lead you to the sandwich shop. It’s a cute little place, tucked away from the main road.
+do set_background("restaurant", show)
+Inside is very quiet. You are able to get your food quickly and start walking back to the base once more. The sun was starting to set.
+=> Date_Ending
+
+:: End_date
+do romance_points(helmeppo, 0)
+=> root.main
+
+:: Date_Ending
+do set_background("town", show)
+Helmeppo: Geeze, I didn’t even notice it was getting so late…
+It isn’t long before you both make it back to the base, walking into the training grounds where you had first run into him. For several seconds you both just stand there.
+
+if check_ratio("hd1.points","hd1.points_possible",0.5)
+    Helmeppo: Look, I know I was dismissive when you asked, but… thanks for coming with me today. It was nice.
+    Helmeppo: We should do something like this again sometime. You know. If you want to.
+    - Yeah. I’d like that. (+1)
+        Helmeppo: Cool. Uh. I’ll see you later, then.
+    - Maybe. We’ll see.
+    Helmeppo: Well I guess just let me know.
+    do romance_points(helmeppo, 2)
+else
+    Helmeppo: Well. Hope you weren’t bored to death following me on my errands today. I’ll see you around.
+    do romance_points(helmeppo, 1)
+=> root.main

@@ -1,0 +1,309 @@
+:: start
+You decide you should see what Captain Coby is up to. You haven’t seen him around the base in the past few hours, so you decide to check his office.
+do set_background("office", show)
+do show_character(coby, center, show)
+Sure enough, he’s there and looking rather... frazzled, to say the least.
+do increment("cd1_possible")
+- Captain? Is everything ok? => Coby_notice1
+- Excuse me, sir, is now a good time? => Coby_notice1
+- What’s got you in a twist?
+    do increment("cd1_points")
+    => Coby_casual1
+
+:: Coby_notice1
+Coby: Oh! `name`! I didn’t see you there. Yes, I’m just trying to get a handle on all of this... Though now that you’re here I may take this opportunity to take a bit of a break. And please, there’s no need for formalities.
+- You certainly look like you need one...
+    Coby: Oh boy, do I? => Coby_choice
+- Are you sure that’s alright?
+    Coby: Of course! Probably. I can always have Helmeppo help me later. => Coby_choice
+- Hey, I’m not letting you use me as an excuse.
+    do decrement("cd1_points")
+    Coby: Ah, sorry, you’re right. I should get back to work... => End_Date
+
+:: Coby_casual1
+Coby: Paperwork. As usual. I really don’t understand how others get theirs done so quickly...
+- Maybe you should take a break for a bit. Come back later.
+    Coby: Maybe you’re right... I’m not going to get anything done like this... => Coby_choice
+- Well. Good luck.
+    Coby: Thanks. I’m going to need it... => End_Date
+
+:: Coby_choice
+Coby: It’s funny, even though I need a break I have no idea what we should do...
+- Have you had anything to eat?
+    Coby: Not for a while... Food sounds really good right now, though... => Coby_food1
+- I’ve been interested in training with you. Could be good to stretch your legs.
+    Coby: Oh, that’s a great idea! Seas know I need to move. => Coby_training1
+
+:: Coby_food1
+do set_background("park", fade)
+You walk with him down to the mess hall, listening to Coby’s stomach growl. He said he hadn’t eaten in a while, but you can’t help but wonder how long ‘a while’ actually was... No wonder he wasn’t getting any work done.
+- Do you know what they’re serving today?
+    Coby: No idea... Something good, I hope. => Coby_food2
+- How did you manage to forget to eat for so long?
+    Coby: I tend to lose track of time while I’m working. There’s usually someone to remind me but he’s had other things to do.
+    `name`: Helmeppo?
+    Coby: Helmeppo... => Coby_food2
+- How did you end up with so much paperwork anyways?
+    Coby: I have no idea! I don’t remember there being so much...
+    Coby: Honestly I wouldn’t put it past Garp to have mixed his in with mine... It would certainly explain some things... => Coby_food2
+
+:: Coby_food2
+do set_background("mess-hall", fade)
+You both enter the mess hall and are met with a delightful smell.
+Coby: Oh! Buttered potatoes! I would’ve come down earlier if I knew this is what they had today!
+do increment("cd1_possible")
+- Oh man, now I’m hungry too!
+    do increment("cd1_points")
+    => Coby_foodchoice
+- I didn’t know you liked buttered potatoes.
+    Coby: They’re my favorite! => Coby_foodchoice
+- Ew. I hope they have something else.
+    do decrement("cd1_points")
+    Coby: Yeah they usually have options. => Coby_foodchoice
+
+:: Coby_foodchoice
+He leads the way up to the counter and grabs two trays, handing one back to you as he looks over the choices. You look as well, weighing your food options from what is available.
+do increment("cd1_possible")
+- Get the buttered potato meal.
+    do increment("cd1_points")
+    => Coby_Potatoes
+- Get the pasta. => Coby_Pasta
+- Skip straight to dessert and get the cake. => Coby_Cake
+
+:: Coby_Potatoes
+You both sit down at one of the empty tables after getting your food.
+Coby: Oh! Good choice! The buttered potatoes are always amazing. You’ll have to tell me what you think.
+do increment("cd1_possible")
+- Wow, they are really good!
+    do increment("cd1_points")
+    Coby: I’m glad you like them! => Coby_food3
+- They’re ok. Not my favorite, but I’m glad I tried them.
+    Coby: Fair enough. I know it’s not everyone’s thing. => Coby_food3
+- Eugh. I really should’ve gotten something else...
+    do decrement("cd1_points")
+    Coby: Ah... => Coby_food3
+
+:: Coby_Pasta
+You both sit down at one of the empty tables after getting your food.
+Coby: Wow, that looks really good too! I’ve always wanted to try it, but it always seems to be here on buttered potatoes day.
+do increment("cd1_possible")
+- It’s great! Want to try some?
+    do increment("cd1_points")
+    do increment("cd1_points")
+    Coby: Really? Sure!
+    Coby: ...
+    Coby: Wow! That is good! => Coby_food3
+- It is good, but honestly you’re not missing too much.
+    Coby: Yeah? Well, good to know. => Coby_food3
+- It’s way better than what you got.
+    do decrement("cd1_points")
+    Coby: Hah, you sound like Helmeppo.
+    Coby: He doesn’t like them either... => Coby_food3
+
+:: Coby_Cake
+You both sit down at one of the empty tables after getting your food.
+Coby: Went straight for dessert, huh? I don’t blame you, the cake is always delicious.
+do increment("cd1_possible")
+- It really is. They always make it so moist.
+    do increment("cd1_points")
+    Coby: *Right*? => Coby_food3
+- I’m not a huge cake fan, but it is pretty nice. => Coby_food3
+- I just wish they had a different flavor. This kind is kinda gross.
+    do decrement("cd1_points")
+    Coby: Well, tomorrow they’ll have something different. => Coby_food3
+
+:: Coby_food3
+Both of you eat in silence for a little while. The captain seems content to stay occupied with his food, but your mind wanders. If there was ever a perfect chance to get to know him better, it would be now.
+- (Eat silently) => Coby_food4
+- So. What’s it like being a Captain? => Coby_Captain
+- Does the goat get into the file room a lot? => Coby_Goat
+- Your friend Helmeppo is kind of a bitch. => Coby_Helmeppo
+
+:: Coby_Captain
+Coby: It’s hard work, but I really enjoy it. My crew has been amazing and it’s nice to be able to trust them to have my back. I don’t think I’ll ever get used to the paperwork, though...
+do increment("cd1_possible")
+- It may be a pain, but it does have its uses. Things would be a mess without any.
+    do increment("cd1_points")
+    Coby: Of course. But sometimes it feels like I’m filling out the same information over and over... => Coby_food4
+- Yeah the paperwork sucks. Most of the time it just feels redundant.
+    Coby: It does. I don’t see why departments can’t just use one form so we can fill it out once and copy it... => Coby_food4
+- Don’t you have better things to do than complain about paperwork?
+    do decrement("cd1_points")
+    Coby: Yes. But I’ve learned that venting can be a bit therapeutic.  => Coby_food4
+
+:: Coby_Goat
+Coby: Sometimes. Usually it stays with Sengoku, but it seems to be getting a bit more adventurous lately. Especially since Drake has come back. I think it missed him a bit...
+- That’s so sweet!
+    Coby: Yeah. Of course I can’t exactly say if it’s true or not, since I’m pretty sure Helmeppo’s also been feeding it old paperwork... => Coby_food4
+- Understandable. I’d probably miss him too.
+    Coby: Same here if I knew him that long. => Coby_food4
+- Do you really think a goat can miss someone like that?
+    Coby: I don’t know enough goats to know overall, but this one most definitely would. => Coby_food4
+
+:: Coby_Helmeppo
+Coby: Oh he’s *such* a bitch.
+Coby: All jokes aside, he’s actually pretty cool once you get to know him. He’s just...
+Coby: An acquired taste...
+do increment("cd1_possible")
+- Oh. I guess maybe I judged him too soon.
+    do increment("cd1_points")
+    Coby: Fair warning though, he’s still pretty abrasive even when you know him. => Coby_food4
+- I’ll take your word for it...
+    Coby: That’s all I can ask. => Coby_food4
+- And that’s a taste I’d rather not acquire.
+    do decrement("cd1_points")
+    Coby: Well you don’t need to be rude about it. => Coby_food4
+
+:: Coby_food4
+Coby: What about you? How are you liking working here so far?
+do increment("cd1_possible")
+- I’m really enjoying it. Everyone’s been so nice so far, and those that aren’t are at least polite.
+    do increment("cd1_points")
+    Coby: That’s so good to hear! => Coby_food5
+- It’s alright. Getting used to things has been hard, but I’m sure things will get better.
+    do increment("cd1_points")
+    do increment("cd1_points")
+    Coby: I know how you feel. I know I felt like I’d been thrown in with the sharks when I first arrived. But it does get easier. => Coby_food5
+- Honestly, I wish I’d stayed where I was. Less going on.
+    Coby: Understandable, it can be pretty hectic here and I know that’s not for everyone. => Coby_food5
+- I hate it here. I transferred for my career but I wish I’d been placed somewhere better.
+    do decrement("cd1_points")
+    Coby: Ah, I see... => Coby_food5
+
+:: Coby_food5
+You both finish eating and Coby sighs.
+Coby: Wow, I really needed that...
+Coby: I guess I should get back to work now, though, shouldn’t I?
+- Probably. I can walk back with you, if you’d like.
+    Coby: Well I’m not about to say no to that. => Coby_food6
+- Good luck. I think I’m going to stay here a bit longer.
+    Coby: Alright. I’ll see you around, then. => End_Date
+
+:: Coby_food6
+do set_background("park", fade)
+You walk with Coby back towards his office. On the way he tells you a story from his early days as a Marine.
+Coby: Helmeppo and I are still paying off that building, since we were the ones to destroy it... But we’re getting close!
+do set_background("office", fade)
+Coby: Oh, it looks like we’re already here...
+do increment("cd1_possible")
+- Well, at least I got to hear the end of your story first.
+    do increment("cd1_points")
+    Coby: True! I’m glad you enjoyed it. It’s one of the funnier things that happened to us back then. => Coby_food_ending
+- Thank the seas. I was getting tired of your storytelling.
+    Coby: Oh... I see... => Coby_food_ending
+
+:: Coby_food_ending
+if check_ratio("cd1_points","cd1_possible",0.5)
+    Coby: Well, `name`, thanks for letting me take a bit of a break with you. It was a lot of fun talking with you. And, well, if you ever want a break buddy again you know where to find me.
+else
+    Coby: Thanks for letting me join you for lunch. I really appreciate it. I’ll see you around.
+=> root.main
+
+:: Coby_training1
+do set_background("park", fade)
+He leads the way to the training grounds. They are almost empty when you arrive, with only the occasional sparring pair scattered around the open area.
+do set_background("training-grounds", fade)
+Coby: Right. I’ll be sure to go easy on you, no need for anyone to get hurt during a friendly sparring match.
+do increment("cd1_possible")
+- Sounds good to me!
+    do increment("cd1_points")
+    Coby: Great! => Coby_training2
+- If you insist. => Coby_training2
+- Hey, I’m not that fragile.
+    do decrement("cd1_points")
+    Coby: I’m sure you aren’t. But it would make *me* feel better. => Coby_training2
+
+:: Coby_training2
+You both stand facing each other, and get into fighting stances. He seems to be having a great time already, and you haven’t even started.
+=> ThePunch
+
+:: ThePunch
+Coby: Well, go on. Attack me.
+do increment("coby.attacks")
+- (Punch him in the face) [if not(visited("Coby_Punch"))] => Coby_Punch
+- (Aim for the knees) [if not(visited("Coby_Knees"))] => Coby_Knees
+- (Kick him in the side) [if not(visited("Coby_Kick"))] => Coby_Kick
+- (Fight dirty, aim for the crotch) [if not(visited("Coby_Crotch"))] => Coby_Crotch
+
+:: Coby_Punch
+do visit("Coby_Punch")
+You take a swing at his face and he leans to the side, reaching up to quickly grab your arm and flip you on your back. As soon as he does, Coby cringes.
+Coby: I’m so sorry! Are you alright?
+He pulls you back onto your feet
+do increment("cd1_possible")
+- You *have* to teach me how to do that.
+    do increment("cd1_points")
+    Coby: I mean. I can certainly try, if you’d like me to. => Coby_training3
+- I’m fine. That was certainly something. => Coby_training3
+- Ugh, what was that? Are you trying to kill me?
+    do decrement("cd1_Points")
+    Coby: N-no! Of course not! => Coby_training3
+
+:: Coby_Knees
+do visit("Coby_Knees")
+You rush him, kicking out at his knees. Your leg connects with his, but he doesn’t move.
+Coby: That was pretty good! You’ve got a lot of leg strength.
+do increment("cd1_possible")
+- I could use some help learning to put it to better use.
+    do increment("cd1_points")
+    Coby: W-well, I mean, I suppose I could, if you wanted... => Coby_training3
+- Not as good as yours, that was like kicking a wall...
+    Coby: Yeah, I get that a lot... => Coby_training3
+- What the hell are you even made of? Steel?
+    Coby: Nope. Just flesh and blood here. => Coby_training3
+
+:: Coby_Kick
+do visit("Coby_Kick")
+You spin, your heel lashing out at his side. Before it can connect he catches it.
+Coby: That was great! If you’d been a little faster you probably would’ve hit me.
+do increment("cd1_possible")
+- Thanks! My brother taught me that move forever ago. I need to practice it more, though...
+    do increment("cd1_points")
+    Coby: Of course. Being great at something doesn’t happen overnight. => Coby_training3
+- I’m not sure I’ll ever be as fast as you, though.
+    Coby: You never know! I think you’ve got a lot of potential. => Coby_training3
+- Look, I don’t need your sympathy.
+    Coby: Sympathy? I was just saying it was a nice kick... => Coby_training3
+
+:: Coby_Crotch
+do visit("Coby_Crotch")
+You rush him and bring your leg up in an attempt to knee him in the groin. Before you are able to connect, Coby sidesteps and elbows you in the side, knocking you off-balance.
+Coby: Hey now. Don’t think I know those kinds of tricks. Helmeppo tries them on me enough.
+do increment("cd1_possible")
+- And here I was thinking I was doing something special.
+    do increment("cd1_points")
+    Coby: Aw, don’t worry. I’m sure you’ll find a new way to fight dirty. => Coby_training3
+- Wait- your friend tries that move on you?
+    Coby: Well, he usually goes the throwing dirt in my eyes route.
+    Coby: But the point is he’s not above cheap shots. => Coby_training3
+- One officer taking cheap shots at another... I thought the Marines were better than that.
+    do decrement("cd1_points")
+    Coby: You *just* tried to do the same thing... => Coby_training3
+
+:: Coby_training3
+Coby takes a step back from you.
+if is_less_than("coby.attacks", 4)
+    Coby: Well? Want to give it another shot or call it a day?
+    - Yeah, I’ll give it another go. => ThePunch
+    - I think that’s enough for one day.
+        Coby: Sounds good to me. I still have a lot to get done...
+        => Coby_training4
+else
+    Coby: I think that's enough for today. I still have a lot to get done... => Coby_training4
+
+:: Coby_training4
+- Honestly, so do I. But we should do this again sometime. => Coby_training_end
+- Good luck with that. I’m going to enjoy the weather a bit more.
+    Coby: Lucky. It’s absolutely gorgeous out... => End_Date
+
+:: End_Date
+The date ends early (0 points)
+=> root.main
+
+:: Coby_training_end
+if check_ratio("cd1_points", "cd1_possible", 0.5)
+    Coby: Of course! It was fun getting to spend some time with you. And if you ever want to do something other than training, just let me know. There’s a lot to see around here if you know where to look.
+else
+    Coby: Sure. You have a lot of potential and I’d love to see you improve.
+    Coby: Besides, it’s nice to train with someone different once in a while.
+=> root.main

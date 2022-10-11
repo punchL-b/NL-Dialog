@@ -1,0 +1,180 @@
+:: start
+do set_background("bedroom", show)
+do hide_characters(hide)
+It’s been a long day at work. I sit in my room, looking out the window to a beautiful sky. I search my bag for my favorite pen in order to write a few more lines in the letter I’m going to send to my family…
+do start_effect(shake)
+But the pen is missing. #It’s my lucky pen!# My brother gave it to me before I came to New Marineford! Oh no… Did I forget it at the office? There was a meeting earlier… I need to go back. The HQ might close at any moment now! I can’t lose that pen!
+I race to the Headquarters in a hurry, heart pounding in my ear. As I fling the door to the meeting room open, I stop short at the threshold, breathing heavily. Fleet Admiral Sakazuki. I didn’t expect to find him here at this hour. Shouldn’t he already be home by now?
+do set_background("office", fade)
+do show_character(sakazuki, center, show)
+Fleet Admiral Sakazuki looks up from his position at the head of the table, puzzled by my appearance. Next to him, a pile of paperwork needing to be tended to.
+- I’m so sorry to intrude! I thought everyone went home!
+    Fleet Admiral Sakazuki: It’s fine. I decided to stay after the meeting to finish up some paperwork.
+    => Justice_test
+- You really do go above and beyond, don't you? That’s admirable.
+    Fleet Admiral Sakazuki: <pause> Someone has to do the work to get things done.
+    => Justice_test
+- They say being the Fleet Admiral never pays enough and you still want to do overtime? That’s unpaid work!
+    Fleet Admiral Sakazuki: [Frown sprite] Unpaid work or not, I signed up for the job. I have a responsibility to it.
+    => Justice_test
+
+:: Justice_test
+Fleet Admiral Sakazuki: You are looking for your pen, aren’t you? It’s on the table, where you left it.
+Indeed I spot it immediately, laying neatly where I sat earlier. I hurry over to grab it and put it back in my backpack, letting out a sigh of relief. I look at the Fleet Admiral, noticing how he's scrutinizing me carefully. I wonder what he’s thinking…
+Fleet Admiral Sakazuki: Tell me, Petty Officer `name`… What does Justice mean to you?
+- For me, Justice means doing whatever it takes to make a difference. => AJ_path
+- It is protecting the innocent and opposing the corrupt. => MJ_path
+- Huh? Justice? What are you talking about? I’m just in the Marines to find a date.
+    do get("NoJustice")
+    Fleet Admiral Sakazuki: [Frown sprite] A Marine without ideology is nothing but a mercenary for hire. => Part_2
+
+:: AJ_path
+Fleet Admiral Sakazuki’s intense look doesn’t lessen. He seems to weigh my words as if testing my resolve.
+Fleet Admiral Sakazuki: That’s a bold statement to make. ‘Whatever it takes’ is not something you say lightly.
+- I know, sir. I joined the Navy to be the change I want to see. => AJ_a
+- I guess so… But I stand by my words! => AJ_b
+- It-it’s not? I mean, you say it, right? Isn’t it something everyone says? => AJ_c
+
+:: AJ_a
+Fleet Admiral Sakazuki: And what if being that change takes you down a path of isolation? What if people hate you for it?
+- Then so be it.
+    do get("AbsoluteJustice")
+    I thought the Fleet Admiral would praise me hearing those words spoken with such determination. But he says nothing, his expression remains unreadable.
+    Fleet Admiral Sakazuki: <pause> You’ve picked a lonely road to travel, `name`. I’d know. I’m walking the path. => Part_2
+- I’ll just have to find people who understand me. That way I won’t be alone.
+    do get("AbsoluteJustice")
+    Fleet Admiral Sakazuki: Easier said than done. Although I suppose it’s not impossible to achieve. => Part_2
+- That won’t happen, will it? People will love me if I do the right things… right? I don’t want them to hate me...
+    do get("NoJustice")
+    Fleet Admiral Sakazuki: [Smile sprite] To be so naïve. [Normal sprite] You’d better get used to being scorned if you want to follow Absolute Justice. It’s the path of the thankless. => Part_2
+
+:: AJ_b
+Fleet Admiral Sakazuki: So then, I ask you… how far are you willing to go to stick to your vow?
+- As long as I can still sleep at night with the decisions I made. But no further than that.
+    do get("AbsoluteJustice")
+    Fleet Admiral Sakazuki: A non-answer, but I’ll accept it. There’ll come a time you’ll need to make hard choices. I’ll know your limitations then. => Part_2
+- A reasonable amount. I have to weigh the pros and the cons, of course.
+    He doesn’t look very impressed with my unclear answer. Another moment stretches out before…
+    Fleet Admiral Sakazuki: Elaborate
+    - Like how steep the price is in comparison to the good it does in the long run.
+        do get("AbsoluteJustice")
+        Fleet Admiral Sakazuki: You’ll be facing very tough choices. Any leaders, be it Sengoku or I, always have to weight the good and the bad. Remember to follow the correct path no matter how difficult it is. => Part_2
+    - I know the brass doesn’t like it when things are messy. It might affect my promotion if I go too far… □
+        Fleet Admiral Sakazuki: <pause> Your priorities are skewed. If the ‘difference’ you want to make is your status, then you need to think hard about what the Navy stands for. => Part_2
+
+:: AJ_c
+Fleet Admiral Sakazuki: Yes, I do say that. And I believe in it.
+Fleet Admiral Sakazuki: Do you?
+- Of course, sir! Absolute Justice, I know all about it!
+    Fleet Admiral Sakazuki: Is that so? Do you think the Navy’s Justice is different from the World Government’s?
+    - The Navy was built on a foundation of doing the right things. As long as the World Government wants the same thing as us, there should be no difference.
+        do get("AbsoluteJustice")
+        Fleet Admiral Sakazuki: Well said. Perhaps you do know the Navy’s Justice. => Part_2
+    - Not at all! It’s treasonous to think otherwise!
+        do get("NoJustice")
+        Fleet Admiral Sakazuki: <pause> Once you gain true understanding of Justice, you’ll be surprised at how different we are. Being loyal and being true aren’t the same thing. => Part_2
+- ...no?... Yes? ...I know it’s something everyone says so it must be right!
+    do get("NoJustice")
+    Fleet Admiral Sakazuki: It doesn’t matter what anyone says. You have to determine what the right thing is for yourself. Only then can you make the decision when there’s no one to tell you how to act. True Justice comes from within. => Part_2
+
+:: MJ_path
+The Fleet Admiral’s expression doesn’t change. I thought he would be angry, but he doesn’t yell. He doesn’t break anything. He lets the tension build and build until…
+Fleet Admiral Sakazuki: What if protecting the people means letting evil escape? Your failure would come back to haunt you.
+- Sir, you can lose a battle but win the war. But if you lose innocent lives, you are never getting them back. => MJ_a
+- In that case, I just need to do both: protecting the innocent and also defeating evil. Why not? => MJ_b
+
+:: MJ_a
+Fleet Admiral Sakazuki: Everyone has a duty to justice. If sacrifice has to be made to prevent an even bigger catastrophe, don’t you think it’s worth it?
+- I respectfully disagree. Civilians don’t sign up to become sacrifices.
+    `name`: First, I want to uphold Justice by not treating people like they’re expendable.
+    do get("MoralJustice")
+    Fleet Admiral Sakazuki looks at me for a very long time, but I refuse to take back my words or apologize for them. Eventually, he sighs. There’s a ghost of a smile.
+    Fleet Admiral Sakazuki: [smile sprite] <pause> Hmph. I can’t say I agree with your thinking but I can spot stubbornness when I see it. I can go far for my belief. I’m curious to see how far you’ll go for yours. => Part_2
+- I guess you have a point. However, I still think it depends.
+    Fleet Admiral Sakazuki: Depends on what?
+    - It depends on the exact situation. I don’t think it’s fair to generalize as if everything is the same. Each scenario requires flexibility!
+        do get("MoralJustice")
+        Fleet Admiral Sakazuki: [smile sprite] Spoken like that damn Issho and Kuzan. Very well. Justice is Justice. I accept your conviction. => Part_2
+    - Like… the directives of the World Government and stuff… If they’d let you do that…
+        do get("NoJustice")
+        Fleet Admiral Sakazuki: [frown sprite] I think you have a misunderstanding of how our goals align. If you value the World Government's directives more than your own sense of right and wrong, you should be their agent instead. => Part_2
+
+:: MJ_b
+Fleet Admiral Sakazuki: That’s naive thinking. There’ll be a time where you have to choose.
+- Maybe… Have you ever had to make a choice like that…?
+    Fleet Admiral Sakazuki: <pause> Yes. Many times.
+    Fleet Admiral Sakazuki: It’s easy to think when you’re at my strength and position that you have the power to remove the difficult choices. But I find myself with harder and harder choices more than ever.
+    Fleet Admiral Sakazuki: <pause> As the Fleet Admiral of the Marines, the only choice I can make is pushing forward.
+    Fleet Admiral Sakazuki: A great deal of people would have and **did** argue against my choice to look at the big picture though. What about you?
+    - ...Maybe they didn’t so much as disagree with you as they thought you had forgotten about the people when you looked down on a map.
+        do get("MoralJustice")
+        Fleet Admiral Sakazuki: I haven’t. But I cannot forget my vow to uphold Justice at all cost, either.
+        Fleet Admiral Sakazuki: <pause> Thank you, Petty Officer `name`. Your answer is sufficient. => Part_2
+    - That makes sense. I heard Absolute Justice is evil and Moral Justice is righteous.
+        do get("NoJustice")
+        Fleet Admiral Sakazuki: [Frown sprite] You determine what’s right and what’s wrong based on what other people tell you? Observe and make your own choice yourself. => Part_2
+    - Ack I don’t know! Why are you asking me these hard questions?!
+        do get("NoJustice")
+        Fleet Admiral Sakazuki: [Frown sprite] Hm. Perhaps there’s a better question to ask instead… ‘Why can’t you answer them?’ => Part_2
+- That sounds scary… Is there a position where I don’t have to make that kind of decision…?
+    do get("NoJustice")
+    Fleet Admiral Sakazuki: Frankly, there isn’t. Even as a foot soldier, you have to make choices between staying behind to help civilians or pursuing pirates. If you don’t want to make hard choices, then this job isn’t for you. => Part_2
+
+:: Part_2
+Mind reeling from the sudden questioning about Justice from the Fleet Admiral, I stand there for a moment. I eye the paperwork on the table, knowing I could offer my help. I don’t know if I want to.
+- Do you… need help, sir? People say I’m pretty good with paperwork! It doesn’t sit right with me not helping you when I know I can do it!
+    Fleet Admiral Sakazuki: <pause> …Alright. Take a seat. It’s going to be a long night. => Dedication_test
+- Um, thank you, sir, for pointing out where my pen was and for the… conversation. Actually, I have to leave now. Good luck with your work!
+    if or(has_item("MoralJustice"),has_item("AbsoluteJustice"))
+        do give("MoralJustice")
+        do give("AbsoluteJustice")
+        => Neutral_ending_1
+    else
+        => Bad_ending_1
+
+:: Dedication_test
+As soon as I sit down, the Fleet Admiral hands me a stack of papers so full of words I have to squint to see. Oh boy, what have I gotten myself into?
+- Work hard
+    do get("VeryDedicated")
+    As expected, the work is tedious and boring. I can feel everything blur together after a while. I keep pushing through. I want to do my best!
+- Slack off
+    do get("NotDedicated")
+    The work is too boring so I start making spit balls and flicking them at the Fleet Admiral while he’s trying to work. Entertainment!
+Eventually, I fall asleep, sometime after midnight has passed. All I can recall is the pen falling from my slackened fingers and was caught by a warm hand. I remember nothing else afterwards…
+if and(or(has_item("MoralJustice"),has_item("AbsoluteJustice")),has_item("VeryDedicated"))
+    => Good_ending
+elif and(or(has_item("MoralJustice"),has_item("AbsoluteJustice")),has_item("NotDedicated"))
+    => Neutral_ending_2
+elif and(has_item("NoJustice"),has_item("VeryDedicated"))
+    => Neutral_ending_3
+else
+    => Bad_ending_2
+
+
+:: Neutral_ending_1
+It's getting really late and I don't want to work overtime. I salute smartly, excusing myself. Fleet Admiral Sakazuki gives me a nod but he doesn't stop me from leaving. The last thing I notice as I close the door behind me is how lonely he appears to be.
+=> root.main
+
+:: Bad_ending_1
+It's getting really late and I don't want to work overtime. I salute smartly, excusing myself. Fleet Admiral Sakazuki doesn't acknowledge me but he doesn't stop me from leaving, either. I go home and think about the strange conversation we had.
+=> root.main
+
+:: Good_ending
+When I wake up early the next morning, Fleet Admiral Sakazuki was long gone. Someone has taken the time to close the office window for me though. Covered my body is a large white jacket, the fabric smelling faintly of cigars. There's a note next to me. In blocky letters, it reads…
+Note: SLEEP DEPRIVATION WILL DULL EVEN THE MINDS OF GOOD MARINES. THANK YOU.
+=> root.main
+
+:: Neutral_ending_2
+When I wake up the next morning, I find myself all alone. Someone has taken the time to close the office window for me though. There's a note next to me. In blocky letters, it reads…
+Note: YOUR CONVICTION IS IMPRESSIVE, BUT A MARINE WITH ONLY CONVICTION ALONE ISN'T ENOUGH. YOU NEED SOME SELF-DISCIPLINE.
+=> root.main
+
+:: Neutral_ending_3
+When I wake up the next morning, I find myself all alone. Someone has taken the time to close the office window for me though. There's a note next to me. In blocky letters, it reads…
+Note: I HAVE NOTED YOUR DEDICATION FOR THE JOB. BUT RIGHT NOW, YOU LACK A PURPOSE. SEEK YOUR OWN JUSTICE. ASK YOURSELF WHY YOU CHOOSE TO BE A MARINE.
+=> root.main
+
+:: Bad_ending_2
+When I wake up the next morning, I find myself all alone. Someone has taken the time to close the office window for me though. There's a note next to me. In blocky letters, it reads…
+Note: YOU NEED TO SHAPE UP, SOLDIER. YOUR SELF DISCIPLINE IS LACKING AND YOU DON'T HAVE A CLEAR PURPOSE. BEING IN THE NAVY IS NOT A SAFE OCCUPATION SO MAKE SURE YOU KNOW WHY YOU CHOSE THIS PATH IN THE FIRST PLACE.
+=> root.main

@@ -1,0 +1,326 @@
+:: start
+do set_background("park", show)
+On your way home, you decide to walk through the park.
+`name`: Isn't that Admiral Kizaru?
+do show_character(borsalino, center, fade)
+`borsalino`: `name`... ~Helloo...~
+`borsalino`: Fancy meeting you here, isn't it...? Are you going that way...?
+`borsalino`: Oh, me too... ~*Whaat*~ a coincidence...
+`borsalino`: I hope your first day at New Marineford wasn't too stressful...
+- Oh, so is that what you higher-ups call being busy? (+)
+    `borsalino`: Oh... you caught me...
+    `borsalino`: It's hard to focus on paperwork with so many *distractions*...
+- It was what I expected from the Navy.
+    `borsalino`: Hmm...
+    `borsalino`: That's... not a very good thing, is it?
+- No, Sir. (-)
+    `borsalino`: Oh... how formal.
+    `borsalino`: You can call me Borsalino...
+    do get("CallMeBorsalino")
+- At least you're there to keep it interesting...  (+)
+    `borsalino`: ~Ooh...~
+    `borsalino`: That is very kind of you...
+    `borsalino`: A new face is always... a very exciting thing, don't you agree...?
+- Say nothing. (-)
+    `borsalino`: ...
+`borsalino`: Well, keep up the, ah, *good work*...
+`borsalino`: Do you mind if I smoke?
+- That's bad for your health. (-)
+    `borsalino`: Oh... ~*Reaally?*~
+    `borsalino`: That's news to me...
+- It doesn't bother me.
+    You watch him light up the cigarette.
+    Silence hangs between you.
+- If you invite me too? (+)
+    `borsalino`: Oh my. But of course...
+    `borsalino`: It seems like we'll be walking some of the way together, won't we...?
+There's an awkward lull in the conversation.
+- Talk about the workday. => route1
+- Let's grab something to eat! => route2
+- What would you do on a day off around here? => route3
+- Say nothing. => route4_bored
+
+:: route1
+You talk about work until the conversation gets deeper.
+- What is it like working with Kuzan? (-)
+    `borsalino`: ... Kuzan, mmm?
+    `borsalino`: Well, we have known each other... for ~*suuch*~ a long time...
+    `borsalino`: I can't remember one time I've worked with him... =>  route1_talking_admirals
+- What is it like to have your powers? =>  route1_talking_powers
+- What is your 'Justice' all about? =>  route1_talking_justice
+
+:: route1_talking_admirals
+- What is it like working around Sakazuki? (-)
+    `borsalino`: ... Sakazuki, mmm?
+    `borsalino`: Ah, everyone thinks he is ~*soo*~ scary...
+    `borsalino`: But he is a very funny guy, actually...
+    `borsalino`: Crunchy outside... soft inside... like bread... => route1_talking_admirals_alt
+- What is it like to have your powers? => route1_talking_powers
+- What is your 'Justice' all about? => route1_talking_justice
+
+:: route1_talking_admirals_alt
+- What is it like working around Issho? (-)
+    `borsalino`: ... Issho, mmm?
+    `borsalino`: It depends... Ah... He's very principled...
+    `borsalino`: Always smiling... hard to tell what he’s thinking...
+    `borsalino`: <pause>... I find that very comforting. => route4_late
+- What is it like to have your powers? => route1_talking_powers
+- What is your 'Justice' about? => route1_talking_justice
+
+:: route1_talking_powers
+`borsalino`: ...
+`borsalino`: ...
+You almost think he hasn't heard the question, but then...
+`borsalino`: Imagine a roller-coaster...
+`borsalino`: Do you know the moment when it picks up ~*sloowly*~ before the fall?
+`borsalino`: And your belly turns...
+`borsalino`: *That...* is what it feels like, all the time.
+- I heard about your fight with Rayleigh... (-)
+    `borsalino`: <pause> Ah, yes. Rayleigh.
+    `borsalino`: I had not expected to find him at Sabaody on that day...
+    `borsalino`: Ah... Back when he and Roger sailed the seas, you see... Sakazuki and I were rookies...
+    `borsalino`: I was convinced I would catch him someday, you know...?
+    `borsalino`: Well, well... Even so many years later, it seems that I lost again...
+    `borsalino`: There's always a next time...
+=> route4_late
+
+- I heard about your fight with Arlong... (+)
+    `borsalino`: With... whom?
+    `borsalino`: ...
+    `borsalino`: Oh! That fishman?
+    `borsalino`: ~*Yees, yees,*~ that one... My men certainly feared the Tiger pirates...
+    `borsalino`: But sometimes, all it takes is one shot... to put them back where they belong... => route4_late
+- Can you demonstrate?
+    `borsalino`: Mmm... I'm afraid I can't teleport you home.
+    `borsalino`: I get asked that often...
+    `name`: What I actually mean is... It seems like somebody could use our help.
+    On your way, you have seen a small boy crying because his kite is stuck on a tree. It’s so far away!
+    - Point it out. => route1_kite
+    - Say nothing. => route4_late
+
+:: route1_kite
+`borsalino`: Oh... I hadn't seen that...
+`borsalino`: Are you saying I should shoot that kite?
+- Yes. (-)
+    `borsalino`: That is... Not exemplary...
+    `borsalino`: You need to play nice with civilians, `name`...
+    Borsalino disappears, and then reappears in a flash, handing the child his kite. From sobbing, the boy goes to grinning brightly.
+    => route4_late
+- Of course not, help him! (+)
+    `borsalino`: ~*Aah,*~ that's what I thought...
+    Borsalino is gone in a burst of light, and reappears handing the kid that kite. From sobbing, the boy goes to grinning brightly.
+    `borsalino`: ... well, what a strange thing...
+    `borsalino`: I would have probably overlooked it...
+    `borsalino`: ...
+    `borsalino`: Shall we go? => route1_best
+
+:: route1_best
+It is getting late. Time to go home.
+`borsalino`: It was nice meeting you, `name`.
+`borsalino`: I’ll be glad to see you tomorrow.
+`borsalino`: ~Aah...~ Perhaps next time we can go somewhere quieter...
+
+:: route1_talking_justice
+`borsalino`: Ah... you're curious, aren't you...?
+`borsalino`: ...
+`borsalino`: I prefer to leave work at work, don’t you agree..?
+=> route4_bored
+
+:: route2
+`name`: Let's grab something to eat from that bistro over there.
+`borsalino`: Oh, ~*soo...*~ Such a good idea...
+do set_background("restaurant", fade)
+`borsalino`: Take your pick...
+- I'd like to have dinner already. Noodles? (+)
+    `borsalino`: Oh. Dinner to go?
+    `borsalino`: Gladly...
+    `borsalino`: ...let me invite you. I suppose this is a date already...
+- Just a snack. A pastry.
+    `borsalino`: ~*Suure.*~ Here, I'll get it for you...
+- I'd like ice cream, please! (-)
+    `borsalino`: Ah... suit yourself...
+    `borsalino`: Here, I will invite you...
+    `borsalino`: ~*Mee?*~ I'm okay without...
+=> route2_place
+
+:: route2_place
+`borsalino`: Would you like to sit here or go somewhere else, `name`? Someplace... Nicer, perhaps...?
+- Let's sit on the grass! => route2_place_grass
+- Let's just stay here at the shop.
+    `borsalino`: As you wish... => route2_place_shop
+- Let's go to that gazebo over there. => route2_place_romantic
+
+:: route2_place_grass
+`borsalino`: Oh... hum...
+- Come, don't be shy! (-)
+    `borsalino`: I haven't done that since I was a child...
+    `borsalino`: And I don't want to... not really...
+    - Okay, you win.
+        Despite the awkward start, you do walk and chat for a bit.
+        => route4_late
+    - I’m staying. => route5_choice
+- What, you mean you're too fancy for me? (--)
+    `borsalino`: ...
+    `borsalino`: Too ~*faancy,*~ you say?
+    You don't think he liked being called out like that.
+    => route5_nochoice
+- Would you rather stay in the bistro?
+    `borsalino`: Ah... I would, thank you.
+    `borsalino`: I'd rather keep my suit tidy... If it doesn't bother you. => route2_place_shop_alt
+
+:: route2_place_shop
+`borsalino`: Oh... I never stop to have food outside anymore.
+`borsalino`: It's nice to take the time, isn't it...?
+`borsalino`: These terrasses in summer remind me of the South Blue.
+`borsalino`: Isn't that where you're from?
+- Yes, and I miss home.
+- Yes, but I love traveling. (+)
+You tell him about where the place you come from, and you both converse about locations you have traveled to.
+=> route4_late
+
+:: route2_place_shop_alt
+`borsalino`: I'd never really paid attention to this place...
+`borsalino`: But it's... comfortable.
+`borsalino`: Tell me... so you are from the South Blue, aren't ~*yoou?*~
+You tell him about where the place you come from, and you both converse about locations you have traveled to.
+=> route4_late
+
+:: route2_place_romantic
+`borsalino`: Oh... What a nice place...
+`borsalino`: ...
+`borsalino`: Even a little bit romantic, `name`.
+- Oh, don't pull my leg. (+)
+    `borsalino`: Help... don't get angry...
+    `borsalino`: I’m sure you’re ~*scaary*~ when you’re angry...
+    Even though he likes to pick on you, the two of you had a good time together.
+    => route2_best
+- I didn't want to spend that much time there. (-)
+    `borsalino`: Ah... What did you say?
+    `borsalino`: I'm sorry, I was thinking of something else...
+    You two have food without saying much.
+    => route4_bored
+- If it is... Would we get in trouble? (+)
+    `borsalino`: ...
+    `borsalino`: Well, well, `name`... That depends on your definition of trouble...
+    `borsalino`: And if we did, would it matter...?
+    `borsalino`: What a thing to say...  => route2_best
+- N-no, it's not romantic at all!
+    `borsalino`: If ~*yoou say so*...~
+    You had food and chatted some more before moving on.
+    => route4_late
+
+:: route2_best
+`borsalino`: Ah, it's getting late...
+`borsalino`: You are one of a kind, `name`... I do look forward to seeing you tomorrow.
+Borsalino disappears in a flash of light... that went well, didn't it?
+=> DateEnds
+
+:: route3
+`name`: What do Marines do on a day off around here?
+`borsalino`: Ah... You ask the important questions, don't ~*yoou*~?
+`borsalino`: But it depends on your tastes... Everyone is different...
+- Where can you go shopping? => route3_fashion
+- Where's a calm spot to read? => route3_reading
+- I always train after work. (-)
+    `borsalino`: Ah...
+    `borsalino`: ~*Weell,*~ I prefer to do it during working hours...
+    `borsalino`: Keep free time free... => route4_late
+- What's a good spot to have a swim? (-) => route3_swimming
+- Let's go out to eat sometime, but only if you're paying. (+)
+    `borsalino`: Oh... as you wish.
+    `borsalino`: You pick the restaurant, I imagine...? => route4_late
+
+:: route3_swimming
+`borsalino`: ...
+`borsalino`: I can ~*noot*~ really swim anymore... although I used to like it...
+`borsalino`: Red Line is ~*niice*~ if you ignore the sharks... => route5_choice
+
+:: route3_fashion
+`borsalino`: Oh... The main avenue of Marineford... that's where I tailor my clothes.
+- I love how you dress! (+)
+    `borsalino`: Oh... ~*Thaank*~ you...
+    `borsalino`: I think the first impression is important, you see...
+    `borsalino`: ...I would say you understand, don’t you...? => route4_late
+- High-end fashion is nothing for me. (-)
+    `borsalino`: Well, you’re not the only one...
+    `borsalino`: I have had to drag a ~*goood*~ few colleagues around so they would stop showing up in their sweaty hoodies to work...
+    `borsalino`: ...which— is not your case, of course... => route5_choice
+
+:: route3_reading
+`borsalino`: You like reading...?
+- Why are you surprised? (+)
+    `borsalino`: No, I...
+    `borsalino`: ...
+    `borsalino`: I used to read and study a lot, you see...
+    `borsalino`: You could say I lost the habit...
+    - That can't be! Let’s swap favorite books. (+)
+        `borsalino`: That would be ~*loovely,*~ `name`. => route3_best
+    - I prefer reading the news. (-)
+        `borsalino`: I can understand that...
+        You speak a little bit about the news. He seems bored... maybe that's just the way he talks.
+        => route4_late
+- I read to keep informed about the world. (-)
+    `borsalino`: I can understand that...
+    `borsalino`: Interesting things happen all the time, don't they...?
+    You speak a little bit about the news. He seems bored... maybe that's just the way he talks.
+    => route4_late
+
+:: route3_best
+Time flies by as you tell Borsalino about the things you have been reading.
+`borsalino`: ~*Weell*~, don't forget our deal, will you?
+`borsalino`: It's getting late now, but I'll be glad to see you at work, `name`.
+`borsalino`: Take care... => DateEnds
+
+:: route4_bored
+`borsalino`: Are you bored...?
+`borsalino`: Ah, but you have a long day behind you...
+`borsalino`: The next time we meet... we could do something more fun.
+- No thanks, I’m too busy. (-)
+- I’d like to go somewhere loud and more exciting. (+)
+- I think I need some more time to settle.
+`borsalino`: Of course, of course.
+`borsalino`: Well, take care of yourself, `name`. => DateEnds
+
+:: route4_late
+`borsalino`: Ah, it’s getting late...
+`borsalino`: It was nice to see you.
+`borsalino`: The next time we meet, I’m sure I could take you somewhere more fun.
+- No thanks, I’m too busy. (-)
+    `borsalino`: Oh, I see...
+    `borsalino`: Well, take care, will you?
+    `borsalino`: See you tomorrow. => DateEnds
+- I’d like to go somewhere loud and more exciting. (+)
+    `borsalino`: ~*Ooh*~... I don't know if I can keep up with you...
+    `borsalino`: Well, until then? See you tomorrow... => DateEnds
+- Sounds like a plan!
+    `borsalino`: *Good...*
+    `borsalino`: Until then... See you tomorrow. => DateEnds
+
+
+:: route5_choice
+`borsalino`: Oh, I just remembered...
+`borsalino`: I forgot something in the office.
+`borsalino`: I am ~*soo*~ forgetful.
+- Oh, let me come get it with you! (+)
+    `borsalino`: <pause>
+    `borsalino`: Don't worry, I'll get there at the speed of light...
+    `borsalino`: ...See you tomorrow, `name`.
+- Okay, then go! (-)
+    `borsalino`: ... How nice seeing you.
+Like that, he just vanishes.
+=> DateEndsEarly
+
+:: route5_nochoice
+`borsalino`: Oh, I just remembered...
+`borsalino`: I forgot something in the office.
+`borsalino`: I am ~*soo*~ forgetful, aren't I...?
+`borsalino`: I will see you tomorrow, `name`.
+Like that, he just vanishes.
+=> DateEndsEarly
+
+:: DateEnds
+=> root.main
+
+:: DateEndsEarly
+The date ends early
+=> root.main

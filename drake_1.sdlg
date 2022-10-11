@@ -1,0 +1,367 @@
+:: start
+do set_background("office", show)
+do show_character(drake, center, show)
+Drake: Thank you for agreeing to help me organize my files, `name`.
+- No problem! I'm sorry the goat ate some of your paperwork.
+  Drake: It's replaceable; I just need to know what it is.
+- Oh, so that's what we're here for...
+- Eh, I was free anyway.
+
+Should we get started, then? I can take the drawers on the left and you can take the ones on the right.
+- I'll file **your** papers, Rear Admiral. => Part_2C
+- How about we get to know each other a little better first? => Part_2B
+- Okay, right side it is. => Part_2A
+
+:: Part_2A
+You look into the first drawer on the right. It seems pretty full and well-organized, so it's unlikely the goat got into those, right?
+- Should I look at every file? What do you think could be missing from here?
+  Drake: Check the back first.
+- This looks fine. Let me go to the next one.
+  Drake: You checked all of it already?
+  - No, but it's pretty tightly stuffed.
+    Drake: Make sure to just look in the back. But you might be okay.
+  - Of course I did!
+    Drake: ...
+  - Uh...it seems unlikely, but I'll come back later if I don't find anything in the other drawers.
+    Drake: I don't think it was limited to just one drawer.
+- What about this piece of paper that's sticking out near the back?
+  Drake: Oh, let me take a closer look.
+  His gloved hand brushes over yours as he reaches for the file. The sensation of the leather is pleasant on your skin.
+  Drake: No, this is just an oversize page.
+
+You continue to work through the files. Nothing seems to be out of place in the top drawer, so you close it and open the next one. Before you even see the damage, you hear the papers ruffling and folding against the top of the drawer. Unlike the first, they seem to have been thrown into the draw haphazardly, not at all what you'd expect to see from Drake.
+- Uh...this looks pretty bad.
+  Drake: Yes, the goat must have gotten in there.
+  - So what's missing?
+    Drake: Second from the top on the right, that's the compliance forms. Do you know where we keep the extra copies?
+    - No, but I can go get them.
+      Drake: That's fine. I'll just write it down and we can get more later. Let's take a look at which ones we need.
+      => Part_3A
+    - Do we really need them? The office knows you're compliant.
+      Drake: They could audit me.
+      => Part_3B
+- Damn, you're actually messy under all that!
+  Drake: No, that was the goat.
+  - I was just kidding. => Part_3C
+  - Oh. Right. => Part_3B
+- Well, nothing to see here either.
+  You close the drawer again before Drake can see into it.
+  Drake: Please check more thoroughly.
+  => Part_3C
+
+:: Part_2B
+Drake: It's not that I don't like you, `name`, but I'd really like to get this work done.
+- Right, but maybe we'll work better if we get to know each other first?
+  Drake: I think we'll learn more about each other by working together.
+- Maybe we should get to it, then. What all needs to be done, just the files?
+  Drake: Yes, just the files.
+- So after work, then? Can't have all work and no play.
+  Drake: This is work, though.
+
+Drake: Okay, are you good with the right side?
+- Sure. Let's see what's in here.
+  You open the drawer and begin to pick through the files. Looks like there's a lot to review.
+  => Part_3B
+- I guess... => Part_3C
+- Are you sure we don't have time to talk right now?
+  Drake: Yes.
+  => Part_3D
+
+:: Part_2C
+Drake: Excuse me? I'd prefer to keep things professional, `name`.
+- I'm sorry. That was tactless of me. After all, we are here to do work.
+  Drake: Apology accepted.
+  => Part_3C
+- Well, sorry.
+  Drake: ...Apology accepted.
+  => Part_3D
+- Geez, I was just being friendly.
+  Drake: We're colleagues in a work environment. I think we would both do well to remember that.
+  - Fine. Sorry. => Part_3D
+  - I'm not going to spend my after-work hours like this. => Part_3E
+
+:: Part_3A
+do hide_characters(fade)
+do set_background("office", fade)
+do show_character(drake, center, fade)
+Drake: Okay, it's been an hour and we've gotten through all of the drawers. I think we can take a break now. Good effort, Petty Officer.
+- It's all thanks to you and your work ethic. I couldn't let up at the rate you were going.
+  Drake: I know this isn't exactly fun, but the more focused we are, the quicker we can get things done.
+  => Part_3APart2
+- Thanks.
+  Drake: I don't mean that lightly.
+  => Part_3APart2
+- So, uh...how long is this break going to be?
+  Drake: As long as we need. We're not on a set schedule. Unless you'd rather not take one?
+  - Nope, let's get back to it! => Part_4B
+  - I think we deserve a break. => Part_3APart2
+
+:: Part_3APart2
+Drake: Would you like some water? I know it can be a bit stuffy in here.
+- Yes, please. Are there any windows we can open?
+  Drake: Unfortunately not. When I returned from my last mission, they'd reassigned my old office. This isn't as bad as it gets.
+  - Oh, have you had worse?
+    Drake: When I first became an officer, I had a desk job. And it was right by the boiler room.
+    - Ugh, I hope you got called back to active duty soon after that. => Part_4A
+    - Must have been...**steamy** => Part_4C
+  - So you like to look on the bright side?
+    Drake: I don't know about that.
+    => Part_4B
+- I brought my own.
+  Drake: It's good to see someone so prepared.
+  - Are new people usually not prepared?
+    Drake: I wouldn't say that in general, no. New recruits are well-trained, especially when it comes to things like that. But people tend to forget, the longer they've been out of Basic.
+    => Part_4B
+  - I try. I also brought my first aid kid, and an extra flask full of hot water, and some candy, and spare bits of rope...you never know what you're going to need.
+    Drake: That's true. Even somewhere like this, you could fall and cut yourself on a filing cabinet.
+    => Part_4A
+- No thanks! I'm not thirsty at all. => Part_4B
+
+:: Part_3B
+do hide_characters(fade)
+do set_background("office", fade)
+do show_character(drake, center, fade)
+You've been combing through the files for a while now. Towards the back of the third drawer from the top, you find a folder and several papers (they look like writeups for misbehaving sailors from a quick glance) with a chunk bitten out of all of them and tilt it toward Drake.
+Drake: I think someone else should have copies of those on file. You can leave them on my desk.
+You turn to do as he asks. The desk is neat and clear, indistinct from any other but for a large paperweight shaped like a lizard.
+- Should it just go under the paperweight?
+  Drake: Yeah, that's fine.
+  => Part_4D
+- Nice paperweight. What kind of lizard is that?
+  Drake: It's a komodo dragon. They're one of my favorite kinds of lizards.
+  - Oh, you like lizards?
+    Drake: All reptiles, really.
+    => Part_3BPart2
+  - They're super fierce and powerful! Does it give you strength?
+    Drake: It's more the sentimental value. And it keeps my papers from blowing away when I open the door.
+    => Part_3BPart2
+  - Yeah, I think they're really cute.
+    Drake: I think so too.
+    => Part_3BPart2
+- Did you make that paperweight yourself?
+  Drake: No, Sengoku-san gave it to me when I first made Captain. He even kept it after I left...
+  - That's because he knew you'd come back. => Part_3BPart2
+  - Wow, the two of you are really close, huh?
+    Drake: Yes. Sengoku-san has done a lot for me, and I can only hope to repay his kindness.
+    => Part_3BPart2
+  - Oh, that's a great gift. Perfect for the office.
+    Drake: That's exactly what I thought.
+    => Part_3BPart2
+
+:: Part_3BPart2
+Drake: Sometimes it's nice to have something personalized. I wouldn't want a real animal in this office, though.
+- Yeah, the former Fleet Admiral's goat has already caused some trouble.
+  Drake: It's nice having an animal around, though.
+  => Part_4C
+- But you like animals overall? Would you work with them outside the office?
+  Drake: I thought about working in a zoo for a while. But I'm glad I chose the Marines.
+  => Part_4B
+- I wouldn't. => Part_4D
+
+:: Part_3C
+You've been digging into the files for quite some time now. No matter how hard you try, your eyes keep glazing over.
+- So, uh, how about the weather?
+  Drake: ...
+- What's your favorite kind of paperwork?
+  Drake: I'm not sure I have one.
+  - Yeah, me neither.
+  - The best paperwork is done paperwork!
+- How much more of this is there?
+  Drake: We're about halfway through.
+
+You lean back and stretch your arms out. Still a ways to go.
+- Ok, I should pick up the pace. => Part_4C
+- Ugh...this sucks. => Part_4E
+- What's that sound at the door? => Part_4D
+
+:: Part_3D
+You start looking into the right side drawer. Drake already seems angry with you, so you'd better be on your best behavior and check every file for any sign of goat interference. The first few forms are fine, but then you see one missing a signature. There are no teeth marks on it, but is this a problem?
+- Um, excuse me...Rear Admiral? Does this need a signature?
+  Drake: No, there's no authorization required on that. Good catch, though.
+- Well, no bite marks on this one. Onward.
+- What happens if a form is left unsigned?
+  Drake: The request won't be approved.
+
+You stick the form back into the file and look over toward Drake. He's nearly finished with his drawer already.
+- Ugh, I'm so slow at this.
+  Drake: Go at your own pace. What matters is that the work gets done.
+  => Part_4E
+- Is it okay that I'm not going fast? I'm trying to be careful.
+  Drake: Careful is good. Thanks for being thorough.
+  => Part_4D
+- **Shit, gotta speed up.**
+  You rifle through the rest of the drawer in record time.
+  => Part_4F
+
+:: Part_3E
+You're so annoyed. All you did was make one flirtatious remark and Drake way overreacted. Whatever. This was a mistake. You turn around and leave, shutting the door firmly behind you.
+The date has ended early.
+
+:: Part_4A
+Drake: How have people been treating you here? I've been involved with the Marines for so long I sometimes forget how it can be.
+- But you left for a while, right?
+  Drake: I was still a Marine when I was gone.
+  - Didn't things change when you were away?
+    Drake: Yes. Things were different.
+  - Right, but you got to meet new people when you came back.
+    Drake: It wasn't all new people.
+  - I didn't mean to imply otherwise...
+    Drake: Sorry. I know I can get a little defensive about that.
+- Everyone is nice here.
+  Drake: That's good to hear.
+- It's just like they would treat me at any civilian job.
+  Drake: Oh, I see.
+  - Have you ever had a civilian job?
+    Drake: Not exactly.
+  - Well, a job is a job, right? No matter your career, everyone's doing it for their own reasons.
+    Drake: I suppose that's true.
+  - Not a bad thing. It is what it is.
+
+Drake: I don't mean to pry. I've enjoyed working with you today and just wanted to make sure things were going okay for you.
+- I'm also not trying to pry, but...is there any reason in particular you have for your concern?
+  Drake: I...I think it was unfounded. When I returned from my missions, I had some difficulty. But the situation was different.
+- Thanks for your concern...I'm really touched that you care.
+  Drake: Of course I care.
+- I've enjoyed working with you, too. We got a lot done.
+=> Two_point_end
+
+:: Part_4B
+Drake: Let's get back to work. We have a few more drawers to go.
+- Do you want to do this drawer together?
+  Drake: Sure. I think we can both fit our hands in.
+- Okay, let's finish it off.
+- So is this all stuff from the time since you've been back?
+  Drake: Yes. All of the old forms had become obsolete or had been...confiscated.
+  - I'm sorry to hear that.
+    Drake: It was just paper after all.
+  - So like, destroyed?
+    Drake: Searched for evidence.
+
+Your hands brush as both of you reach in simultaneously to the same drawer. You think you catch sight of a faint blush on Drake's face.
+- So, want to grab some food after this?
+  Drake: I have some more work to do now, sorry.
+  => One_point_end
+- Looks like nothing in this drawer either. Maybe it's good luck doing it together.
+  Drake: It does seem to go faster.
+  => Two_point_end
+- Maybe the goat left most of your stuff alone because it likes you...?
+  Drake: I doubt it. It leaves Sengoku-san alone but with everyone else it likes, it tries to eat their belongings.
+  - A goat's way of showing affection?
+    Drake: Yes, I think so.
+    => Two_point_end
+  - Well maybe you've reached the former Fleet Admiral's level of, uh, goat friendship.
+    Drake: ...I doubt it, but I appreciate the sentiment.
+    => Two_point_end
+
+:: Part_4C
+You crack your knuckles and dig into the papers. Beside you, Drake busies himself with his own papers. You pull out a few with chunks bitten out, and close the drawer--hey, are you done?
+- Is that everything?
+  Drake: Looks like it. Good job.
+- Wow, we did that so quickly!
+  Drake: Yes, that's what happens with good teamwork.
+- On to the next one, eh?
+  Drake: That's it.
+  - ...
+  - I'm joking!
+    Drake: ...oh. That's actually pretty funny!
+  - Aww, man.
+    Drake: You're joking.
+    You smile, and Drake does too.
+
+Drake: ...So.
+- Need any help with fixing up the papers?
+  Drake: I can do that myself, thanks. But I appreciate the offer.
+  => Two_point_end
+- Well, working with you has been an experience. => One_point_end
+- I think I'll be on my way, then. => One_point_end
+
+:: Part_4D
+The door handle rattles.
+Drake: Excuse me? Who's there?
+The door handle rattles again, and then the door bursts open.
+do hide_characters(hide)
+do show_character(goat, left, show)
+do show_character(drake, right, show)
+Goat: #Maaaaa!#
+- No, bad goat! Go away!
+- Oh no...the papers, just when we were making progress.
+- What should we do?
+
+Drake: How did you get loose again?
+Goat: Maaaa.
+Drake: Oh, dear...
+- Aw, come here, sweetie. I'll give you something to eat.
+  Drake: Is that my compliance form?
+  - Uh...
+  - Nope, it's my to-do list from yesterday.
+  - Better that than something at random.
+  Goat: Maaa! (+1 Goat)
+  => Part_4DPart3
+- Quick, let's just stuff everything back in the cabinets and lock them!
+  Drake: I guess that's better than letting it destroy them.
+  => Part_4DPart3
+- No! Shoo!
+  Goat: MAAAAA
+  The goat lunges for a file folder on the table. Both you and Drake try to stop it, but the effort is in vain. The contents of the folder fall onto the floor, and the goat runs back out of the room, taking the empty folder in its mouth.
+  => One_point_end
+
+:: Part_4DPart3
+do hide_characters(hide)
+do show_character(drake, center, show)
+Drake: Here. I have a goat treat.
+Goat: Maaaa.
+It nuzzles Drake and looks expectantly at you. You reach out and scratch it under the chin.
+=> One_point_end
+
+:: Part_4E
+You sigh and dig into the papers, checking each one a little more thoroughly. Both you and Drake pull out some chewed and crumpled papers, but nothing looks unsalvageable.
+Drake: Ah, it's getting late.
+- How can you tell?
+  Drake: I can hear the bells in the clock tower.
+  - Oh, that's what that was!
+  - Maybe I wasn't paying attention...
+  - Whoa, your hearing is really good.
+- Yeah, I'm getting hungry for dinner.
+- No kidding...it feels like we've been here forever.
+
+Drake: I guess we should put this work down for now, but maybe we can get back to it later?
+- Can we keep going?
+  Drake: No, I think we deserve a break. We can come back with fresh eyes.
+- ...I guess.
+- Let's just remember to lock the door!
+=> One_point_end
+
+:: Part_4F
+Even after you've sped through your last drawer, it feels like it's taking hours. Drake keeps giving you what you think are suspicious glances.
+Drake: Can I see your last drawer?
+- Uh, ok. => Part_4FPart2B
+- No, you aren't done with yours.
+  Drake: I can get back to it later.
+  => Part_4FPart2A
+- Why?
+  Drake: I think you might have missed something. Just want to double-check.
+  - Oh, ok. => Part_4FPart2B
+  - Uh, excuse you? => Part_4FPart2A
+
+:: Part_4FPart2A
+Drake: This doesn't look like you checked it at all. I'm disappointed in you, `name`.
+=> Zero_point_end
+
+:: Part_4FPart2B
+Drake: This...yeah, you definitely missed it. This is why you should check more carefully.
+=> One_point_end
+
+:: Zero_point_end
+do romance_points(drake, 0)
+Drake: I hope we can maintain a professional relationship.
+=> root.main
+
+:: One_point_end
+do romance_points(drake, 1)
+Drake: I'm glad we were able to get some work done.
+=> root.main
+
+:: Two_point_end
+do romance_points(drake, 2)
+Drake: I'm looking forward to working with you again. I think we can achieve a lot for the Marines together.
+=> root.main

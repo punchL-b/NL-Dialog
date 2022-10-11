@@ -1,0 +1,158 @@
+:: start
+do set_background("training-grounds", show)
+PC: Huh, this must be the training grounds! Garp should be here… I hope.
+PC: Hey… what’s that?!
+do show_character(garp, d, show)
+Garp: WATCH OUT!
+do start_effect(shake)
+#A cannonball hurtles towards your head!!!#
+do hide_character(garp, fade)
+do show_character(garp, center, fade)
+Garp: Are you alright?
+- Ha! That was nothing. => route_a
+- I think I’m okay! Thanks for the save! => route_b
+- That was terrifying! => route_c
+
+:: route_a
+Garp: Bwahaha! That's the spirit! We need more Marines like you!
+- Well, that's what I'm here for. I know you've trained some amazing people; I hope I can learn from you! (+)
+    Garp: With that kind of determination, you'll be fine!
+- Actually, I think we need more Marines like you—the way you caught that cannonball was amazing!
+    Garp: Heh, you could do it too if you put in the work!
+- You mean... Marines that aren't afraid of anything?
+    Garp: Bwhahaha! You have a lot to learn if you aren’t afraid of anything, rookie!
+=> route_d
+
+:: route_b
+Garp: Good to hear! A Marine’s duty is always to protect what they care about.
+`name`: Couldn’t agree more, sir! That's why I decided to become a Marine. I want to help people, as well as my team.
+Garp: Not to catch criminals or to be a hero?
+- If that happens along the way, then sure! But that's not what being a Marine is really about... at least to me. (+)
+    => route_a
+- Well... Being a hero would be nice…
+    Garp: Garp frowns, then shrugs. "Maybe..." He looks off into the distance, thinking for a bit.
+    => route_d
+- Is that why you decided to become a Marine, sir? (+)
+    Garp: I became a Marine a long, long time ago… things have changed since then.
+    Garp: …
+    => route_d
+
+:: route_c
+Garp: Hmm… Are you sure you want to be a Marine, rookie? It’s not a career for cowards.
+- Yes, I'm sure! I just have to get used to all of the cannonballs.... (+)
+    Garp: Good! Keep working on that.
+    => route_d
+- Of course I'm sure! I made it here, didn't I? (+)
+    Garp: Bwahaha! I suppose you did!
+    => route_d
+- Ah, well, I'm more of an office worker, really. Training and all of that really isn't my strong suit…
+    Garp: I suppose office work is necessary… why are you out here if you don’t want to train?
+    - To give you some paperwork, sir. Here! (-)
+        Garp: Thanks… you can be on your way now, rookie.
+        => end
+    - I came here for paperwork, but stayed to watch you catch those cannonballs.
+        Garp: Hm. Well, you might as well stay a little longer, then!
+        => route_e
+    - Truth be told, I just wanted to get some fresh air and take a break from the office work for a bit... (+)
+        Garp: Heh, I can understand that. I’ll help you get your mind off of it!
+        => route_e
+
+:: route_d
+Garp: Anyway, whaddya want? You here to train?
+- I came here to deliver some paperwork, but I would honestly rather train! (+)
+    Garp: Bwahaha! I can get behind that! How about you train with me? I’m sure I can put you through your paces.
+    - Um.
+    - What?
+    Garp: Let's go!
+    => route_e
+- I came here to deliver some paperwork, but I got a little distracted by your training session.
+    Garp: Watching is fine, but wouldn’t you rather hop in?
+    `name`: I… oh, what the heck? Let’s do it!
+    => route_e
+- I'm just here to deliver some papers. Training isn't really my thing; I left that behind in boot camp! (-)
+    Garp: Alright, then… consider them received. You can be on your way.
+    => end
+
+:: route_e
+Garp: So here's a little training exercise I like to do with the real rookies. You ready?
+- PC: Ready for anything! (+)
+    Garp: That's the spirit!
+- PC: Um… yes?
+    Garp: Good enough for me!
+- PC: N-no, not really… (-)
+    Garp: Oh, you’ll be fine!
+Garp: I'll take it easy on you for now. I'm gonna throw some cannonballs, and you'll want to dodge left, right, then down. And by left, I mean your left. Got it?
+- Got it!
+- Please repeat!
+    Garp: Left, right, down!
+Garp: Ready? Go!
+=> game_sequence1
+
+:: game_sequence1
+Garp: Alright, move, rookie!
+- Left!
+    do increment("gd1.correct_answers")
+    Garp: Good! => game_sequence2
+- Right!
+- Down!
+=> wrong_order
+
+:: game_sequence2
+Garp: Let’s see you dodge this one!
+- Left!
+- Right!
+    do increment("gd1.correct_answers")
+    Garp: Nice! One more to go! => game_sequence3
+- Down!
+=> wrong_order
+
+:: game_sequence3
+Garp: Do it!
+- Left!
+- Right!
+- Down!
+    do increment("gd1.correct_answers")
+    Garp: Perfect! => right_order
+
+:: right_order
+Garp: Not too bad out there!
+- You sure you weren't going easy on me? (+)
+    Garp: Bwahaha! Is that a challenge? Guess I’ll see you back here again for Round 2!
+- Boot camp paid off, I guess…
+    Garp: That’s what it’s for, rookie! You did well!
+- I’m never doing this again. (-)
+    Garp: Quitting already? That’s too bad. You have some real potential!
+=> outro
+
+:: wrong_order
+Garp: Well… you almost had it.
+- “Almost?” Against a Marine legend? I'll take it!
+    Garp: Hopefully next time you won’t almost get hit in the head, either.
+- I'll just have to try harder next time! (+)
+    Garp: Next time? Bwahaha! It's a promise, rookie!
+- Maybe I'll stick to office work… (-)
+    Garp: If anything, I think you could use more training, rookie!
+=> outro
+
+:: end
+do romance_points(garp, 0)
+=> root.main
+
+:: outro
+do start_effect(shake)
+[LUNCH BELL]
+Garp: Hey, there’s the lunch bell! Perfect timing! Looks like we’re done for now. Good job out there!
+
+if is_greater_than("gd1.correct_answers", 2)
+    do romance_points(garp, 2)
+    Garp: You’re a natural at this sorta thing! Come on by anytime, and maybe you’ll even learn to catch ‘em one day. Later, [Name]! (+)(+)
+elif is_greater_than("gd1.correct_answers", 1)
+    do romance_points(garp, 1)
+    Garp: Not too shabby! You almost took one on the chin, but you’ve got guts. Swing by anytime you wanna get some more practice in. (+)
+elif is_greater_than("gd1.correct_answers", 0)
+    do romance_points(garp, 1)
+    Garp: Well, you were a little close back there, but you dodged in the nick of time. You’ve got some potential. Come on back if you’d like to work on that.
+else
+    do romance_points(garp, 0)
+    Garp: You did your best, rookie, but maybe all this training really isn’t your thing. You’d better get back to Tsuru… after you visit the infirmary. (-)
+=> root.main

@@ -1,0 +1,56 @@
+:: main
+do set_background("characterlayout", show)
+do hide_characters(hide)
+
+Which route do you want?
+- Legendary => Legendary
+- Admirals => Admirals
+- Smokers & Friend => SmokersAndFriend
+- Coby Crew => CobyCrew
+- DEBUG => kuzan_1.FrisbeeThrow
+
+:: Legendary
+Who do you want to date?
+- Tsuru => tsuru_1.start
+- Rosinante => rosinante_1.start
+- Garp => garp_1.start
+- Sengoku => sengoku_1.start
+
+:: Admirals
+Who do you want to date?
+- Fleet Admiral Sakazuki => sakazuki_1.start
+- `kuzan` => kuzan_1.start
+- `borsalino` => borsalino_1.start
+- Issho => issho_1.start
+
+:: SmokersAndFriend
+=> smokers_and_friend_1.start
+
+:: CobyCrew
+Who do you want to date?
+- Drake => drake_1.start
+- Helmeppo => helmeppo_1.start
+- Coby => coby_1.start
+
+:: DEBUG
+do show_character(garp, center, show)
+center
+do show_character(rosinante, left, fade)
+left
+do show_character(coby, right, show)
+right
+do hide_characters(hide)
+do show_character(helmeppo, a, show)
+left left
+do show_character(kuzan, b, fade)
+left
+do show_character(sakazuki, c, show)
+right
+do show_character(smoker, d, show)
+right right
+do highlight(kuzan)
+Kuzan: highlight four_left
+do highlight(smoker)
+Smoker: I AM A BIG BURRITO.
+Smoker: LOVE ME
+=> root.main

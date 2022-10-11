@@ -1,0 +1,295 @@
+:: start
+do set_background("park", show)
+It is the start of another workday. You decide to get to HQ early.
+On the way there, you check your notes for today.
+`name`: Tsuru’s subordinates on duty today are…
+`name`: Captain Mei for reconnaissance… Ensign Malina… for guarding duty…
+do show_character(tsuru, center, show)
+You notice that Lady Tsuru is already there. Is she meditating?
+Tsuru: …
+Tsuru: Good morning, `name`. I see you're early.
+Tsuru: I apologize for the chaos yesterday. It must've been stressful for a first-timer here.
+- It's okay. I like a challenge. (+) => route1
+- It's what I expected from the Navy. (-) => route1_alt
+- It was a little bit confusing… => route2
+
+:: route1
+Tsuru: Very well.
+Tsuru: Being confident will do you good. You'll need to stand your ground when dealing with some of the personalities around here.
+Tsuru: Especially nowadays.
+- Can you elaborate? (-)
+    Tsuru: As I trust you know, the Navy is divided between very different ideologies.
+    Tsuru: The ideals you adscribe will determine how you act. Some will try to sway you in their direction…
+    Tsuru: Some forget that we are all one and the same.
+    Tsuru: You should know this already, `name`!
+- I hope I'll do a great job, like you!
+    Tsuru: I appreciate the sentiment.
+    Tsuru: But you shouldn't put anybody on a pedestal—not even me.
+- Was it ever different? (+)
+    Tsuru: …very good question.
+    Tsuru: If there was ever any unity in the Marines, it must have been during the Golden Era of piracy.
+    Tsuru: Things aren't the same now.
+=> route1_interruption
+
+:: route1_interruption
+Before you are able to say anything, you hear the sound of boots storming toward the garden.
+It's two of Tsuru’s subordinates.
+do show_character(placeholder("Marine1"), left, show)
+do show_character(placeholder("Marine2"), right, show)
+Marine1: Lady Tsuru! `name`!
+Marine2: Sorry for the interruption, ma'am, but we have a problem!
+- What's the matter? (+)
+    Marine1: Well, you see…
+- Don't worry about interrupting.
+    Marine1: Huh… Thanks?!
+    Tsuru: What's the matter?
+- You haven't been addressed. You shouldn't talk. (-)
+    Tsuru: Tell us what the matter is.
+Marine1: You see, Inspector Sengoku's goat…
+Tsuru: …
+Marine2: Which seemed to be in quite a bad mood…
+Marine1: They ate our schedules, Ma'am!
+Marine1: Now we don't know where we are posted. We need your help.
+- I can help!
+    Tsuru: Well, then…
+    Marine1: Thank you!
+    => route1_interruption_quiz1
+- How irresponsible of you!
+    Tsuru: That is true.
+    Tsuru: I assume you have kept an eye on the schedules as I told you, haven't you, `name`? => route1_interruption_quiz2
+- I don't remember anything about today's schedule.
+    Tsuru: I see.
+    Tsuru: Perhaps we'd better go to the office early, then.
+    `name`: (We went upstairs, we all had to start work earlier than usual.) => route3_end_early
+
+:: route1_interruption_quiz1
+Tsuru: `name`. Do you remember their names?
+- Ensign Malina and Captain Rei!
+    Tsuru: You're confusing them with somebody else.
+    Tsuru: ... let's go back to the office. => route3_end_early
+- Captain Mei and Ensign Malina! (+)
+    Tsuru: Very good! => route1_interruption_quiz2
+- Ensign Reki and Captain Mei!
+    Tsuru: You're confusing them with somebody else.
+    Tsuru: ... let's go back to the office. => route3_end_early
+- Um…
+    Tsuru: I see.
+    Tsuru: Let's go back to the office. => route3_end_early
+
+:: route1_interruption_quiz2
+Tsuru: And do you remember where these two officers are posted?
+- Captain Mei at reconnaissance, Ensign Malina at guarding duty. (+)
+    Tsuru: Excellent job, `name`.
+    Tsuru: That was helpful. => route1_end_best
+- Captain Mei at guarding duty, Ensign Malina at reconnaissance.
+    Tsuru: Those aren't their ranks.
+    Tsuru: ... <pause> You tried.
+    => route3_end_neutral
+- Officer Mei at guarding duty, Captain Malina at reconnaissance.
+    Tsuru: Those aren't their ranks.
+    Tsuru: ... <pause> You tried.
+    => route3_end_neutral
+
+:: route1_end_best
+Phew! You managed to help her.
+After dismissing her subordinates, you still have some time, so the two of you don't have to rush making your way to the office.
+Once there, Tsuru seems content…
+Tsuru: I am happy to see you live up to your confidence, `name`.
+Tsuru: But don't let your guard down.
+- Of course not!
+- I have the best teacher! (+)
+    Tsuru: Well, well.
+    Tsuru: You don't need to flatter me.
+Tsuru: Would you like some tea, before we get started?
+- Yes!
+- Of course!
+`name`: (Tsuru seems pleased!)
+=> DateEnds
+
+:: route1_alt
+Tsuru: It's what you expected? What does that mean, `name`?
+- Everyone says the Navy is chaotic! (-)
+    Tsuru: How can you say that so cheerfully?!
+    Tsuru: Think before you speak!
+- Ah, nothing…
+    Tsuru: …
+    Tsuru: We will see how this develops.
+    Tsuru: You need to take your duty seriously!
+- I apologise if I offended you!
+    Tsuru: ...
+    Tsuru: Well, then.
+    Tsuru: Garp, Sengoku, and I think we made the right choice to have you here. Don't disappoint us.
+    Before you can say anything else, you hear the sound of boots storming toward the garden.
+=> route1_alt_interruption
+
+:: route1_alt_interruption
+It's two of Tsuru’s subordinates.
+Marine1: Lady Tsuru! `name`!
+Marine2: Sorry for the interruption, ma'am, but we have a problem!
+Tsuru: Let's see if you can help them, `name`.
+- Of course!
+- I'm not sure... (-)
+Marine1: You see, Inspector Sengoku's goat…
+Tsuru: …
+Marine2: Which seemed to be in quite a bad mood…
+Marine1: They ate our schedules, Ma'am!
+Marine1: Now we don't know where we are posted.
+Tsuru: Well, `name`. I assume you have kept an eye on the schedules as I told you, haven't you?
+Tsuru: Do you remember their names and ranks?
+- Ensign Malina and Captain Rei!
+    Tsuru: You're confusing them with somebody else.
+    Tsuru: ... let's go back to the office. => route3_end_bad
+- Captain Mei and Ensign Malina! (+)
+    Tsuru: Very good!
+- Ensign Reki and Captain Mei!
+    Tsuru: You're confusing them with somebody else.
+    Tsuru: ... let's go back to the office. => route3_end_bad
+- Um…
+    Tsuru: I see.
+    Tsuru: Let's go back to the office. => route3_end_early
+Tsuru: And do you remember where these two officers are posted?
+- Captain Mei at reconnaissance, Ensign Malina at guarding duty. (+)
+    Tsuru: Very good.
+    Tsuru: That was helpful.
+    Tsuru: I am happy to see your confidence was not unwarranted, `name`.
+    `name`: (Phew! I made it.)
+    `name`: (Like that, we made it to the office still on time…) => route3_end_neutral
+- Captain Mei at guarding duty, Ensign Malina at reconnaissance.
+    Tsuru: Those aren't their ranks.
+    Tsuru: It's a better idea to admit if you're not sure, `name`.
+    `name`: (We went back to the office to retrieve the pertaining schedules in silence…)
+    => route3_end_bad
+- Officer Mei at guarding duty, Captain Malina at reconnaissance.
+    Tsuru: Those aren't their ranks.
+    Tsuru: It's a better idea to admit if you're not sure, `name`.
+    `name`: (We went back to the office to retrieve the pertaining schedules in silence…) => route3_end_bad
+
+
+:: route2
+Tsuru: Ah, Garp and Sengoku. Don't mind them!
+Tsuru: They don't intend to make our work space so… *unpredictable*...
+- I guess not…
+    Tsuru: You need more confidence if you're to work with them.
+- But they're sure good at it! (+)
+    `name`: (Tsuru smiled!)
+Tsuru: Say, `name`. I think joining me in meditation could help you feel more grounded. What do you think?
+- No, thank you. (-)
+    Tsuru: Hm. We can help you, but you need a will to improve.
+    Tsuru: Let's at least begin the workday early! => route3_end_neutral
+- That is a good idea! (+) => route2_meditation
+
+:: route2_meditation
+Tsuru: Very well!!
+Tsuru: Close your eyes, `name`.
+Tsuru: Relax every muscle and control your breath…
+<pause>
+`name`: . . .
+- Follow instructions. (+)
+- Just pretend to follow her lead.
+    Tsuru: `name`, concentrate.
+Tsuru: Hold your position still.
+Tsuru: Feel your breath flow from your core into every corner of your body.
+`name`: . . .
+- Follow instructions. (+)
+- Just pretend to follow her lead.
+- Laugh nervously. (-)
+        Tsuru: You need to concentrate.
+You hear the sound of steps on wood. Somebody wants your attention…
+- Stay concentrated. (+) => route2_meditation_success
+- Interrupt the exercise. (-)
+    Tsuru: What's the matter? => route1_alt_interruption
+
+:: route2_meditation_success
+... It seems like they're gone again.
+After a few minutes of deep concentration, you end the exercise.
+Tsuru: Very good. What did you think?
+- That was helpful. (+)
+    Tsuru: I was hoping you would find so.
+    Tsuru: I am happy with your performance, `name`. A will to improve is important.
+    Tsuru: Perhaps we could go have tea in the extra time before the shift starts?
+    => DateEnds
+- I don't see the point, but okay! (-)
+    Tsuru: Of course…
+    Tsuru: Well, nothing much we can do in that case.
+    => DateEnds
+- That was easy. I could do it again!
+    Tsuru: It was a very basic exercise.
+    Tsuru: But there is no more time now. Let's start making our way upstairs.
+    => DateEnds
+
+
+:: route3
+Tsuru: We need to catch up with some -
+(Bele-bele-bele…)
+`name`: Your transponder snail is ringing…
+Tsuru: Tsuru. Who's there?
+Snail: H-hello, Lady Tsuru!!
+Snail: We had a problem with our schedules. It had to do with Inspector Sengoku's goat…
+Tsuru: What? Has that thing learned to climb up walls already?
+She is signaling for her papers.
+- Give all of them to her.
+    Tsuru: Good.
+    Tsuru still has to sort through all of the information alone…
+- I don't know exactly which info she needs… (-)
+    Tsuru: `name`, don't only stare! Get started with the work for today.
+- Try sorting through the papers for the info she needs. (+) => route3_end_good
+You think she will be busy with this call for some time…
+=> DateEnds
+
+:: route3_end_good
+Tsuru: Oh… thank you.
+Tsuru: It's about the shifts.
+`name`: Yes! It's Captain Mei at reconnaissance, Ensign Malina at guarding duty.
+Tsuru: Did you hear that? Now, please be good and go to your posts.
+Snail: Yes, ma'am!!
+Tsuru: Thank you for your help, `name`.
+- I had been looking at the schedules on the way…
+- It's just my duty, ma'am. (+)
+Tsuru: Well, it's still a few minutes before the
+shift begins…
+Tsuru: Would you like some tea?
+- Yes!
+- Of course!
+`name`: (Tsuru seems pleased!)
+=> DateEnds
+
+:: route3_end_early
+You go back to the office to look up the necessary information.
+`name`: I hope she's not angry…
+Tsuru: Ah… well, now that we're here, no use postponing work…
+- I'm sorry. (+)
+    Tsuru: It's fine. It is good to admit you don't know something.
+- Say nothing.
+    Tsuru: Pay more attention next time…
+=> DateEndsEarly
+
+
+:: route3_end_neutral
+You're back at the office now…
+Tsuru: Given our conversation before, `name`…
+Tsuru: Is there anything you need to make the job more comfortable?
+- No, chaos is not necessarily bad! (-)
+    Tsuru: ... Impossible.
+    Tsuru shakes her head in disapproval and continues working…
+- No! I'll do my best from now on. (+)
+    Tsuru: Good.
+    Tsuru: That's what I expect.
+- I'm not sure what to say.
+    Tsuru: We expect you to do your best.
+=> DateEnds
+
+
+:: route3_end_bad
+Uh oh… it seems you l messed up.
+Tsuru: `name`! Concentrate!
+Tsuru: There is nothing worse than unwarranted confidence!
+Tsuru: Be better!
+You run away to fetch the necessary papers from the office. You don't think you've ever seen Tsuru so irritated!
+=> DateEnds
+
+:: DateEnds
+=> root.main
+
+:: DateEndsEarly
+The date ended early...
+=> root.main

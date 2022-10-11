@@ -1,0 +1,339 @@
+
+:: start
+do set_background("garden", show)
+do show_character(smoker, center, show)
+Smoker: Thanks for joining me in the garden, `name`. I like coming here to relax and take a look around sometimes.
+Smoker: So what do you think about rock decorations?
+He gestures towards an area of carefully-stacked rocks nearby.
+- I prefer trees. => Part_2A
+- I've never really thought about it...are you fond of them? => Part_2B
+- Uh, I guess? => Part_2C
+
+:: Part_2A
+Smoker: Strong opinion, huh? I can’t fault you for that. I like rocks better myself, but some trees aren’t so bad.
+- What about rocks specifically?
+  Smoker: When I was a kid, there was a zen garden near my house. Lots of rocks. I used to go there when I was angry and needed to clear my head.
+- "Aren’t so bad"?
+  Smoker: We need trees to make ships. And I guess they complement the rocks in a zen garden...
+- PC: ...
+  Smoker: Some trees go well with rocks. Like in a zen garden.
+=> Part_2AA
+
+:: Part_2AA
+- I’m fond of dry gardens as well. => Part_3B
+- A guy like you in a zen garden? That’s pretty cute.
+  Smoker: Hina teases me about that too.
+  => Part_3A
+- I don’t know. I just always thought of rocks as, well...boring. => Part_3C
+
+:: Part_2B
+Smoker: I dunno if "fond" is the word, but I like arranging ‘em. Helps me think things through sometimes; you should try it.
+- Oh, I see...I like to rearrange my papers sometimes if I’m having trouble. It’s a bit like trying to solve a metaphorical puzzle.
+  Smoker: Huh, I never thought of it that way, but you’re right.
+- I don’t know about that...
+- I’d be worried about balancing the rocks together...but maybe if I had someone experienced to show me?
+
+Smoker: I could show you my rocks sometime if you want.
+- That would be great! Are they like the rocks here?
+  Smoker: Not really. They’re a little different.
+  => Part_3B
+- Maybe if I’m free... => Part_3C
+- No thanks. => Part_3D
+
+:: Part_2C
+Smoker: ...
+do hide_characters(hide)
+You look around, desperate to break the awkward silence. Smoker puffs on his cigars. You see more rocks, more trees, and a small pond with lily pads on it. With the sound of a splash, a ripple breaks at the surface.
+do show_character(smoker, center, show)
+- Do you think that was a frog?
+  Smoker: I don’t know. Why, you like frogs? I think Drake does too.
+- So...you like water?
+  Smoker: To drink? I guess it’s not bad...I mostly just drink coffee though.
+- What’s your favorite cigar brand?
+  Smoker: Whatever the standard Marine manufacturer is. Tobacco’s tobacco.
+
+You and Smoker lapse back into silence. A frog croaks from the direction of the pond.
+- That was definitely a frog, huh... => Part_3D
+- Hey, who do you think would win in a fight? A hundred frog-sized Fleet Admirals or one frog the size of the Fleet Admiral?
+  Smoker: Heh. Does the frog have Sakazuki’s Devil Fruit power?
+  - Yeah, sure.
+    Smoker: Okay, I’ll place a bet on the little Fleet Admirals. Either the big frog dries out or it drowns. => 3C
+  - No, but the little Fleet Admirals do.
+    Smoker: Yeah, I bet the frog could take them all.
+    => Part_3C
+- So you were promoted to Vice Admiral pretty recently, huh?
+  Smoker: Yeah. I was pretty sure it was coming for a while, though.
+  PC: Yes, I’ve heard your record’s pretty good.
+  Smoker: It’s not all in the record...
+  => Part_3B
+
+:: Part_3A
+PC: You and Rear Admiral Hina seem pretty close.
+Smoker: Yeah, we watched each other’s backs when we were younger. That kind of thing you just don’t forget. She still gets on my case a lot about following rules, though.
+- Oh. So are you and her, you know...
+  Smoker: Me and Hina? Oh, come on.
+- Is, uh, that the only thing she’s getting on?
+  Smoker: Yes. I mean with me; what she does with other people is her business.
+- So when you say you just don’t forget, you mean...
+  Smoker: I mean we’re good friends.
+
+Smoker: Why are you so interested anyway?
+- Sometimes it’s good to know if someone’s on the market or not. => Part_4A
+- I, uh...well, just...in the interest of teamwork?
+  Smoker: Uh-huh.
+  => Part_4B
+- The two of you are so close. I was only curious. => Part_4C
+
+:: Part_3B
+Smoker: You interested in getting a high rank?
+- Yes! I mean, uh, yes, someday.
+  Smoker: It’s not a bad thing to be ambitious, yknow. You need to go after what you want.
+- I’d like to get good at my current position first.
+  Smoker: Heh, Tashigi says that kind of thing a lot. I’ll tell you the same thing I tell her: don’t get too complacent.
+- Do you think I’d qualify for a promotion soon?
+  Smoker: I don’t know. Don’t know you well enough to say. But you’ve got a decent head on your shoulders.
+  - Thank you! I’m just doing my best.
+    Smoker: You sure **say** all the right things...
+  - Aww, Vice Admiral. I’m going to blush.
+Smoker: Well, leadership ain’t just a badge on your uniform.
+- I know that. I still have a lot of learning to do. Got any advice?
+  Smoker: Fuck, I don’t know. What works for me isn’t gonna work for you.
+  => Part_4C
+- Well, I need to get some fighting experience first, of course...what kind of weapon would you recommend?
+  Smoker: Depends on what you’re comfortable with or what you think is fun. I chose the jitte because I thought it was an interesting challenge, and the seastone helped against fruit users, especially before I could use haki. => 4B
+- What, you think I don’t know that?
+  Smoker: I dunno. Do you?
+  => Part_4D
+
+:: Part_3C
+Smoker: Tashigi says you’re a decent fighter. She read your file and stuff.
+- And what’s **your** opinion?
+  Smoker: I haven’t seen you in person. I don’t like reading files; they don’t tell me stuff I can’t find out just by looking or doing.
+  - You learn by doing? That makes sense.
+    Smoker: Why does it make sense?
+    - Well, I can tell that you’re a practical, hands-on kind of guy.
+    - Uh...why wouldn’t it?
+    - It just does.
+  - So...you’re saying you didn’t read my file at all?
+    Smoker: Course not. That’s not you. What makes you is the person I see in front of me.
+- She did? Has she seen me fight?
+  Smoker: Nope. Just read the file. She gets something out of that, I guess.
+- Whoa, that’s awesome to get a compliment from her.
+  Smoker: She just calls it like she sees it, and she can see it pretty well on paper.
+
+PC: So do you believe Captain Tashigi’s opinion?
+Smoker: Sure. I trust her instincts, even if I don’t get how she finds them. I’m sure there’s some shit about me she doesn’t get. But when you work with someone, even for years, you’re never going to know everything about them.
+- That’s a really thoughtful thing to say. I get why you’re such a good leader. => Part_4C
+- Hopefully I’ll get to show you what I’m made of soon myself.
+  Smoker: Yeah, we should spar sometime.
+  => Part_4C
+- I guess I can see that... => Part_4D
+
+:: Part_3D
+Smoker: So I was thinking. We’re not really doing much here and I got a shitton of paperwork so I was thinking I should head to the mess hall and do that.
+- Oh...okay. I guess I’ll see you around?
+  Smoker: Sure. See ya.
+  => Early_end
+- I should catch up on work too. Mind if I come with?
+  Smoker: Fine by me.
+- I guess I should come too. I could use a bite to eat.
+
+do set_background("mess-hall", show)
+do hide_characters(hide)
+You follow Smoker back to the mess hall where you started your day. The lunch dishes are cleared but they have some cup noodles and containers of yogurt available, and the coffee carafes are steaming.
+do show_character(smoker, center, show)
+Smoker: Well, here we are.
+- You want some coffee?
+  Smoker: Sure. Three packets of sugar.
+  => Part_4E
+- I’ll grab us some seats. => Part_4F
+
+:: Part_4A
+Smoker: What about you? You on the market?
+- Am I ever.
+  Smoker: Good to know.
+- Maybe for the right person.
+  Smoker: And who might that be?
+  - Someone attractive, good fighter, strong personality...
+  - Oh, you’ll find out soon enough.
+  - I’m still deciding.
+
+A frog on the pond catches your eye, and Smoker’s, too. The pond is quite lovely, well-kept with a scattering of lily pads on top. You and Smoker walk over in a comfortable silence, your hand close enough to his to feel the warmth from it.
+Smoker: Relaxing, huh? I wonder where that frog went...
+- Let me crouch down and see.
+  Smoker: Careful, there.
+- Hmm...I think I saw it go to the right? I bet I can see around that tree.
+- Let’s get a little closer.
+
+You inch along the edge of the pond, peering forward and around into the water. Where could the frog have gone? Is that it, there? You tilt forward and begin to fall...
+PC: #AAAAAH#
+Smoker: I’ve got you.
+Smoker has you by the shoulder, his other arm snaking around your chest to bring you in close. He’s so warm. You inhale the scent of tobacco, coffee, and a little bit of salty air. You can feel your heart beating hard against your rib cage.
+- Oh...thank you, Vice Admiral...
+  Smoker: Just call me Smoker.
+- Whoa, quick reflexes!
+  Smoker: I’ve had practice. You okay there?
+  - Y-yes...
+  - Thanks to you, I am.
+  - Never better.
+  Smoker: You sure? Your heart’s beating pretty wildly.
+  - I’ve just had a scare; it’s only natural.
+    Smoker: Okay, okay.
+  - Um...yeah, I’m okay.
+  - Well maybe if we stay like this for a little longer?
+    Smoker: Can’t say no to that.
+
+do hide_characters(fade)
+You sit down on the bank, far enough from the edge of the pond that you’re no longer in any danger of falling in. Smoker, though, is close enough that you think he might not mind grabbing you again.
+do show_character(smoker, center, show)
+=> Two_point_end
+
+:: Part_4B
+Smoker: So, what kind of weapon do you like the best?
+- I love long-range artillery. Nothing like the feeling of firing a cannon!
+  Smoker: Yeah, cannons are pretty impressive. I’ve always favored close combat myself.
+  - You’re a logia user, so it’s probably easier for you to make up the distance.
+    Smoker: Fair enough. But if you get good at jumping, climbing, get yourself a little aircraft...even without my powers, I can get pretty good range with a jitte, too.
+    - Yeah, it’s a long weapon. => Part_4BPart2A
+    - I noticed when I saw you sparring earlier...can I touch it? => Part_4BPart2B
+- Just punches and kicks. It’s easier to control myself than an object.
+  Smoker: You ever want to mix things up with a weapon?
+  - I’ve tried it, but I don’t know if it suits me. => Part_4BPart2A
+  - Haven’t thought about it outside of drills. But maybe you could help me learn how to use a jitte? => 4BPart2B
+- I love a good blade—sword, axe, lance, dagger. But I’d love to try something like a jitte, too.
+  Smoker: We’ve got some good instructors here.
+  - Are you volunteering yourself? => Part_4BPart2B
+  - I’m a quick learner. Bet I could pick it up easily. => Part_4BPart2B
+
+:: Part_4BPart2A
+Smoker: Well, there are all kinds of weapons. Even if you narrow it down, you’ve got some variety. One of my midshipmen collects spears. And don’t get Tashigi started on swords.
+- And ballistics...the required class I had to take on bullet types was a snoozefest.
+  Smoker: Must not have changed at all since I had to take it.
+  - I don’t know how they stretch out that information into an hour.
+  - The person next to me fell asleep!
+    Smoker: Yeah, I nearly did. Hina had to keep poking me.
+  - Well. I’m sure they were doing their best...
+    Smoker: If they put any less effort into it, I’d be shocked.
+- There are so many, I don’t know how I could ever learn them all.
+  Smoker: Eh, you’ll learn what you need to pretty quick.
+- Yeah, one of my friends in my hometown was really into arrow quivers. It made them really easy to buy gifts for.
+  Smoker: Yeah, that’s true. Don’t see too many bowfighters nowadays.
+=> Part_4BCPart3A
+
+:: Part_4BCPart3A
+You lapse into a comfortable silence, punctuated by the sounds of birds and frogs and wind through the grass.
+=> One_point_end
+
+:: Part_4BPart2B
+Smoker: Here’s how you hold it. Best to use two hands first and get your bearings. Line up your knuckles like you’d hold a baseball bat.
+- But I’ve never played baseball.
+  Smoker: Okay, okay. I’ll guide your hands.
+- Like this?
+  Smoker: Almost. Here, you’ll want them close together like that. There you go.
+- And then I swing!
+  Smoker: Don’t get ahead of yourself, kid.
+
+His hands are warm on yours as he positions them correctly on the handle of the jitte.
+Smoker: There you go. Now swing! Yep, that’s it.
+- Wow, you’re a really good teacher.
+  Smoker: Thanks. You’ve got a lot more to learn, though.
+- This is so cool! I need to get me one of those.
+  Smoker: This one’s custom. But we might have a few floating around you can practice with.
+- *Keep swinging* Hiyah! Hoo!
+  Smoker: Guess it’s grown on you pretty quickly, huh.
+=> Two_point_end
+
+:: Part_4C
+**Smoker is a good leader. He’s a Vice Admiral, after all, and he’s been an officer for several years now.**
+- So, when did you start feeling like a good leader?
+  Smoker: Dunno. Not sure if I do now. I mean, yeah, I can run a battle, get people to listen to me, but I make mistakes. I guess we all do.
+- What makes a good leader, anyway?
+  Smoker: People say it’s intangible, but I think that’s lazy. They’re just not willing to unpack their own point of view. You have to be firm and strong; the best leaders I’ve had have led by example.
+- I hope I can be as good of a leader as you someday.
+  Smoker: Don’t try to be like me. Just try to be like you.
+
+Smoker: What’s all this leadership stuff, anyway? Bullshit the recruiters are stressing?
+- No, I just think people like you have certain qualities...like I’d like to, uh, serve under you.
+  Smoker: Volunteering for G-5? Well, you’ve sure as hell got courage, kid. I like it.
+  The two of you exchange smiles. Smoker stubs out his cigars and lights two fresh ones, and you head back toward the main building.
+  => Two_point_end
+- I don’t think it’s bullshit. Every organization needs leaders.
+  Smoker: Yeah, well, I think you can learn it along the way, just like any other skill.
+  => Part_4BCPart3A
+- Just wanted to pick your brain a little.
+  Smoker: Yeah, consider it picked.
+  => Part_4BCPart3A
+
+:: Part_4D
+Silence falls. You think you hear shouts from somewhere across the garden; it sounds like people are running drills. You stretch your arms toward the sky. Is it worth it to try and start another conversation?
+- ...
+  Smoker: ...
+- I have some paperwork I still have to do...not looking forward to it.
+  Smoker: Yeah, me neither.
+- ...So.
+  Smoker: So.
+
+You remain silent. Smoker doesn’t say anything either. Well, that’s alright; you’ve run out of things to talk about at the moment. Maybe you need to get to know him better in a group setting, or maybe he’s just shy. (The latter possibility seems unlikely, though.)
+=> One_point_end
+
+:: Part_4E
+You get some coffee for Smoker, with the requested three packets of sugar, and some for yourself as well. When you locate him, he’s at a small table with space across from him, but he doesn’t have his work out yet.
+Smoker: Thanks for the coffee.
+- Hopefully it hasn’t been sitting out too long...
+  Smoker: When you’ve been here long enough, you learn to put up with shitty coffee. I’m sure it’s fine.
+- Sure, no problem!
+- Yeah...didn’t think I’d end up doing work here later today.
+  Smoker: In a good way or in a bad way?
+  - In a good way. I’m glad to get a bit of a head start and it’s nice to spend some time with you.
+  - I dunno...could go either way.
+  - I’m kind of wishing we’d stayed in the garden.
+    Smoker: Well, you’re allowed to leave.
+
+Smoker: So what do you have to work on?
+- Oh, just some forms and things...taxes, security clearances.
+  Smoker: Damn. It’s been a while since I had to do those. Guess I’m already in the system.
+  - They aren’t too bad. I should be able to get through them pretty quickly. => Zero_point_end
+  - Do you remember enough to help me out?
+    Smoker: Nah, paperwork’s really not my thing. I let Tashigi do too much of it for me, but she’s good at that shit.
+    - Oh...I see. => Part_4EPart3
+    - Well, anything you could remember would help. => Part_4EPart3
+
+:: Part_4EPart3
+Smoker: Well, it’s been a while...sorry. Guess this day just wasn’t going to work out.
+- Maybe we can have a do-over?
+  Smoker: Yeah, I’d like that. Leave the paperwork behind. Talk a little more.
+  => One_point_end
+- No, I’m sorry. I made things awkward.
+  Smoker: Takes two to tango, right? Maybe we can give it another try sometime.
+  => One_point_end
+- Guess not. We can salvage it by getting some work done, though, right?
+  Smoker: ...Right.
+  => Zero_point_end
+
+:: Part_4F
+You find a couple of seats close to a window and sit down while Smoker fixes himself a cup of coffee. You still have some paperwork that you’d been saving for later, but you might as well do it now. When Smoker finally sits down next to you, you’ve been staring at your blank paper for half a minute.
+- So, uh...what now?
+  Smoker: We keep working.
+- ...
+  Smoker: ...
+- Let’s get to work.
+  Smoker: Already on it.
+=> Zero_point_end
+
+:: Early_end
+The date has ended early.
+
+:: Zero_point_end
+do romance_points(smoker, 0)
+Smoker: It’s good that we got some work done, I guess, but that’s not how I wanted to spend my break.
+=> root.main
+
+:: One_point_end
+do romance_points(smoker, 1)
+Smoker: Looks like you’ve got more going on than I thought, `name`.
+=> root.main
+
+:: Two_point_end
+do romance_points(smoker, 2)
+Smoker: You’re an interesting person, `name`. Let’s do this again sometime, yeah?
+=> root.main

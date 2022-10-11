@@ -1,0 +1,126 @@
+:: start
+do set_background("park", show)
+It’s a nice day, the sun is shining, the fog has just blown out. And best of all,  you have a bit of free time! The largest garden on base has been calling your name since you arrived, and now you’re finally here! Wow, look at that view…
+Suddenly, you feel a weird tugging near your waist. Startled, you look down-!
+do show_character(goat, left, show)
+A…goat?
+A goat looks up at you, the hem of your shirt in its mouth. Uh. Hm. You look back and forth. Where did this goat come from?!
+do show_character(sengoku, right, show)
+Sengoku: Goat! Stop that! PC, I apologize for my companions rudeness. [MAD SPRITE]
+- It's no bother, your goat is very cute! => RouteA
+- It's alright - thank you for getting them off of me though - i don't think the higher ups would appreciate a goat-drooled uniform => RouteB
+- Please have better control over your goat! My uniform has Goat spit all over it! => RouteC
+
+
+:: RouteA
+Sengoku: Thank you… They’ve been my companion for a long time. [SMILING SPRITE]
+- From before you were Inspector General? (+)(+)
+    Sengoku: Far before then, (RANK PC). They’ve seen more than most marines captains by now - We both deserve a retirement!
+- They looks spritely for a Old Goat…(+)
+    Sengoku: They’ve always been young at heart... and who's to say they’re old? [WINK SPRITE]
+- A goat? A companion? (-)
+    Sengoku: They’re better than some people on this base.
+Sengoku: Now, furry companions aside -
+=> RouteE
+
+:: RouteB
+Sengoku: Ha! No, Tsuru in particular would not appreciate that.
+- Speaking from experience, sir?
+    Sengoku laughs. You don't keep this old goat a companion for as long as I have without having a few.... incidents.
+- She seems pretty stern…
+    Sengoku: Tsuru's been my shipmate since my rookie days - she's not quite as stern as she seems... even with goats.
+- Yeah... I don't think I would win any argument with her! => RouteD
+Sengoku: Now, furry companions aside -
+=> RouteE
+
+:: RouteC
+Sengoku: Perhaps you should have better awareness of your surroundings. [MAD SPRITE]
+- I suppose so sir.
+    => RouteD
+- Of course - I apologize for my loss of temper!
+    => RouteD
+- I came to this Garden to relax! Not to get chewed on by a Goat!
+    Sengoku: "This goat has served the marines longer than you have, (Rank) `name`. You will respect that. [MAD SPRITE]
+    - Understood, sir…
+        => RouteD
+    - I'm sorry sir... and I'm sorry, Goat.
+        => RouteD
+    - With all due respect, sir, it's an animal!
+        Sengoku: (PC Rank,) I may no longer be fleet admiral, and we may be working as a team but you have overstepped. Leave. [VERY MAD SPRITE]
+        => HateGoatEnding
+
+:: RouteD
+Sengoku: A good marine knows when to step down... I'm glad you've learned such a lesson already. [NEUTRAL SPRITE]
+- Are... are there times when you have had to stand down sir?
+    Sengoku: Ah... yes. The world doesn't see it that way but - yes. Yes… [MORE SERIOUS SPRITE]
+- Bootcamp tends to humble you like that ....
+    Sengoku: Bootcamp! Ha! It's been a long time since I thought of that. [LAUGHING SPRITE]
+Sengoku: But thoughts of those times aside...
+=> RouteE
+
+:: RouteE
+Sengoku: What brings you to the garden?
+- I just wanted some fresh air... a bit of a break, you know?
+    Sengoku: Then you've stumbled upon one of my favorite parts! The garden - where few others tend to disturb a man walking his goat.
+    => RouteF
+- I was just exploring - getting familiar with the base!
+    Sengoku: Then you've stumbled upon one of my favorite parts! The garden - where few others tend to disturb a man walking his goat.
+    => RouteF
+- I honestly can't remember... I should be getting back to my duties now…
+    Sengoku: Ah... of course. The work of a marine never stops. Remember to rest now and then.
+    - Would you mind if I took a chance to rest here then?
+        Sengoku: I would welcome the company then, PC! The garden is a wonderful place to ...escape, in a manner of speaking. [SMILING SPRITE]
+        => RouteF
+    - I will sir. I'll see you later?
+        Sengoku: Yes - Later, (PC RANK) [NEUTRAL SPRITE]
+        => NeutralEnd
+
+:: RouteF
+Sengoku: It's a peaceful place.
+- Do people often disturb you?
+    Sengoku: They used to. Fleet admiral means problems tend to settle at your feet whether you want them to or not. Now... now I have time to relax more. To laugh more.
+    - To talk With friends?
+        Sengoku: Are you talking about yourself?
+        - Ah, no, sorry to overstep
+            It's alright.
+            => PositiveEnd
+        - I'd hope so!
+            I suppose if you can spare a few moments of your day to talk to a man and his goat, that's friends enough.
+            => RouteG
+    - The rumors do say you've loosened up a bit…
+        Sengoku: There's some truth to that. I most likely wouldn't be talking to you if I hadn't.
+        => RouteG
+- I can agree with that ... Do you ever come here with others?
+    Sengoku: Besides my goat? No... Garp tends to be.... Garp, disturbing the peace, and Tsuru still hasn't retired - she can't afford the time to rest. I've yet to find a calm shipmate for this place.
+    - If you don't mind - I could come along.
+        Sengoku: You know... I think I'd like that. [APPRAISING SPRITE]
+        => RouteG
+    - I'm calm!
+        Sengoku: Is that a request? Then… [SMILING SPRITE]
+        => RouteG
+    - I wish you luck then - I'm not sure I could rest for long.
+        Sengoku: I never seem to find the calm types
+        => PositiveEnd
+
+:: RouteG
+Come sit with me, and enjoy a rest. You make good company `name`.
+You and and Sengoku take a moment to rest, enjoying the sunshine and the small noises of a happy goat
+=> PositiveEnd
+
+:: PositiveEnd
+do show_character(placeholder("Rando Marine"), center, show)
+Rando Marine: Sengoku sir! I have a message from you from Tsuru…
+Sengoku: And there goes the peace... I'd best be going. It was nice talking to you (PC Name) I look forward to working with you.
+do romance_points(sengoku, 2)
+=> root.main
+
+:: HateGoatEnding
+Date ends super early.
+Note: Lock out the goat route after this, since the pc hates the goat.
+do romance_points(sengoku, 0)
+do get("HATES_GOAT")
+=> root.main
+
+:: NeutralEnd
+do romance_points(sengoku, 1)
+=> root.main
