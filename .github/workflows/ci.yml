@@ -15,6 +15,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: main
+          token: ${{ secrets.GH_PAT }}
           repository: StandOfGiants/NavyLovin
       - uses: actions/checkout@v2
         with:
@@ -44,6 +45,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: main
+          token: ${{ secrets.GH_PAT }}
           repository: StandOfGiants/NavyLovin
       - uses: actions/checkout@v2
         with:
@@ -72,6 +74,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: main
+          token: ${{ secrets.GH_PAT }}
           repository: StandOfGiants/NavyLovin
       - uses: actions/checkout@v2
         with:
