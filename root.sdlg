@@ -27,6 +27,7 @@ Who do you want to date?
 => smokers_and_friend_1.start
 
 :: CobyCrew
+=> coby_crew_1.start
 Who do you want to date?
 - Drake => drake_1.start
 - Helmeppo => helmeppo_1.start
