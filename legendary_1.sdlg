@@ -1,0 +1,311 @@
+:: start
+`name` Comes up to Tsuru's office; the door is closed.
+`name`: *This is the right place....*
+- `name`: Knock
+	'Come in!' Tsuru says greeting `name`, warm smile
+- `name`: Just go right in
+	'Oh there you are!' Tsuru smiles warmly, 'We were just looking for you!'
+Garp: Eh? Who is this?
+`name`: Pleased to meet you Inspector General Sengoku, Instructor Garp, Vice-Admiral Tsuru—
+Garp: Ah, you can just drop the titles when we’re alone in here. Nobody really cares. Anyway, who are you?
+Sengoku: This is Tsuru's new assistant. We were just talking about this!
+Garp: We were?
+Tsuru: Sighs. Please, Ignore them. We're happy to have you here.
+- `name`: Is this... normal?
+	Roci: Pretty much, though everyone is a bit rowdier because of the event later today.
+- `name`: I'm just happy to be here!
+	Roci line (Something about an event?
+=> ConversationContinues
+
+:: ConversationContinues
+- `name`: Event? What kind of event?
+- `name`: I think I heard something about that…
+Sengoku: It's a welcoming ceremony for the new recruits we have coming in. Something to show them what the Navy's made of, and what to expect!
+Garp: Ah... I remember my first day as a rookie... the food was amazing.
+Tsuru: That's because you accidentally went to the officer's hall instead of the recruitment ceremony.
+Roci: That sounds better than my first ceremony... I accidentally set the cannons off.
+Tsuru: Oh, I remember that! Let's hope that doesn't happen this time around.
+Tsuru: But back to business.
+Tsuru: `name` Currently, we are all writing a speech that myself, Garp, and Sengoku will be presenting at the ceremony. Something about *Marine Legends* inspiring the youth... as if I'm old enough to be a legend!
+Tsuru: We could use your help with the final touches. There are a lot of... conflicting ideas here.
+- `name`: I'd be happy to help!
+	Tsuru: Fantastic!
+	Sengoku: Finally - someone who wants to help.
+	Garp: I don't see why we can't just skip the speech…
+	Tsuru: Our recruits need to understand our ideals - not just our strength, Garp!
+- `name`: I'd rather just listen - I don't think I have enough speech writing experience for that.
+	Garp: See! Someone else who thinks writing this speech is ridiculous!
+	Tsuru: We already have a demonstration, Garp - not everything can be accomplished by throwing punches!
+- `name`: You said you, Garp, and Sengoku will be performing the speech - what about Rosinante?
+	Sengoku: Inspiration! Rosi here is a shining example of what a Marine can be.
+	Rosi: I completed a mission a short while ago, something extremely dangerous. The higher ups decided I should get promoted for that... and get some recognition.
+	Sengoku: As you deserve. We need to put the finishing touches on your promotion speech as well...Let's go over that in my office later.
+	Tsuru: Let's focus on this speech first, gentlemen.
+Tsuru: Now oOur first decision is about how we should address the recent rise in piracy...
+- `name`: How about ‘Piracy is nothing in the face of a united Navy?’ (+R +T)
+	Rosinante: It does enforce the value of working together…
+	Tsuru: And draws attention to how the Navy one force, while the Pirates are divided - Perfect! I’ll add it in.
+	Garp: Being united didn’t help us at Marineford…
+- `name`: You should write ‘Only with new recruits and new ideas can we overcome this adversary’ (+R +T)
+	Sengoku: Captain Coby and his team of recruits are doing far better work than any old legend…
+	Garp: It’s good that new blood is changing the way we fight.
+	Tsuru: New recruits are nothing without us veterans training them…. But I’ll add it in.
+- `name`: Pirates rule, Navy drools, please change that?  (+G -T)
+	Garp: Ha! Perfect - Tsuru, add that in!
+	Tsuru: Absolutely not! That’s the opposite message we want to send! Let’s try something more about defeating pirates, shall we?
+- Just say it - Piracy is rising faster than the Navy can fight it. (+S)
+	Tsuru: A bit critical…
+	Sengoku: But it is the truth.
+	Rosinante: All recruits should know the truth of what they will be fighting. Add it in.
+Tsuru: Hmm…Glad that issue is settled. Now, how should we address the disruptions by the Straw Hat Pirates? Impel Down, Marineford, and the like?
+- The Straw Hat’s destruction allows us to rebuild bigger and better.
+	Sengoku: I don’t think we should be endorsing a pirate demolition crew.
+	Garp: I do!
+	Rosinante: How about a line saying that the Navy always rebuilds?
+	Tsuru: Well, we hope they always rebuild. I don’t see another Ennies Lobby… but that’s a good line, Rosinante.
+- Straw Hat Luffy may be destructive, but he can be defeated like any other pirate.
+	Rosinante: To be fair… Straw Hat hasn’t been defeated yet.
+	Tsuru: He will be though - and the recruits need to believe that he can be.
+- Attacks by this pirate and others are why the Navy serves to protect.
+	Sengoku: How many times has that criminal done the Navy’s job for us though?
+	Garp: Too many. Far too many times.
+	Rosinante: The world doesn’t know that though. Let’s keep it.
+- Can you even explain anything that bastard does?
+	Garp: Bwahaha! You can’t!
+	Sengoku: Stop being so proud of him!
+	Garp: Never! Add it in!
+	Tsuru: No, Garp. We’ll add something about Captain Coby chasing him, that should work.
+Tsuru: Lastly - our recent changes in leadership... and general ideals.This is our most important factor.
+- Absolute justice ensures that no pirate will go unpunished, at any cost - making our world safe at last.
+	Sengoku: We’ve seen how that turns out.
+	Tsuru: It is truthful to the Navy’s current philosophies…
+	Rosinante: Perhaps change the wording to make it more subtle.
+	Tsuru: That could work.
+- A Marine’s justice is their own, no matter what the Fleet Admiral says.
+	Rosinante: Every marine has their own line that they won’t cross.
+	Garp: You mean most marines.
+	Tsuru: I’m not sure I like the… vigilantism that this line encourages. Let's have something about a Marine’s duty instead.
+- The Navy’s change in leadership is reflective of our changing times!
+	Rosinate: Marineford did bring many changes to our structure…
+	Sengoku: Some of them good, some of them bad.
+	Tsuru: Not everything changed - Some of us didn’t retire, Sengoku. But… I’ll keep the line.
+- We’d also prefer it if someone else was in charge.
+	Garp: Ha! That’s the truth!
+	Sengoku: I’m not doing it anymore.
+	Tsuru: No one is getting out of retirement until I retire. But… let’s say something about justice instead.
+Tsuru: That should be the last bit -
+Rando Marine: Ma'am! And Sirs! The ceremony will be starting soon.
+Tsuru: Finished just in time - Thank you for your help, `name`! Meet me here after the event, alright?
+EVENT - FADE TO BLACK - FADE BACK IN
+Tsuru: A resounding success, `name`! I look forward to working more with you later. Now, for the rest of our work day, what would you like to do?
+Tsuru: I have some papers that need to be sent to Sengoku... or you can stay and help me here. Garp should be dropping by in a moment.
+- `name`: I'd be happy to help you here, ma’am!
+	=> GarpTsuruRoute
+- `name`: I think I want to stretch my legs. I’ll take the papers to him!
+	=> CoraSengokuroute
+
+:: GarpTsuruRoute
+You make your way to Tsuru's office.
+Tsuru:  Thank you for staying, `name`.
+Tsuru:  Let's try to get ahead of this workload before-
+Garp: Bwah hah hah hah!
+Tsuru:  ...
+Garp: Hey, Tsuru, back to paperwork already?
+Garp: No rest for the wicked, huh?
+- `name`: That's easy to say when you're retired! (T+)
+	Tsuru:  Good point, `name`! I don't even know what "retired" means in the Navy anymore.
+- `name`: Hey, are you here to help or to get on our nerves? (G+)
+	Garp: Ha! You have a spine, kid!
+	Tsuru:  What do you expect, Garp?
+	Tsuru:  You reap what you sow!
+- `name`: Not much else to do around here! (G-, T-)
+	Tsuru:  In fact, you just chose to come help.
+	Tsuru:  Don't try and get on Garp's better side by pretending otherwise!
+	Garp: If you're so bored, I could run you through some drills instead!
+- `name`: At least share some of those rice cakes. (G+, T-)
+	Garp: You’ve got good taste, but you oughta get your own!
+	Tsuru:  It's no time for banter.
+Tsuru:  You were always a hothead.
+Tsuru:  It doesn't matter what we say—he'll stay here. Just try to be quiet.
+- `name`: Have you known each other for a long time? => GarpTsuruconvo1
+- `name`: Would you tell me some stories about the times you chased Roger? (G+) => GarpTsuruconvo2
+- `name`: Let's work and focus on the present. (T+)
+	Tsuru:  That's a true hard-working disposition. => GarpTsuruWrapUp
+
+:: GarpTsuruconvo1
+Tsuru:  Indeed, `name`. We have been comrades throughout our whole career.
+Garp: Ever since we were kids!
+Tsuru:  That's a way to put it.
+- `name`: You have some patience, Lady Tsuru! (T+, G-)
+		Garp: People keep sayin’ that!
+		Tsuru:  And they aren’t wrong.
+- `name`: I’m sure you made a great team together! (G+, T-)
+		Garp: We used to chase pirates to the last corners of the blues!
+		Garp: And don’t forget about Sengoku… We had many adventures.
+		Tsuru:  Perhaps we should reminisce some other time!
+- `name`: Was it very different back then, to be a Marine?
+		Tsuru:  The times have changed. Our Navy has to adapt, but the core stays the same.
+		Garp: I’d say the times haven’t changed enough.
+		Garp scoffs. It seems like this is a conversation they have had often.
+		You notice it is tense between the two of them.
+		- `name`: I hope that we can maintain peace together! (T+, G-)
+			Tsuru:  That’s a good starting point, `name`.
+			Garp: Damn, kid, do you always only parrot what you hear?
+		- `name`: I hope to be part of the change! (G+, T-)
+			Garp: Bwahaha! That’s the spirit!
+=> GarpTsuruWrapUp
+
+:: GarpTsuruconvo2
+Garp: Ah, Roger! It's incredible that, decades after his death, he's not quite gone!
+Tsuru:  As much as I disagree with giving a pirate the status of a legend, it's true…
+- `name`: Did you chase him as well, Tsuru?
+	Tsuru:  I did, back in the day.
+	Tsuru:  Sengoku, too. So did all our disciples. But I think, by the end, only Garp could keep up with him.
+	Garp: Would've been funny to have seen Roger laundried and hung to dry!
+	- `name`: At last, he died, and that was the end of it. (G-, T-)
+		Garp: Hm.
+		Tsuru:  Roger might've died, but the trouble he caused is still very much alive.
+	- `name`: I think Tsuru should hang *you * to dry! (T+, G+)
+		Garp erupts in laughter. Tsuru chuckles.
+		Tsuru:  It won't work to discipline him.
+		Tsuru:  Believe it or not, Garp’s heart is in the right place…
+- `name`: How did you get him in the end?
+	Garp: We didn't.
+	Garp: Three times we had him cornered, and three times he got away!
+	Tsuru:  Not everybody knows this, `name`.
+	Tsuru:  It’s one of the difficult decisions that had to be made from the top.
+	- `name`: I understand why. (T+, G-)
+		Garp: What?! Really?!
+		Garp: I wouldn’t be happy, kid!
+		Tsuru:  The new generation has to stay pragmatic, too.
+	- `name`: I think the world should know the truth. (G+, T-)
+		Tsuru:  …well.
+	Tsuru:  Let's focus on the task at hand.
+- `name`: All these stories of the past don’t really interest me. (T-, G-)
+	Garp: What a thing to say to two old-timers like us!
+	Tsuru:  Old-timers?! `name`.
+	Tsuru:  As you wish. But don’t forget that knowledge is power.
+=> GarpTsuruWrapUp
+
+:: GarpTsuruWrapUp
+Tsuru sighs.
+Tsuru:  Still, I’m glad that we are working together after all this time… at least, in *some* capacity.
+Garp: Yeah! You’re not getting rid of me that easily!
+Garp: You want to catch up with the workload so we can all enjoy Rosinante’s promotion in peace too, huh?
+Tsuru:  …Yes.
+Tsuru:  I think that’s something we can all agree on.
+Garp: I’m glad the boy is back, too! Bwahahah!
+Garp seems to be content with sticking around, even helping a little, as you two work.
+=> EndOfWorkday
+
+:: CoraSengokuroute
+
+You walk quietly until you reach Sengoku’s office. You knock on the door.
+Sengoku: Come in!
+`name`: Good afternoon, Inspector General.
+Unexpectedly, Rosinante is also in the office. You couldn’t hear what they were talking about before you entered, but you can see a wanted poster on the table between them. Peaking closer, you notice it is the poster of Trafalgar Law.
+`name`: Good afternoon, Commander.
+Sengoku: `name`, Tsuru sent you?
+`name`: Yes.
+- Give Sengoku the papers. (S+)
+	Sengoku: Hmm? What are these about?
+	`name`: I’m not sure, Tsuru-san just gave them to me.
+	`name`: I assumed you would know.
+	Sengoku: Yes…
+	Sengoku: Rosinante, it’s about your promotion.
+	Rocinante: We didn’t get to talk about that even though we meant to, right?
+	- `name`: Congratulations for your promotion! (R+ S+)
+		Rocinante: Ah, thank you thank you. It’s nothing really. => CS1A
+	- `name`: It would be ideal if you figured out the details as soon as possible then. (S+)
+		Sengoku: `name` is right. We can’t just sit around. We need to plan the ceremony.
+		Sengoku: We got caught talking about *other issues*
+		Rocinante: How is this an issue?
+		Sengoku: Of course it’s an issue! We were just talking about it. => CS1A
+	- `name`: How could *you* possibly get promoted? (R- S-)
+		Sengoku: `name`... Rosinante may be younger than me and Tsuru-san but he’s still a superior, be respectful.
+		Sengoku: Tsuru-san would disapprove of this and you know it.
+	- `name`: You’re right, Inspector, I apologize. => CS1A
+- Ask him about the wanted poster. (R+) => CS1A
+
+:: CS1A
+You glance at the wanted poster on the table again.
+`name`: Is the Worst Generation causing trouble again?
+Sengoku: Pff, trouble is too light of a word.
+`name`: Why? What's happening?
+Sengoku: I’m sure you heard that Straw Hat and Trafalgar formed an alliance. After Doflamingo’s fall, they plan to take down Kaidou!
+Rocinante: And how is that an issue?
+- `name`: Commander is right. Isn’t there a chance they could defeat Kaidou? (R+)
+	Sengoku: Don’t be foolish. They don’t stand a chance.
+	Rocinante: Pff, don’t be so sure of that.
+	Sengoku: Rosinante, whose side are you on?! => CS1B
+- `name`: I don’t see the issue, let them take each other out. Less paperwork for us, right? (S+ R-)
+	Rocinante: That’s easy for you to say.
+	Sengoku: `name`, isn’t wrong, you know.
+	Sengoku: Are you a marine, Rosinante? Or did working undercover among pirates for so long makede you think like them?.
+	Rocinante: I’m just saying not all of them are bad.
+	Sengoku: Bad or not, they still cause too much trouble to simply let them run wild. => CS1B
+- `name`: Is there anything we can do to stop them?
+	Sengoku: Heh! I like your enthusiasm but that’s not under our jurisdiction.
+	Sengoku: Let Sakazuki figure it out, I'm done with all that!
+	Rocinante: Yeah… we’re just talking for the sake of conversation. I doubt the Fleet Admiral will deploy any of us at this base to deal with this.
+	- `name`: You’re right. I don’t even know what I would do if I found myself face to face with them. They’re way too strong. (R+ S-)
+		Sengoku: Don’t give them so much credit!
+		Rocinante: It’s fine, Sengoku-san! Haha.
+		Rocinante: `name`, isn’t wrong. Out of us three, you’re the only one who could stand a chance.
+		Sengoku: Don’t try to flatter your way out of this! Don’t think I didn’t notice how you’ve been sympathizing with the pirates for so long.
+		Sengoku: It’s unacceptable for someone of your rank!
+		Rocinante: Yes, yes, I heard it before.
+		Sengoku: And yet you never listen.
+		Sengoku: What will I do with you… => CS1B
+	- `name`: It’s still a nice thought. (S+ R-)
+		Rocinante: Let other people deal with it.
+		Sengoku: You want to do good things, I appreciate it, but you’re still just a recruit.
+		Sengoku: You’ll have to get a lot stronger.
+		`name`: I don’t mind! I will get stronger.
+		Sengoku: Hahaha! See, Rosinante? This is the sort of attitude I want from you as well.
+Sengoku: Maybe one day, after you stop fraternizing with the enemy…
+Rocinante: …
+Rocinante: Sengoku-san, you wound me.
+Sengoku: As if *you* don’t wound me! Hahahaha! => CS1B
+
+:: CS1B
+The way Rosinante is talking about the pirates is odd, but you also can’t help but notice how close he and Sengoku seem to be. Almost like a father and son.
+- `name`: You two seem so close! (S+ R+)
+	Sengoku: We’ve known each other for a long time, I suppose you can tell eh?from our interactions.
+	`name`: Really? How come?
+	Rocinante: Sengoku-san took me in when I was a child.
+	Rocinante: He trained me and taught me everything I know!
+	Sengoku: Indeed. Rosinante is like a son to me.
+	`name`: Wow! I had no idea.
+	`name`: I bet it’s great to work so closely to a father figure like this, right?
+	Rocinante: It can be a bit of a headache sometimes.,
+	Sengoku: …
+	Rocinante: But it feels great knowing that someone will always have your back. => CS1C
+- `name`: You two remind me of the way my brother and father often used to bicker. (S+ R+)
+	Rocinante: That makes sense! Sengoku-san is like a father to me.
+	Sengoku: Yes, and sometimes I can’t help but think it’s most unfortunate…
+	Rocinante: Don’t listen to him. No one was happier than him when I came back from my mission.
+	`name`: I bet! You two have a great relationship, I haven’t been here for long and I can already tell.
+	Sengoku: Eh…
+	Rocinante: Don’t mind him, don’t mind him. => CS1C
+-`name`: Why is the Commander defending the pirates so much? (S- R-)
+	Sengoku: Ah… don’t take it so seriously.
+	Rocinante: We are just joking around.
+	`name`: I’m sorry! I didn’t realize.
+	Rocinante: You’re new and you didn’t know, it’s alright!
+	Rocinante: We should have made it clearer.
+	Sengoku: Yes. Rosinante is an exemplary marine, never afraid to take down his enemies.
+	Rocinante: Here he goes again… => CS1C
+
+
+:: CS1C
+`name`: Oh! I can’t just sit around and chat, I have to go back to Tsuru-san!
+`name`: Goodbye, Inspector General, Commander.
+
+They bid their farewell to you and you leave, your mood lifting considerably after the conversation with the two.
+
+=> EndOfWorkday
+
+:: EndOfWorkday
+WOrkdayend
+=> root.main
