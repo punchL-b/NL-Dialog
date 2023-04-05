@@ -10,6 +10,7 @@ Which route do you want?
 - DEBUG => kuzan_1.FrisbeeThrow
 
 :: Legendary
+=> legendary_1.start
 Who do you want to date?
 - Tsuru => tsuru_1.start
 - Rosinante => rosinante_1.start
