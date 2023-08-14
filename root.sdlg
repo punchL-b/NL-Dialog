@@ -11,6 +11,8 @@ Which route do you want?
 
 :: Legendary
 => legendary_1.start
+
+:: LegendaryDatesOne
 Who do you want to date?
 - Tsuru => tsuru_1.start
 - Rosinante => rosinante_1.start
@@ -18,6 +20,9 @@ Who do you want to date?
 - Sengoku => sengoku_1.start
 
 :: Admirals
+=> admirals_1.start
+
+:: AdmiralsDatesOne
 Who do you want to date?
 - Fleet Admiral Sakazuki => sakazuki_1.start
 - `kuzan` => kuzan_1.start
@@ -27,8 +32,16 @@ Who do you want to date?
 :: SmokersAndFriend
 => smokers_and_friend_1.start
 
+:: SmokersAndFriendDatesOne
+- Smoker => smoker_1.start
+- bellmere => bellmere_1.start
+- Tashigi => tashigi_1.start
+- hina => hina_1.start
+
 :: CobyCrew
 => coby_crew_1.start
+
+:: CobyCrewDatesOne
 Who do you want to date?
 - Drake => drake_1.start
 - Helmeppo => helmeppo_1.start
