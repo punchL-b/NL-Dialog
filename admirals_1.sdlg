@@ -263,6 +263,7 @@ The next time the Fleet Admiral takes a swig of water, he gets unnaturally red i
 `issho`: Oh, it’s suddenly rather hot, isn’t it?
 Sakazuki lets out some choked noises, getting on his feet and leaving before you can see his reaction.
 (Workday ends. After this, the Sakazuki date is perma locked?)
+=> Outro
 
 :: prank_route2
 You decide to approach Sakazuki.
@@ -281,6 +282,7 @@ Sakazuki eyes Kuzan with deep contempt. A look that could kill.
 Before he heads for the exit, Sakazuki turns to you.
 S:... I appreciate that.
 (Workday ends. After this, the Kuzan date is perma locked?)
+=> Outro
 
 :: prank_route3
 You decide to approach Issho, in hopes he can help you avoid the prank without telling Sakazuki.
