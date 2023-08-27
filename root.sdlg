@@ -7,7 +7,7 @@ Which route do you want?
 - Admirals => Admirals
 - Smokers & Friend => SmokersAndFriend
 - Coby Crew => CobyCrew
-- DEBUG => kuzan_1.FrisbeeThrow
+- DEBUG => DEBUG
 
 :: Legendary
 => legendary_1.start
@@ -48,6 +48,16 @@ Who do you want to date?
 - Coby => coby_1.start
 
 :: DEBUG
+before routine
+>> routine
+after routine
+>> routine
+did routine again!
+
+:: routine
+Hi!
+
+:: Other
 do show_character(garp, center, show)
 center
 do show_character(rosinante, left, fade)
