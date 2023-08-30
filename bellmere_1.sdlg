@@ -5,8 +5,8 @@ You’re mopping the deck of the large battleship parked at the island, when you
 do show_character(bellmere, center, show)
 `name`: Do... do you always do this?
 Belle-mére: Do what? Oh, avoid menial labor? Damn right I do! Hey, don’t look at me like that! You think I’m lazy?
--Yes...
--No...
+- Yes...
+- No...
 You try to answer, but she cuts you off.
 Belle-mére: Just kidding: don’t answer that. You should see me in a fight, though- I got into this business to take down baddies, not to mop ships and do paperwork. Not much of a rule-follower when it comes to grunt work. How about you? Do you enjoy all that crap?
 - I’m in it to fight, too! (+1)
@@ -68,10 +68,10 @@ Belle-mére: This damn thing’s never seen any real action. It’s my biggest p
 `name`: Er... been where?
 Belle-mére gets quiet for a minute as she assembles what looks like a giant brass wire swab to clean the cannon.
 Belle-mére: War.
--You fought and adopted war orphans!? You’re not lazy at all, are you?
+- You fought and adopted war orphans!? You’re not lazy at all, are you?
     do increment("bm1.points")
     => Part_3A
--We should follow orders. The Vice Admiral wouldn’t assign tasks that weren’t vital.
+- We should follow orders. The Vice Admiral wouldn’t assign tasks that weren’t vital.
     => Part_3B
 
 :: Part_3A
@@ -92,14 +92,14 @@ Belle-mére: I can go get another one of these, if you want to race!
 
 :: Maybe
 Belle-mére: Maybe
--I’ll do it! => Race
+- I’ll do it! => Race
 - No thanks => Time
--How about if we just skip it and go do something else? => Alternate
+- How about if we just skip it and go do something else? => Alternate
 
 :: Alternate
 Belle-mére: Oh, I am a bad influence on you! Alright, `name`, whatcha have in mind?
--Jogging in the park => Jog
--Practice at the firing range => Guns
+- Jogging in the park => Jog
+- Practice at the firing range => Guns
 
 :: Jog
 Belle-mére: Hey! Not a bad idea- I’m pretty restless from pretending to work all afternoon. Cleaning duty can wait- let’s go!
