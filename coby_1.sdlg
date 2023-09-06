@@ -303,7 +303,9 @@ The date ends early (0 points)
 :: Coby_training_end
 if check_ratio("cd1_points", "cd1_possible", 0.5)
     Coby: Of course! It was fun getting to spend some time with you. And if you ever want to do something other than training, just let me know. There’s a lot to see around here if you know where to look.
+    do romance_points(coby, 2)
 else
     Coby: Sure. You have a lot of potential and I’d love to see you improve.
     Coby: Besides, it’s nice to train with someone different once in a while.
+    do romance_points(coby, 0)
 => root.main

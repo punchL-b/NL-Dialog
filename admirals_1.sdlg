@@ -9,7 +9,7 @@ You arrive at the mostly vacant bar. Following behind you are four intimidating 
 `borsalino`: One for me, please.
 `kuzan`: Hit me, two.
 `issho`: I’ll pass this time. Perhaps another day. [Smile sprite]
-`borsalino`: What about yo~ou, `name`?
+`borsalino`: What about ~yoou~, `name`?
 - If I go to a bar, I’m obliged to get a drink! (K & B +1, S -1)
     `kuzan`: That’s the spirit, `name`!
 - No, thank you, Admiral. I’d rather stay sober for work later. (S & I +1, K -1)
@@ -28,7 +28,7 @@ You place your drink down to get everyone’s attention.
 - How did you guys meet?
     It might have been the right thing to ask. Admiral Fujitora smiles.
     `issho`: [smile sprite] I have known Saka-san for a while. We went far back. He was stationed at a base and… [fade to black]
-    `borsalino`: … *so~o* when he found out I could teleport into the pantry, we became the best of friends…
+    `borsalino`: … *~soo~* when he found out I could teleport into the pantry, we became the best of friends…
     `sakazuki`: Ignore them, they are such fools. Do you have any further questions? => Talk_route
 - Tell me the most embarrassing experience you’ve been through!
     The Admirals look at one another. Admiral Kizaru gives an easy grin.
@@ -75,7 +75,7 @@ Admiral Fujitora laughs good naturedly while Fleet Admiral Sakazuki just scowls.
 `sakazuki`: [Frown sprite] Annoying. => Date_unlock2
 
 :: Path_3
-`borsalino`: Oh, there are only *go~od* things to say about my friends. Sakazuki and his passion... Kuzan and his temperament... Issho... Is very brave, too, isn't he...? He doesn't mind what anybody thinks... Just *lo~ok* at him…
+`borsalino`: Oh, there are only *~good~* things to say about my friends. Sakazuki and his passion... Kuzan and his temperament... Issho... Is very brave, too, isn't he...? He doesn't mind what anybody thinks... Just *~look~* at him…
 `issho`: [smile sprite] Thank you. You’re a very remarkable man yourself, Borsalino.
 `kuzan`:  Passion is one way to put it with Sakazuki…
 `sakazuki`: [Frown sprite] What do you mean ‘one way to put it’? =>Date_unlock2
@@ -186,7 +186,7 @@ Everyone: Stakes?
 - Get more drinks for everyone!
     `kuzan`: Great, another round! I’m going to get this one for sure now.
 - Bump into the others nonchalantly. Keep them on their toes!
-    `borsalino`: Oh careful `name`, wouldn’t want to cause chaos now, would *yo~ou…?*
+    `borsalino`: Oh careful `name`, wouldn’t want to cause chaos now, would *~yoou~…?*
 - Cheer them on!
     `issho`: Thank you for your confidence, `name`.
 - Double check the darts and the board to make sure there is no funny business. A level playing field is the only way to go.
@@ -201,13 +201,13 @@ RANDOM WINNER DECIDED
 :: prank_main
 You notice that Kuzan and Borsalino are acting shifty and decide to approach them.
 `kuzan`: Hey, um. Hey.
-`borsalino`: Can we help *yo~ou?*
+`borsalino`: Can we help *~yoou~?*
 `kuzan`: …
 `borsalino`: ...
 `kuzan`: <pause> (Psst.. I think they know.)
-`borsalino`: Hmmm, *oka~ay…*
+`borsalino`: Hmmm, *~okaay~…*
 `borsalino`: Let's let `name` in on it…
-`borsalino`: But first… be good and promise *no~ot* to tell anybody about it, will you?
+`borsalino`: But first… be good and promise *~noot~* to tell anybody about it, will you?
 - OK… What could go wrong? (B+)
     `borsalino`: What indeed…
 - No way. Tell me what's going on first! (K+)
@@ -257,7 +257,7 @@ You just found out that Borsalino and Kuzan are planning to prank Sakazuki.
 `kuzan`: Borsalino is the fastest of us, so he’ll…
 `kuzan`: …
 `kuzan`: It’s done, isn’t it.
-`borsalino`: *Ye~es,* but you can keep talking…
+`borsalino`: *~Yees~,* but you can keep talking…
 The next time the Fleet Admiral takes a swig of water, he gets unnaturally red in the face and really tense…
 `sakazuki`: ….!!!!!!!!!!!!!!!
 `issho`: Oh, it’s suddenly rather hot, isn’t it?
@@ -287,7 +287,7 @@ S:... I appreciate that.
 :: prank_route3
 You decide to approach Issho, in hopes he can help you avoid the prank without telling Sakazuki.
 Kuzan and Borsalino are still whispering.
-`issho`: Oh. ´Name´. Are you enjoying your-
+`issho`: Oh. `name`. Are you enjoying your-
 `issho`: …
 `issho`: It’s very kind of you to tell me.
 `issho`: Well, now I'm curious… What do you suggest we do?
@@ -304,7 +304,7 @@ Kuzan and Borsalino are still whispering.
 `sakazuki`: Hm?
 `issho`: Be so kind as to tell a blind man the time.
 While Sakazuki turns around, you watch as Issho leans in with his walking cane and knocks Sakazuki’s drink.
-`borsalino`: *O~oh…*
+`borsalino`: *~Ooh~…*
 `kuzan`: (Did he do that… on purpose?)
 `sakazuki`: …
 `sakazuki`: You can be very clumsy.

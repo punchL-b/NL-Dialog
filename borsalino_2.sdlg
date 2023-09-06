@@ -1,0 +1,358 @@
+:: start
+if has_romance_points(borsalino, 2)
+    Didn't `borsalino` say you could do something else together soon?
+    Speaking of the devil...
+else
+    It’s nearing the end of a working day, on the training grounds…
+`borsalino`: Oh, ~*helloo*~, `name`…
+`borsalino`: What a fun day today, wasn’t it…?
+- `name`: Have you forgotten about me?! [if has_romance_points(borsalino, 2)]
+    do increment("bd2.points")
+    do increment("bd2.points")
+    `borsalino`: Oh my…
+    `borsalino`: You’re cute when you’re angry…
+    `borsalino`: Of ~coourse~ not `name`.
+- Are you free today?
+    do increment("bd2.points")
+    `borsalino`: Ah… I wish I was, ~belieeve~ me…
+- I thought it was stressful… (-)
+    do decrement("bd2.points")
+    `borsalino`: Oh, you *poor thing…*
+    `borsalino`: I’d love to help you decompress, I really ~*woould…*~
+`borsalino`: *But…*
+`borsalino`: My cute little nephew, ~*Sentomaaru*~, won’t leave me alone…
+`borsalino`: I’m being inefficient, he says… And I need to catch up with work…
+- Oh, poor you… Should I help you?
+    `borsalino`: Oh… Please, no, enjoy your afternoon off…
+    `name`: Oka-
+    `borsalino`: Well… *actually*...
+    `borsalino`: Would you really do that for me…? => branching_out
+- That’s too bad… But it’s your own fault. (-)
+    `borsalino`: You don’t need to remind me…
+    `borsalino`: ~Weell~, if it were two of us at work, it would take half the time…
+    - I’ll stick around.
+        `borsalino`: Oh, lovely… => branching_out
+    - No way, I have plans! (-)
+        `borsalino`: ~Weell~, see you another day, *then*...
+        `borsalino`: Hopefully somewhere else… => Early_End
+- I can help you—but not for nothing! (+)
+    `borsalino`: Oh… I’ll need to make it up to you, won’t I…?
+    `borsalino`: ~Okaay…~ => branching_out
+
+:: branching_out
+You walk along Borsalino to his office.
+Worn and lived-in, full of interesting little trinkets and neatly stacked books…
+But the desk is a mess!
+`borsalino`: Shall we have coffee first…?
+- No coffee. Let’s get to work. (-)
+    `borsalino`: …
+    `borsalino` disappears in a flash of light and reappears with a coffee.
+- I’m *only* here to drink coffee and watch you work. (+)
+    `borsalino`: ...karma is catching up…
+- Sure!
+    `borsalino`: Oh, lovely…
+    `borsalino`: Milk, two spoons of sugar, please…
+    - Yes, Sir!
+        `borsalino`: I knew I could count on you…
+        You fetch a coffee for B, and one for yourself. When you come back, `borsalino` has made some space on the desk for you, among the stacks of paperwork.
+    - Go get it yourself! (+)
+        `borsalino`: Aw… You know, I had to try…
+        `borsalino` disappears in a flash of light and reappears with a coffee.
+        You make some space for yourself among the stacks of paperwork.
+B lays back on his chair, arms comfortable behind his head…
+- Let's put this behind us! (-)
+    `borsalino`: My, my…
+    `borsalino`: You can be very persistent… => work
+- I get it, it's boring… but let's get *something* done.
+    `borsalino` stretches and yawns loudly.
+    `borsalino`: ~Okaay…~ => work
+- Well? When are you getting started?
+    do increment("bd2.points")
+    => route3
+
+:: work
+You look at the mess. At least, the stacks and stacks of documents are somewhat divided by theme.
+HQ operations… Grand Line strategy… Celestial Dragons.
+`borsalino`: And how do ~yoou~ suggest we start?
+- I’ll take over one third of the work.
+    `borsalino`: Oh… would you prefer… let’s see…
+    - Internal operations of HQ => route1
+    - Grand Line Strategy => route2
+    - Celestial Dragons
+        `borsalino`: Oh, really…?
+        `borsalino`: Better pick something else… (option disappears)
+    - Your pick! Let’s just get it done! (-) => route1
+- This is too much for me… => route3
+
+:: route1
+`borsalino`: ~Okaay~… Why don’t you take over these HQ operations…?
+- This is supposed to be your signature and stamp on it.
+    `borsalino`: Oh, it’s true… I’m sorry…
+    `borsalino`: It would all be much faster if I teach you how to sign in my name, wouldn’t ~iit~?
+    - Sure! (+)
+        `borsalino`: Oh, that’s what I call helping! => route1_takeover
+    - Are you insane?! (-)
+        `borsalino`: Calm down… it was a joke…
+        `borsalino`: …mostly… => route1_more_work
+- Of course! => route1_takeover
+- I’d rather take a look at the Grand Line documents! (-)
+    `borsalino`: Very well… we'll change again…
+    => route2_pirates
+
+:: route1_takeover
+You two work together in silence, taking alternate swigs of coffee.
+`name`: Finished!
+`borsalino`: Oh, that’s marvelous… You’re almost as fast as me…
+`borsalino`: Would you like to take over half of the Grand Line work for me?
+- Sure, if it means we will be done sooner…
+    `borsalino`: Of course, of course… => route1_end_early
+- Um, no. (+)
+    `name`: I’ll go refill the coffee while you’re done…
+    `borsalino`: Aww, I’m not fooling you, am I…?
+    `borsalino`: *~Okaay~*… => route1_newspaper
+
+:: route1_more_work
+After some time working. You are done with your share… `borsalino` is not even halfway through!
+`borsalino`: *~Weell~…* It seems like this will take more time than I want you to wait…
+`borsalino`: Mmm…
+`borsalino`: If you see Sentomaru, will you tell him I am caught up?
+- Okay. (+)
+    `borsalino`: Aww… I'll make it up to you…
+- Nah. (-)
+    `borsalino` shrugs and hums nonchalantly.
+    `borsalino`: Go then…
+=> End
+
+
+:: route1_end_early
+You put all your effort into finishing your assignments as soon as possible.
+`borsalino`: You’re doing good, `name`…!
+`borsalino`: Oh, if you’re almost there with your share… Would you mind taking a look at these budgets…?
+- Hey, this is a bit too much.
+    `borsalino`: Aw, don’t worry… You’ll be done in no time, at your speed, *~riight~?*
+- I guess?
+    `borsalino`: Good, good…
+He’s getting his jacket and hat and *leaving?!*
+`borsalino`: You’re lovely for taking over, truly.
+Borsalino disappears in a flash of light.
+Wait… That’s so unfair!
+=> End
+
+:: route1_newspaper
+While you continue to work, it seems like he’s eyeing the newspaper…
+`borsalino`: Being up-to-date is very important for strategy, you see…?
+`borsalino`: This is what the Government wants the public to see…
+- How about we focus? (-)
+    `borsalino` side-eyes you.
+    `borsalino`: Oh, okay, okay…
+    `borsalino` goes back to glancing at the newspaper while you work.
+    => route1_more_work
+- Don’t we know more than what stands there? (+)
+    `borsalino`: We do…
+    `borsalino`: But what, exactly, are they *not* saying…? That’s the interesting part…
+    - Say nothing, keep working. => route1_more_work
+    - That's the way it is.
+        `borsalino`: Hmmm…That's a very interesting thing…
+    - I think that should be forbidden. (+)
+        `borsalino`: I think it’s good to question things…
+    => route4_wg
+- Say nothing, keep working.
+    Not really the idea you had for a date…
+    => route1_more_work
+
+:: route2
+`borsalino`: Grand Line, hmm?
+`borsalino`: You picked the most exciting work, no less…
+- I loved fighting pirates during training! (+)
+        `borsalino`: Oh…
+        `borsalino`: I like action, too…
+        He hums happily.
+        => route2_pirates
+- I don't think it's all that exciting. (-)
+        `borsalino`: Ah… of course not… spending the day in an office is…much more charming… => route1_more_work
+
+:: route2_pirates
+`borsalino`: Shall we take a look at some of these bounty posters…?
+-Pick the Supernovas. (+)
+    `borsalino`: Oh… The most dangerous out of the new generation…
+    `borsalino`: It almost took me ten minutes to beat them…
+    -So much for strong… (+)
+        `borsalino`: They're ~noothing~…  => route2_cute
+    -Why didn't you arrest them? (-)
+        `borsalino`: ~Heey~, I had things to do, mmm? => route2_cute
+-Pick a Warlord of the Sea.
+    `borsalino`: Oh… Yes, there might be updates to be made… Their status and our alliances seem to always be shifting…
+    - Name: I'll do that.
+        `borsalino`: Thank you, Name.
+        => route2_cute
+    - Name: Don't you think it's strange to be allied with pirates? (+)  => route2_vega
+-Pick a Yonko. (+)
+    `borsalino`: Oh, thinking big, hmm…?
+    `borsalino`: As far as I can see, there were no major changes in bounties… but interesting pick… => route2_pirates1
+
+:: route2_pirates1
+`borsalino`: Shall we take a look at some of these bounty posters…?
+- Pick the Supernovas. (+)
+    `borsalino`: Oh… The most dangerous out of the new generation…
+    `borsalino`: It almost took me ten minutes to beat them…
+    -So much for strong… (+)
+        `borsalino`: They're ~noothing~…  => route2_cute
+    -Why didn't you arrest them? (-)
+        `borsalino`: ~Heey~, I had things to do, mmm? => route2_cute
+- Pick a Warlord of the Sea.
+    `borsalino`: Oh… Yes, there might be updates to be made… Their status and our alliances seem to always be shifting…
+    - I'll do that.
+        `borsalino`: Thank you, Name. => route1_more_work
+    - Can I have a closer look? => route2_cute
+    - Don't you think it's strange to be allied with pirates? (+)  => route2_vega
+
+:: route2_cute
+You're taken away by the pictures on the posters. You think of battle and adventure…
+`borsalino`: Aww, the way you're looking at the posters…
+`borsalino`: What, do you have a crush?
+`borsalino`: Don't worry, don't worry… Marines fall in love with the pirates they're chasing all the time…
+- Oh…that means you did too? (+)
+            `borsalino`: ~Heey~, everyone has a past…
+- I think some Marines are cuter.
+            `borsalino` chuckles.
+            `borsalino`: You don't say…
+- Are you crazy? That's forbidden… (-)
+            `borsalino`: Ah, but can you forbid feelings, dear Name…?
+`borsalino`: Hmm…but if it were true, we'd be in for heartbreak…
+`borsalino`: Marines and pirates… not much in common…
+- nothing at all!
+           `borsalino`: Oh… you seem convinced…
+- Depends on the person…   (+)
+           `borsalino`: You remind me of a friend… He would say that, too…
+`borsalino`: Hmm… Well, even among Marines, you need to stay flexible… No one will see things exactly as you do, will they…?
+B looks thoughtful as he goes back to work…
+=> route2_end_work
+
+:: route2_end_work
+You work until your share is done.
+`borsalino`: Oh, it seems like you can go home now… That was very helpful!
+`borsalino`: If you see Sentomaru, will you tell him I am caught up?
+- Okay. (+)
+    `borsalino`: Aww… I'll make it up to you…
+- Nah. (-)
+    `borsalino` shrugs and hums nonchalantly.
+    `borsalino`: Go, then…
+=> End
+
+:: route2_vega
+`borsalino`: That's an interesting question…
+`borsalino`: Why do you think that is…?
+- Because in theory, pirates should solve matters between pirates.
+    `borsalino`: Mm-hm… that is the theory… => route2_vega1
+- Because the World Government is lazy and doesn't care about corruption. (-)
+    `borsalino`: Valiant point… but be careful who you say that to…  => route2_vega1
+- Because the Navy is not strong enough to face the Four Emperors by itself. (+)
+    `borsalino`: Oh… That is sad…
+    `borsalino`: ...but true…
+    => route2_vega2
+
+:: route2_vega1
+B Anyway, let's not talk politics… we don't want to argue, do we…?
+Name: ...
+What a strange conversation.
+The rest of the work takes place in silence. You have the feeling this could have gone better…
+=> End
+
+:: route2_vega2
+`borsalino`: The idea would be… ~indeed~… to replace them eventually…
+- Like the Pacifistas? (+)
+    `borsalino`: Oh, exactly, that… is the idea behind Vegapunk's defense projects…
+    `borsalino`: ~Oh~ did you know?
+    `borsalino`: They were built using my lineage factor…
+    He seems very proud.
+    - Creepy. (-)
+        `borsalino` seems satisfied.
+        `borsalino`: Then… the good Doctor has done his job well… hasn't he? => route2_end_work
+    - That's so ~scaary~… (++)
+        `borsalino`: …
+        => route2_vega_end
+- I don't think that's possible. (-)
+    `borsalino`: Maybe… You need more imagination… => route2_end_work
+- That's interesting.
+    `borsalino`: Hmm… I hear that often…  => route2_vega_end
+
+:: route2_vega_end
+`borsalino`: I didn't know you were interested in these things…
+`borsalino`: If I could… I'd show you his lab sometime…
+Well, you haven't gotten much done, but now you're sure `borsalino` is not that much of an airhead…
+=> End
+
+:: route3
+`borsalino`: …
+`borsalino`: Despite how lovely your company is…
+`borsalino`: I think this is enough karma… getting the best of me for today…
+- Boring… (-)
+    `borsalino` sighs.
+    `borsalino`: Have a nice evening, dear…
+    He's picked you up, dropped you outside the office, and shut the door.
+    => Early_End
+- Last chance to drop work!
+    `borsalino`: Oh… ~soo~ tempting…
+    `borsalino`: We need to get through Sentomaru first…
+    -Name: I'll call him! (+)
+        `borsalino`: Oh… Marvelous… => route3_den_den
+    -Name: Good luck with that!
+        `borsalino`: Oh, you only want to see me suffer…
+        `borsalino`: It will have to be another time…
+        He's picked you up, dropped you outside the office, and shut the door.
+        => Early_End
+
+:: route3_den_den
+You take your transponder snail and call Sentomaru…
+*Bele-bele-bele-bele…*
+S: Huh?! Who is this?!
+- Can `borsalino` come out to play?
+    S: WHAT? Of course not!!!
+    S: Uncle, is that you I hear snickering there?!
+    => End
+- Hey, you big bully, let your uncle out. (-)
+    `borsalino`: (Aww, be nice, `name`… it might not seem like it, but Sentomaru is very sensitive…)
+    S: HEY! I heard that!
+    S: It's bad enough that the Fleet Admiral had to appoint me as your babysitter, uncle!!
+    S: There's gotta be at least one responsible adult here… so NO!
+    *click*
+    `borsalino`: Well, that was mortifying…
+    `borsalino`: Oh well, we *~triied~…*
+    You leave for the evening—well, he kind of brought that on himself…
+    => End
+
+:: route4_wg
+All at once, `borsalino` doesn’t seem all that airheaded and distracted anymore.
+`borsalino`: If I may ask you, `name`… which is more important to you?
+- Ethics. (-)
+    `borsalino`: …I see…
+    `borsalino`: Ah, to see the world with your eyes… => route4_wg_end
+- Freedom. (-)
+    `borsalino`: I was born in the North Blue, not in a country of the Government…
+`borsalino`: Freedom, my dear, can be terrifying. => route4_wg_end
+- Justice. (+) ****
+    `borsalino`: I see…
+    `borsalino`: Well, justice has a price, much like everything…
+    - What do you mean? (+)
+        => route4_wg_best
+    - I agree. => route4_wg_end
+
+:: route4_wg_best
+(**)**
+`borsalino`: If there’s one thing my years have taught me it’s that…
+`borsalino`: To attain what you want… you must sacrifice things…
+`borsalino`: That is the price…
+(pause)
+`borsalino`: *~Maaybe~* I’ll tell you more… some other time.
+=> route4_wg_end
+
+:: route4_wg_end
+After this conversation, you and `borsalino` go back to work, but…
+You feel its weight like damp cold in your bones.
+=> End
+
+:: End
+Doctor
+
+:: Early_End
+BAd doot
