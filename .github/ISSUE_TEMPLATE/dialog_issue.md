@@ -2,7 +2,7 @@
 name: Dialog Issue
 about: When there is a dialog issue for a writer to fix
 title: "[DIALOG]"
-labels: dialog issue
+labels: ["dialog issue", "triage"]
 assignees: 'hamstercheese7'
 ---
 
