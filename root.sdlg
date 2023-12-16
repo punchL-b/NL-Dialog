@@ -10,42 +10,42 @@ Which route do you want?
 - DEBUG => DEBUG
 
 :: Legendary
-=> legendary.workday_1.start
+=> workday.legendary.1.start
 
 :: LegendaryDatesOne
 Who do you want to date?
-- Tsuru => tsuru.date_1.start
-- Rosinante => rosinante.date_1.start
-- Garp => garp.date_1.start
-- Sengoku => sengoku.date_1.start
+- Tsuru => date.tsuru.1.start
+- Rosinante => date.rosinante.1.start
+- Garp => date.garp.1.start
+- Sengoku => date.sengoku.1.start
 
 :: Admirals
 => workday.admirals.1.start
 
 :: AdmiralsDatesOne
 Who do you want to date?
-- Fleet Admiral Sakazuki => sakazuki.date_1.start
-- `kuzan` => kuzan.date_1.start
-- `borsalino` => borsalino.date_1.start
-- Issho => issho.date_1.start
+- Fleet Admiral Sakazuki => date.sakazuki.1.start
+- `kuzan` => date.kuzan.1.start
+- `borsalino` => date.borsalino.1.start
+- Issho => date.issho.1.start
 
 :: SmokersAndFriend
-=> smokers_and_friend.workday_1.start
+=> workday.smokers_and_friend.1.start
 
 :: SmokersAndFriendDatesOne
-- Smoker => smoker.date_1.start
-- bellmere => bellmere.date_1.start
-- Tashigi => tashigi.date_1.start
-- hina => hina.date_1.start
+- Smoker => date.smoker.1.start
+- bellmere => date.bellmere.1.start
+- Tashigi => date.tashigi.1.start
+- hina => date.hina.1.start
 
 :: CobyCrew
-=> coby_crew.workday_1.start
+=> workday.coby_crew.1.start
 
 :: CobyCrewDatesOne
 Who do you want to date?
-- Drake => drake.date_1.start
-- Helmeppo => helmeppo.date_1.start
-- Coby => coby.date_1.start
+- Drake => date.drake.1.start
+- Helmeppo => date.helmeppo.1.start
+- Coby => date.coby.1.start
 
 :: DEBUG
 before routine
