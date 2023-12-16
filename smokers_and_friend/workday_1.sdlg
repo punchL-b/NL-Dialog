@@ -151,10 +151,10 @@ You fire your cannon in a BOOM of the largest water balloon you’ve ever seen, 
 Smoker: Not bad for an early drill, recruits. I saw some quick thinking out there.
 Hina: The purpose of a drill, however, is to learn to follow orders.
 if has_date_unlocked(hina)
-    => hina_1.start
+    => hina.date_1.start
 elif is_greater_than("wd1.smoker", 1)
     TRANSITION TO SMOKER DATE
-    => smoker_1.start
+    => smoker.date_1.start
 else
     You failed to unlock a date
     => root.main
@@ -466,9 +466,9 @@ Belle-mere: Waste time!? Implying you’re going to do more? You're going to pas
 At the end of the day you go to bed thinking over everything that happened between your two superiors. Hopefully, you’ve made the right decisions…
 END WORK DAY
 if has_date_unlocked(bellmere)
-    => bellmere_1.start
+    => bellmere.date_1.start
 elif has_date_unlocked(tashigi)
-    => tashigi_1.start
+    => tashigi.date_1.start
 else
     You failed to unlock a date
     => root.main
