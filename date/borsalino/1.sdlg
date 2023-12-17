@@ -62,7 +62,7 @@ You talk about work until the conversation gets deeper.
 - What is it like working around Issho? (-)
     `borsalino`: ... Issho, mmm?
     `borsalino`: It depends... Ah... He's very principled...
-    `borsalino`: Always smiling... hard to tell what he’s thinking...
+    `borsalino`: Always smiling... hard to tell what he's thinking...
     `borsalino`: <pause>... I find that very comforting. => route4_late
 - What is it like to have your powers? => route1_talking_powers
 - What is your 'Justice' about? => route1_talking_justice
@@ -94,7 +94,7 @@ You almost think he hasn't heard the question, but then...
     `borsalino`: Mmm... I'm afraid I can't teleport you home.
     `borsalino`: I get asked that often...
     `name`: What I actually mean is... It seems like somebody could use our help.
-    On your way, you have seen a small boy crying because his kite is stuck on a tree. It’s so far away!
+    On your way, you have seen a small boy crying because his kite is stuck on a tree. It's so far away!
     - Point it out. => route1_kite
     - Say nothing. => route4_late
 
@@ -117,13 +117,13 @@ You almost think he hasn't heard the question, but then...
 :: route1_best
 It is getting late. Time to go home.
 `borsalino`: It was nice meeting you, `name`.
-`borsalino`: I’ll be glad to see you tomorrow.
+`borsalino`: I'll be glad to see you tomorrow.
 `borsalino`: ~Aah...~ Perhaps next time we can go somewhere quieter...
 
 :: route1_talking_justice
 `borsalino`: Ah... you're curious, aren't you...?
 `borsalino`: ...
-`borsalino`: I prefer to leave work at work, don’t you agree..?
+`borsalino`: I prefer to leave work at work, don't you agree..?
 => route4_bored
 
 :: route2
@@ -158,7 +158,7 @@ do set_background("restaurant", fade)
     - Okay, you win.
         Despite the awkward start, you do walk and chat for a bit.
         => route4_late
-    - I’m staying. => route5_choice
+    - I'm staying. => route5_choice
 - What, you mean you're too fancy for me? (--)
     `borsalino`: ...
     `borsalino`: Too ~*faancy,*~ you say?
@@ -191,7 +191,7 @@ You tell him about where the place you come from, and you both converse about lo
 `borsalino`: Even a little bit romantic, `name`.
 - Oh, don't pull my leg. (+)
     `borsalino`: Help... don't get angry...
-    `borsalino`: I’m sure you’re ~*scaary*~ when you’re angry...
+    `borsalino`: I'm sure you're ~*scaary*~ when you're angry...
     Even though he likes to pick on you, the two of you had a good time together.
     => route2_best
 - I didn't want to spend that much time there. (-)
@@ -240,9 +240,9 @@ Borsalino disappears in a flash of light... that went well, didn't it?
 - I love how you dress! (+)
     `borsalino`: Oh... ~*Thaank*~ you...
     `borsalino`: I think the first impression is important, you see...
-    `borsalino`: ...I would say you understand, don’t you...? => route4_late
+    `borsalino`: ...I would say you understand, don't you...? => route4_late
 - High-end fashion is nothing for me. (-)
-    `borsalino`: Well, you’re not the only one...
+    `borsalino`: Well, you're not the only one...
     `borsalino`: I have had to drag a ~*goood*~ few colleagues around so they would stop showing up in their sweaty hoodies to work...
     `borsalino`: ...which— is not your case, of course... => route5_choice
 
@@ -253,7 +253,7 @@ Borsalino disappears in a flash of light... that went well, didn't it?
     `borsalino`: ...
     `borsalino`: I used to read and study a lot, you see...
     `borsalino`: You could say I lost the habit...
-    - That can't be! Let’s swap favorite books. (+)
+    - That can't be! Let's swap favorite books. (+)
         `borsalino`: That would be ~*loovely,*~ `name`. => route3_best
     - I prefer reading the news. (-)
         `borsalino`: I can understand that...
@@ -275,21 +275,21 @@ Time flies by as you tell Borsalino about the things you have been reading.
 `borsalino`: Are you bored...?
 `borsalino`: Ah, but you have a long day behind you...
 `borsalino`: The next time we meet... we could do something more fun.
-- No thanks, I’m too busy. (-)
-- I’d like to go somewhere loud and more exciting. (+)
+- No thanks, I'm too busy. (-)
+- I'd like to go somewhere loud and more exciting. (+)
 - I think I need some more time to settle.
 `borsalino`: Of course, of course.
 `borsalino`: Well, take care of yourself, `name`. => DateEnds
 
 :: route4_late
-`borsalino`: Ah, it’s getting late...
+`borsalino`: Ah, it's getting late...
 `borsalino`: It was nice to see you.
-`borsalino`: The next time we meet, I’m sure I could take you somewhere more fun.
-- No thanks, I’m too busy. (-)
+`borsalino`: The next time we meet, I'm sure I could take you somewhere more fun.
+- No thanks, I'm too busy. (-)
     `borsalino`: Oh, I see...
     `borsalino`: Well, take care, will you?
     `borsalino`: See you tomorrow. => DateEnds
-- I’d like to go somewhere loud and more exciting. (+)
+- I'd like to go somewhere loud and more exciting. (+)
     `borsalino`: ~*Ooh*~... I don't know if I can keep up with you...
     `borsalino`: Well, until then? See you tomorrow... => DateEnds
 - Sounds like a plan!

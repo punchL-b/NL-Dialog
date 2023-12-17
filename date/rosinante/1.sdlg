@@ -2,71 +2,71 @@
 do set_background("training-grounds", fade)
 do hide_characters(hide)
 
-You walk onto the training grounds and look around to find a suitable spot to start your stretching. It’s been a while since you managed to catch a moment alone to train and you are willing to make every moment count.
+You walk onto the training grounds and look around to find a suitable spot to start your stretching. It's been a while since you managed to catch a moment alone to train and you are willing to make every moment count.
 
 As you look around the area you notice a familiar figure sitting alone on the bleachers with a cigarette between his fingers. It was Rosinante and as you looked at him more closely he seemed to be deep in thought.
 
 do show_character(rosinante, center, show)
-- Approach him and ask what’s on his mind. => Part_1A
+- Approach him and ask what's on his mind. => Part_1A
 - Approach him and start small talk. => Part_1B
-- Maybe he’s busy… It’s probably a good idea to leave him alone. => Part_1C
+- Maybe he's busy… It's probably a good idea to leave him alone. => Part_1C
 
 
 :: Part_1A
 
 `name`: Commander, good afternoon, is everything all right? You seem like you have a lot on your mind.
-Rosinante: `name`! Hello, I didn’t expect to see you here today.
-Rosinante: All is good! I’m just figuring out some last minute details for the mission I’m about to go on later.
-`name`: You’re going on a mission later? But you seem so relaxed.
-`name`: I’m often so nervous the day I have to go on the field.
+Rosinante: `name`! Hello, I didn't expect to see you here today.
+Rosinante: All is good! I'm just figuring out some last minute details for the mission I'm about to go on later.
+`name`: You're going on a mission later? But you seem so relaxed.
+`name`: I'm often so nervous the day I have to go on the field.
 Rosinante: Ah, I remember going through that when I was a recruit.
-Rosinante: After a while you get used to it, you know? It’s just a bit more complicated now since it wasn’t my mission originally. I’m just filling in for Lieutenant Gray.
+Rosinante: After a while you get used to it, you know? It's just a bit more complicated now since it wasn't my mission originally. I'm just filling in for Lieutenant Gray.
 - Oh! Do you need any help? We could figure out a plan together. => Part_2A
 - Are you going by yourself? => Part_2B
-- That sounds like important work. I won’t bother you anymore, Commander. => Part_1C
+- That sounds like important work. I won't bother you anymore, Commander. => Part_1C
 
 :: Part_2A
 
-Rosinante: There’s no need. I’m already in a hurry, I just wanted to figure out some last minute details, but I’ll be good. I always work better while I’m already in action anyway.
+Rosinante: There's no need. I'm already in a hurry, I just wanted to figure out some last minute details, but I'll be good. I always work better while I'm already in action anyway.
 - Are you going by: yourself? => Part_2B
-- That sounds like important work. I won’t bother you anymore, Commander. => Part_1C
+- That sounds like important work. I won't bother you anymore, Commander. => Part_1C
 
 :: Part_2B
 
-Rosinante: Yes, that’s my speciality.
-`name`: Isn’t it difficult? What if something happens to you and you’re all alone?
-Rosinante: That’s something that comes with the job description, isn’t it? Even if you have a partner you can’t always rely on them and expect them to get you out of trouble.
-Rosinante: They’ve got their own part of the mission to worry about. Camaraderie and teamwork are very important in the marines but at the end of the day, for all that to work, each individual needs to do their own part.
+Rosinante: Yes, that's my speciality.
+`name`: Isn't it difficult? What if something happens to you and you're all alone?
+Rosinante: That's something that comes with the job description, isn't it? Even if you have a partner you can't always rely on them and expect them to get you out of trouble.
+Rosinante: They've got their own part of the mission to worry about. Camaraderie and teamwork are very important in the marines but at the end of the day, for all that to work, each individual needs to do their own part.
 
 You never thought about it that way. You knew Rosinante was capable with how praised he often was but it was only now that you could talk to him that you realised how important experience was in this line of work.
 
-`name`: You’re right, I suppose solo missions are unavoidable then. But if it was me, I would still prefer a partner.
-Rosinante: Everyone has their own style. For me, it’s a lot simpler to go alone given my Devil Fruit powers.
-- The Calm-Calm Fruit, right? Could you tell me more about it? I’m not sure how it works. => Part_3A
-- Even if you have your Devil Fruit, I still find it impressive that you can work so efficiently by yourself. It looks like I’ve got a lot to learn. (+1 point) => Part_3B
+`name`: You're right, I suppose solo missions are unavoidable then. But if it was me, I would still prefer a partner.
+Rosinante: Everyone has their own style. For me, it's a lot simpler to go alone given my Devil Fruit powers.
+- The Calm-Calm Fruit, right? Could you tell me more about it? I'm not sure how it works. => Part_3A
+- Even if you have your Devil Fruit, I still find it impressive that you can work so efficiently by yourself. It looks like I've got a lot to learn. (+1 point) => Part_3B
 
 :: Part_3A
 
-Rosinante: Oh! It’s very simple actually. When I snap my fingers &&like this&& I create a bubble around me that can either stop all sound from getting in or the sound I make from getting out. It’s really useful for stealthy missions! I can even do this for other people if I want to.
-Rosinante: Maybe you won’t think it’s all that amazing, *someone* I know certainly doesn’t, but even a weak Devil Fruit can be useful in the right hands.
+Rosinante: Oh! It's very simple actually. When I snap my fingers &&like this&& I create a bubble around me that can either stop all sound from getting in or the sound I make from getting out. It's really useful for stealthy missions! I can even do this for other people if I want to.
+Rosinante: Maybe you won't think it's all that amazing, *someone* I know certainly doesn't, but even a weak Devil Fruit can be useful in the right hands.
 - I completely agree, Commander! Mastering a Devil Fruit is certainly no easy-feat and the one you described sounds really handy in your line of work. (+ 1 Point) => Part_3B
 - Hmm, I have a question. I know it may not seem appropriate given our previous discussion but would it be alright if I tagged along on the mission? I am not so familiar with stealth missions and I wish to learn more. => Part_3C
-- Pff, that’s underwhelming… (- 1 Point) => Part_3D
+- Pff, that's underwhelming… (- 1 Point) => Part_3D
 
 :: Part_3B
 
 Unexpectedly, the Commander seems shy under your praise.
 
-Rosinante: Truly, it’s nothing. It’s not that impressive.
-Rosinante: Hey, why don’t you come along? I think it would be a great opportunity for a recruit to learn new things.
-Rosinante: Tsuru-san speaks highly of you, I’m sure you can handle this.
+Rosinante: Truly, it's nothing. It's not that impressive.
+Rosinante: Hey, why don't you come along? I think it would be a great opportunity for a recruit to learn new things.
+Rosinante: Tsuru-san speaks highly of you, I'm sure you can handle this.
 - Of course! I would never miss an opportunity like this. => Part_4A
-- I’m sorry, Commander, thank you for the offer but I wouldn’t want to drag you down. Maybe after I gather more experience. => Part_1C
+- I'm sorry, Commander, thank you for the offer but I wouldn't want to drag you down. Maybe after I gather more experience. => Part_1C
 
 :: Part_3C
 
 As you had expected, the Commander is surprised by your question. He seems to think about it for a few seconds before giving you a response.
-Rosinante: Sure, I don’t see why not. I’ve heard good things about you, you should be able to handle it. => Part_4A
+Rosinante: Sure, I don't see why not. I've heard good things about you, you should be able to handle it. => Part_4A
 
 :: Part_3D
 
@@ -76,74 +76,74 @@ Rosinante: I better get going. Goodbye, `name`. => DateEnds
 
 :: Part_1C
 
-The commander is busy, so you shouldn’t distract him with making conversation anymore. You say goodbye and return to your training.
+The commander is busy, so you shouldn't distract him with making conversation anymore. You say goodbye and return to your training.
 => DateEnds
 
 
 :: Part_1B
 
 `name`: Good afternoon, Commander.
-Rosinante: `name`! Hello. I didn’t expect to see you here today.
-`name`: Yes… I’ve caught a window of free time and I decided to come train alone.
-`name`: I enjoy it a lot more than training with the group, it’s more relaxing.
+Rosinante: `name`! Hello. I didn't expect to see you here today.
+`name`: Yes… I've caught a window of free time and I decided to come train alone.
+`name`: I enjoy it a lot more than training with the group, it's more relaxing.
 
 You lean in closer and put a hand near your mouth to hide your next words from any on-lookers.
 
-`name`: Although, don’t tell Tsuru-san I’ve got free time, she’ll put me to work right away.
+`name`: Although, don't tell Tsuru-san I've got free time, she'll put me to work right away.
 Rosinante: Tsuru-san is great, but I agree she works so much.
-`name`: That’s the way she got to her position. It would have been impossible without working as hard as she does. I respect it, but I still need time for myself.
+`name`: That's the way she got to her position. It would have been impossible without working as hard as she does. I respect it, but I still need time for myself.
 Rosinante: Of course, we all need a break once in a while.
-- Are you taking a break, too? Is that why you’re on the training grounds? => Part_5A
-- With weather like this, who wouldn’t want to take a break from work? => Part_5B
-- Exactly, but are you having a break right now as well, Commander? Won’t you get in trouble if you just sit here and do nothing? => Part_5C
+- Are you taking a break, too? Is that why you're on the training grounds? => Part_5A
+- With weather like this, who wouldn't want to take a break from work? => Part_5B
+- Exactly, but are you having a break right now as well, Commander? Won't you get in trouble if you just sit here and do nothing? => Part_5C
 
 
 
 :: Part_5A
 
-Rosinante: Ah, no. I wish I was taking a break. I’m just trying to figure out some last minute details for the mission I’m about to go on today. As for why I’m here, it’s the only place I can smoke in peace without getting interrupted.
-`name`: You’re going on a mission? But you seem so relaxed.
-`name`: I’m often so nervous the day I have to go on the field.
+Rosinante: Ah, no. I wish I was taking a break. I'm just trying to figure out some last minute details for the mission I'm about to go on today. As for why I'm here, it's the only place I can smoke in peace without getting interrupted.
+`name`: You're going on a mission? But you seem so relaxed.
+`name`: I'm often so nervous the day I have to go on the field.
 Rosinante: Ah, I remember going through that when I was a recruit.
-Rosinante: After a while you get used to it, you know? It’s just a bit more complicated now since it wasn’t my mission originally. I’m just filling in for Lieutenant Gray.
+Rosinante: After a while you get used to it, you know? It's just a bit more complicated now since it wasn't my mission originally. I'm just filling in for Lieutenant Gray.
 - Oh! Do you need any help? We could figure out a plan together. => Part_2A
 - Are you going by yourself? => Part_2B
-- That sounds like important work. I won’t bother you anymore, Commander. => Part_1C
+- That sounds like important work. I won't bother you anymore, Commander. => Part_1C
 
 :: Part_5B
 
-Rosinante: Really? Isn’t it too hot, though?
-`name`: For me it’s perfect.
+Rosinante: Really? Isn't it too hot, though?
+`name`: For me it's perfect.
 `name`: If I may ask, where are you from, Commander?
 Rosinante: Ah…
-Rosinante: Let’s just say I grew up in North Blue.
-`name`: Then it makes sense! You prefer colder weather, right? I’m from the South so I prefer warmer weather.
-Rosinante: I’ve never thought about it like that, but you’re right it makes sense.
-Rosinante: Wasn’t it hard for you to leave your island and move here? I’ve noticed a lot of recruits tend to be homesick during their first months.
-`name`: I can’t say I don’t miss it but it’s been a while since I left and I got used to it.
+Rosinante: Let's just say I grew up in North Blue.
+`name`: Then it makes sense! You prefer colder weather, right? I'm from the South so I prefer warmer weather.
+Rosinante: I've never thought about it like that, but you're right it makes sense.
+Rosinante: Wasn't it hard for you to leave your island and move here? I've noticed a lot of recruits tend to be homesick during their first months.
+`name`: I can't say I don't miss it but it's been a while since I left and I got used to it.
 `name`: I still have to get used to how rowdy marine settlements are, back at home I lived on a small island and it was so much quieter.
-Rosinante: Heh, you’re right. It’s hard to find a quiet place around here. That’s the reason why I’m on the training grounds outside of schedule, too.
-Rosinante: But one thing I can tell you, it’s also quite hard to get lonely, as well. You’ll be fine here.
+Rosinante: Heh, you're right. It's hard to find a quiet place around here. That's the reason why I'm on the training grounds outside of schedule, too.
+Rosinante: But one thing I can tell you, it's also quite hard to get lonely, as well. You'll be fine here.
 Rosinante smiles warmly before gasping softly and facepalming. The action surprises you and you take a step back.
 `name`: Is everything alright, Commander?
-Rosinante: I can’t just be sitting here and chatting, I’ve got a mission to go on.
+Rosinante: I can't just be sitting here and chatting, I've got a mission to go on.
 `name`: A mission? Right now?
 Rosinante: Not right now. But very soon, I need to get ready.
 - Are you going by yourself? => Part_2B
-- That sounds like important work. I won’t bother you anymore, Commander. => Part_1C
+- That sounds like important work. I won't bother you anymore, Commander. => Part_1C
 
 :: Part_5C
-Rosinante: I’m not taking a break, but even if I was there is hardly anyone around here to get me in trouble.
-Rosinante: Although, if I’m not careful around Tsuru-san I wouldn’t put it past her making me sweep the floors as if I was a recruit again.
-`name`: If you’re not taking a break, then what are you doing?
-Rosinante: I’m thinking! The training grounds are quiet at this hour.  I’m just trying to figure out some last minute details for the mission I’m about to go on today.
-`name`: You’re going on a mission? But you seem so relaxed.
-`name`: I’m often so nervous the day I have to go on the field.
+Rosinante: I'm not taking a break, but even if I was there is hardly anyone around here to get me in trouble.
+Rosinante: Although, if I'm not careful around Tsuru-san I wouldn't put it past her making me sweep the floors as if I was a recruit again.
+`name`: If you're not taking a break, then what are you doing?
+Rosinante: I'm thinking! The training grounds are quiet at this hour.  I'm just trying to figure out some last minute details for the mission I'm about to go on today.
+`name`: You're going on a mission? But you seem so relaxed.
+`name`: I'm often so nervous the day I have to go on the field.
 Rosinante: Ah, I remember going through that when I was a recruit.
-Rosinante: After a while you get used to it, you know? It’s just a bit more complicated now since it wasn’t my mission originally. I’m just filling in for Lieutenant Gray.
+Rosinante: After a while you get used to it, you know? It's just a bit more complicated now since it wasn't my mission originally. I'm just filling in for Lieutenant Gray.
 - Oh! Do you need any help? We could figure out a plan together. => Part_2A
 - Are you going by yourself? => Part_2B
-- That sounds like important work. I won’t bother you anymore, Commander. => Part_1C
+- That sounds like important work. I won't bother you anymore, Commander. => Part_1C
 
 
 :: Part_4A
@@ -154,61 +154,61 @@ You and Rosinante climb on the enemy ship hidden away in an unused area of the p
 
 do show_character(rosinante, center, show)
 
-Rosinante: Alright, `name`, now that we’re here I’ll tell you the plan.
+Rosinante: Alright, `name`, now that we're here I'll tell you the plan.
 Rosinante: Our purpose is to find some stolen Marine information. These mercenaries were hired to find *something* in the base and unfortunately they were successful. We need to figure out exactly what type of information was stolen, get it back and more importantly who hired these people
 `name`: That seems simple enough.
 Rosinante: Are you ready?
-- I’m sorry, Commander, but I feel nervous about this. => Part_6A
-- Let’s do this! => Part_6B
+- I'm sorry, Commander, but I feel nervous about this. => Part_6A
+- Let's do this! => Part_6B
 - What is the plan? => Part_6B
 
 :: Part_6A
 
-Rosinante: That’s alright. Listen, I can’t promise everything will go smoothly, but I know you are capable. If you follow the plan everything should be fine.
-Rosinante: Plus, I’m here with you. I promise to protect you no matter what happens.
-- You’re right! I don’t know what I was afraid of. I’m ready. => Part_6B
-- I trust you, Commander. But what if I mess up? This is embarrassing to admit but I don’t want to be all alone. => Part_6C
-- I’m sorry, Commander, that doesn’t help me at all! I should have never come along. => Part_6D
+Rosinante: That's alright. Listen, I can't promise everything will go smoothly, but I know you are capable. If you follow the plan everything should be fine.
+Rosinante: Plus, I'm here with you. I promise to protect you no matter what happens.
+- You're right! I don't know what I was afraid of. I'm ready. => Part_6B
+- I trust you, Commander. But what if I mess up? This is embarrassing to admit but I don't want to be all alone. => Part_6C
+- I'm sorry, Commander, that doesn't help me at all! I should have never come along. => Part_6D
 
 :: Part_6B
 Rosinante: I love your enthusiasm!
-Rosinante: Alright, here is the plan. First, you go towards the Captain’s quarters and find the stolen information while I figure out who they want to sell it to.
-Rosinante: Be careful not to be seen. If you find any enemies it’s better that you continue towards your destination without getting distracted.
-Rosinante: I’ll set a time limit of ten minutes and we’ll both whistle once the time is up. We meet up back on deck soon after. If one of us doesn’t respond to the whistle we have to assume the other person got captured and we continue on with the mission.
-- Understood! Let’s do it. => Part_7B
+Rosinante: Alright, here is the plan. First, you go towards the Captain's quarters and find the stolen information while I figure out who they want to sell it to.
+Rosinante: Be careful not to be seen. If you find any enemies it's better that you continue towards your destination without getting distracted.
+Rosinante: I'll set a time limit of ten minutes and we'll both whistle once the time is up. We meet up back on deck soon after. If one of us doesn't respond to the whistle we have to assume the other person got captured and we continue on with the mission.
+- Understood! Let's do it. => Part_7B
 - I have a better plan! => Part_7C
-- Isn’t it dangerous to split up? I hate to admit this, but I don’t want to by myself. => Part_6C
+- Isn't it dangerous to split up? I hate to admit this, but I don't want to by myself. => Part_6C
 
 
 :: Part_6C
 
-Rosinante: Alright! You won’t have to go alone.
-Rosinante: I meant for us to split up, but it’s fine if you don’t want to do that.
-Rosinante: It’s your first mission like this, I should have thought about it before, it’s my bad.
-`name`: No, no, Commander. It’s my own fault for not being capable enough.
-Rosinante: None of that! You’re still learning, it’s alright to have fears, you know?
+Rosinante: Alright! You won't have to go alone.
+Rosinante: I meant for us to split up, but it's fine if you don't want to do that.
+Rosinante: It's your first mission like this, I should have thought about it before, it's my bad.
+`name`: No, no, Commander. It's my own fault for not being capable enough.
+Rosinante: None of that! You're still learning, it's alright to have fears, you know?
 Rosinante: How else would you overcome them?
-Rosinante smiles and your chest is filled with warmth. You realise you’re so lucky to have someone like him to guide you on this mission.
-Rosinante: Now, here is the plan. We sneak off together towards the Captain’s quarters. The information must be there. Once we are done we will figure out who they want to sell it too.
-Rosinante: I’ll focus on the information and you keep an eye out for any enemies.
+Rosinante smiles and your chest is filled with warmth. You realise you're so lucky to have someone like him to guide you on this mission.
+Rosinante: Now, here is the plan. We sneak off together towards the Captain's quarters. The information must be there. Once we are done we will figure out who they want to sell it too.
+Rosinante: I'll focus on the information and you keep an eye out for any enemies.
 `name`: Understood! => Part_7A
 
 :: Part_6D
 Rosinante: That's alright...
-Rosinante: You still have enough time to learn. The mission didn’t start, you can leave if that’s what you want.
-`name`: I’m sorry to disappoint you, Commander.
-Rosinante: You still have enough time to learn. Get stronger and next time I’ll take you on another mission!
+Rosinante: You still have enough time to learn. The mission didn't start, you can leave if that's what you want.
+`name`: I'm sorry to disappoint you, Commander.
+Rosinante: You still have enough time to learn. Get stronger and next time I'll take you on another mission!
 `name`: I appreciate that, thank you. I will do better next time.
 You quietly sneak off the ship and return back to the marine base.
 => DateEnds
 
 :: Part_7C
 
-`name`: I think one of us should act as a distraction, while the other finds the information. This way the person going after the information surely won’t run into any enemies.
+`name`: I think one of us should act as a distraction, while the other finds the information. This way the person going after the information surely won't run into any enemies.
 Rosinante: I see your point, but this defeats the whole purpose of a stealth mission.
-Rosinante: Don’t forget, we have two objectives here. We need to find who needs this information as well, don’t forget that.
-Rosinante: I think it’s better we stick to my plan for now.
-Rosinante: Next time, I’ll let you figure out the plan.
+Rosinante: Don't forget, we have two objectives here. We need to find who needs this information as well, don't forget that.
+Rosinante: I think it's better we stick to my plan for now.
+Rosinante: Next time, I'll let you figure out the plan.
 
 Rosinante has an encouraging smile on his face but you feel embarrassed for being refused like this. Avoiding his gaze, you nod.
 
@@ -217,17 +217,17 @@ Rosinante has an encouraging smile on his face but you feel embarrassed for bein
 
 
 :: Part_7A
-Rosinante: I will create a Calm bubble on myself. As long as you don’t leave my side your movement’s won’t be heard either.
+Rosinante: I will create a Calm bubble on myself. As long as you don't leave my side your movement's won't be heard either.
 `name`: Understood.
 
 You and Rosinante sneak below deck. The two of you look around for a bit until you suddenly hear some voices and you stop in your tracks.
 Unnamed mercenary 1: So, did the boss tell you anything?
-Unnamed mercenary 2: Nothing of importance but I did hear something from Matthew. Come a bit closer I don’t want to get in trouble for this…
-`name`: Commander, I think we can make out whatever they’re saying if we approach their area.
+Unnamed mercenary 2: Nothing of importance but I did hear something from Matthew. Come a bit closer I don't want to get in trouble for this…
+`name`: Commander, I think we can make out whatever they're saying if we approach their area.
 Rosinante: Good idea.
 You approach when suddenly you notice someone sneaking up behind you.
 - You are too afraid to act. (-1 point) => Part_9A
-- Leave Rosinante’s side and attack the enemy. => Part_9B
+- Leave Rosinante's side and attack the enemy. => Part_9B
 - Tell Rosinante. (+1 point) => Part_9C
 
 :: Part_9A
@@ -239,16 +239,16 @@ Without any time to react, you fall to the ground and pass out.
 
 :: Part_9B
 
-The voices get louder as the enemy approaches. He didn’t realise you had noticed him.
+The voices get louder as the enemy approaches. He didn't realise you had noticed him.
 
 Unnamed mercenary 1: Really? That clown?
-Unnamed mercenary 2: Not so loud! I don’t want the boss to hear that I told you.
-Unnamed mercenary 1: The boss isn’t even here, he won’t know. But are you serious, is it really Buggy the Clown? What does he even want wi-
+Unnamed mercenary 2: Not so loud! I don't want the boss to hear that I told you.
+Unnamed mercenary 1: The boss isn't even here, he won't know. But are you serious, is it really Buggy the Clown? What does he even want wi-
 
 They get interrupted by a loud sound. It is you tackling the attacker to the ground. You manage to knock him out, only belatedly realising you had made so much noise.
 Rosinante: Run!
 
-The two of you dash through the empty ship until you find the Captain’s quarters.
+The two of you dash through the empty ship until you find the Captain's quarters.
 Rosinante: Find the information!
 Rosinante locks the door behind him while you begin rummaging through the drawers. The enemies soon find you and begin violently hitting the door in order to break it down.
 `name`: Found it!
@@ -257,25 +257,25 @@ You snatch the notebook with the information on the new marine recruits and Rosi
 
 :: Part_9C
 `name`: Commander, there is an enemy behind us.
-Rosinante nods without showing any reaction. The attacker approaches and you feel anxious with every passing moment that Rosinante doesn’t do anything. You consider attacking but before you can do it, Rosinante turns around sharply and grabs the enemy into a chokehold. Soon, he passes out.
+Rosinante nods without showing any reaction. The attacker approaches and you feel anxious with every passing moment that Rosinante doesn't do anything. You consider attacking but before you can do it, Rosinante turns around sharply and grabs the enemy into a chokehold. Soon, he passes out.
 Rosinante: Good eye, `name`.
 
 The two of you keep walking until you are close enough to hear the voices.
 
 Unnamed mercenary 1: Really? That clown?
-Unnamed mercenary 2: Not so loud! I don’t want the boss to hear that I told you.
-Unnamed mercenary 1: The boss isn’t even here, he won’t know. But are you serious, is it really Buggy the Clown? What does he even want with this info?
-Unnamed mercenary 2: Who knows… But be quiet about this. If I found you told someone, I’ll beat you up.
-Unnamed mercenary 1: I’m sure that’s what Mathew told you as well, hahahaha!
+Unnamed mercenary 2: Not so loud! I don't want the boss to hear that I told you.
+Unnamed mercenary 1: The boss isn't even here, he won't know. But are you serious, is it really Buggy the Clown? What does he even want with this info?
+Unnamed mercenary 2: Who knows… But be quiet about this. If I found you told someone, I'll beat you up.
+Unnamed mercenary 1: I'm sure that's what Mathew told you as well, hahahaha!
 
-You and Rosinante move away from the mercenaries as you have heard what you needed to hear and continue towards the Captain’s quarters.
+You and Rosinante move away from the mercenaries as you have heard what you needed to hear and continue towards the Captain's quarters.
 `name`: Buggy the Warlord?
-Rosinante: I guess so. I don’t know another Buggy the Clown.
+Rosinante: I guess so. I don't know another Buggy the Clown.
 `name`: Why would he want to steal information from the marines? Is he planning something?
-Leisurely, the two of you enter the Captain’s quarters and begin rummaging through the drawers.
+Leisurely, the two of you enter the Captain's quarters and begin rummaging through the drawers.
 Rosinante: Maybe. Or maybe he wants to sell it to others.
-Rosinante: He’s got a lot of businesses going on right now.
-`name`: I’m not sure which option is scarier…
+Rosinante: He's got a lot of businesses going on right now.
+`name`: I'm not sure which option is scarier…
 `name`: Found it!
 You pick up the notebook with the information on the new marine recruits and Rosinante nods. The two of you leave the ship, careful to not be noticed.
 => Part_8E
@@ -284,22 +284,22 @@ You pick up the notebook with the information on the new marine recruits and Ros
 :: Part_7B
 
 Rosinante uses his Devil Fruit powers on you and you two split up.
-Rosinante: Good luck! Don’t forget to whistle.
+Rosinante: Good luck! Don't forget to whistle.
 
 do hide_characters(hide)
 
 You walk on the lower decks keeping your eyes trained for any movement around you.
-`name`: Okay, `name`, you can’t mess this up.
-`name`: Captain’s quarters… Captain’s quarters…
+`name`: Okay, `name`, you can't mess this up.
+`name`: Captain's quarters… Captain's quarters…
 
-You look around for a bit until you suddenly hear some voices and you stop in your tracks. They’re faint but you think you can make out whatever they’re saying if you approach the area they are lounging in.
+You look around for a bit until you suddenly hear some voices and you stop in your tracks. They're faint but you think you can make out whatever they're saying if you approach the area they are lounging in.
 Unnamed mercenary 1: So, did the boss tell you anything?
-Unnamed mercenary 2: Nothing of importance but I did hear something from Matthew. Come a bit closer I don’t want to get in trouble for this…
+Unnamed mercenary 2: Nothing of importance but I did hear something from Matthew. Come a bit closer I don't want to get in trouble for this…
 
-They continue to speak in lower voices that you can’t hear from your current position.
+They continue to speak in lower voices that you can't hear from your current position.
 `name`: Ugh, what should I do? I only have ten minutes to find the information…
 - What if they say something important? Maybe I should stay and listen. (-1 point) => Part_8A
-- I wonder if what they’re saying is important enough… The Commander did say I should avoid enemies… => Part_8B
+- I wonder if what they're saying is important enough… The Commander did say I should avoid enemies… => Part_8B
 - Forget it! I need to find the information. (+1 point) => Part_8C
 
 :: Part_8A
@@ -307,23 +307,23 @@ They continue to speak in lower voices that you can’t hear from your current p
 You approach them carefully in order to remain out of sight.
 
 Unnamed mercenary 1: Really? That clown?
-Unnamed mercenary 2: Not so loud! I don’t want the boss to hear that I told you.
-Unnamed mercenary 1: The boss isn’t even here, he won’t know. But are you serious, is it really Bu-
+Unnamed mercenary 2: Not so loud! I don't want the boss to hear that I told you.
+Unnamed mercenary 1: The boss isn't even here, he won't know. But are you serious, is it really Bu-
 
 Suddenly, you feel striking pain at the back of your head. Without any time to react, you fall to the ground and pass out.
 => Part_8D
 
 :: Part_8B
 
-You can’t believe you wasted so much time already. You hurry on through the lower decks until you find the Captain’s quarters. You were relieved to see no one was guarding it.
-`name`: Finally! I’m almost out of time.
+You can't believe you wasted so much time already. You hurry on through the lower decks until you find the Captain's quarters. You were relieved to see no one was guarding it.
+`name`: Finally! I'm almost out of time.
 You rummage through the drawers, keeping your focus on the door to make sure no one will come in. Suddenly, you hear a whistle above you.
 `name`: Oh, no. The commander is done, I have to hurry.
-After a couple more minutes of searching you find a notebook and looking through it, you realise it’s information on the new marine recruits. You snatch it and whistle while running past the door.
+After a couple more minutes of searching you find a notebook and looking through it, you realise it's information on the new marine recruits. You snatch it and whistle while running past the door.
 
 do show_character(rosinante, center, show)
 
-`name`: I’m here, Commander!
+`name`: I'm here, Commander!
 Rosinante: Good. You were late, but you did good.
 `name`: Did you find out who orchestrated this?
 Rosinante: Yes, it's Buggy the Clown.
@@ -333,16 +333,16 @@ Rosinante: I don't know, but I think we better get out of here before we get cau
 
 :: Part_8C
 
-You hurry on through the lower decks until you find the Captain’s quarters. You were relieved to see no one was guarding it.
+You hurry on through the lower decks until you find the Captain's quarters. You were relieved to see no one was guarding it.
 `name`: Now… If I was stolen information where would I hide.
 You rummage through the drawers, keeping your focus on the door to make sure no one will come in.
-After a couple more minutes of searching you find a notebook and looking through it, you realise it’s information on the new marine recruits. You snatch it and whistle while running past the door.
+After a couple more minutes of searching you find a notebook and looking through it, you realise it's information on the new marine recruits. You snatch it and whistle while running past the door.
 Above you, another whistle mirrors your own.
 `name`: Heh, right on time.
 
 do show_character(rosinante, center, show)
 
-`name`: I’m here, Commander!
+`name`: I'm here, Commander!
 Rosinante: You are! Good job.
 `name`: Did you find out who orchestrated this?
 Rosinante: Yes, it's Buggy the Clown.
@@ -354,14 +354,14 @@ Rosinante: I don't know, but I think we better get out of here before we get cau
 
 do set_background("office", fade)
 
-You wake up tired. You’re not sure where you are and your head hurts really bad.
+You wake up tired. You're not sure where you are and your head hurts really bad.
 Rosinante: `name`, you are awake!
 `name`: Commander? What happened?
-Rosinante: Ah, it’s alright I finished the mission! I found all the needed information, although I couldn’t avoid combat.
-`name`: Oh no! I am terribly sorry, Commander. I didn’t listen to your advice and I got captured.
-Rosinante: It’s alright. Maybe I put too much on your shoulder.
+Rosinante: Ah, it's alright I finished the mission! I found all the needed information, although I couldn't avoid combat.
+`name`: Oh no! I am terribly sorry, Commander. I didn't listen to your advice and I got captured.
+Rosinante: It's alright. Maybe I put too much on your shoulder.
 Rosinante: Although, next time, it would be good if you were more careful
-`name`: Yes, Commander! I’m sorry. This won’t happen again!
+`name`: Yes, Commander! I'm sorry. This won't happen again!
 Rosinante smiles and gets up from your bedside.
 Rosinante: Alright, I got a report to write. Rest well! Hope to see you soon. => DateEnds
 
@@ -371,9 +371,9 @@ do set_background("training-grounds", fade)
 Rosinante: `name`, you did well!
 Rosinante looks over the notebook and smiles. You feel accomplished.
 Rosinante: I will give the report to Tsuru-san, as well as praise for your efforts.
-Rosinante: I’m sure you will be appreciated for your work today.
-`name`: It’s nothing, Commander. I just followed your lead.
-Rosinante: Don’t be so humble! You worked hard.
+Rosinante: I'm sure you will be appreciated for your work today.
+`name`: It's nothing, Commander. I just followed your lead.
+Rosinante: Don't be so humble! You worked hard.
 Rosinante: Goodbye for now, hope we see each other soon. => DateEnds
 
 

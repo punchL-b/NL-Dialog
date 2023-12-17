@@ -2,7 +2,7 @@
 do set_background("park", show)
 It is the start of another workday. You decide to get to HQ early.
 On the way there, you check your notes for today.
-`name`: Tsuru’s subordinates on duty today are…
+`name`: Tsuru's subordinates on duty today are…
 `name`: Captain Mei for reconnaissance… Ensign Malina… for guarding duty…
 do show_character(tsuru, center, show)
 You notice that Lady Tsuru is already there. Is she meditating?
@@ -33,7 +33,7 @@ Tsuru: Especially nowadays.
 
 :: route1_interruption
 Before you are able to say anything, you hear the sound of boots storming toward the garden.
-It's two of Tsuru’s subordinates.
+It's two of Tsuru's subordinates.
 do show_character(placeholder("Marine1"), left, show)
 do show_character(placeholder("Marine2"), right, show)
 Marine1: Lady Tsuru! `name`!
@@ -123,7 +123,7 @@ Tsuru: It's what you expected? What does that mean, `name`?
 => route1_alt_interruption
 
 :: route1_alt_interruption
-It's two of Tsuru’s subordinates.
+It's two of Tsuru's subordinates.
 Marine1: Lady Tsuru! `name`!
 Marine2: Sorry for the interruption, ma'am, but we have a problem!
 Tsuru: Let's see if you can help them, `name`.

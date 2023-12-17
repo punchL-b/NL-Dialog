@@ -3,14 +3,14 @@ if has_romance_points(borsalino, 2)
     Didn't `borsalino` say you could do something else together soon?
     Speaking of the devil...
 else
-    It’s nearing the end of a working day, on the training grounds…
+    It's nearing the end of a working day, on the training grounds…
 `borsalino`: Oh, ~*helloo*~, `name`…
-`borsalino`: What a fun day today, wasn’t it…?
+`borsalino`: What a fun day today, wasn't it…?
 - `name`: Have you forgotten about me?! [if has_romance_points(borsalino, 2)]
     do increment("bd2.points")
     do increment("bd2.points")
     `borsalino`: Oh my…
-    `borsalino`: You’re cute when you’re angry…
+    `borsalino`: You're cute when you're angry…
     `borsalino`: Of ~coourse~ not `name`.
 - Are you free today?
     do increment("bd2.points")
@@ -18,25 +18,25 @@ else
 - I thought it was stressful… (-)
     do decrement("bd2.points")
     `borsalino`: Oh, you *poor thing…*
-    `borsalino`: I’d love to help you decompress, I really ~*woould…*~
+    `borsalino`: I'd love to help you decompress, I really ~*woould…*~
 `borsalino`: *But…*
-`borsalino`: My cute little nephew, ~*Sentomaaru*~, won’t leave me alone…
-`borsalino`: I’m being inefficient, he says… And I need to catch up with work…
+`borsalino`: My cute little nephew, ~*Sentomaaru*~, won't leave me alone…
+`borsalino`: I'm being inefficient, he says… And I need to catch up with work…
 - Oh, poor you… Should I help you?
     `borsalino`: Oh… Please, no, enjoy your afternoon off…
     `name`: Oka-
     `borsalino`: Well… *actually*...
     `borsalino`: Would you really do that for me…? => branching_out
-- That’s too bad… But it’s your own fault. (-)
-    `borsalino`: You don’t need to remind me…
+- That's too bad… But it's your own fault. (-)
+    `borsalino`: You don't need to remind me…
     `borsalino`: ~Weell~, if it were two of us at work, it would take half the time…
-    - I’ll stick around.
+    - I'll stick around.
         `borsalino`: Oh, lovely… => branching_out
     - No way, I have plans! (-)
         `borsalino`: ~Weell~, see you another day, *then*...
         `borsalino`: Hopefully somewhere else… => Early_End
 - I can help you—but not for nothing! (+)
-    `borsalino`: Oh… I’ll need to make it up to you, won’t I…?
+    `borsalino`: Oh… I'll need to make it up to you, won't I…?
     `borsalino`: ~Okaay…~ => branching_out
 
 :: branching_out
@@ -44,10 +44,10 @@ You walk along Borsalino to his office.
 Worn and lived-in, full of interesting little trinkets and neatly stacked books…
 But the desk is a mess!
 `borsalino`: Shall we have coffee first…?
-- No coffee. Let’s get to work. (-)
+- No coffee. Let's get to work. (-)
     `borsalino`: …
     `borsalino` disappears in a flash of light and reappears with a coffee.
-- I’m *only* here to drink coffee and watch you work. (+)
+- I'm *only* here to drink coffee and watch you work. (+)
     `borsalino`: ...karma is catching up…
 - Sure!
     `borsalino`: Oh, lovely…
@@ -74,41 +74,41 @@ B lays back on his chair, arms comfortable behind his head…
 You look at the mess. At least, the stacks and stacks of documents are somewhat divided by theme.
 HQ operations… Grand Line strategy… Celestial Dragons.
 `borsalino`: And how do ~yoou~ suggest we start?
-- I’ll take over one third of the work.
-    `borsalino`: Oh… would you prefer… let’s see…
+- I'll take over one third of the work.
+    `borsalino`: Oh… would you prefer… let's see…
     - Internal operations of HQ => route1
     - Grand Line Strategy => route2
     - Celestial Dragons
         `borsalino`: Oh, really…?
         `borsalino`: Better pick something else… (option disappears)
-    - Your pick! Let’s just get it done! (-) => route1
+    - Your pick! Let's just get it done! (-) => route1
 - This is too much for me… => route3
 
 :: route1
-`borsalino`: ~Okaay~… Why don’t you take over these HQ operations…?
+`borsalino`: ~Okaay~… Why don't you take over these HQ operations…?
 - This is supposed to be your signature and stamp on it.
-    `borsalino`: Oh, it’s true… I’m sorry…
-    `borsalino`: It would all be much faster if I teach you how to sign in my name, wouldn’t ~iit~?
+    `borsalino`: Oh, it's true… I'm sorry…
+    `borsalino`: It would all be much faster if I teach you how to sign in my name, wouldn't ~iit~?
     - Sure! (+)
-        `borsalino`: Oh, that’s what I call helping! => route1_takeover
+        `borsalino`: Oh, that's what I call helping! => route1_takeover
     - Are you insane?! (-)
         `borsalino`: Calm down… it was a joke…
         `borsalino`: …mostly… => route1_more_work
 - Of course! => route1_takeover
-- I’d rather take a look at the Grand Line documents! (-)
+- I'd rather take a look at the Grand Line documents! (-)
     `borsalino`: Very well… we'll change again…
     => route2_pirates
 
 :: route1_takeover
 You two work together in silence, taking alternate swigs of coffee.
 `name`: Finished!
-`borsalino`: Oh, that’s marvelous… You’re almost as fast as me…
+`borsalino`: Oh, that's marvelous… You're almost as fast as me…
 `borsalino`: Would you like to take over half of the Grand Line work for me?
 - Sure, if it means we will be done sooner…
     `borsalino`: Of course, of course… => route1_end_early
 - Um, no. (+)
-    `name`: I’ll go refill the coffee while you’re done…
-    `borsalino`: Aww, I’m not fooling you, am I…?
+    `name`: I'll go refill the coffee while you're done…
+    `borsalino`: Aww, I'm not fooling you, am I…?
     `borsalino`: *~Okaay~*… => route1_newspaper
 
 :: route1_more_work
@@ -126,20 +126,20 @@ After some time working. You are done with your share… `borsalino` is not even
 
 :: route1_end_early
 You put all your effort into finishing your assignments as soon as possible.
-`borsalino`: You’re doing good, `name`…!
-`borsalino`: Oh, if you’re almost there with your share… Would you mind taking a look at these budgets…?
+`borsalino`: You're doing good, `name`…!
+`borsalino`: Oh, if you're almost there with your share… Would you mind taking a look at these budgets…?
 - Hey, this is a bit too much.
-    `borsalino`: Aw, don’t worry… You’ll be done in no time, at your speed, *~riight~?*
+    `borsalino`: Aw, don't worry… You'll be done in no time, at your speed, *~riight~?*
 - I guess?
     `borsalino`: Good, good…
-He’s getting his jacket and hat and *leaving?!*
-`borsalino`: You’re lovely for taking over, truly.
+He's getting his jacket and hat and *leaving?!*
+`borsalino`: You're lovely for taking over, truly.
 Borsalino disappears in a flash of light.
-Wait… That’s so unfair!
+Wait… That's so unfair!
 => End
 
 :: route1_newspaper
-While you continue to work, it seems like he’s eyeing the newspaper…
+While you continue to work, it seems like he's eyeing the newspaper…
 `borsalino`: Being up-to-date is very important for strategy, you see…?
 `borsalino`: This is what the Government wants the public to see…
 - How about we focus? (-)
@@ -147,14 +147,14 @@ While you continue to work, it seems like he’s eyeing the newspaper…
     `borsalino`: Oh, okay, okay…
     `borsalino` goes back to glancing at the newspaper while you work.
     => route1_more_work
-- Don’t we know more than what stands there? (+)
+- Don't we know more than what stands there? (+)
     `borsalino`: We do…
-    `borsalino`: But what, exactly, are they *not* saying…? That’s the interesting part…
+    `borsalino`: But what, exactly, are they *not* saying…? That's the interesting part…
     - Say nothing, keep working. => route1_more_work
     - That's the way it is.
         `borsalino`: Hmmm…That's a very interesting thing…
     - I think that should be forbidden. (+)
-        `borsalino`: I think it’s good to question things…
+        `borsalino`: I think it's good to question things…
     => route4_wg
 - Say nothing, keep working.
     Not really the idea you had for a date…
@@ -322,7 +322,7 @@ S: Huh?! Who is this?!
     => End
 
 :: route4_wg
-All at once, `borsalino` doesn’t seem all that airheaded and distracted anymore.
+All at once, `borsalino` doesn't seem all that airheaded and distracted anymore.
 `borsalino`: If I may ask you, `name`… which is more important to you?
 - Ethics. (-)
     `borsalino`: …I see…
@@ -339,11 +339,11 @@ All at once, `borsalino` doesn’t seem all that airheaded and distracted anymor
 
 :: route4_wg_best
 (**)**
-`borsalino`: If there’s one thing my years have taught me it’s that…
+`borsalino`: If there's one thing my years have taught me it's that…
 `borsalino`: To attain what you want… you must sacrifice things…
 `borsalino`: That is the price…
 (pause)
-`borsalino`: *~Maaybe~* I’ll tell you more… some other time.
+`borsalino`: *~Maaybe~* I'll tell you more… some other time.
 => route4_wg_end
 
 :: route4_wg_end

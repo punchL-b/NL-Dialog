@@ -2,70 +2,70 @@
 do set_background("town", show)
 do show_character(drake, center, show)
 You arrive at the town to meet Drake for your shopping trip.
-Drake: So you’ve got everything you need to go shopping? Good. Let’s go.
+Drake: So you've got everything you need to go shopping? Good. Let's go.
 
 Drake glances at a small piece of paper in his hand (or maybe it just looks small because his hands are so large), then folds it up and places it in his pocket.
 
 You look questioningly at Drake.
-Drake: This is just a couple of ideas I had. I know I want to get something to suit a purpose, I just don’t know…what. A gift.
-- Ooh, who’s it for?
+Drake: This is just a couple of ideas I had. I know I want to get something to suit a purpose, I just don't know…what. A gift.
+- Ooh, who's it for?
   Drake: …
-- For me? Wow, you don’t need to.
+- For me? Wow, you don't need to.
   Drake: …
-- Well, sometimes it’s good to keep your options open before you buy something.
+- Well, sometimes it's good to keep your options open before you buy something.
   do increment("dd2.points")
   Drake: Yes, I agree.
 
 Near the edge of the town is your destination: an outdoor bazaar full of good things. Food, merchandise, art, clothing…there are so many choices.
 Drake: Where should we head first?
-- The comic stall. I’m looking to beef up my collection. => Comic_stall
+- The comic stall. I'm looking to beef up my collection. => Comic_stall
 - If you want some gift ideas, clothing might be a good place to start. => Clothing_stall
 
 :: Comic_stall
 The comic stall is full of shelves packed into tight aisles. Drake squeezes into one and you push in next to him. Your elbows brush as you leaf through laminated covers.
-**Adventure Gnomes #232**, **Pirate Rangers Special Edition**…the next book is stuck in place. You tug at it, but it won’t come loose, and then with a great sound like a suction cup, the laminate unsticks and you pull the comic out.
-Drake: What’s that you have?
+**Adventure Gnomes #232**, **Pirate Rangers Special Edition**…the next book is stuck in place. You tug at it, but it won't come loose, and then with a great sound like a suction cup, the laminate unsticks and you pull the comic out.
+Drake: What's that you have?
 
 The cover reads **Sora: Strange Universe #1** with a picture of a man in a strange Marine outfit, flanked by a man dressed in green and a seagull.
-- Whoa…now this is a collector’s item. => Comic_stall_a
+- Whoa…now this is a collector's item. => Comic_stall_a
 - Ugh, all this trouble for a boring superhero comic?
   do decrement("dd2.points")
   => Comic_stall_c
-- Interesting! I didn’t know they made comics about Marines; is it licensed? => Comic_stall_b
+- Interesting! I didn't know they made comics about Marines; is it licensed? => Comic_stall_b
 
 :: Comic_stall_a
 Drake turns to look at the comic in your hand, and his placid expression shatters.
-Drake: **Sora: Strange Universe**? I never thought I’d actually get to see it…I missed the publication, and I always found the concept so cool.
-- I know! A parallel universe where Winch Green betrays the Germa and teams up with Sora? It’s like a fancomic, but, like…real.
+Drake: **Sora: Strange Universe**? I never thought I'd actually get to see it…I missed the publication, and I always found the concept so cool.
+- I know! A parallel universe where Winch Green betrays the Germa and teams up with Sora? It's like a fancomic, but, like…real.
   do increment("dd2.points")
-  Drake: Yes, there are so many possibilities. I’ve managed to avoid spoilers so far, too…
-  - My lips are sealed! I won’t ruin your experience.
+  Drake: Yes, there are so many possibilities. I've managed to avoid spoilers so far, too…
+  - My lips are sealed! I won't ruin your experience.
     do increment("dd2.points")
-    Drake: Thank you. I’m sure I’ll read through it quickly.
+    Drake: Thank you. I'm sure I'll read through it quickly.
     => Sora_checkout_Drake
-- Well, I thought the execution was disappointing, though the art is gorgeous—totally worth a read, though; you should get it.. My favorite of the variant universes was the one where Poison Pink steals Sora’s powers.
+- Well, I thought the execution was disappointing, though the art is gorgeous—totally worth a read, though; you should get it.. My favorite of the variant universes was the one where Poison Pink steals Sora's powers.
   - Aww, I might have a copy of that somewhere…want me to lend it to you?
     do increment("dd2.points")
-    Drake: If it’s not too much of an inconvenience.
+    Drake: If it's not too much of an inconvenience.
     => Sora_checkout_Drake
-  - I love how creative he had to get there! I wish they’d put him into more of those kinds of narrative tight spots.
+  - I love how creative he had to get there! I wish they'd put him into more of those kinds of narrative tight spots.
     do increment("dd2.points")
     Drake: Agreed.
     => Sora_checkout_Drake
-- It’s been a long time since I read it…I sold my copy a while ago and really regretted it.
+- It's been a long time since I read it…I sold my copy a while ago and really regretted it.
   Drake leans in to look closer at the title. You thought he was hard to read, but he looks really excited to get his hands on it.
-  Drake: ...You should buy it then. It’s a good find.
+  Drake: ...You should buy it then. It's a good find.
   - Okay, great! I will!
     Drake: …
-    - But I’ll lend it to you first.
+    - But I'll lend it to you first.
       do increment("dd2.points")
-      Drake: Thank you. That’s quite generous of you.
-    - Wow, I. I’m so excited to read it.
+      Drake: Thank you. That's quite generous of you.
+    - Wow, I. I'm so excited to read it.
       do decrement("dd2.points")
     => Sora_checkout_PC
   - No, you should buy it.
     do increment("dd2.points")
-    Drake: Well, I won’t say no.
+    Drake: Well, I won't say no.
     => Sora_checkout_Drake
 
 :: Sora_checkout_Drake
@@ -73,74 +73,74 @@ Drake leads the way to the cashier. At the register, a sign points you to the pr
 => Sora_talk
 
 :: Sora_checkout_PC
-You head to the cashier with your purchase. At the register, a sign points you to the price: **All wrapped copies 1000 beri.** Whoa, a bargain. You pay, and then join Drake at the stall’s exit.
+You head to the cashier with your purchase. At the register, a sign points you to the price: **All wrapped copies 1000 beri.** Whoa, a bargain. You pay, and then join Drake at the stall's exit.
 => Sora_talk
 
 :: Comic_stall_b
-Drake: Yes, I’m surprised you haven’t heard of it. **Sora** is quite popular in North Blue.
+Drake: Yes, I'm surprised you haven't heard of it. **Sora** is quite popular in North Blue.
 - Well, is it historical? Fictional?
-  Drake: Sort of both. Some of Sora’s feats are based on those of legendary Marines, and the main villains are based on a real organization.
-- So you’re a big fan, huh?
-  Drake: Well, I don’t know if I’d say that…I haven’t read **all** the issues.
-  - Aww, don’t gatekeep yourself.
+  Drake: Sort of both. Some of Sora's feats are based on those of legendary Marines, and the main villains are based on a real organization.
+- So you're a big fan, huh?
+  Drake: Well, I don't know if I'd say that…I haven't read **all** the issues.
+  - Aww, don't gatekeep yourself.
     do increment("dd2.points")
   - Oh, uh, I see.
     do decrement("dd2.points")
-  - Well, you’ve read more than I have!
+  - Well, you've read more than I have!
 - Well, if this is number one, should I start here?
   Drake: This is actually the first in a spinoff alternate-universe series. The main comics are called **Sora: Warrior of the Sea**. I have a few of the omnibus volumes myself…you might be able to start with this one, but it would probably make more sense if you read the main story first.
-  - Could you lend me a volume of the omnibus? I’d love to give it a try.
+  - Could you lend me a volume of the omnibus? I'd love to give it a try.
     do increment("dd2.points")
     Drake: Yes, of course.
   - …That sounds really complicated.
     do decrement("dd2.points")
-    Drake: It’s quite simple, actually.
-  - Uh, I’ll take a pass.
+    Drake: It's quite simple, actually.
+  - Uh, I'll take a pass.
     do decrement("dd2.points")
-    Drake: …well, I’d like to buy that one if you don’t mind.
+    Drake: …well, I'd like to buy that one if you don't mind.
 
-You hand Drake the volume and he heads to the cashier to pay. You could keep looking at comics here, but you aren’t really all that interested.
-The smell of fresh baked goods wafts your way—didn’t you pass a cafe at some point? Maybe that should be your destination.
+You hand Drake the volume and he heads to the cashier to pay. You could keep looking at comics here, but you aren't really all that interested.
+The smell of fresh baked goods wafts your way—didn't you pass a cafe at some point? Maybe that should be your destination.
 => Cafe_regular_explain
 
 :: Comic_stall_c
 Drake: …is that **Sora: Strange Universe**?
-- That’s what it says. What’s the big deal?
-  Drake: I’ve been looking for this for a long time. It was a limited run.
-- You’re a **Sora** fan?
+- That's what it says. What's the big deal?
+  Drake: I've been looking for this for a long time. It was a limited run.
+- You're a **Sora** fan?
   Drake: Well, I did grow up in North Blue. Why?
-  - I don’t know, I never really **got** superheroes. I’d rather read a comic about wizards or ninja or the power of friendship.
+  - I don't know, I never really **got** superheroes. I'd rather read a comic about wizards or ninja or the power of friendship.
     do decrement("dd2.points")
     Drake: Fair enough.
-  - Eh, I don’t know. It’s just a little surprising. You seem so…practical.
+  - Eh, I don't know. It's just a little surprising. You seem so…practical.
     do decrement("dd2.points")
-    Drake: It’s just entertainment.
+    Drake: It's just entertainment.
 
-Drake: Well, I guess I’ll buy this and we can move on.
+Drake: Well, I guess I'll buy this and we can move on.
 - Okay.
   do decrement("dd2.points")
 - Oh no, you can take your time…
-  Drake: There’s no point in staying if you’re not interested.
+  Drake: There's no point in staying if you're not interested.
 
 You peer around the market, looking for places to go that both of you might enjoy more than you enjoyed this place. Drake returns shortly, a bag with his comic book under his arm.
 => Cafe_regular_explain
 
 :: Clothing_stall
 The clothing stall is huge, less a stall than three or four merged together. They have everything: tops, bottoms, shoes, swimsuits, socks, coats, underwear, accessories…but where to start?
-- So, this person you’re buying a gift for…they have to wear clothes. What kind do they like?
-  Drake: I’m not sure.
+- So, this person you're buying a gift for…they have to wear clothes. What kind do they like?
+  Drake: I'm not sure.
   - Well, what do they usually wear?
     Drake: …a Marine coat.
     => Clothing_Tsuru
-  - What’s their favorite color?
+  - What's their favorite color?
     Drake: Blue.
     => Clothing_Tsuru
-  - Can you give me some hints as to who it is? Maybe I don’t know them very well, but I might be a good sounding board for whether something looks good on them.
+  - Can you give me some hints as to who it is? Maybe I don't know them very well, but I might be a good sounding board for whether something looks good on them.
     Drake: …
     => Clothing_Tsuru
 - Oh, look, they have cute fuzzy hats. I used to have one of those when I was a kid.
   Drake: You should get one. You look a little underdressed for the weather.
-  - What are you, my parents? I’m not cold at all.
+  - What are you, my parents? I'm not cold at all.
     do decrement("dd2.points")
     => Pre_hat_argument
   - What, are you planning on warming me up?
@@ -150,72 +150,72 @@ The clothing stall is huge, less a stall than three or four merged together. The
   - Uh, sorry? => Pre_hat_argument
 
 :: Clothing_Tsuru
-Drake: Okay. I’m shopping for Vice Admiral Tsuru.
+Drake: Okay. I'm shopping for Vice Admiral Tsuru.
 - Oh, do you know her well?
-  Drake: Yes. She’s been a great mentor to me.
-- Wow, she **does** seem hard to buy for…though I guess I don’t really know her.
-- I don’t think I’ve ever seen her out of uniform.
+  Drake: Yes. She's been a great mentor to me.
+- Wow, she **does** seem hard to buy for…though I guess I don't really know her.
+- I don't think I've ever seen her out of uniform.
   Drake: Her civilian clothes are quite similar.
 
-Drake: I’m not quite sure what she’d like, but I want to show her my appreciation for her support.
-- I think she’d like something practical. Something for the cold weather. I know she has her coat and gloves, but maybe something she can wear inside?
+Drake: I'm not quite sure what she'd like, but I want to show her my appreciation for her support.
+- I think she'd like something practical. Something for the cold weather. I know she has her coat and gloves, but maybe something she can wear inside?
   do increment("dd2.points")
-  Drake: That’s a good idea.
+  Drake: That's a good idea.
   - A nice sweater…do you knit? You could make her one.
-    Drake: That’s a bit advanced for my skillset.
+    Drake: That's a bit advanced for my skillset.
   - Some leg warmers maybe?
-    Drake: I’m not sure they’re her style.
+    Drake: I'm not sure they're her style.
   - Hmm…if I were Vice Admiral Tsuru, what would I want?
 - I bet she gets lots of practical gifts. Teacups, fancy pens, that kind of thing. You should get her something more…ornamental.
-  Drake: I don’t think she’ll want something that she never has occasion to wear.
-  - I’m not saying, like, diamond-encrusted combat boots.
-    Drake: I didn’t know that was something you could buy.
-  - Me either. But what about a leather briefcase? She could carry paperwork or weapons in it, and it’s a step up from what she needs, right?
+  Drake: I don't think she'll want something that she never has occasion to wear.
+  - I'm not saying, like, diamond-encrusted combat boots.
+    Drake: I didn't know that was something you could buy.
+  - Me either. But what about a leather briefcase? She could carry paperwork or weapons in it, and it's a step up from what she needs, right?
     do increment("dd2.points")
     Drake: Oh, I see what you mean.
-  - She can make an occasion to wear it if it’s nice enough.
-    Drake: …I don’t know about that.
-- Has she ever mentioned something she’d like but hasn’t gotten? An expensive tie or something that she doesn’t want to shell out the cash for?
-  Drake: Not to me. She’s very particular about ties, though…I don’t know if I’d be able to choose one that she likes.
+  - She can make an occasion to wear it if it's nice enough.
+    Drake: …I don't know about that.
+- Has she ever mentioned something she'd like but hasn't gotten? An expensive tie or something that she doesn't want to shell out the cash for?
+  Drake: Not to me. She's very particular about ties, though…I don't know if I'd be able to choose one that she likes.
   - What about a duplicate of one she has? In case it gets worn out?
-    Drake: She’s good at taking care of hers.
-  - She’ll appreciate the thought, though, right?
-    Drake: I think she’d appreciate something she would wear more.
+    Drake: She's good at taking care of hers.
+  - She'll appreciate the thought, though, right?
+    Drake: I think she'd appreciate something she would wear more.
   - Okay, scratch that idea. But has she ever stared longingly at anything while window-shopping?
     Drake: No.
-    The idea of Vice Admiral Tsuru staring longingly is a little far-fetched, you’ll admit.
+    The idea of Vice Admiral Tsuru staring longingly is a little far-fetched, you'll admit.
 
 You watch Drake as he looks around, past a rack of fancy suspenders, animal-print shirts (hard to imagine the Vice Admiral in one of those), and workout gear. His eyes stay fixed on a display of cashmere shawls, but then he flicks them away to a stack of fedoras.
 - See anything you like?
   Drake: I want to take a closer look at those shawls.
 - What about the shawls? I bet they come in a color that would suit her.
   do increment("dd2.points")
-  Drake: I was thinking that…you don’t think it would be too much?
-  - I can’t speak to your relationship, but I’d appreciate it if I were her.
+  Drake: I was thinking that…you don't think it would be too much?
+  - I can't speak to your relationship, but I'd appreciate it if I were her.
   - People say Vice Admiral Tsuru is a great judge of intentions.
-    Drake: That’s true.
-  - Why? Unless they’re, like…**really** expensive…
-- Well, I guess it’s true what they say about having too many choices.
-  Drake: There is a lot to choose from. I don’t think most of it would interest Vice Admiral Tsuru…but she might like a new shawl.
+    Drake: That's true.
+  - Why? Unless they're, like…**really** expensive…
+- Well, I guess it's true what they say about having too many choices.
+  Drake: There is a lot to choose from. I don't think most of it would interest Vice Admiral Tsuru…but she might like a new shawl.
 
 The two of you walk over to the shawls. They look so soft, and all the colors are pleasant.
 Drake: Well, they are expensive, but I can fit one in my budget.
-- She’ll love it. Cozy, but presentable.
-- They’re really pretty! I know we’re Marines and we put utility first, but it’s not bad to have things that are purely functional.
+- She'll love it. Cozy, but presentable.
+- They're really pretty! I know we're Marines and we put utility first, but it's not bad to have things that are purely functional.
   do increment("dd2.points")
-  Drake: That’s true.
+  Drake: That's true.
 - Go for it.
 
 Drake chooses a blue shawl with gray trim, and while he pays you begin to think about where you want to go next.
 => Cafe_regular_gift
 
 :: Pre_hat_argument
-Drake: Well, you look cold to me. You don’t have to act tough.
-- I’m not acting tough. Why is it hard to understand that different people react to the weather differently? => Hat_argument
-- I’m a Marine. I have to *be* tough, not act tough.
+Drake: Well, you look cold to me. You don't have to act tough.
+- I'm not acting tough. Why is it hard to understand that different people react to the weather differently? => Hat_argument
+- I'm a Marine. I have to *be* tough, not act tough.
   do decrement("dd2.points")
   => Hat_argument
-- Uh, maybe this stall was a mistake…let’s just drop the subject for now and go somewhere else.
+- Uh, maybe this stall was a mistake…let's just drop the subject for now and go somewhere else.
   Drake: Yes, I agree.
   You exit the stall and look around.
   => Cafe_regular_explain
@@ -224,7 +224,7 @@ Drake: Well, you look cold to me. You don’t have to act tough.
 You walk along congenially in the crisp breeze.
 - So, how did you get into Sora, anyway?
   Drake: I grew up in North Blue, reading the comics in the newspaper.
-  - And that’s why you became a Marine?
+  - And that's why you became a Marine?
     do decrement("dd2.points")
     Drake: …Not exactly.
   - Oh...I wish I could have had that experience.
@@ -235,12 +235,12 @@ You walk along congenially in the crisp breeze.
 
 :: Sora_talk_1A3
 Drake: Stealth Black.
-- I’m surprised it’s not Sora, given that you’re a Marine.
-  Drake: Well, in a lot of ways Sora is the ideal Marine, that’s true. But the Germa are obvious avatars of injustice. In that regard—I find comfort in their simplicity, though some writers do give them more nuanced characters. And I always thought Stealth Black looked, well…cool.
+- I'm surprised it's not Sora, given that you're a Marine.
+  Drake: Well, in a lot of ways Sora is the ideal Marine, that's true. But the Germa are obvious avatars of injustice. In that regard—I find comfort in their simplicity, though some writers do give them more nuanced characters. And I always thought Stealth Black looked, well…cool.
   - Hold on, is that why when you went undercover you dressed in all black?
     Drake: …No.
     => Sora_talk_2
-  - Yeah, even when they’re simple, villains often get to have a lot of fun the heroes don’t. I often find myself drawn to them in fiction.
+  - Yeah, even when they're simple, villains often get to have a lot of fun the heroes don't. I often find myself drawn to them in fiction.
     do increment("dd2.points")
     => Sora_talk_1A4
   - I totally agree! His character design is the best. So of **course** they made him the invisible one.
@@ -248,65 +248,65 @@ Drake: Stealth Black.
     => Sora_talk_2
 - Huh, that…tracks.
   Drake: Really? Everyone always assumes Sora is my favorite.
-  - Sora’s the obvious choice, but I don’t know. You seem like a Stealth Black kind of guy.
+  - Sora's the obvious choice, but I don't know. You seem like a Stealth Black kind of guy.
     do increment("dd2.points")
-  - Most people who have him as their favorite don’t like the **Strange Universe** comics.
-  - You’re a bit of a wild card.
+  - Most people who have him as their favorite don't like the **Strange Universe** comics.
+  - You're a bit of a wild card.
   => Sora_talk_2
 
 :: Sora_talk_1A4
-Drake: Interesting. So Sora isn’t your favorite either?
+Drake: Interesting. So Sora isn't your favorite either?
 - Oh no, he is! But I like the Germa, too.
-- Yeah, I know he’s a fictional character, but the thought of living up to that ideal as a Marine…I don’t know.
-- What can I say? I’ve got a soft spot for comic book villains.
+- Yeah, I know he's a fictional character, but the thought of living up to that ideal as a Marine…I don't know.
+- What can I say? I've got a soft spot for comic book villains.
   do increment("dd2.points")
 => Sora_talk_2
 
 :: Sora_talk_2
 The two of you have reached the edges of the market. To your right is a small cafe with several tables outside and a large display of fancy coffee and tea. To your left is a small stall selling knives.
-- So, about that gift you’re buying…Who’s it for? I promise I won’t tell them. => Sora_talk_2A
+- So, about that gift you're buying…Who's it for? I promise I won't tell them. => Sora_talk_2A
 - I want to sit down for a bit. => Sora_cafe
 
 :: Sora_talk_2A
 Drake: …
 You wait. Drake pauses.
-Drake: It’s Vice Admiral Tsuru. I thought it might be nice to get her something…just because.
-- Well, that’s a fine reason. I bet she’d like a knife. => Knife_stall
-- That’s a great idea. I don’t know what she’d like, but maybe we can stop at that cafe to fuel our minds. => Sora_cafe
+Drake: It's Vice Admiral Tsuru. I thought it might be nice to get her something…just because.
+- Well, that's a fine reason. I bet she'd like a knife. => Knife_stall
+- That's a great idea. I don't know what she'd like, but maybe we can stop at that cafe to fuel our minds. => Sora_cafe
 
 :: Hat_argument
 Drake: Cold is a scientific fact, `name`. I want you to be safe. I grew up in the North Blue—
-- Yeah, and we’re not there now. It’s a little cold, but do I look like I have frostbite?
-  Drake: I don’t want you to get there.
+- Yeah, and we're not there now. It's a little cold, but do I look like I have frostbite?
+  Drake: I don't want you to get there.
   => Hat_argument_2
 - So does that make you the authority on cold weather? Other places have winter, too.
   do decrement("dd2.points")
   => Hat_argument_2
-- I understand that it’s science, and I appreciate your concern.
+- I understand that it's science, and I appreciate your concern.
   Drake: But?
-  - But I’m an adult and I appreciate more that people believe me when I say how I feel. => Hat_argument_2
-  - No but. That’s it. Can we end the discussion please?
-    Drake: …Okay. Let’s go to another stall.
+  - But I'm an adult and I appreciate more that people believe me when I say how I feel. => Hat_argument_2
+  - No but. That's it. Can we end the discussion please?
+    Drake: …Okay. Let's go to another stall.
     => Cafe_regular_explain
-  - But it’s really not that cold yet. You’re not all bundled up either.
+  - But it's really not that cold yet. You're not all bundled up either.
     Drake: But you look—nevermind.
     => Hat_argument_2
 
 :: Hat_argument_2
 Drake: …
-- Look, just forget it. But I’m not wearing a hat. Let’s leave. => Cafe_regular_explain
-- Stop acting like you’re better than me!
+- Look, just forget it. But I'm not wearing a hat. Let's leave. => Cafe_regular_explain
+- Stop acting like you're better than me!
   do decrement("dd2.points")
-  Drake: I’m not acting like that.
-  - Yeah, right. I’m leaving.
+  Drake: I'm not acting like that.
+  - Yeah, right. I'm leaving.
     do decrement("dd2.points")
     => Early_end
   - So why are you insisting you know better? => Hat_argument_3
 
 :: Hat_argument_3
-Drake: I’m not, I’m just concerned.
+Drake: I'm not, I'm just concerned.
 - Well then, let me assuage your concerns, okay?
-  Drake: I’m sorry. I overreacted. Let’s just go somewhere else.
+  Drake: I'm sorry. I overreacted. Let's just go somewhere else.
   => Cafe_regular_explain
 - And you keep saying that, but not enough to be concerned about my answers.
   do decrement("dd2.points")
@@ -314,67 +314,67 @@ Drake: I’m not, I’m just concerned.
   => Early_end
 
 :: Sora_cafe
-You each purchase a warm drink and sit down at a small table. Underneath, your knee brushes Drake’s—he’s so tall that sitting here is a little bit awkward for him. He’s managing, though, and not commenting on it.
+You each purchase a warm drink and sit down at a small table. Underneath, your knee brushes Drake's—he's so tall that sitting here is a little bit awkward for him. He's managing, though, and not commenting on it.
 - So, what was the first issue of **Sora** you read?
-  Drake: I don’t remember the exact issue, but it was during the Acorn Island Siege arc.
-  - That’s one of my favorites!
+  Drake: I don't remember the exact issue, but it was during the Acorn Island Siege arc.
+  - That's one of my favorites!
     do increment("dd2.points")
-    Drake: Yes, it left quite an impression on me that Sora went against orders and fought for those he didn’t have to.
+    Drake: Yes, it left quite an impression on me that Sora went against orders and fought for those he didn't have to.
   - It gave me such a warm feeling! Sora really is the avatar of justice.
     do increment("dd2.points")
   - Wow, so you go way back.
     Drake: I suppose it really was a long time ago. But those ideals…
 - Is it difficult to find seats big enough for you?
-  Drake: This isn’t so bad. And I don’t have as hard of a time as some others.
-  - Still, it’s not fair…
-  - Just because others have it worse doesn’t mean it doesn’t suck for you.
+  Drake: This isn't so bad. And I don't have as hard of a time as some others.
+  - Still, it's not fair…
+  - Just because others have it worse doesn't mean it doesn't suck for you.
 - Did they fill your cup the whole way?
   Drake: It looks like not…
-  - You should complain! Get your money’s worth!
+  - You should complain! Get your money's worth!
     do decrement("dd2.points")
-    Drake: It’s not worth making trouble over.
-  - That’s not fair, especially when they filled mine to the brim.
+    Drake: It's not worth making trouble over.
+  - That's not fair, especially when they filled mine to the brim.
     do increment("dd2.points")
     Drake: Perhaps it depends on the drink.
 
 Drake pauses, stirring the milk into his coffee.
-Drake: You know, once you open your eyes to unfairness…it’s hard to not see it. Because it’s everywhere.
-- That’s why we became Marines, though, right?
+Drake: You know, once you open your eyes to unfairness…it's hard to not see it. Because it's everywhere.
+- That's why we became Marines, though, right?
   Drake: Some of us, yes.
-- Yeah. And you can’t fix everything.
+- Yeah. And you can't fix everything.
   Drake: Sometimes it can be easy to be paralyzed by indecision. Or guilt.
-  - When you couldn’t or didn’t do anything…
+  - When you couldn't or didn't do anything…
     do increment("dd2.points")
     Drake: Yes, exactly.
   - Guilt?
-    Drake: If you didn’t make the right decision. Or had to choose to let some form of injustice be. Or—
-    He breaks off, as if he’s said too much.
-- I don’t know if that’s necessarily true.
+    Drake: If you didn't make the right decision. Or had to choose to let some form of injustice be. Or—
+    He breaks off, as if he's said too much.
+- I don't know if that's necessarily true.
   Drake: If not, then which systems are fair?
-  - Oh, I don’t know…
+  - Oh, I don't know…
     do decrement("dd2.points")
   - The Marines are fair, right?
     Drake: in some ways, but we have our blind spots.
 
 The topic is heavy, but its residue does not descend on you like ash from a volcano. Rather, the quiet that remains is pleasant. You continue to sip your drinks.
 Drake: To change the subject…`name`, can you help me with something?
-Drake: The person I’m shopping for is Vice Admiral Tsuru.
-- Do you think she’d like something here?
+Drake: The person I'm shopping for is Vice Admiral Tsuru.
+- Do you think she'd like something here?
   Drake: Yes, actually—they seem to have a large selection of tea tins.
-  - Oh, that’s nice! Do you drink tea together often?
+  - Oh, that's nice! Do you drink tea together often?
     do increment("dd2.points")
     Drake: Yes.
   - Tea tins...practical, but pretty. Nice.
   => Sora_cafe_gift
-- Uh, I don’t know if I’d be of much help…I barely know her.
+- Uh, I don't know if I'd be of much help…I barely know her.
   do decrement("dd2.points")
-  Drake: You’re good with people. And I’d like your opinion, regardless.
+  Drake: You're good with people. And I'd like your opinion, regardless.
   => Sora_cafe_pre_tea
 
 :: Sora_cafe_pre_tea
-Drake: I’d like to buy her something she can use, not just look at. And since we’re here, and she likes tea…
+Drake: I'd like to buy her something she can use, not just look at. And since we're here, and she likes tea…
 - Get her tea?
-- I may not know the Vice Admiral, but that’s as straightforward as it gets.
+- I may not know the Vice Admiral, but that's as straightforward as it gets.
 => Sora_cafe_gift
 
 :: Sora_cafe_gift
@@ -382,75 +382,75 @@ The teas are displayed on a large shelf next to the coffees, and there appear to
 Drake: Hm.
 
 He picks up a tin of the chamomile.
-- Well, technically that’s tisane, not tea.
+- Well, technically that's tisane, not tea.
   do decrement("dd2.points")
   Drake: Vice Admiral Tsuru lumps it into the same category.
 - Is that a kind she likes?
   Drake: Yes. She often says she needs to stock up on it.
 
-Drake: She’s always telling me that chamomile tea will help me relax…
-- Aww, that’s kind of her to look out for you.
-- Well then it’s definitely a good gift. Some connection there!
+Drake: She's always telling me that chamomile tea will help me relax…
+- Aww, that's kind of her to look out for you.
+- Well then it's definitely a good gift. Some connection there!
   do increment("dd2.points")
 - So will this be like you telling her to relax?
   do decrement("dd2.points")
-  Drake: I don’t think so.
+  Drake: I don't think so.
 
-Drake: I’ll buy this. And then after that…
-- Let’s go back to base. => Back_to_base_positive
-- Let’s sit back down. => Cafe_end
+Drake: I'll buy this. And then after that…
+- Let's go back to base. => Back_to_base_positive
+- Let's sit back down. => Cafe_end
 
 :: Back_to_base_positive
-Drake buys the tea and the two of you depart the stall. Satisfied with the purchase, you return to the base together at a slow walk, enjoying each other’s company.
+Drake buys the tea and the two of you depart the stall. Satisfied with the purchase, you return to the base together at a slow walk, enjoying each other's company.
 => End
 
 :: Sora_cafe_post_gift
 Drake purchases the tea along with both of your drinks, and the two of you walk over to a nearby table.
-- To tell you the truth, I find Vice Admiral Tsuru a bit…intimidating. She’s so accomplished.
-  Drake: She is, and she’s been a great mentor to me.
+- To tell you the truth, I find Vice Admiral Tsuru a bit…intimidating. She's so accomplished.
+  Drake: She is, and she's been a great mentor to me.
   => Cafe_mentorship
-- So she tells you that you need to relax? You don’t seem high-strung to me.
+- So she tells you that you need to relax? You don't seem high-strung to me.
   do decrement("dd2.points")
   => Sora_cafe_stress
 
 :: Sora_cafe_stress
-Drake: I’m used to concealing things.
-- You don’t have to. I promise I won’t blab your secrets, but if you need someone to talk to I’m available.
+Drake: I'm used to concealing things.
+- You don't have to. I promise I won't blab your secrets, but if you need someone to talk to I'm available.
   do increment("dd2.points")
-  Drake: It’s mostly habit, I suppose. I find it difficult to trust.
-  - Yeah, I know we don’t know each other well, but even if I’m not your first choice, I’m here.
+  Drake: It's mostly habit, I suppose. I find it difficult to trust.
+  - Yeah, I know we don't know each other well, but even if I'm not your first choice, I'm here.
     Drake: Thank you.
-  - Gee, **that’s** a shocker.
+  - Gee, **that's** a shocker.
     Drake gives you a half-smile.
     Drake: That much I suppose is obvious…
-- Right, goes along with the job. But your job’s changed; you can adapt to that.
-  Drake: I find it difficult to adapt when I don’t have to.
-  - I can’t blame you!
+- Right, goes along with the job. But your job's changed; you can adapt to that.
+  Drake: I find it difficult to adapt when I don't have to.
+  - I can't blame you!
 - Talk to the ocean? A stuffed animal? A journal written in cypher?
   do decrement("dd2.points")
-  Drake: I hadn’t thought of that.
+  Drake: I hadn't thought of that.
 => Cafe_end
 
 :: Cafe_mentorship
-Drake: When I joined the Marines, the circumstances in my life weren’t great. I needed support, but I didn’t think it would be acceptable to ask for it, and Vice Admiral Tsuru gave me that.
+Drake: When I joined the Marines, the circumstances in my life weren't great. I needed support, but I didn't think it would be acceptable to ask for it, and Vice Admiral Tsuru gave me that.
 - Oh, I see. Like, offering advice?
   Drake: Yes. And her time. And nurturing my skills and interests.
-- That’s really kind of her.
+- That's really kind of her.
   Drake: I know.
 - Wow. I know new recruits are expected to be tough, but it can be harder for some than others to adjust.
   do increment("dd2.points")
-  Drake: And some have built-in support systems that others don’t.
+  Drake: And some have built-in support systems that others don't.
 
-Drake: In many regards, I had more skills and experience than the average new recruit my age. But I had no family or friends, and I didn’t want to lose this opportunity.
-- Now that’s stressful.
+Drake: In many regards, I had more skills and experience than the average new recruit my age. But I had no family or friends, and I didn't want to lose this opportunity.
+- Now that's stressful.
   Drake: Yes, it was. In retrospect, I wonder how I managed.
-- I’m sure she knew that, and she didn’t want you to lose the opportunity either. Not that you wouldn’t have landed on your feet!
+- I'm sure she knew that, and she didn't want you to lose the opportunity either. Not that you wouldn't have landed on your feet!
   do increment("dd2.points")
   Drake: I appreciate your confidence in my younger self.
-- And you didn’t!
-  Drake: Yes, thanks to the Vice Admiral’s mentorship.
+- And you didn't!
+  Drake: Yes, thanks to the Vice Admiral's mentorship.
 
-Drake smiles, his hand uncurling on the table. It’s close to yours. You think of taking it, but—maybe you will the next time you’re alone with him.
+Drake smiles, his hand uncurling on the table. It's close to yours. You think of taking it, but—maybe you will the next time you're alone with him.
 => Cafe_end
 
 :: Knife_stall
@@ -463,26 +463,26 @@ Drake: This is quite a selection.
   Drake: Standard issue pocket knife for most things.
 
 Drake frowns.
-Drake: Actually, I suppose what I’m asking myself is—how can I show that I appreciate her? Not with a token, but in what way I can support her as she has supported me, without me having to ask for it.
+Drake: Actually, I suppose what I'm asking myself is—how can I show that I appreciate her? Not with a token, but in what way I can support her as she has supported me, without me having to ask for it.
 
 He flexes his right hand in its glove.
-- Relationships aren’t about matching gestures one-for-one. I’m sure she didn’t do anything for you because it would create an obligation.
-  Drake: I know. It’s not about that; I **want** to repay her.
-- What does she need that she’s not getting, then?
-  Drake: I’m not sure that it’s a knife.
+- Relationships aren't about matching gestures one-for-one. I'm sure she didn't do anything for you because it would create an obligation.
+  Drake: I know. It's not about that; I **want** to repay her.
+- What does she need that she's not getting, then?
+  Drake: I'm not sure that it's a knife.
   - Metaphorically, I mean. Something functional? Something pretty?
     do increment("dd2.points")
-    Drake: Either, perhaps. I know she’s got a reputation for resourcefulness, and for not needing pretty things.
+    Drake: Either, perhaps. I know she's got a reputation for resourcefulness, and for not needing pretty things.
   - But does she want one?
-    Drake: I don’t know.
-  - But are you sure it’s **not** a knife?
+    Drake: I don't know.
+  - But are you sure it's **not** a knife?
     Drake: Well, no.
-- But she hasn’t asked you for a gift at all. And she’ll understand the thought behind it.
+- But she hasn't asked you for a gift at all. And she'll understand the thought behind it.
   Drake: I hope so.
 
-Drake’s eyes are scanning this table, and then the next. It’s way too much to take in at once.
+Drake's eyes are scanning this table, and then the next. It's way too much to take in at once.
 - How about the switchblades? => Knife_switchblade
-- How about a holster? It’s always good to have a fresh one for formal occasions. => Knife_holster
+- How about a holster? It's always good to have a fresh one for formal occasions. => Knife_holster
 
 :: Knife_switchblade
 On the far table, the switchblades sit waiting for you to take a look. Drake scans each one, thoughtfully, his eyes seeming to stick on one with engravings on the handle.
@@ -491,15 +491,15 @@ You look closer at the switchblade. It is cranes—too on-the-nose? Or a happy c
 => Knife_end
 
 :: Knife_holster
-Drake: Yes, you’re right.
+Drake: Yes, you're right.
 The holsters make up a large section of the far table. Many are cheap-looking, but some are respectable and a few on the pricier side appear to be well-crafted leather.
 Drake: …This one.
-He points to a light-brown holster that looks the right size for a pocketknife. You take your standard-issue knife from your pocket—yep, it should fit, based on the eyeball. It’s snazzy, but not overstated; you can easily see it on Vice Admiral Tsuru’s belt.
+He points to a light-brown holster that looks the right size for a pocketknife. You take your standard-issue knife from your pocket—yep, it should fit, based on the eyeball. It's snazzy, but not overstated; you can easily see it on Vice Admiral Tsuru's belt.
 
 Drake: Good idea on the holster.
 do increment("dd2.points")
 - Nice find!
-- It’ll look good on her.
+- It'll look good on her.
 - Thanks! Happy to help.
 => Knife_end
 
@@ -508,8 +508,8 @@ Drake checks out and the two of you walk back to base together in the crisp air.
 => Sora_cafe_post_gift
 
 :: Cafe_regular_gift
-You still haven’t decided where to go, but as you rejoin the aisle, you spy a charming little cafe. Drake, too, seems to be drawn to it.
-Drake: Let’s get some food.
+You still haven't decided where to go, but as you rejoin the aisle, you spy a charming little cafe. Drake, too, seems to be drawn to it.
+Drake: Let's get some food.
 
 You purchase warm pastries, sitting down in a corner table by the edge of the seating area, where Drake has room to stretch his long legs.
 - So Vice Admiral Tsuru supported you, huh? => Cafe_mentorship
@@ -517,53 +517,53 @@ You purchase warm pastries, sitting down in a corner table by the edge of the se
 
 :: Cafe_regular_meeting
 Drake: When I first joined the Marines, actually. She—I suppose you could say she was the one who signed me up.
-- I “could” say? Sounds like there’s a story there.
+- I “could” say? Sounds like there's a story there.
   Drake: There—well.
   - …Yes?
     do decrement("dd2.points")
     Drake: …
     => Cafe_end
-  - Oh, you don’t want to talk about it? I don’t want to pry.
+  - Oh, you don't want to talk about it? I don't want to pry.
     do increment("dd2.points")
-    Drake: I’d rather not.
+    Drake: I'd rather not.
     => Cafe_end
-  - Or maybe not. Can’t say my own sign-up was eventful.
+  - Or maybe not. Can't say my own sign-up was eventful.
     => Cafe_end
 - I bet that happens to a lot of people, though. But you got to know her and stayed close?
   Drake: She looked out for me, and I was stationed on her base.
-  - Oh, that’s pretty cool! She must have set a great example.
+  - Oh, that's pretty cool! She must have set a great example.
     do increment("dd2.points")
     Drake: She did.
   - You make it sound so…unremarkable.
     Drake: The Vice Admiral is a remarkable person. But those years were happily normal.
   => Cafe_end
-- Wow, that’s going pretty far back! Not that I’m calling you old.
-  Drake: Oh, I didn’t think you were. But yes, it’s been quite a long time…
+- Wow, that's going pretty far back! Not that I'm calling you old.
+  Drake: Oh, I didn't think you were. But yes, it's been quite a long time…
   => Cafe_end
 
 :: Cafe_regular_explain
-The smell of freshly-baked pastries wafts from a nearby stall. It looks like a cafe. That’s convenient. Drake’s eyes snap to it, as if he’s had an epiphany.
-Drake: The person I’m buying a gift for…well, it’s Vice Admiral Tsuru.
+The smell of freshly-baked pastries wafts from a nearby stall. It looks like a cafe. That's convenient. Drake's eyes snap to it, as if he's had an epiphany.
+Drake: The person I'm buying a gift for…well, it's Vice Admiral Tsuru.
 - And she really likes almond croissants?
 - Oh, so you want to take her out for coffee?
 - Whoa, really?
 
-Drake: We drink tea together a lot…they might have a good selection. At least it’s worth a try.
+Drake: We drink tea together a lot…they might have a good selection. At least it's worth a try.
 
-Drake: Let’s see what they have.
+Drake: Let's see what they have.
 - Does she like cinnamon?
   Drake: Hmm, maybe.
 - What about this gift tin? It has flowers on it.
   Drake: The design is a bit…overstated.
-- Why don’t you buy something for yourself? You can get something for Vice Admiral Tsuru later.
+- Why don't you buy something for yourself? You can get something for Vice Admiral Tsuru later.
   do decrement("dd2.points")
-  Drake: No, I’d rather not.
+  Drake: No, I'd rather not.
 
-On the top shelf, beyond your reach, there are several tea tins. You can’t quite read what’s written on them, but Drake could probably get them for you.
+On the top shelf, beyond your reach, there are several tea tins. You can't quite read what's written on them, but Drake could probably get them for you.
 - Um, do any of those teas on the top shelf look good?
   Drake: Let me pull them down.
 - **Glance at them, then back to Drake.**
-  Drake: Is there something you’d like to say?
+  Drake: Is there something you'd like to say?
   - Could you take a closer look at the teas on the top shelf?
     do increment("dd2.points")
     Drake: Sure.
@@ -583,15 +583,15 @@ Drake takes all three tins in one very large hard, the leather of his gloves onl
 - Hmm, does she like any of those kinds of tea?
   Drake: The bergamot…and that is a nice tin.
   - Are you familiar with the brand?
-    Drake: I’ve never had their teas, but I’ve heard good things.
+    Drake: I've never had their teas, but I've heard good things.
   - Am I a genius or what?
     Drake: It **was** a good idea.
   - There you go.
 - Whoa, you can fit a lot in your hand…
   Drake: They have to be good for something.
 
-Drake hands you the tin of bergamot and places the others back on the shelf. His hand brushes your shoulder on the way by—intentional or not? It’s difficult to tell.
-Drake: Let’s get some drinks for ourselves, too.
+Drake hands you the tin of bergamot and places the others back on the shelf. His hand brushes your shoulder on the way by—intentional or not? It's difficult to tell.
+Drake: Let's get some drinks for ourselves, too.
 
 You grab drinks and find a table, Drake purchasing the tea in a gift bag.
 => Cafe_end
@@ -607,11 +607,11 @@ else
   => Cafe_positive_end
 
 :: Cafe_positive_end
-You sit, enjoying each other’s company, warm to the core despite the nip in the air.
+You sit, enjoying each other's company, warm to the core despite the nip in the air.
 => End
 
 :: Cafe_slightly_negative
-You lapse into a semi-awkward silence. At least the refreshments are good. When you’re done, you both get up, but Drake doesn’t want to get rid of you despite the awkwardness.
+You lapse into a semi-awkward silence. At least the refreshments are good. When you're done, you both get up, but Drake doesn't want to get rid of you despite the awkwardness.
 => End
 
 :: End
@@ -628,8 +628,8 @@ Drake: …
 
 :: One_point_end
 do romance_points(drake, 1)
-Drake: I’m glad we were able to get some shopping done.
+Drake: I'm glad we were able to get some shopping done.
 
 :: Two_point_end
 do romance_points(drake, 2)
-Drake: I enjoyed shopping and talking with you, `name`. Let’s do this again sometime.
+Drake: I enjoyed shopping and talking with you, `name`. Let's do this again sometime.

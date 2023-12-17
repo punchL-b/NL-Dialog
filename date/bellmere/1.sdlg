@@ -1,30 +1,30 @@
 :: start
 do set_background("ship", show)
 
-You’re mopping the deck of the large battleship parked at the island, when you smell the sharp-sweet scent of cigarette smoke. You follow it in a comical line: straight to an unassuming supply closet.
+You're mopping the deck of the large battleship parked at the island, when you smell the sharp-sweet scent of cigarette smoke. You follow it in a comical line: straight to an unassuming supply closet.
 do show_character(bellmere, center, show)
 `name`: Do... do you always do this?
-Belle-mére: Do what? Oh, avoid menial labor? Damn right I do! Hey, don’t look at me like that! You think I’m lazy?
+Belle-mére: Do what? Oh, avoid menial labor? Damn right I do! Hey, don't look at me like that! You think I'm lazy?
 - Yes...
 - No...
 You try to answer, but she cuts you off.
-Belle-mére: Just kidding: don’t answer that. You should see me in a fight, though- I got into this business to take down baddies, not to mop ships and do paperwork. Not much of a rule-follower when it comes to grunt work. How about you? Do you enjoy all that crap?
-- I’m in it to fight, too! (+1)
-  Belle-mére: Oh-ho! Well, newbie, we’ll just see how you stack up when tested, won’t we? I *do* like people that are confident!
+Belle-mére: Just kidding: don't answer that. You should see me in a fight, though- I got into this business to take down baddies, not to mop ships and do paperwork. Not much of a rule-follower when it comes to grunt work. How about you? Do you enjoy all that crap?
+- I'm in it to fight, too! (+1)
+  Belle-mére: Oh-ho! Well, newbie, we'll just see how you stack up when tested, won't we? I *do* like people that are confident!
 - I actually like keeping busy with small tasks (+0)
   Belle-mére: Yeah? I guess some people are just wired differently, huh?
 - Hey- at least this is safe! (+0)
   Belle-mére: ...huh. You joined a military installation.... to stay.... Safe?
-Feeling a bit sheepish, you figure it’s a good idea to change the subject. If you want to impress this hot fiery woman, it would probably be a good idea to ask some questions about her, right?
+Feeling a bit sheepish, you figure it's a good idea to change the subject. If you want to impress this hot fiery woman, it would probably be a good idea to ask some questions about her, right?
 => questions
 
 
 :: questions
 if is_less_than("bm1.questions", 3)
     do increment("bm1.questions")
-    - So... what’s your favorite color? [if not(visited("bm1.color"))]
+    - So... what's your favorite color? [if not(visited("bm1.color"))]
         do visit("bm1.color")
-        Belle-mére:  I’ve always been a fan of blue. Not like a sky-blue, but a deeper color... sapphires! You expected me to say orange though, didn’t ‘cha?
+        Belle-mére:  I've always been a fan of blue. Not like a sky-blue, but a deeper color... sapphires! You expected me to say orange though, didn't ‘cha?
     - Er, well, what did you do before joining the Marines? [if not(visited("bm1.whyjoin"))]
         do visit("bm1.whyjoin")
         if is_less_than("bm1.questions", 2)
@@ -34,65 +34,65 @@ if is_less_than("bm1.questions", 3)
         do visit("bm1.whyjoin")
         if is_less_than("bm1.questions", 2)
             do increment("bm1.points")
-        Belle-mére: Well, I told you I had mikan trees back home, yeah? I cultivated them as a profession, but I suppose you could also call it a hobby. I can sew some very &&stylish and creative&& T-shirt designs, too, in a pinch! There’s a sports festival coming up... maybe I should jazz up my uniform a bit before then...?
+        Belle-mére: Well, I told you I had mikan trees back home, yeah? I cultivated them as a profession, but I suppose you could also call it a hobby. I can sew some very &&stylish and creative&& T-shirt designs, too, in a pinch! There's a sports festival coming up... maybe I should jazz up my uniform a bit before then...?
     - I don't have any more questions. => leave_closet
     => questions
 else
     => leave_closet
 
 :: Response_2B
-Belle-mére: I’m a mom! I was raising my girls for a long spell, and then... well... I was also a prisoner for a long time. Not exactly a fun topic, but it does account for why I have a real love/hate relationship with pirates!
-You don’t understand what she could mean by that. Shouldn’t it just be a hate/hate relationship with pirates, since she’s a Marine?
-- Don’t you hate all pirates?
-    Belle-mére: ...no comment. I don’t know ya well enough to get into that annoying topic, you know? You gotta buy a girl dinner before she starts spilling secrets!
+Belle-mére: I'm a mom! I was raising my girls for a long spell, and then... well... I was also a prisoner for a long time. Not exactly a fun topic, but it does account for why I have a real love/hate relationship with pirates!
+You don't understand what she could mean by that. Shouldn't it just be a hate/hate relationship with pirates, since she's a Marine?
+- Don't you hate all pirates?
+    Belle-mére: ...no comment. I don't know ya well enough to get into that annoying topic, you know? You gotta buy a girl dinner before she starts spilling secrets!
     Secrets?
 - Wait... you were imprisoned by pirates!? For how long!?
     Belle-mére: Oh, you know... about ten years.
     `name`: T- ten years!?
-    Belle-mére: Once upon a time there was a price I wasn’t willing to pay... literally and figuratively. Sometimes you have to stand up for what you know is right, even if it isn’t the safest option, you know?
-    Belle-Mere sounds like a very brave woman, despite her derelict attitude regarding her work. Maybe there’s a thing or two you can learn here.
+    Belle-mére: Once upon a time there was a price I wasn't willing to pay... literally and figuratively. Sometimes you have to stand up for what you know is right, even if it isn't the safest option, you know?
+    Belle-Mere sounds like a very brave woman, despite her derelict attitude regarding her work. Maybe there's a thing or two you can learn here.
 - You were captured by pirates!? Which ones?
     Belle-mére: Ever hear of the Arlong pirates? Caused quite a bit of trouble in my neck of the woods in East Blue. My kids and her friends beat him up.
     `name`: Y-your kid did!?
-    Belle-mére: Well, I say kid, but she’s all grown now.
+    Belle-mére: Well, I say kid, but she's all grown now.
     You wonder what kind of children the blunt Marine raised. In your mind, you envision a mini-body-building version of Belle-mére fighting pirates with big beefy muscled arms.
 => questions
 
 :: leave_closet
 Belle-mére checks her watch, hissing as she stubs her cigarette out on a nearby shelf loaded with various cleaning supplies.
-Belle-mére: Let’s walk and talk newbie! Smoker does his rounds around this time, and he doesn’t give a shit if I’m where I should be but Tashigi’s always with him and always on my case...
+Belle-mére: Let's walk and talk newbie! Smoker does his rounds around this time, and he doesn't give a shit if I'm where I should be but Tashigi's always with him and always on my case...
 `name`: Do you two not get along?
-Belle-mére: Huh? Me and Tash? I don’t know if I’d say that... she’s one strict swordsman. Stands so damn straight I sometimes wonder if she keeps that sword up her- er, that is, yeah, maybe there’s a bit of tension there?
-You both walk out onto the deck warship, Belle-Mere with a box taken from the supply closet. You soon find it’s a set of cleaning supplies, and she sets up next to a shiny black cannon.
-Belle-mére: This damn thing’s never seen any real action. It’s my biggest problem with a lot of the rules around here; these are all games. I know what training I need to be battle-ready. I’ve been there. Done that. Bought the T-shirt and brought home the souvenir adopted children.
+Belle-mére: Huh? Me and Tash? I don't know if I'd say that... she's one strict swordsman. Stands so damn straight I sometimes wonder if she keeps that sword up her- er, that is, yeah, maybe there's a bit of tension there?
+You both walk out onto the deck warship, Belle-Mere with a box taken from the supply closet. You soon find it's a set of cleaning supplies, and she sets up next to a shiny black cannon.
+Belle-mére: This damn thing's never seen any real action. It's my biggest problem with a lot of the rules around here; these are all games. I know what training I need to be battle-ready. I've been there. Done that. Bought the T-shirt and brought home the souvenir adopted children.
 `name`: Er... been where?
 Belle-mére gets quiet for a minute as she assembles what looks like a giant brass wire swab to clean the cannon.
 Belle-mére: War.
-- You fought and adopted war orphans!? You’re not lazy at all, are you?
+- You fought and adopted war orphans!? You're not lazy at all, are you?
     do increment("bm1.points")
     => Part_3A
-- We should follow orders. The Vice Admiral wouldn’t assign tasks that weren’t vital.
+- We should follow orders. The Vice Admiral wouldn't assign tasks that weren't vital.
     => Part_3B
 
 :: Part_3A
-Belle-mére:  Let’s keep that our little secret. I have a proud reputation as a slacker to uphold around here!
+Belle-mére:  Let's keep that our little secret. I have a proud reputation as a slacker to uphold around here!
 => cannons
 
 :: Part_3B
-Belle-mére: Man, you are young! I think you’ll find that within the Marines there are plenty of people who will ask you to do things for nothing that help nobody. Sometimes it’s some small bullshit meant to test your obedience like some kind of robot. Sometimes... sometimes it’s something bigger. Heavier. You’ll learn how to pick out what’s important and follow your gut.
+Belle-mére: Man, you are young! I think you'll find that within the Marines there are plenty of people who will ask you to do things for nothing that help nobody. Sometimes it's some small bullshit meant to test your obedience like some kind of robot. Sometimes... sometimes it's something bigger. Heavier. You'll learn how to pick out what's important and follow your gut.
 => cannons
 
 :: cannons
-The cannons do look used, despite Belle-mére’s claim, and you question her about it.
-Belle-mére: Huh? Oh, they get used during war games and drills. They do, in fact, need to be cleaned... I just wasn’t in a rush.
+The cannons do look used, despite Belle-mére's claim, and you question her about it.
+Belle-mére: Huh? Oh, they get used during war games and drills. They do, in fact, need to be cleaned... I just wasn't in a rush.
 She holds out the swab.
 Belle-mére: I can go get another one of these, if you want to race!
-- Hell yeah! I’m pretty competitive, you should know! => Race
-- ...you’re just trying to pawn your chores off on me, aren’t you? => Maybe
+- Hell yeah! I'm pretty competitive, you should know! => Race
+- ...you're just trying to pawn your chores off on me, aren't you? => Maybe
 
 :: Maybe
 Belle-mére: Maybe
-- I’ll do it! => Race
+- I'll do it! => Race
 - No thanks => Time
 - How about if we just skip it and go do something else? => Alternate
 
@@ -102,31 +102,31 @@ Belle-mére: Oh, I am a bad influence on you! Alright, `name`, whatcha have in m
 - Practice at the firing range => Guns
 
 :: Jog
-Belle-mére: Hey! Not a bad idea- I’m pretty restless from pretending to work all afternoon. Cleaning duty can wait- let’s go!
+Belle-mére: Hey! Not a bad idea- I'm pretty restless from pretending to work all afternoon. Cleaning duty can wait- let's go!
 LOCATION: Park
 The two of you spend an afternoon jogging through the park, chatting about inconsequential things and laughing at dumb jokes.
 Belle-mére: Nice stamina there, `name`. Fighting skills are great, but those who spend time on cardio are the survivors in a conflict, am I right?
-Eventually, you’re both forced to return to the ship, time passing by much too quickly.
+Eventually, you're both forced to return to the ship, time passing by much too quickly.
 => Time
 
 :: Guns
-Belle-mére: Oh, hell yeah! Let me get my musket and I’ll meet you there!
+Belle-mére: Oh, hell yeah! Let me get my musket and I'll meet you there!
 LOCATION: Training Grounds
-You meet Belle-mére at the training grounds, musket in hand. Personally, you don’t have a lot of experience with guns (especially muskets), but the brightly colored targets set up about 200 yards away look like a carnival game you once enjoyed as a kid. You were pretty good at that, back in the day!
-Belle-mére: Alright, here’s what you do...
+You meet Belle-mére at the training grounds, musket in hand. Personally, you don't have a lot of experience with guns (especially muskets), but the brightly colored targets set up about 200 yards away look like a carnival game you once enjoyed as a kid. You were pretty good at that, back in the day!
+Belle-mére: Alright, here's what you do...
 You listen to her instructions and do very well in your first round of shooting. The two of you make a game of it, eventually putting up old cans and bottles to add variety to the “contest.”
-In fact, Belle-mére is a really good shot, but you’re fine with second place.
+In fact, Belle-mére is a really good shot, but you're fine with second place.
 Time passes quickly, and soon you realize you need to get back to the ship.
 => Time
 
 :: Race
-You run to get a second cleaning set from the closet that still smells of Belle-mére’s cigarettes, and rush back to the grinning woman.
-Belle-mére: Alright- I’ll take this half, you take those over there. We’ll meet in the middle.
+You run to get a second cleaning set from the closet that still smells of Belle-mére's cigarettes, and rush back to the grinning woman.
+Belle-mére: Alright- I'll take this half, you take those over there. We'll meet in the middle.
 `name`: How do you do this?
 Belle-mére: Easy! Wipe the barrel with turpentine, scrub with the wire brush, wipe it dry and get out all the powder, and then finish by oiling all the joints here, see?
 She points out each step.
-Belle-mére: If you win, I’ll give you a treat, okay?
-You’re not sure what to make of that, but you find yourself intrigued. This is definitely a trick to get out of her own work, but you can’t help but be amused. You nod, ready to win this thing!
+Belle-mére: If you win, I'll give you a treat, okay?
+You're not sure what to make of that, but you find yourself intrigued. This is definitely a trick to get out of her own work, but you can't help but be amused. You nod, ready to win this thing!
 Quickly, you rush over to your first cannon. What do you do first?
 => Begin
 
@@ -137,7 +137,7 @@ Quickly, you rush over to your first cannon. What do you do first?
 - Oil the joins => Bad
 
 :: Good_1
-Nice! You wipe down the inner barrel with turpentine as Belle-mére indicated. You’re fast! Now what?
+Nice! You wipe down the inner barrel with turpentine as Belle-mére indicated. You're fast! Now what?
 - Wipe it dry => Bad
 - Scrub with the brush => Good_2
 - Oil the joins => Bad
@@ -145,7 +145,7 @@ Nice! You wipe down the inner barrel with turpentine as Belle-mére indicated. Y
 :: Good_2
 Good thing you listened to directions, huh? This is the part that takes the most time. Do you rush it to win, or make sure to be thorough and get every bit of powder out?
 - Rush it! I want the prize! => Bad
-- I’m sure Belle-mére means for me to do this the right way. => Good_3
+- I'm sure Belle-mére means for me to do this the right way. => Good_3
 
 :: Good_3
 Smart move! Almost done!
@@ -153,10 +153,10 @@ Smart move! Almost done!
 - Wipe it dry => Good_4
 
 :: Good_4
-You wipe the barrel dry and oil the joints, then move on to the next cannon. You’re fast, but as you glance over at Belle-mére you can see she’s way ahead... well, she does have more experience with such things, even if she does try to get out of it whenever possible!
+You wipe the barrel dry and oil the joints, then move on to the next cannon. You're fast, but as you glance over at Belle-mére you can see she's way ahead... well, she does have more experience with such things, even if she does try to get out of it whenever possible!
 What can you do to catch up!?
 - Cheat: pour a bunch of oil in the barrel of one of her cannons => Shit
-- Keep going! You’ll get faster as you get used to the work! => Bad
+- Keep going! You'll get faster as you get used to the work! => Bad
 - Bribe her to slow down!
     do increment("bm1.points")
     do increment("bm1.points")
@@ -165,43 +165,43 @@ What can you do to catch up!?
 :: Good_5
 `name`: Belle-mére! Give me a fighting chance, here! A five minute head start-
 Belle-mére: Ha! And why would I do THAT!?
-`name`: Because... because if you do I’ll buy you dinner! Not the mess hall... somewhere nice!
+`name`: Because... because if you do I'll buy you dinner! Not the mess hall... somewhere nice!
 Belle-mére: Oh? Is that a bribe, or are you asking me out?
 You have no answer to that.
-Belle-mére: ...Well, I’ll take it- but wait until you see how expensive my tastes can run.
+Belle-mére: ...Well, I'll take it- but wait until you see how expensive my tastes can run.
 You sweat a little at the idea. The prize for winning better be worth it.
 Sure enough, the head start is enough for you to come through in the end- barely. Belle-mére is fast, and looks mildly annoyed at losing.
 Belle-mére: Damn! I wanted to win *and* get a free meal!
 `name`: Uh... sorry?
 She laughs, clapping you on the back.
-Belle-mére: You’re crafty and a fast-learner; I like that! Now look out there to get your prize.
-She points to the ocean beyond the railing and you turn to look, shocked as something presses softly to your face. It’s just a quick peck- barely qualifying as a kiss to your cheek- but it leaves your head spinning as you turn back to look at the gorgeous marine with wide eyes.
-Belle-mere: Next time we have a free day- a real one, not a slack-off one- you’ve gotta take me someplace nice. Trust me, I know the most *expensive* restaurants in town. Keep your calendar free, `name`. For now... you’d better go take care of your own work, yeah? I’ll just try to keep looking busy over here.
+Belle-mére: You're crafty and a fast-learner; I like that! Now look out there to get your prize.
+She points to the ocean beyond the railing and you turn to look, shocked as something presses softly to your face. It's just a quick peck- barely qualifying as a kiss to your cheek- but it leaves your head spinning as you turn back to look at the gorgeous marine with wide eyes.
+Belle-mere: Next time we have a free day- a real one, not a slack-off one- you've gotta take me someplace nice. Trust me, I know the most *expensive* restaurants in town. Keep your calendar free, `name`. For now... you'd better go take care of your own work, yeah? I'll just try to keep looking busy over here.
 You rush off to find your long-forgotten mop, not wanting to make a bad impression if other high-ranking marines come by, but you find your mind drifting back to that warm press of lips to your skin...
 END DATE
 
 :: Shit
 She notices right away and grabs your hand, snatching the bottle away.
-Belle-mére: Nice try, but cheating only works if you’re sneaky, newbie! You’re so obvious!
+Belle-mére: Nice try, but cheating only works if you're sneaky, newbie! You're so obvious!
 => Bad
 
 :: Bad
 Well, you messed up. You manage to get the hang of things after some more redirection from the Belle-mére, but it still puts you pretty far behind her. She ends up having to pick up your slack.
-Belle-mére: Too bad, `name`! You’ll just have to try harder to win my affections in the future, huh?
+Belle-mére: Too bad, `name`! You'll just have to try harder to win my affections in the future, huh?
 ....affections?
 => Time
 
 :: Time
-Belle-mére: Look at the time! I better get started pretending to be busy. Unless you want Tashigi on your case, you’d best go finish your mopping.
-You realize with a little jump that she’s right: you had been holding a mop, before finding the Captain! Now where did that go...?
+Belle-mére: Look at the time! I better get started pretending to be busy. Unless you want Tashigi on your case, you'd best go finish your mopping.
+You realize with a little jump that she's right: you had been holding a mop, before finding the Captain! Now where did that go...?
 if is_greater_than("bm1.points", 1)
     do romance_points(bellmere, 2)
-    Belle-mére: Hey newbie, this was fun. If you wanna grill me again, you’ll have to pay for it. Literally. Buy me dinner some time- I also accept bribes as payment for my presence: books, guns, gems, gold. You know, the usual.
+    Belle-mére: Hey newbie, this was fun. If you wanna grill me again, you'll have to pay for it. Literally. Buy me dinner some time- I also accept bribes as payment for my presence: books, guns, gems, gold. You know, the usual.
 elif is_greater_than("bm1.points", 0)
     do romance_points(bellmere, 1)
-    Belle-mére: Hey, you’re a bit of a square but I don’t hate chatting. Get more interesting or buy me something pretty, and maybe we’ll do it again sometime.
+    Belle-mére: Hey, you're a bit of a square but I don't hate chatting. Get more interesting or buy me something pretty, and maybe we'll do it again sometime.
 else
     do romance_points(bellmere, 0)
     Belle-mére: Next time stick to mopping, kid. Leave smoking in the closet to the cool moms.
-You’ll keep that in mind.
+You'll keep that in mind.
 => root.main

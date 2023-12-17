@@ -9,8 +9,8 @@ Issho: Ah, `name`! Have you come to eat as well? The food is excellent here.
 - Is there anything you recommend?
     Issho: The udon and soba here are a great choice. They're my favorites.
     Udon and soba, huh? That sounds good, too.
-    `name`: I’ll have whatever the Admiral is having please.
-    The food is delicious. It’s warm, comfort food. You enjoy it very much. You note down the address. Perhaps you will visit it again.
+    `name`: I'll have whatever the Admiral is having please.
+    The food is delicious. It's warm, comfort food. You enjoy it very much. You note down the address. Perhaps you will visit it again.
     => Part_2
 - Well a stall is a bit too common for me...I prefer something with more class.
     Issho: Is that so? I suppose I consider having class something different than how luxurious something looks.
@@ -131,9 +131,9 @@ A kite's line snaps, causing it to snag on a tree. Uh oh. What should you do now
 - Why should you do anything when you can just ask Admiral Fujitora for help?
     do decrement("isd1.points")
     You tell the kids to wait for you while you go back to the Admiral.
-    `name`: Sir, can you help us with a stuck kite? The line snaps and I really don’t like climbing trees. It’s such a hassle! You have a really useful power to help us out!
+    `name`: Sir, can you help us with a stuck kite? The line snaps and I really don't like climbing trees. It's such a hassle! You have a really useful power to help us out!
     Issho: [surprised] Alright.
-    With Admiral Fujitora’s help, the kite is easily unstuck and brought back to ground level. The children cheer happily.
+    With Admiral Fujitora's help, the kite is easily unstuck and brought back to ground level. The children cheer happily.
     You beam. A good deed without having to expend energy!
     => Part_2A3
 - You probably should leave it. The kid's parents are going to get them a new kite anyway.
@@ -176,7 +176,7 @@ do show_character(placeholder("Marine"), a, show)
 do show_character(placeholder("Civilian"), d, show)
 There's a civilian on the ground, holding a red cheek. A group of five other Marines towering over him, laughing. He throws a flailing, uncoordinated fist but is immediately kicked in the face.
 Marine: Hahaha, shouldn't have put up a resistance. Who do you think you are? You're only living so well thanks to our protection.
-`name`: What’s going on here?
+`name`: What's going on here?
 Marine: Petty Officer?! This person right there is trying to pick a fight with us! It's self defense!
 Civilian: N-No! They're lying! They were demanding protection money from me! I swear I'm telling the truth!
 You look at the two sides. It's clear to you, what the right decision is:
@@ -211,7 +211,7 @@ Relieved, you hide behind Admiral Fujitora the whole time as he deals with the g
 Once he has finished chastising those Marines, Admiral Fujitora bows low to the hurt civilian. You watch the guy leave, hoping that his opinion on the Navy hasn't changed.
 do hide_character(placeholder("Marine"), hide)
 do hide_character(placeholder("Civilian"), hide)
-How you’re glad you didn't have to deal with *that* mess.
+How you're glad you didn't have to deal with *that* mess.
 => DateEnding
 
 :: Part_2A3_Dick
@@ -254,7 +254,7 @@ Issho: Personally speaking, I suppose I still have wanderlust left.
     Issho: With the era we're in, I think nowhere's safe, `name`. From Paradise to New World, to the four Blues, everything's changing. => Part_2B2
 
 :: Part_2B1b
-Issho: It's not illegal, although Saka would beg to differ. He doesn’t think an Admiral should gamble. Still, as long as I complete my duty. He has to let it go.
+Issho: It's not illegal, although Saka would beg to differ. He doesn't think an Admiral should gamble. Still, as long as I complete my duty. He has to let it go.
 `name`: I guess so but…
 - ...People try to scam you all the time. Why do you still gamble?
     Issho: [smile] You're kind, but there's no need to worry. Observation Haki can also detect feelings. I'm gambling, but in a different way. => Part_2B2
@@ -293,7 +293,7 @@ Issho: Saka is prideful and strong-willed in ways I cannot accept.
 - I see what you mean. They do say pride comes before the fall.
     do increment("isd1.points")
     do increment("isd1.points")
-    Issho: <pause> [sad] They do. We have our differences. I don’t hate him though, only his pride. => Part_2B3
+    Issho: <pause> [sad] They do. We have our differences. I don't hate him though, only his pride. => Part_2B3
 - He's also scary and super strict!
     Issho: [sad] He does hold himself and others to very high standards. => Part_2B3
 - Why do you fight him? I think he's right!
@@ -312,7 +312,7 @@ Issho: I don't talk to him very often.
     Issho: Is that so? I suppose I should make an effort to talk with him more. => Part_2B3
 - Well... I guess he *is* pretty cool…
     do decrement("isd1.points")
-    Issho: [smile] Indeed, and I’m just one boring Admiral. => Part_2B3
+    Issho: [smile] Indeed, and I'm just one boring Admiral. => Part_2B3
 
 :: Part_2B2c
 Issho: [smile] No, I don't. He shows up to work eventually.
@@ -331,7 +331,7 @@ Issho: [sad] The Punk Hazard fight takes its toll on him…
     Issho: <pause>... I don't take part in that kind of discussion. => Part_2B3
 
 :: Part_2B3
-You watch him walk, feeling the ground in front of him. You can’t help but wonder…
+You watch him walk, feeling the ground in front of him. You can't help but wonder…
 `name`: Is it... hard being a Marine while being visually impaired?
 Issho: [smile] There are methods to see without vision. Observation Haki helps tremendously.
 - But... how do you deal with people treating you differently? => Part_2B3a

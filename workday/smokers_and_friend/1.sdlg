@@ -1,79 +1,79 @@
 :: start
 do set_background("mess-hall", show)
-It’s already orientation day in your new assignment with Vice Admiral Smoker and his group. You gulp, entering the mess hall- no need to be nervous, right? You should just do your best to get to know them. You can trust your training group to prepare you for your role in the Marines.
+It's already orientation day in your new assignment with Vice Admiral Smoker and his group. You gulp, entering the mess hall- no need to be nervous, right? You should just do your best to get to know them. You can trust your training group to prepare you for your role in the Marines.
 do show_character(bellmere, a, show)
 do show_character(tashigi, b, show)
 do show_character(hina, c, show)
 do show_character(smoker, d, show)
 On that note, you sit next to the group of four, all of them eating in relative silence despite the loud cacophony of voices echoing in the busy space.
-Belle-Mere: Hey look! The newbie finally showed! Don’t worry kid, I hate getting up at the crack of dawn, too.
+Belle-Mere: Hey look! The newbie finally showed! Don't worry kid, I hate getting up at the crack of dawn, too.
 Tashigi: You are a bit late, but the compound can be difficult to navigate at first.
 Hina: Hina will be assessing your obedience and potential.
-Smoker: Hope you’re ready for some hard work. Damn, I’m all out of coffee…
+Smoker: Hope you're ready for some hard work. Damn, I'm all out of coffee…
 - I can get you a refill!
     do decrement("wd1.bellmere")
     => Part_1A
-- Yes Sir and Ma’ams! I look forward to learning from the best! => Part_1B
-- Ha ha… yeah, I’ll do what I can.
+- Yes Sir and Ma'ams! I look forward to learning from the best! => Part_1B
+- Ha ha… yeah, I'll do what I can.
     do increment("wd1.bellmere")
     => Part_1C
 
 :: Part_1A
 You notice Belle-Mere make an odd face, something like disapproval, though the others do not seem to react at all beyond the Vice Admiral handing his cup to you dismissively. You get the coffee like the good little gopher you signed up to be when you joined the Marines, eager to please.
-Smoker: Thanks. Just the right amount of sugar, too–you’re not bad, kid.
+Smoker: Thanks. Just the right amount of sugar, too–you're not bad, kid.
 do increment("wd1.smoker")
 - It was no problem.
     do decrement("wd1.bellmere")
 - Anything else, Sir?
-  Smoker: Easy. That’ll do.
+  Smoker: Easy. That'll do.
 => Days_Duty
 
 :: Part_1B
-Smoker nods curtly, and you feel the gleam of Hina’s eyes trained on you.
+Smoker nods curtly, and you feel the gleam of Hina's eyes trained on you.
 Hina: ...
-Smoker: Right, well, let’s see what you can do.
-Tashigi: That’s the spirit! I expect nothing but your best moving forward.
-Belle-Mere: Well, let’s rip off this band-aid, huh?
+Smoker: Right, well, let's see what you can do.
+Tashigi: That's the spirit! I expect nothing but your best moving forward.
+Belle-Mere: Well, let's rip off this band-aid, huh?
 => Days_Duty
 
 :: Part_1C
 Belle-Mere grins, though Tashigi seems less than pleased with your blaise attitude.
 Tashigi: That is no way to address your superior officers, Marine.
 do decrement("wd1.tashigi")
-Belle-Mere: Well, they have a realistic attitude, at least. Geez, Tash-chan, you don’t have to get on the kid’s case on day one.
-Tashigi: There is a difference between realistic and insubordinate. We won’t be doing them any favors by being so lax.
-Belle-Mere rolls her eyes behind Captain Tashigi’s back, but otherwise does not respond.
+Belle-Mere: Well, they have a realistic attitude, at least. Geez, Tash-chan, you don't have to get on the kid's case on day one.
+Tashigi: There is a difference between realistic and insubordinate. We won't be doing them any favors by being so lax.
+Belle-Mere rolls her eyes behind Captain Tashigi's back, but otherwise does not respond.
 => Days_Duty
 
 :: Days_Duty
-Smoker: So, we’re going to be splitting up into a couple of different groups. `name`, you can come with me and Hina to do some drills by the docks…
-Hina: (explains Tashigi’s option (swordplay) and Belle-mere’s (training grounds/obstacle course). Maybe hint that they could be good for the new recruit, too?)
-Belle-mere: Uh, right. Training grounds. That’s totally where I plan to spend my time today.
-She winks your way, unseen by the others, and you’re not sure what to make of that.
-`name`: All of these things seem like they’d be really useful training for an actual battle. Do you all always separate like that?
+Smoker: So, we're going to be splitting up into a couple of different groups. `name`, you can come with me and Hina to do some drills by the docks…
+Hina: (explains Tashigi's option (swordplay) and Belle-mere's (training grounds/obstacle course). Maybe hint that they could be good for the new recruit, too?)
+Belle-mere: Uh, right. Training grounds. That's totally where I plan to spend my time today.
+She winks your way, unseen by the others, and you're not sure what to make of that.
+`name`: All of these things seem like they'd be really useful training for an actual battle. Do you all always separate like that?
 Tashigi: They are all essential in the training of a Marine. You will be expected to take part in every activity during your rotations, but for now you are free to choose where to start.
 
-Smoker: Ever hear about too many cooks spoiling the pot? Too many of us giving orders and we’ll butt heads, and it’s nothing like how it would be in the field with one CO to every however many subordinates.
-- Don’t you usually work with Captain Tashigi?
-    Smoker: Yeah, but we’re mixing things up a little.
+Smoker: Ever hear about too many cooks spoiling the pot? Too many of us giving orders and we'll butt heads, and it's nothing like how it would be in the field with one CO to every however many subordinates.
+- Don't you usually work with Captain Tashigi?
+    Smoker: Yeah, but we're mixing things up a little.
 - But what if I want to learn from all of you?
     Smoker: Not like this is your last day.
 - Yeah, getting that many orders seems like a drag.
     do increment("wd1.bellmere")
 
-Smoker: And we’ve all got different things we teach best.
+Smoker: And we've all got different things we teach best.
 - Great. Could you go over the options again?
     Tashigi: It is quite a bit of information. Ask as much as you need, but be sure to pay attention.
     do increment("wd1.tashigi")
-- Who’s the best teacher overall?
-    Smoker: That’s for you to make up your mind about. I’ll go over the choices again.
-- So you don’t switch up who teaches what?
-    Smoker: Occasionally, but it’s been a while. So, let’s see...
+- Who's the best teacher overall?
+    Smoker: That's for you to make up your mind about. I'll go over the choices again.
+- So you don't switch up who teaches what?
+    Smoker: Occasionally, but it's been a while. So, let's see...
 
-Smoker: We’ve got the first plan, naval drills with me and Hina. Tashigi and her sword stuff. Captain Belle-Mere and her obstacles. What’ll it be?
-- I like the original plan- I’d love to try naval drills!
+Smoker: We've got the first plan, naval drills with me and Hina. Tashigi and her sword stuff. Captain Belle-Mere and her obstacles. What'll it be?
+- I like the original plan- I'd love to try naval drills!
     => Part_2A
-- I’m a fan of swords…. Captain Tashigi, would you teach me a few moves?
+- I'm a fan of swords…. Captain Tashigi, would you teach me a few moves?
     do increment("wd1.tashigi")
     => Part_2B
 - An obstacle course seems interesting!
@@ -84,11 +84,11 @@ do hide_characters(hide)
 do set_background("ship", show)
 do show_character(hina, left, show)
 do show_character(smoker, right, show)
-Smoker and Hina lead the way to the docks, keeping a quick pace with each other. The three of you arrive at a large warship. Several unfamiliar people who look to be trainees look as if they’re expecting Smoker and Hina. Once you board the deck, they motion for everyone to gather around.
-Smoker: You’ll be fighting a mock battle together. Hina and I are in command, so listen up.
+Smoker and Hina lead the way to the docks, keeping a quick pace with each other. The three of you arrive at a large warship. Several unfamiliar people who look to be trainees look as if they're expecting Smoker and Hina. Once you board the deck, they motion for everyone to gather around.
+Smoker: You'll be fighting a mock battle together. Hina and I are in command, so listen up.
 Hina: A decoy ship armed with your fellow Marines posting its attending crew will be attempting to storm the deck, just as you might encounter in a real naval battle. Your objective will be to work as a team to hold them off and detain their captain.
-Smoker: I’m sure some of you have done this before, and I think this is in a manual.
-Hina: The plan we’ll be adapting is in the Standard Warship Drills section of your combat manual.
+Smoker: I'm sure some of you have done this before, and I think this is in a manual.
+Hina: The plan we'll be adapting is in the Standard Warship Drills section of your combat manual.
 - Oh, I know this one!
     do increment("wd1.hina")
     do decrement("wd1.smoker")
@@ -97,10 +97,10 @@ Hina: The plan we’ll be adapting is in the Standard Warship Drills section of 
 - Sounds familiar, but I learn better by doing.
     do increment("wd1.smoker")
 
-Smoker: The winner here is the first team to knock the other team’s captain into the water. For the purposes of the drill, I’m your commanding officer. Any questions?
+Smoker: The winner here is the first team to knock the other team's captain into the water. For the purposes of the drill, I'm your commanding officer. Any questions?
 - Nope, I got it.
-- What happens if we knock people who aren’t the captain into the water?
-    Smoker: Good question. Nothing, except they get wet–you don’t get points for that.
+- What happens if we knock people who aren't the captain into the water?
+    Smoker: Good question. Nothing, except they get wet–you don't get points for that.
     Hina: In a real naval battle there will not be time to ask questions, `name`. Right, everyone in positions!
 - Wait, are we actually using real weapons or what?
     Hina: What an asinine question, as if you would be opening fire on your fellow Marines.
@@ -110,41 +110,41 @@ Smoker: The winner here is the first team to knock the other team’s captain in
 
 :: Drill_Start
 You are positioned at a cannon in the rear of the ship along with several others, while other Marines stand ready on the deck.
-Another sailor yells out the alert. You can see the other ‘crew’ (and a few familiar faces from your cohort of newbies!) on the other ship. Pirates, indeed.
-Smoker: Okay, they’re approaching. What are you thinking here?
+Another sailor yells out the alert. You can see the other ‘crew' (and a few familiar faces from your cohort of newbies!) on the other ship. Pirates, indeed.
+Smoker: Okay, they're approaching. What are you thinking here?
 Hina: Smoker, you are modeling for our new recruits. Must Hina always be reminding you to demonstrate leadership? In an actual naval battle, you would not be standing around asking what your crew is thinking. Really.
-Smoker: Nah, I do it all the time. They’re not moving fast. It’s better to know where your subordinates’ brains are.
+Smoker: Nah, I do it all the time. They're not moving fast. It's better to know where your subordinates' brains are.
 Hina: Hina unimpressed. What would Tashigi-chan think if she saw you conducting drills with such a lackadaisical attitude?
 Smoker: I know her well enough. So, `name`, what are you thinking?
 - At the ready and waiting for orders.
     do increment("wd1.hina")
-- I’ll see how they attack when they get closer to range and make adjustments.
+- I'll see how they attack when they get closer to range and make adjustments.
 - I need to be prepared for anything!
     do increment("wd1.smoker")
     Hina: They will be following the drill.
-    Smoker: You don’t know that.
+    Smoker: You don't know that.
 
-They’re drawing up closer. None of your own crew seems ready to make the first move, but then again, perhaps that is the point? You can see their captain from your position - but are they close enough yet to open fire? Should you make the first move? Or wait?
-Hina: That’s it, maintain position, don’t attack until they’re within range, otherwise we waste energy, ammo and resources.
-Smoker: Don’t just sit back and wait for them to come to you. In a real battle, you’re not going to know what they’re going to do. The sooner you make your move, the more likely it is you’ll take them by surprise.
-- **Fire your ‘weapon’ at the other ship’s captain.** => A
+They're drawing up closer. None of your own crew seems ready to make the first move, but then again, perhaps that is the point? You can see their captain from your position - but are they close enough yet to open fire? Should you make the first move? Or wait?
+Hina: That's it, maintain position, don't attack until they're within range, otherwise we waste energy, ammo and resources.
+Smoker: Don't just sit back and wait for them to come to you. In a real battle, you're not going to know what they're going to do. The sooner you make your move, the more likely it is you'll take them by surprise.
+- **Fire your ‘weapon' at the other ship's captain.** => A
 - **Stay at the cannon and follow orders.** => B
 
 :: A
-You rush from your position at the cannon, aiming your watergun at the ship’s captain!
+You rush from your position at the cannon, aiming your watergun at the ship's captain!
 Hina: Soldier! Get back in position!
 do lock_out_date(hina)
-Smoker: Yeah, that’s it, `name`! Way to think on your feet.
+Smoker: Yeah, that's it, `name`! Way to think on your feet.
 do increment("wd1.smoker")
-The other ship’s captain topples from his perch at the ship’s helm as a water balloon hits him in the face, leaving his crew stunned, which affords your crew the opportunity to open fire. The drill is over!
+The other ship's captain topples from his perch at the ship's helm as a water balloon hits him in the face, leaving his crew stunned, which affords your crew the opportunity to open fire. The drill is over!
 => Drill_end
 
 :: B
 do unlock_date(hina)
-You hold your ground at the ship’s cannon, waiting for the right moment.
-Hina: That’s right crew, hold her steady! Ready, fire!
-Smoker: Well, I can’t fault you for going that way when you know their battle plan…
-You fire your cannon in a BOOM of the largest water balloon you’ve ever seen, as the cannon’s alongside you do the same. The rival ship is rocked by the onslaught of water and the ship’s ‘captain’ goes tumbling into the water. The drill is over!
+You hold your ground at the ship's cannon, waiting for the right moment.
+Hina: That's right crew, hold her steady! Ready, fire!
+Smoker: Well, I can't fault you for going that way when you know their battle plan…
+You fire your cannon in a BOOM of the largest water balloon you've ever seen, as the cannon's alongside you do the same. The rival ship is rocked by the onslaught of water and the ship's ‘captain' goes tumbling into the water. The drill is over!
 => Drill_end
 
 :: Drill_end
@@ -168,7 +168,7 @@ do set_background("park", show)
 You follow the red-haired woman out of the mess hall and down a nearby path. She moves with purpose, and you wonder what she has in mind for your first day of training.
 - Where are we going?
     => Part_2C1
-- Er, so what’s the plan for today?
+- Er, so what's the plan for today?
     => Part_2C2
 - [Keep silent.]
     => Part_2C3
@@ -176,7 +176,7 @@ You follow the red-haired woman out of the mess hall and down a nearby path. She
 :: Part_2C1
 Belle-Mere: Ah, you know… looking for some nice shade.
 `name`: To…. train under?
-Belle-Mere: (laughs) Oh, no. I’m going to nap- this place is interrupting my sleep schedule!
+Belle-Mere: (laughs) Oh, no. I'm going to nap- this place is interrupting my sleep schedule!
 => day
 
 :: Part_2C2
@@ -184,7 +184,7 @@ Belle-Mere: Plan? Well, avoiding the Vice Admiral and Rear Admiral should be eas
 => day
 
 :: Part_2C3
-Belle-Mere: A recruit of few words, huh? Good- I’m not adverse to some peace and quiet today!
+Belle-Mere: A recruit of few words, huh? Good- I'm not adverse to some peace and quiet today!
 => day
 
 :: day
@@ -197,20 +197,20 @@ Belle-Mere: You like mikan oranges, (name?).
     => Part_4
 
 :: Part_3
-Belle-Mere: I brought a tree from my family orchard when I found out I’d be shipped to this island for training- let’s go check on it. It’s a good spot to hide out on a hot day like this!
+Belle-Mere: I brought a tree from my family orchard when I found out I'd be shipped to this island for training- let's go check on it. It's a good spot to hide out on a hot day like this!
 => Mikan
 
 :: Part_4
-Belle-Mere: Well, too bad for you! I brought a couple trees from my family orchard when I found out I’d be shipped to this island for training- I plan on checking on them and hiding out in the shade. Not too late to go find Captain Tashigi if you feel like overworking yourself and getting sweaty.
-- Yeah, I’ll go find her. => tash_transition
-- No way! It’s like 100 degrees out here! => Mikan
+Belle-Mere: Well, too bad for you! I brought a couple trees from my family orchard when I found out I'd be shipped to this island for training- I plan on checking on them and hiding out in the shade. Not too late to go find Captain Tashigi if you feel like overworking yourself and getting sweaty.
+- Yeah, I'll go find her. => tash_transition
+- No way! It's like 100 degrees out here! => Mikan
 
 :: tash_transition
 do hide_characters(hide)
 do set_background("garden", show)
 do show_character(tashigi, center, show)
-It’s not long before you spot Captain Tashigi on a secluded corner of the garden.
-Tashigi: Petty Officer `name`, aren’t you supposed to be with Captain Bell-mere at the training grounds?
+It's not long before you spot Captain Tashigi on a secluded corner of the garden.
+Tashigi: Petty Officer `name`, aren't you supposed to be with Captain Bell-mere at the training grounds?
 `name`: Huh…
 Tashigi: Never mind, I can imagine what went on.
 `name`: Can I join you?
@@ -221,11 +221,11 @@ do increment("wd1.tashigi")
 :: Mikan
 There are three trees down the path, deep emerald and dotted with small unripened fruit, and you settle in a bench nearby beneath their shade.
 PC: How long until the mikans ripen?
-Belle-mere: Hmm… I’d say a couple more months, at least. On a day as hot as this, it’s important to take care of yourself. I like to sit here and think sometimes…
+Belle-mere: Hmm… I'd say a couple more months, at least. On a day as hot as this, it's important to take care of yourself. I like to sit here and think sometimes…
 PC: …like meditation?
-Belle-mere: Yeah? Yeah! That sounds more productive, doesn’t it? I mean, I train when I need to, but I think some people around here just don’t know how to enjoy life.
+Belle-mere: Yeah? Yeah! That sounds more productive, doesn't it? I mean, I train when I need to, but I think some people around here just don't know how to enjoy life.
 PC: What kind of training do you prefer?
-Belle-mere: Oh, I’m a flintlock girl. As long as my aim is true, I don’t need to be sweating out here running laps or swinging around a sword. What do you think is most important in a real conflict, (name)?
+Belle-mere: Oh, I'm a flintlock girl. As long as my aim is true, I don't need to be sweating out here running laps or swinging around a sword. What do you think is most important in a real conflict, (name)?
 - Good_Aim
     => Good_Aim
 - Physical Strength
@@ -234,15 +234,15 @@ Belle-mere: Oh, I’m a flintlock girl. As long as my aim is true, I don’t nee
     => Thinking_Fast
 
 :: Good_Aim
-Belle-mere: Oh yeah? Let’s see what you got, then, newbie.
+Belle-mere: Oh yeah? Let's see what you got, then, newbie.
 You wonder, as she stands up from the bench, if she means for you to follow her to the shooting range or something and get some training in, after all. However, she stops short only a little further away, gathering small pebbles off the gravel path.
 Belle-mére: Can you throw me a couple cans from behind the bench?
-You look, and sure enough there’s a *rather impressive* pile of empty soda and beer cans thrown behind the bench in a wooden box. It tells the story of frequent truancy. You grab them one at a time and toss them to the Captain, who catches them easily and begins to balance them on the ground a good hundred yards away down the path.
-Belle-mére: Okay, here’s your ammo.
+You look, and sure enough there's a *rather impressive* pile of empty soda and beer cans thrown behind the bench in a wooden box. It tells the story of frequent truancy. You grab them one at a time and toss them to the Captain, who catches them easily and begins to balance them on the ground a good hundred yards away down the path.
+Belle-mére: Okay, here's your ammo.
 She hands you a fistfull of pebbles and you stare at them a moment before looking back up, perplexed.
 PC: You want me to… hit the cans with these little rocks?
-Belle-mére: Knock them all down and maybe I’ll share some of my mikans with you when they ripen.
-You size up the little cans, not too sure of your chances. She didn’t say you had to do it in one go, though, so… with enough persistence, you could probably do it.
+Belle-mére: Knock them all down and maybe I'll share some of my mikans with you when they ripen.
+You size up the little cans, not too sure of your chances. She didn't say you had to do it in one go, though, so… with enough persistence, you could probably do it.
 - Go for it
     do increment("wd1.bellmere")
     => continue
@@ -251,31 +251,31 @@ You size up the little cans, not too sure of your chances. She didn’t say you 
     => boo
 
 :: continue
-You aim carefully at the cans, selecting the heaviest little stones you have. You manage to hit all the cans down before finishing with the fistful of pebbles, though it’s definitely a challenge. You find you need to put a good deal of strength behind the little projectiles to get the force needed. It’s fun, and you find yourself laughing with the Captain before it’s all over.
+You aim carefully at the cans, selecting the heaviest little stones you have. You manage to hit all the cans down before finishing with the fistful of pebbles, though it's definitely a challenge. You find you need to put a good deal of strength behind the little projectiles to get the force needed. It's fun, and you find yourself laughing with the Captain before it's all over.
 => Walk
 
 :: boo
 Belle-mére looks unimpressed, tossing the pebbles back down and rubbing her hand clean on her pants.
 Belle-mére: Sure. How about you head over to the obstacle course on your own, then? Seems like that would be… a *better* use of your time.
-You’re pretty sure you’ve offended her, but there’s not much you can do about it now!
+You're pretty sure you've offended her, but there's not much you can do about it now!
 WORK DAY ENDS
 => root.main
 
 :: Strength
-Belle-mére: Oh, really? Well then, if muscles are all that you won’t mind helping a lady out with something heavy, will you?
-You can’t help but feel that there is something devious in her tone, but you’re left with little options: You nod.
+Belle-mére: Oh, really? Well then, if muscles are all that you won't mind helping a lady out with something heavy, will you?
+You can't help but feel that there is something devious in her tone, but you're left with little options: You nod.
 Belle-mére directs you to a plot near the back of her trees.
-Belle-mére: There’s a bagged sapling by the shed down that way.
+Belle-mére: There's a bagged sapling by the shed down that way.
 She pointspoint down the path and you squint, not seeing anything… it much be very far!
-Belle-mére: Don’t you use a wheelbarrow and risk dumping my last unplanted mikan tree! You can bring it here and plant it.
+Belle-mére: Don't you use a wheelbarrow and risk dumping my last unplanted mikan tree! You can bring it here and plant it.
 PC: W-why should I be responsible for-
 Belle-mére: Hey now- do I look like I have big beefy arms? No? Well, I planted all of these. Should ebe no trouble for a marine that values strength so damn much.
 She has you there.
-You work the better part of an hour away sweating in the sweltering sun, lifting and walking and digging until your limbs feel like noodles… How did she get such a huge sapling to this island in the first place!? It’s practically a full-grown tree!
-- Complain: You’re the commanding officer, here. You could have pulled your weight!
+You work the better part of an hour away sweating in the sweltering sun, lifting and walking and digging until your limbs feel like noodles… How did she get such a huge sapling to this island in the first place!? It's practically a full-grown tree!
+- Complain: You're the commanding officer, here. You could have pulled your weight!
     do lock_out_date(bellmere)
-    Belle-mére: If I’m your commanding officer, maybe you should cool it with your snark, huh? I’m kind of tired of talking- I think you should go give that obstacle course a try.
-    You’re pretty sure you’ve offended her, but there’s not much you can do about it now!
+    Belle-mére: If I'm your commanding officer, maybe you should cool it with your snark, huh? I'm kind of tired of talking- I think you should go give that obstacle course a try.
+    You're pretty sure you've offended her, but there's not much you can do about it now!
     END WORK DAY
     => root.main
 - Joke: Well, I learned a valuable lesson about priorities, huh?
@@ -288,104 +288,104 @@ Belle-mére: Oh? A good answer- nothing will get you killed in this line of work
 She looks thoughtful, playing absently with a leaf that had fallen from one of her trees.
 Belle-mére: What has to be broken before you can use it?
 PC: Huh?
-Belle-mére: Riddles! We’re doing riddles now- keep up! You said thinking fast was important, and then you give me a “huh?”
+Belle-mére: Riddles! We're doing riddles now- keep up! You said thinking fast was important, and then you give me a “huh?”
 You should probably just answer the riddle.
 - a horse
     Belle-mére blinks at you.
     Belle-mére: Huh… I mean, technically that makes sense, though it sounds a bit harsh, huh? It was supposed to be an egg…
 - mosaic glass
-    Belle-mére: Ha! Okay, you’re reaching- it’s supposed to be an egg!
+    Belle-mére: Ha! Okay, you're reaching- it's supposed to be an egg!
 - an egg
     do increment("wd1.bellmere")
     Belle-mére: Yes! Have you heard that one before?
 Belle-mére: Okay, next-
-PC: There’s more!?
+PC: There's more!?
 Belle-mére: You have a complaint?
 - Yes, riddles are dumb.
     do lock_out_date(bellmere)
     Belle-mére does not look happy.
-    Belle-mére: Disrespecting the craft, huh? Hey, why don’t you do hit up that obstacle course after all. I could use some alone time with my “dumb riddles.”
-    You’re pretty sure you’ve offended her.
+    Belle-mére: Disrespecting the craft, huh? Hey, why don't you do hit up that obstacle course after all. I could use some alone time with my “dumb riddles.”
+    You're pretty sure you've offended her.
     END WORK DAY
     => root.main
-- No, ma’am! I will answer as many riddles as you can throw at me!
+- No, ma'am! I will answer as many riddles as you can throw at me!
     Belle-mére looks excited, rubbing her hands together.
-    Belle-mére: Okay, let’s see… I shave every day, but my beard stays the same. What am I?
+    Belle-mére: Okay, let's see… I shave every day, but my beard stays the same. What am I?
     - beardless
         Belle-mére: Well….
         She touches her jaw as she thinks and you grin.
-        PC: Got you! If you don’t have a beard, then it doesn’t matter how much you shave, right? Your beard will remain the same- as in, non-existent.
-        Belle-mére: Huh. I guess I’ll take it!
+        PC: Got you! If you don't have a beard, then it doesn't matter how much you shave, right? Your beard will remain the same- as in, non-existent.
+        Belle-mére: Huh. I guess I'll take it!
     - a barber
         do increment("wd1.bellmere")
         Belle-mére: You got it!
         She looks pleased. She must really like riddles… or people who  answer them.
     - a track star
-        Belle-mére:... You’re going to have to give me an explanation on that one, (name).
-        PC: Well, you can shave time off of youryou’re run-
+        Belle-mére:... You're going to have to give me an explanation on that one, (name).
+        PC: Well, you can shave time off of youryou're run-
         Belle-mére:-boo! Weak answer, all around.
         PC: I thought it was clever!
         Belle-mére looks amused, snickering as she shakes her head.
     PC: Well, bring on the next one!
-    Belle-mére: Nope! That’s all you get for free, newbie! I charge by the riddle now.
-    You think she’s joking, but she really doesn’t tell you any more.
+    Belle-mére: Nope! That's all you get for free, newbie! I charge by the riddle now.
+    You think she's joking, but she really doesn't tell you any more.
     => Walk
 
 :: Walk
 The two of you sit on the benches and talk for a while before you start to get thirsty.
-PC: I’ll go get us some water…
-With a start, you realized something, freezing just as you start to stand up so you’re sort of half-bent and ridiculous. You blink, plopping back down to stare at Belle-Mere
+PC: I'll go get us some water…
+With a start, you realized something, freezing just as you start to stand up so you're sort of half-bent and ridiculous. You blink, plopping back down to stare at Belle-Mere
 PC: Hey! Did you just… train me in something after all!?
 She shrugged, grinning and looking unconcerned.
 Belle-mere: Maybe. Maybe it was a happy coincidence if you learned a thing or two. In any case-
 She stops, suddenly, looking up.
 Belle-mere: Oh, shit. Hear that?
 You do hear it. The sound of footsteps approaching
-PC: Captain Tashigi? She did say she’d be training out here…
+PC: Captain Tashigi? She did say she'd be training out here…
 Belle-mere nods, standing up and giving you a hand to follow suit (again) just as the Captain rounds the bend of short orange trees and spots the two of you… not at the obstacle course as previously stated. You tense, suddenly concerned about getting in trouble on your first day.
 => TB
 
 
 :: Part_2B
 After clearing out the table, Tashigi leads you all the way to the main garden. She signed out two practice swords from the armory on your way out, but even if they are made of wood, you have the feeling that you might end up in the infirmary if not careful.
-Tashigi: Let's see what you’ve got.
+Tashigi: Let's see what you've got.
 Before you can even assume a defensive stance, Captain Tashigi advances, quicker than any other adversary you have ever faced.
-Tashigi: Don’t drop your guard, Marine!
+Tashigi: Don't drop your guard, Marine!
 if has_item("WentWithBellmere")
     => Route2
 else
     => Route1
 
 :: Route1
-You take a step back instinctively, but you know you won’t make it in time.
+You take a step back instinctively, but you know you won't make it in time.
 Then, she stumbles, seemingly with her own feet. You are left speechless as you watch the Captain flap her arms around, barely managing to stay on her own feet. A violent blush covers her from head to toe.
 Tashigi: Oh, crap!
 Captain Tashigi squints as she frantically looks around her feet.
 Tashigi: I… I dropped my glasses.
-It’s a clearly futile search. You had noticed her glasses earlier, but it’s only until now that you realize just how much she needs them. She drops to her knees, and you can hear her whisper.
-Tashigi: If Vice Admiral Smoker finds out I lost another pair, I won’t hear the end of it.
+It's a clearly futile search. You had noticed her glasses earlier, but it's only until now that you realize just how much she needs them. She drops to her knees, and you can hear her whisper.
+Tashigi: If Vice Admiral Smoker finds out I lost another pair, I won't hear the end of it.
 - [Ask if she is alright]
     PC: Are you alright?
-    Tashigi: I’m fine. It’s just that it’s difficult to find my glasses without, well, having my glasses on… Wait, found them!
+    Tashigi: I'm fine. It's just that it's difficult to find my glasses without, well, having my glasses on… Wait, found them!
     Captain Tashigi blows on the lenses, trying to get most of the dirt off them. She accepts your hand when you offer it, and you help her stand up.
     Tashigi: Thanks. Now, huh, where were we?
     +1
 - [Step forward to help]
     Tashigi: NO, WAIT!
-    But it’s too late. There is a loud sound of shattering glass coming from under your heel. You wince but there is nothing you can do. You lift your foot and find Captain Tashigi’s glasses, or what’s left of them.
+    But it's too late. There is a loud sound of shattering glass coming from under your heel. You wince but there is nothing you can do. You lift your foot and find Captain Tashigi's glasses, or what's left of them.
     Tashigi: …
-    Tashigi: You know, I bet Captain Bell-mere could use some help with her obstacle course after all. Why don’t you go look for her?
+    Tashigi: You know, I bet Captain Bell-mere could use some help with her obstacle course after all. Why don't you go look for her?
     After Captain Tashigi dismisses you, you are left to wander around the garden alone. If you remember correctly, Captain Bell-mere should be at the training grounds…
     Bell-mere: Hey, [name]... Woah, why so grim?
     You tell Captain Bell-mere all about your incident with Captain Tashigi, as you walk together.
     Bell-mere: Ha! —---
     => Part_3
 - [Brush it off]
-    PC: The Vice Admiral would probably just be glad he doesn’t have to deal with the paperwork of my demise in the line of duty. You totally had me there!
+    PC: The Vice Admiral would probably just be glad he doesn't have to deal with the paperwork of my demise in the line of duty. You totally had me there!
     Captain Tashigi lets out a laugh.
-    Tashigi: You would have blocked in time, I’m sure.
-    PC: Nah, I was definitely done for. Saw my life flash in front of my eyes. It’s my lucky day, I guess.
-    Tashigi: Ha! If you say so… Smoker does hate paperwork, you know, so I’ll try to reel it in.
+    Tashigi: You would have blocked in time, I'm sure.
+    PC: Nah, I was definitely done for. Saw my life flash in front of my eyes. It's my lucky day, I guess.
+    Tashigi: Ha! If you say so… Smoker does hate paperwork, you know, so I'll try to reel it in.
     Tashigi: Oh, here they are!
     Captain Tashigi blows on the lenses, trying to get most of the dirt off them. She accepts your hand when you offer it, and you help her stand up.
     Tashigi: Thanks. Now, where were we?
@@ -395,41 +395,41 @@ Tashigi: If Vice Admiral Smoker finds out I lost another pair, I won’t hear th
 :: Route2
 You spar for a while, and despite your background training, your breathing becomes erratic.
 - This is just the workout I needed!
-    Tashigi: You’re not half as bad as I thought. There is certainly some potential!
+    Tashigi: You're not half as bad as I thought. There is certainly some potential!
     +2
 - My hand is about to fall off, can we take a break soon?
-    Tashigi: One more round, and we’ll move on to perfect your technique. Great job so far!
+    Tashigi: One more round, and we'll move on to perfect your technique. Great job so far!
     +1
 - This is too hard! I give up.
-    Tashigi: Hmm. At this rate, you won’t last a month. Survive this next round, and we’ll talk about a break.
+    Tashigi: Hmm. At this rate, you won't last a month. Survive this next round, and we'll talk about a break.
     +0
 => PostTraining
 
 :: PostTraining
 Captain Tashigi does not go easy on you. Your every muscle aches, and you soon find yourself struggling not to let go of your sword. You hold on to it, even if by sheer will power.
 After a while, even the talented swordswoman in front of you needs to pause to catch her breath.
-Tashigi: That’s good enough for now.
+Tashigi: That's good enough for now.
 She takes off her fogged glasses, frowning, and reaches for a small piece of cloth from one of her pockets. She starts to clean the lenses carefully, albeit absentmindedly, as she continues talking.
-Tashigi: I’m sure you must have some questions for me, I can tell. Let’s hear them.
+Tashigi: I'm sure you must have some questions for me, I can tell. Let's hear them.
 - [Ask why she chose the garden for the training]
     PC: Why are we training here and not in the training grounds?
-    Tashigi: Captain Bell-mere is running her obstacle course, it’s best we don’t get in the way.
-    Tashigi: Besides, it’s a lovely day outside. Don’t you think?
-    A soft breeze carries Captain Tashigi’s voice, along with the sweet smell of freshly cut grass. Warm sunlight bathes her face and bounces off her pitch-black hair, making it almost glow blue.
+    Tashigi: Captain Bell-mere is running her obstacle course, it's best we don't get in the way.
+    Tashigi: Besides, it's a lovely day outside. Don't you think?
+    A soft breeze carries Captain Tashigi's voice, along with the sweet smell of freshly cut grass. Warm sunlight bathes her face and bounces off her pitch-black hair, making it almost glow blue.
     It certainly is a lovely day, you think.
-    Tashigi: Ok, time’s up.
+    Tashigi: Ok, time's up.
     Tashigi: Let me see that stance again.
 - [Ask about her interest in swords]
     PC: What made you choosechose to be a swordswoman?
-    Captain Tashigi seems taken aback by your question, but after a moment’s hesitation she clears her throat.
+    Captain Tashigi seems taken aback by your question, but after a moment's hesitation she clears her throat.
     Tashigi: Come to think of it, I have always liked swords, ever since I was a child.
     PC: Why?
-    Tashigi: In the past, I’ve met so many swordsmen unworthy of the swords they carry, unknowing of their past and their true potential.
-    Tashigi: And the first thing you need to know is that each sword is… unique in their making, with a history of their own. Perhaps a will of their own, too. They aren’t just *tools* for us to use.
+    Tashigi: In the past, I've met so many swordsmen unworthy of the swords they carry, unknowing of their past and their true potential.
+    Tashigi: And the first thing you need to know is that each sword is… unique in their making, with a history of their own. Perhaps a will of their own, too. They aren't just *tools* for us to use.
     Captain Tashigi chuckles as she shakes her head.
-    Tashigi: I’m rambling, now. Let’s get back to work.
-You prepare yourself for the next round, but Captain Tashigi’s sword stops midair. She frowns as she looks at something behind you.
-You turn around, and you spot a red haired figure with the Captain’s coat lying underneath the shade of a couple of trees.
+    Tashigi: I'm rambling, now. Let's get back to work.
+You prepare yourself for the next round, but Captain Tashigi's sword stops midair. She frowns as she looks at something behind you.
+You turn around, and you spot a red haired figure with the Captain's coat lying underneath the shade of a couple of trees.
 Captain Tashigi motions for you to follow her, and together you make your way towards the resting figure.
 As you approach, you recognize Captain Bell-mere, who is quick to stand up the moment you are within earshot.
 => TB
@@ -437,23 +437,23 @@ As you approach, you recognize Captain Bell-mere, who is quick to stand up the m
 :: TB
 Upon meeting, the two women look grim, eyeing each other up and down.
 Belle-mere: Uh, hey, Captain Tashigi.
-Tashigi looks tired and maybe a little sweaty- she’s obviously been putting effort into her swordplay. Bell-mere, on the other hand, looks fresh as a daisy.
+Tashigi looks tired and maybe a little sweaty- she's obviously been putting effort into her swordplay. Bell-mere, on the other hand, looks fresh as a daisy.
 Belle-mere: Working hard?
 Tashigi: Captain Bell-mere. Hardly working, are we? How was the… obstacle course?
-Belle-mere: I mean, honestly I wasn’t really feeling it today. Look around! It’s so nice and warm… sometimes you just have to slow down and enjoy life. Take care of the things that are important, you know?
+Belle-mere: I mean, honestly I wasn't really feeling it today. Look around! It's so nice and warm… sometimes you just have to slow down and enjoy life. Take care of the things that are important, you know?
 Captain Tashigi sighs.
-Tashigi: Why am I not surprised? You not *feeling it* translates into unprepared marines. And see, Petty Officer [name], we in the Marines usually consider the safety of our officers as ‘important’.
-Bell-mere: Oh, I know all about keeping my priorities in order and protecting others. I was fighting pirates years before you were old enough to lift that sword, you know… and I didn’t feel like running today.
+Tashigi: Why am I not surprised? You not *feeling it* translates into unprepared marines. And see, Petty Officer [name], we in the Marines usually consider the safety of our officers as ‘important'.
+Bell-mere: Oh, I know all about keeping my priorities in order and protecting others. I was fighting pirates years before you were old enough to lift that sword, you know… and I didn't feel like running today.
 She says the last stubbornly, like a petulant child trying to argue and running out of words.
-Tashigi: The obstacle course would be done by now, you’re just making excuses at this point, Bell-mere. You know what, whatever, it’s not worth getting into it with you right now.
+Tashigi: The obstacle course would be done by now, you're just making excuses at this point, Bell-mere. You know what, whatever, it's not worth getting into it with you right now.
 Captain Tashigi turns to look at you.
 Tashigi: Come now, [name], let us not waste any more time.
-Belle-mere: Waste time!? Implying you’re going to do more? You're going to pass out from this heat! Am I right, (name)?
+Belle-mere: Waste time!? Implying you're going to do more? You're going to pass out from this heat! Am I right, (name)?
 - Well, actually… I think Captain Tashigi has a point.
     do lock_out_date(bellmere)
     if is_greater_than("wd1.tashigi", 2)
         do unlock_date(tashigi)
-    Belle-mere looks very displeased- maybe even disgusted- with you right now. You doubt you’ll be spending a lot of free time with her in the future.
+    Belle-mere looks very displeased- maybe even disgusted- with you right now. You doubt you'll be spending a lot of free time with her in the future.
     Tashigi: Seriously, to have the new recruit be more responsible than a Captain.
     Captain Tashigi pats you in the back, an approving smile on her lips.
 - Yeah! You have to take care of your health, first.
@@ -462,8 +462,8 @@ Belle-mere: Waste time!? Implying you’re going to do more? You're going to pas
         do unlock_date(bellmere)
     Tashigi looks exasperated, but Belle-mere, grins.
     Belle-mere: See that? I got the newbie on my side here, Tash.
-    Maybe you’ve made a bad impression. You doubt, based on the bespeckled woman’s expression, you’ll be spending much time with Captain Tashigi one-on-one in the near future.
-At the end of the day you go to bed thinking over everything that happened between your two superiors. Hopefully, you’ve made the right decisions…
+    Maybe you've made a bad impression. You doubt, based on the bespeckled woman's expression, you'll be spending much time with Captain Tashigi one-on-one in the near future.
+At the end of the day you go to bed thinking over everything that happened between your two superiors. Hopefully, you've made the right decisions…
 END WORK DAY
 if has_date_unlocked(bellmere)
     => date.bellmere.1.start

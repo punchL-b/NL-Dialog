@@ -1,6 +1,6 @@
 :: start
 do set_background("park", show)
-It’s a nice day, the sun is shining, the fog has just blown out. And best of all, you have a bit of free time! The largest garden on base has been calling your name since you arrived, and now you’re finally here! Wow, look at that view…
+It's a nice day, the sun is shining, the fog has just blown out. And best of all, you have a bit of free time! The largest garden on base has been calling your name since you arrived, and now you're finally here! Wow, look at that view…
 Suddenly, you feel a weird tugging near your waist. Startled, you look down-!
 do show_character(goat, left, show)
 A…goat?
@@ -13,13 +13,13 @@ Sengoku: Goat! Stop that! PC, I apologize for my companions rudeness. [MAD SPRIT
 
 
 :: RouteA
-Sengoku: Thank you… They’ve been my companion for a long time. [SMILING SPRITE]
+Sengoku: Thank you… They've been my companion for a long time. [SMILING SPRITE]
 - From before you were Inspector General? (+)(+)
-    Sengoku: Far before then, (RANK PC). They’ve seen more than most marines captains by now - We both deserve a retirement!
+    Sengoku: Far before then, (RANK PC). They've seen more than most marines captains by now - We both deserve a retirement!
 - They looks spritely for a Old Goat…(+)
-    Sengoku: They’ve always been young at heart... and who's to say they’re old? [WINK SPRITE]
+    Sengoku: They've always been young at heart... and who's to say they're old? [WINK SPRITE]
 - A goat? A companion? (-)
-    Sengoku: They’re better than some people on this base.
+    Sengoku: They're better than some people on this base.
 Sengoku: Now, furry companions aside -
 => RouteE
 

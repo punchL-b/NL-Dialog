@@ -1,57 +1,57 @@
 :: start
 You arrive at the mostly vacant bar. Following behind you are four intimidating figures, their heights and statures dwarfing everyone else around them.
-`sakazuki`: [Frown sprite] I told you it’s too early to get a drink.
-`kuzan`: … It’s never too early when we have to deal with you.
+`sakazuki`: [Frown sprite] I told you it's too early to get a drink.
+`kuzan`: … It's never too early when we have to deal with you.
 `sakazuki`: What did you just say?
-`issho`: Gentlemen, let’s give this bonding exercise a try first. We don’t have to do it long, but it’s worth the gamble.
+`issho`: Gentlemen, let's give this bonding exercise a try first. We don't have to do it long, but it's worth the gamble.
 `borsalino`: ~Soo…~ anyone want to order a drink?
-`sakazuki`: I don’t drink on the job.
+`sakazuki`: I don't drink on the job.
 `borsalino`: One for me, please.
 `kuzan`: Hit me, two.
-`issho`: I’ll pass this time. Perhaps another day. [Smile sprite]
+`issho`: I'll pass this time. Perhaps another day. [Smile sprite]
 `borsalino`: What about ~yoou~, `name`?
-- If I go to a bar, I’m obliged to get a drink! (K & B +1, S -1)
-    `kuzan`: That’s the spirit, `name`!
-- No, thank you, Admiral. I’d rather stay sober for work later. (S & I +1, K -1)
+- If I go to a bar, I'm obliged to get a drink! (K & B +1, S -1)
+    `kuzan`: That's the spirit, `name`!
+- No, thank you, Admiral. I'd rather stay sober for work later. (S & I +1, K -1)
     `borsalino`: Suit yourself.
-The bartender takes everyone’s order and a few moments later, drinks are passed around. Right! You are supposed to be the one promoting teamwork through bonding exercises. Now is your chance to shine.
-You place your drink down to get everyone’s attention.
-`name`: It’s not really a proper bonding exercise if we just sit around saying nothing! Let’s make sure the time we spend together is utilized to its fullest!
+The bartender takes everyone's order and a few moments later, drinks are passed around. Right! You are supposed to be the one promoting teamwork through bonding exercises. Now is your chance to shine.
+You place your drink down to get everyone's attention.
+`name`: It's not really a proper bonding exercise if we just sit around saying nothing! Let's make sure the time we spend together is utilized to its fullest!
 `issho`: Oh? Do you have a suggestion for what we should be doing, `name`?
-- Well, it’s a bonding exercise, it wouldn’t be much of a bonding exercise if we don’t talk at all, right? => Talk_route
+- Well, it's a bonding exercise, it wouldn't be much of a bonding exercise if we don't talk at all, right? => Talk_route
 - How about a game of darts? Sometimes friendly competition is all you need to have a good time. => Dart_choice
 - You guys wait right here for a minute! I have just the thing! => prank_main
 
 :: Talk_route
-<I don’t know how to write the code so that once an option is picked, it can’t be picked again. Someone with coding knowledge, send help>
-`kuzan`: So… What do you want to talk about? Don’t be shy.
+<I don't know how to write the code so that once an option is picked, it can't be picked again. Someone with coding knowledge, send help>
+`kuzan`: So… What do you want to talk about? Don't be shy.
 - How did you guys meet?
     It might have been the right thing to ask. Admiral Fujitora smiles.
     `issho`: [smile sprite] I have known Saka-san for a while. We went far back. He was stationed at a base and… [fade to black]
     `borsalino`: … *~soo~* when he found out I could teleport into the pantry, we became the best of friends…
     `sakazuki`: Ignore them, they are such fools. Do you have any further questions? => Talk_route
-- Tell me the most embarrassing experience you’ve been through!
+- Tell me the most embarrassing experience you've been through!
     The Admirals look at one another. Admiral Kizaru gives an easy grin.
-    `borsalino`: [Smile sprite] *~Weell…~* This is a long story. When I was a cadet, there was this dare board in the campus, and there’d be a list of dares. At the end of the week we’d pick our winner. So one time… [fade to black]
-    `sakazuki`: [Embarrassed sprite]... And that’s why there’s a hole in the storage room in the old Marineford. They figured it’d be easier to try and convert the room to a storage room rather than just messing with the infrastructure. So… yes…
-    `kuzan`: [smile sprite] #Hahaha!# Ararara! It was you?! I never knew! So the rule stickler Sakazuki’s got a dark side, too, huh?
-    `sakazuki`: Shut up! It wasn’t like that! I was new at controlling my power, okay?!
-    `issho`: Let’s not fight in a bar, Saka-san, Kuzan. `name` seems to still have questions for us. What do you want to ask us about? => Talk_route
+    `borsalino`: [Smile sprite] *~Weell…~* This is a long story. When I was a cadet, there was this dare board in the campus, and there'd be a list of dares. At the end of the week we'd pick our winner. So one time… [fade to black]
+    `sakazuki`: [Embarrassed sprite]... And that's why there's a hole in the storage room in the old Marineford. They figured it'd be easier to try and convert the room to a storage room rather than just messing with the infrastructure. So… yes…
+    `kuzan`: [smile sprite] #Hahaha!# Ararara! It was you?! I never knew! So the rule stickler Sakazuki's got a dark side, too, huh?
+    `sakazuki`: Shut up! It wasn't like that! I was new at controlling my power, okay?!
+    `issho`: Let's not fight in a bar, Saka-san, Kuzan. `name` seems to still have questions for us. What do you want to ask us about? => Talk_route
 - So… what is the deal with Vice Admiral Aramaki?
     The demeanors of the Admirals change at the question. Admiral Fujitora looks vaguely amused, while the others look annoyed. Finally, Kuzan speaks up.
-    `kuzan`: That Sakazuki groupie? Eurgh. Competed with Issho for the Admiral position but lost. I suppose there’s one thing we can all agree on… Screw him.
+    `kuzan`: That Sakazuki groupie? Eurgh. Competed with Issho for the Admiral position but lost. I suppose there's one thing we can all agree on… Screw him.
     `borsalino`: Oh, we ~doo~…
     `sakazuki`: Hmph! He had better not screw up my very clear orders this time!
-    `kuzan`: Ararara, I didn’t mean it like that now that you mentioned it…
-    `borsalino`: Isn’t he your friend, Issho?
-    `issho`: [Smile sprite] Even the best of friends can have disagreements. <pause> He’s a… spirited individual.
-    Kuzan:... Anyway… Let’s talk about something else.
+    `kuzan`: Ararara, I didn't mean it like that now that you mentioned it…
+    `borsalino`: Isn't he your friend, Issho?
+    `issho`: [Smile sprite] Even the best of friends can have disagreements. <pause> He's a… spirited individual.
+    Kuzan:... Anyway… Let's talk about something else.
     Well, that is that.
     => Talk_route
 - Tell me a good thing about each other! => Date_unlock
 
 :: Date_unlock
-There’s an awkward silence. Noone seems willing to speak up. This situation requires some initiative. You smile and point toward the group.
+There's an awkward silence. Noone seems willing to speak up. This situation requires some initiative. You smile and point toward the group.
 How about you start first….
 - Fleet Admiral Sakazuki? => Path_1
 - Admiral Aokiji? => Path_2
@@ -60,77 +60,77 @@ How about you start first….
 
 :: Path_1
 `sakazuki`: Me? Tt. <pause> They are qualified Marine soldiers. Hmph.
-`borsalino`: Ah, Sakazuki, that’s so nice coming from you…
+`borsalino`: Ah, Sakazuki, that's so nice coming from you…
 `kuzan`: Really good at the boosting moral part of Fleet Admiral, huh?
 Fleet Admiral Sakazuki eyes the other two in annoyance.
-`sakazuki`: Don’t make a habit out of it.
+`sakazuki`: Don't make a habit out of it.
 `issho`: Now, now, Saka-san. That's not nice. They are being genuine. => Date_unlock2
 
 :: Path_2
 `kuzan`: Something nice? Uhh... Issho has a real good poker face, you never know with him.
-`issho`: Thank you, Kuzan. I’m flattered you think so.
-`borsalino`: Kuzan’s temperature is a good thing in the summer, too.
+`issho`: Thank you, Kuzan. I'm flattered you think so.
+`borsalino`: Kuzan's temperature is a good thing in the summer, too.
 `kuzan`: And Borsalino is really good… ah what is it… that turns on and off? Forget it.
 Admiral Fujitora laughs good naturedly while Fleet Admiral Sakazuki just scowls.
 `sakazuki`: [Frown sprite] Annoying. => Date_unlock2
 
 :: Path_3
 `borsalino`: Oh, there are only *~good~* things to say about my friends. Sakazuki and his passion... Kuzan and his temperament... Issho... Is very brave, too, isn't he...? He doesn't mind what anybody thinks... Just *~look~* at him…
-`issho`: [smile sprite] Thank you. You’re a very remarkable man yourself, Borsalino.
+`issho`: [smile sprite] Thank you. You're a very remarkable man yourself, Borsalino.
 `kuzan`:  Passion is one way to put it with Sakazuki…
-`sakazuki`: [Frown sprite] What do you mean ‘one way to put it’? =>Date_unlock2
+`sakazuki`: [Frown sprite] What do you mean ‘one way to put it'? =>Date_unlock2
 
 :: Path_4
 `issho`: I think they are all very unique people. Kuzan is very kind. Borsalino is very playful. And Saka is... a man who stays true to his words.
-`kuzan`: Ararara… You aren’t too shabby yourself.
-`borsalino`: It’s ~truue~.
-`sakazuki`: Hn. If only you hadn’t caused us to lose face. => Date_unlock2
+`kuzan`: Ararara… You aren't too shabby yourself.
+`borsalino`: It's ~truue~.
+`sakazuki`: Hn. If only you hadn't caused us to lose face. => Date_unlock2
 
 :: Date_unlock2
 Not wanting a fight to start, you decide to step in. Turning to the person you admire the most, you give them a smile.
 - I think Admiral Aokiji is pretty &&cool!&& => Kuzan_unlock
-- You brighten up any room you’re in, &&Admiral Kizaru!&& => Bors_unlock
+- You brighten up any room you're in, &&Admiral Kizaru!&& => Bors_unlock
 - Admiral Fujitora, you have such amazing luck! => Issho_unlock
 - Fleet Admiral Sakazuki, I really admire your tenacity. => Saka_unlock
 
 :: Kuzan_unlock
 `borsalino`: Oh… Ice-cold…
 `kuzan`: Not cool, getting hot under my collar, haha.
-`issho`: That’s a classic one, but still good.
+`issho`: That's a classic one, but still good.
 `sakazuki`: Hn.
 `kuzan`: Are you jealous, Sakazuki?
 `sakazuki`: Of your frequent failure to secure a date? Not a chance.
-`issho`: Gentlemen, please, let’s not turn this into a fight.
-After that, the conversation flows smoother than before. You exchange banters with them with relative ease. It’s actually fun once they loosen up. You glance at the clock, noticing the time.
+`issho`: Gentlemen, please, let's not turn this into a fight.
+After that, the conversation flows smoother than before. You exchange banters with them with relative ease. It's actually fun once they loosen up. You glance at the clock, noticing the time.
 => Outro
 
 :: Bors_unlock
 `borsalino`: You brighten my day, `name`.
 `sakazuki`: [Frown sprite] Hmph.
 `kuzan`: Seems like Sakazuki is the one who needs to lighten up.
-`issho`: [smile sprite] Don’t mind him. He’s just jealous. It looks like you have an admirer, Borsalino.
-After that, the conversation flows smoother than before. You exchange banters with them with relative ease. It’s actually fun once they loosen up. You glance at the clock, noticing the time.
+`issho`: [smile sprite] Don't mind him. He's just jealous. It looks like you have an admirer, Borsalino.
+After that, the conversation flows smoother than before. You exchange banters with them with relative ease. It's actually fun once they loosen up. You glance at the clock, noticing the time.
 => Outro
 
 :: Saka_unlock
-`sakazuki`: <pause> [embarrassed sprite]... Thank you. I’m only doing my duty.
-`borsalino`: Oh, Sakazuki, you’re becoming quite popular…
+`sakazuki`: <pause> [embarrassed sprite]... Thank you. I'm only doing my duty.
+`borsalino`: Oh, Sakazuki, you're becoming quite popular…
 `kuzan`: Another Sakazuki groupie? Eurgh…
 `issho`: Vice Admiral Aramaki would be having a fit. Competition for the Fleet Admiral's attention? Oh dear.
 `sakazuki`: [embarrassed sprite] All of you, shut the hell up!
-After that, the conversation flows smoother than before. You exchange banters with them with relative ease. It’s actually fun once they loosen up. You glance at the clock, noticing the time.
+After that, the conversation flows smoother than before. You exchange banters with them with relative ease. It's actually fun once they loosen up. You glance at the clock, noticing the time.
 => Outro
 
 :: Issho_unlock
 `sakazuki`: Hmph. The one with the gravity power would obviously be good at gambling.
-`issho`: I don’t know what you’re insinuating, Saka-san. [Smile sprite] Thank you, `name`. I suppose fate just has a funny way sometimes.
-`kuzan`: Watch out for his poker face, `name`. Luck isn’t the only thing he’s got.
-`borsalino`: It’s always the quiet ones…
-After that, the conversation flows smoother than before. You exchange banters with them with relative ease. It’s actually fun once they loosen up. You glance at the clock, noticing the time.
+`issho`: I don't know what you're insinuating, Saka-san. [Smile sprite] Thank you, `name`. I suppose fate just has a funny way sometimes.
+`kuzan`: Watch out for his poker face, `name`. Luck isn't the only thing he's got.
+`borsalino`: It's always the quiet ones…
+After that, the conversation flows smoother than before. You exchange banters with them with relative ease. It's actually fun once they loosen up. You glance at the clock, noticing the time.
 => Outro
 
 :: Dart_choice
-`name`: Let’s play darts!
+`name`: Let's play darts!
 All the Admirals shrug and agree on something for once.
 `kuzan`: No lightspeed crap Borsalino.
 `borsalino`: I would ~*never…*~
@@ -140,15 +140,15 @@ The group moves toward the corner of the bar with the darts. You do them the cou
 `kuzan`: You mean who sets the bar to beat?
 `sakazuki`: Hn, worried Kuzan?
 `kuzan`: Not as much as you should be.
-`borsalino`: I’ll go first…
+`borsalino`: I'll go first…
 
 Admiral Kizaru takes a dart from your hand and lines up his shot. With a flick of his wrist, the dart shoots straight home. Bullseye! Wow! You expected nothing less from an Admiral!
 
-`borsalino`: Ooh, looks like I’ve set the bar pretty high…
-`sakazuki`: Pft. -he takes a dart from you next, lining up his shot. He lets the dart loose from his hand. It flies straight and true, embedded right next to Admiral Kizaru’s! Two bullseyes?! The competition is heating up!-
-`kuzan`: That’s off center. -He snags a dart from you, gloved hand brushing against your fingers and lets the dart fly! It slams home, right next to the other two. Three bullseyes in a row? Was that even possible?!-
+`borsalino`: Ooh, looks like I've set the bar pretty high…
+`sakazuki`: Pft. -he takes a dart from you next, lining up his shot. He lets the dart loose from his hand. It flies straight and true, embedded right next to Admiral Kizaru's! Two bullseyes?! The competition is heating up!-
+`kuzan`: That's off center. -He snags a dart from you, gloved hand brushing against your fingers and lets the dart fly! It slams home, right next to the other two. Three bullseyes in a row? Was that even possible?!-
 `issho`: It appears my colleagues have set the bar quite high… I will have to give it my all.
-`sakazuki`: Hn, don’t try and guilt us.
+`sakazuki`: Hn, don't try and guilt us.
 `kuzan`: Oi, no gravity stuff from you Issho!
 
 You hand the last dart to Admiral Fujitora. He tilts his head a little, leaning on his walking stick. The dart swooshes from his hand. Another bullseye?! Wow all the Admirals are no joke!
@@ -162,38 +162,38 @@ You hand the last dart to Admiral Fujitora. He tilts his head a little, leaning 
 - I think Admiral Aokiji was the most uh, center?
     `kuzan`: Told you you were off center Sakazuki.
 - I think Admiral Kizaru had the advantage of going first so…he got the closest sorry.
-    `borsalino`: ~Beggars can’t be choosers~
+    `borsalino`: ~Beggars can't be choosers~
 - Admiral Fujitora got the closest!
     `issho`: Thank you `name`.
 - Um, I think the Fleet Admiral is the most center? And maybe the deepest?
     `sakazuki`: Good eye `name`. What did you say about off center Kuzan?
 
 `kuzan`: Well that happened. I need another drink.
-`issho`: I’m sure that can be arranged, we are in a bar.
+`issho`: I'm sure that can be arranged, we are in a bar.
 `sakazuki`: Distasteful hobby.
 `borsalino`: I would like to play another ~round~? With more interesting stakes perhaps?
 Everyone: Stakes?
 
-- Hm, let’s do something else instead, darts is too easy for you all. => Outro
+- Hm, let's do something else instead, darts is too easy for you all. => Outro
 - Another round would be fun, let's up the ante! => Round_2
 
 :: Round_2
 `kuzan`: Alright, what's the catch?
-`issho`: Perhaps the winner doesn’t have to pay for drinks.
-`borsalino`: ~Ooooh that’s fun Issho~
+`issho`: Perhaps the winner doesn't have to pay for drinks.
+`borsalino`: ~Ooooh that's fun Issho~
 `sakazuki`: Hmph, fine.
 `name`: It was a little too easy last time, maybe I could be a little more active this round…
 - Get more drinks for everyone!
-    `kuzan`: Great, another round! I’m going to get this one for sure now.
+    `kuzan`: Great, another round! I'm going to get this one for sure now.
 - Bump into the others nonchalantly. Keep them on their toes!
-    `borsalino`: Oh careful `name`, wouldn’t want to cause chaos now, would *~yoou~…?*
+    `borsalino`: Oh careful `name`, wouldn't want to cause chaos now, would *~yoou~…?*
 - Cheer them on!
     `issho`: Thank you for your confidence, `name`.
 - Double check the darts and the board to make sure there is no funny business. A level playing field is the only way to go.
     `sakazuki`: -nods at you in thanks-
-This time there is a clear winner, no ties here, and it’s…*drumroll*...
+This time there is a clear winner, no ties here, and it's…*drumroll*...
 RANDOM WINNER DECIDED
-`borsalino`: Oh… it’s me. What a surprise…
+`borsalino`: Oh… it's me. What a surprise…
 `issho`: Ah, I shall take only a little advantage of free drinks.
 `kuzan`: Nothing better than free alcohol!
 `sakazuki`: Hn, the rest of you need to brush up on your skills. Preparedness is key.
@@ -220,8 +220,8 @@ Of hot sauce?
     `borsalino`: Oh… it's a treat…
     `borsalino`: Just spicing up the work day…
     `kuzan`: Man…
-- Isn’t Sakazuki immune to that? (-1)
-    `borsalino`: ~Weell~, aren’t you pessimistic…?
+- Isn't Sakazuki immune to that? (-1)
+    `borsalino`: ~Weell~, aren't you pessimistic…?
     `kuzan`: Only one way to know for sure.
 - That's completely unprofessional! (-2)
     `borsalino`: Oh… ~*whaat*~ is, exactly?
@@ -229,9 +229,9 @@ Of hot sauce?
     Kuzan turns away from you. Borsalino waves you away with a hand.
 - I thought you guys were friends?
     `borsalino`: Oh, we are.
-    `borsalino`: Isn’t it normal… to tease your friends? Enjoy making them ~*reaally*~ angry?
+    `borsalino`: Isn't it normal… to tease your friends? Enjoy making them ~*reaally*~ angry?
     `kuzan`: Uh… No.
-    `kuzan`: I think he’s an idiot.
+    `kuzan`: I think he's an idiot.
 You just found out that Borsalino and Kuzan are planning to prank Sakazuki.
 - I want to join them. (K+, B+, S-, I-) => prank_route1
 - I want to tell Sakazuki. (K-, B-, S+, I+) => prank_route2
@@ -241,26 +241,26 @@ You just found out that Borsalino and Kuzan are planning to prank Sakazuki.
 `borsalino`: ~Ooh…~ What a nice surprise…
 `kuzan`: Cool.
 `kuzan`: The plan is to spike his drink.
-`borsalino`: ~*Saay,*~ while we’re on that topic…
-`borsalino`: There’s enough for two drinks… What do we think about the purple guy…?
+`borsalino`: ~*Saay,*~ while we're on that topic…
+`borsalino`: There's enough for two drinks… What do we think about the purple guy…?
 `kuzan`: Nah. I like Issho.
-`borsalino`: Mmm… Let’s let `name` choose, shall we...?
-- Let’s prank Issho as well. (B+2, K-1)
+`borsalino`: Mmm… Let's let `name` choose, shall we...?
+- Let's prank Issho as well. (B+2, K-1)
     `kuzan`: Man… isn't it weird to prank a blind guy?
-    `kuzan`: I’m out.
-    `borsalino`: Ahh, fine… You’re too good for us, Kuzan…
+    `kuzan`: I'm out.
+    `borsalino`: Ahh, fine… You're too good for us, Kuzan…
     Borsalino winks at you.
 - No, I agree with Kuzan. (K+2, B-1)
     `borsalino`: Ah… it's two against one, I suppose…
-`kuzan`: Let’s stick to Sakazuki.
+`kuzan`: Let's stick to Sakazuki.
 `kuzan`: `name`, how about you go distract him?
-`kuzan`: Borsalino is the fastest of us, so he’ll…
+`kuzan`: Borsalino is the fastest of us, so he'll…
 `kuzan`: …
-`kuzan`: It’s done, isn’t it.
+`kuzan`: It's done, isn't it.
 `borsalino`: *~Yees~,* but you can keep talking…
 The next time the Fleet Admiral takes a swig of water, he gets unnaturally red in the face and really tense…
 `sakazuki`: ….!!!!!!!!!!!!!!!
-`issho`: Oh, it’s suddenly rather hot, isn’t it?
+`issho`: Oh, it's suddenly rather hot, isn't it?
 Sakazuki lets out some choked noises, getting on his feet and leaving before you can see his reaction.
 (Workday ends. After this, the Sakazuki date is perma locked?)
 => Outro
@@ -278,7 +278,7 @@ Sakazuki eyes Kuzan with deep contempt. A look that could kill.
 `issho`: Oh, did he stand you up, Kuzan?
 `sakazuki`: Hot sauce, huh?
 `sakazuki`: I suppose this degree of maturity is to be expected from someone who considers *drinking* their pastime.
-`sakazuki`: I’ll see you at work.
+`sakazuki`: I'll see you at work.
 Before he heads for the exit, Sakazuki turns to you.
 S:... I appreciate that.
 (Workday ends. After this, the Kuzan date is perma locked?)
@@ -289,7 +289,7 @@ You decide to approach Issho, in hopes he can help you avoid the prank without t
 Kuzan and Borsalino are still whispering.
 `issho`: Oh. `name`. Are you enjoying your-
 `issho`: …
-`issho`: It’s very kind of you to tell me.
+`issho`: It's very kind of you to tell me.
 `issho`: Well, now I'm curious… What do you suggest we do?
 - Let's prank them back! (I+)
     `issho`: I was thinking the same.
@@ -303,7 +303,7 @@ Kuzan and Borsalino are still whispering.
 `issho`: No time to lose, have we? Sakazuki!
 `sakazuki`: Hm?
 `issho`: Be so kind as to tell a blind man the time.
-While Sakazuki turns around, you watch as Issho leans in with his walking cane and knocks Sakazuki’s drink.
+While Sakazuki turns around, you watch as Issho leans in with his walking cane and knocks Sakazuki's drink.
 `borsalino`: *~Ooh~…*
 `kuzan`: (Did he do that… on purpose?)
 `sakazuki`: …
@@ -315,12 +315,12 @@ While Sakazuki turns around, you watch as Issho leans in with his walking cane a
 :: Outro
 `name`: Well that was fun! Look at the time… I suppose we should get going.
 `kuzan`: Yeah I could use a nap.
-`borsalino`: The office calls but I don’t want to answer…
+`borsalino`: The office calls but I don't want to answer…
 `sakazuki`: We need to get back to work, we have been goofing off too long as it is.
 `issho`: There is always more work to be done.
 They seem pretty split. What do you want to do?
 
 - We should get back to work, this was just supposed to be a lunch break anyway. (K-1, B-1, S+1, I+1)
-- I don’t think working with a non-clear head is a good idea. I think we should take the day to rest. (K+1, B+1, S-1, I-1)
+- I don't think working with a non-clear head is a good idea. I think we should take the day to rest. (K+1, B+1, S-1, I-1)
 
 => root.AdmiralsDatesOne
