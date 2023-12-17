@@ -8,361 +8,218 @@ else
 It's early morning. You have woken up and have finished your coffee, when you notice Tashigi looking flustered and frazzled off to the side of the mess hall. She looks at you and bites her lip, as if debating something. Determination sets in her face, her fist clenched at her side as she approaches you.
 Tashigi: Hello. I know it's early in the morning, and that it's the weekend and you can spend it how you please, but I was wondering if you would like to spend it together? I do have some errands to run in town for the sports day, though, so I'm not sure if that's something you'd be interested in doing.
 - Yes, I'd love to spend the day with you, and sports day is so important for morale. I'd love to assist you in your task. Let me know what I can do to help out!
-    D2Points = +1
+    do increment("ta2.points")
 - Ah, so you're ran ragged and looking for a helper, huh. Sure, I'll help.
-    D2Points = +0
 *Tashigi is flustered by your response, but you're polite enough not to point it out.*
-Tashigi: Would you like ko accompany me into town? Be warned, I like to take the long way because I like to watch the ducks by the pond.
+Tashigi: Would you like to accompany me into town? Be warned, I like to take the long way because I like to watch the ducks by the pond.
 - Of course! It would be a refreshing way to spend the morning. Fresh air and great company—the ducks, I mean, not that you're not lov—I'd love to accompany you into town. Couldn't imagine a nicer start to the day.
-    D2Points = +1
+    do increment("ta2.points")
 - I actually have some things I need to do first this morning, but I'll meet you in town later.
-    D2Points = +0
 => date_start
 
 
 :: normal_date_start
 It's late morning and you're in town doing some window shopping on your day off. It's the weekend and you're enjoying relaxing and being away from early morning drills. The weather is pleasant, but getting warmer.
 You notice Tashigi passing by with a bunch of bags in one hand, a giant list in the other, and an incredibly worried look on her face. Distracted by the list and not able to see passed the bags, she trips over an uneven brick in the pavement. The contents of the bags sprawl out across the pavement—so many ribbons and trophies, scuffed and dented.
-
 Tashigi: My glasses—
-
 You swear she'd get the gold for being a klutz, but it's endearing and those are a lot of bags. She's clearly stressed.
-
--She's probably embarrassed anyone witnessed that. I should leave her be. Besides, I don't want to be roped into anything on my first weekend off in a while.
-
-D2Points = +0
-
- [You do not proceed with your date with Tashigi and get 0 points overall]
-
--Captain Tashigi! That's a very decorated and award-winning pavement. You're carrying so many prizes for the sports day: let me help get those back in their bags for you.
-
-D2 Points = +1
-
+- *She's probably embarrassed anyone witnessed that. I should leave her be. Besides, I don't want to be roped into anything on my first weekend off in a while.*
+    => end_date
+- Captain Tashigi! That's a very decorated and award-winning pavement. You're carrying so many prizes for the sports day: let me help get those back in their bags for you.
+    do increment("ta2.points")
 Tashigi smiles up at you awkwardly as you retrieve all the prizes, finishing with lifting up her glasses and slide them onto her face.
-
 Tashigi: Oh, you saw that huh. Thank you for helping me, I should be good to go now.  Enjoy your weekend!
-
--Please, let me carry your bags for you. What can I do to help out?
-
+- Please, let me carry your bags for you. What can I do to help out?
 => date_start
 
 :: date_start
-
 You carry some of the bags for Tashigi as you both walk down the street. She still carries half of them. They're heavy. It's a testament to her strength that she was carrying double the load. You look to her occasionally in awe as she walks alongside you, smile never wavering despite the growing unpleasant warmth of the day. She waves and greets any civilian who approaches. She seems to know everyone!
+- *laughs* This is so much stuff. Do you have much more to get today?
+    Tashigi smiles apologetically and consults the list.
+Tashigi: We've almost got everything. We just have to pick up all the medals that were ordered; the replacement rope for the obstacle course because someone got over excited and completely broke—some would say, shredded it; and the custom maid outfits some of the marines volunteered to wear while working in the café. For charity.
+=> choose_date_part
 
--[laughs] This is so much stuff. Do you have much more to get today?
-Tashigi smiles apologetically and consults the list.
+:: choose_date_part
+if and(visited("get_the_medals"), and(visited("show_the_ropes"), visited("get_maid_outfits")))
+    => date_part_2
+Tashigi: Alright. Where do you want to go?
+- Let's get the medals! [if not(visited("get_the_medals"))] => get_the_medals
+- How ‘bout you show me the ropes? [if not(visited("show_the_ropes"))] => show_the_ropes
+- I think we were maid for this. [if not(visited("get_maid_outfits"))] => get_maid_outfits
 
-Tashigi: We've almost got everything. We just have to pick up all the medals that were ordered; the replacement rope for the obstacle course because someone got over excited and completely broke—some would say, shredded it; and the custom maid outfits some of the marines volunteered to wear while working in the café. For charity. Where would you like to go first?
-
-> TSD2P1_1 Let's get the medals!
-> TSD2P1_2 How ‘bout you show me the ropes?
-> TSD2P1_3 I think we were maid for this.
-
-(4 points max for each route? = 12 + 1 from earlier (with an additional point in bonus route as protection against getting something wrong for doing so well on the first date) 13 total)
-
-> TSD2P1_2 How ‘bout you show me the ropes?
-
+:: show_the_ropes
+do visit("show_the_ropes")
 Tashigi chuckles a bit at your bad pun.
-
 Tashigi: Sorry to rope you into helping me on your weekend off. I really appreciate it.
-
--Well, my hands were tied when I saw you struggling with your bags. What hero doesn't help a maiden in distress?
-
-D2Points = +0
-
--Please. I wouldn't skip it for the world. Mostly because skipping makes me faceplant.
-
-D2Points = +1
-
-Tashigi puts an end to the pun-off.
-
-Tashigi: So, we're going to the docks to get our rope supply.
-
--The docks and not the sports store in town?
-
-Tashigi: The sailor's use the hardiest of rope. Besides, what marine wouldn't want to support a fellow sea dweller?
-
-She has a point. Walking to the docks is pleasant. The smell of salt air is refreshing to the senses, like coming home. Beside you, Tashigi takes in a deep lungful of air. A contented smile lights up her face as she lets out a happy sigh.
-
-Tashigi: This is nice.
-
+- Well, my hands were tied when I saw you struggling with your bags. What hero doesn't help a maiden in distress?
+- Please. I wouldn't skip it for the world. Mostly because skipping makes me faceplant.
+    do increment("ta2.points")
+    Tashigi puts an end to the pun-off.
+    Tashigi: So, we're going to the docks to get our rope supply.
+- The docks and not the sports store in town?
+    Tashigi: The sailor's use the hardiest of rope. Besides, what marine wouldn't want to support a fellow sea dweller?
+    She has a point. Walking to the docks is pleasant. The smell of salt air is refreshing to the senses, like coming home. Beside you, Tashigi takes in a deep lungful of air. A contented smile lights up her face as she lets out a happy sigh.
+    Tashigi: This is nice.
 Sea spray tickles your skin. You have the sudden impulse to put your hands in the water, so you do. Tashigi looks at you in confusion as you kneel by the edge of the docks, putting your hands in the water.
 
-> TSD2P1_2_a You splash yourself in the face.
-> TSD2P1_2_b You splash Tashigi playfully with the water.
+- *splash yourself in the face* => splash_self
+- *splash tashigi*
+    You splash Tashigi playfully with the water
+    => splash_tash
 
-> TSD2P1_2_a
--Ah. Sorry, it's just getting warmer, and there's nothing nicer than feeling the sea on your face.
-
-D2Points = +1
-
+:: splash_self
+`name`: Ah. Sorry, it's just getting warmer, and there's nothing nicer than feeling the sea on your face.
+do increment("ta2.points")
 Tashigi looks at you with a fond smile. She sits beside you, dipping her own hands in the sea.
-
 Tashigi: I agree. Sometimes I like to just sit by here with my toes in the water, watching the world go by. It's always so beautiful, the sun reflecting on the water, the gentle waves. Don't you agree?
-
 The light reflects on her glasses and hair. She looks like she's glowing. You agree, you've never seen anything more beautiful.
+=> TSD2P1_2
 
-> TSD2P1_2_b You splash Tashigi playfully with the water.
-
-D2Points = +0
-
+:: splash_tash
 Tashigi yelps and ducks out of the water's spray on impulse. Her reflexes are sharp! The civilian behind her isn't so lucky, and cops a handful of saltwater straight in the eyes. They totter off the dock, losing their balance before landing in the water. Tashigi glares at you as she helps fish him from the water.
+=> TSD2P1_2
 
--TSD2P1_2
-
+:: TSD2P1_2
 You awkwardly clear your throat and avoid eye contact, hoping the deck will give way and the sea will swallow you whole. The silence is too much for your heart to take, but you don't know what to say. Tashigi takes control of the interaction with the sailor selling rope, stopping to ask you your opinion on which rope you think looks sturdiest. They both look identical to you, but you point to the one on the left and Tashigi orders 10 metres of the rope for the obstacle course, and 10 metres for the tug-of-war.
-
--So, why do we need to replace the rope?
-
+`name`: So, why do we need to replace the rope?
 Tashigi sighs deeply as she pays for the rope.
-
 Tashigi: The state of them after last weekend saw them unfit to use. They were ‘tested' before the sports day, to ensure they would hold and we'd get no injuries. But they were found completely shredded and broken. Someone must have gotten a bit overly excited.
-
-> It's a kind thing for you to be using your weekend to fetch replacement ropes for the course! It looks like such a fun day for morale, and I'd love to race you on the obstacle course. You might kick my arse, but I'm gonna try my hardest!
-
-D2Points = +1
-
-> Did you investigate into the culprits?
-
-Tashigi: We arrived back after a tea break to find only two in the room: An awkward Vice Admiral Garp, and Fleet Admiral Sengoku's goat. It didn't look like they were chew marks, though.
-
-> Well, clearly it was Garp then. The man's a shredded maniac and doesn't seem to know his own strength.
-
-D2Points = +0
-
-Tashigi: Need I remind you that that's your superior you're talking about, and the hero of the navy at that. Do better.
-
-> Maybe that's just what the goat wants you to think. A stitch up!
-
-D2Points = +2
-
-Tashigi laughs at the absurdity.
-
+- It's a kind thing for you to be using your weekend to fetch replacement ropes for the course! It looks like such a fun day for morale, and I'd love to race you on the obstacle course. You might kick my arse, but I'm gonna try my hardest!
+    do increment("ta2.points")
+- Did you investigate into the culprits?
+    Tashigi: We arrived back after a tea break to find only two in the room: An awkward Vice Admiral Garp, and Fleet Admiral Sengoku's goat. It didn't look like they were chew marks, though.
+- Well, clearly it was Garp then. The man's a shredded maniac and doesn't seem to know his own strength.
+    Tashigi: Need I remind you that that's your superior you're talking about, and the hero of the navy at that. Do better.
+- Maybe that's just what the goat wants you to think. A stitch up!
+    do increment("ta2.points")
+    do increment("ta2.points")
+    Tashigi laughs at the absurdity.
 Tashigi: Alright. Where do you want to go next?
+=> choose_date_part
 
-> TSD2P1_1 Let's get the medals!
-> TSD2P1_2 How ‘bout you show me the ropes?
-> TSD2P1_3 I think we were maid for this.
-
-[whichever option has been previously selected is completed and unavailable]
-
-> TSD2P1_1 Let's get the medals!
-
--Might as well go for gold!
-
-Tashigi: That's the spirit!
-
--So did you compete in the sports day last year?
-
-Tashigi: Of course! It's mandatory, but I would do it even if it isn't. I like competing.
-
--How many medals did you win last year?
-
-Tashigi: [flustered] Well, I … I took out silver in the overall fencing competition for the Captain division, qualified for the final of group relay race—we might have came fourth, but I faceplanted near the finish line—and I got the gold in sword kata demonstration for my class!
-
--Wow! That's so cool! I'm not surprised you did so well, your sword technique is just so cool and precise! I know who to go to for pointers.
-
-D2Points = +2
-
--Oh cool! I'm surprised you didn't win more, your skills are impressive. Maybe this year is your year!
-
-D2Points = +1
-
--Did you win the medal for being clumsy, too? Sounds like a very stylish flop.
-
-D2Points = +0
-
-Tashigi gets flustered and huffs, embarrassed.
-
+:: get_the_medals
+do visit("get_the_medals")
+- Might as well go for gold!
+    Tashigi: That's the spirit!
+- So did you compete in the sports day last year?
+    Tashigi: Of course! It's mandatory, but I would do it even if it isn't. I like competing.
+- How many medals did you win last year?
+    Tashigi: [flustered] Well, I … I took out silver in the overall fencing competition for the Captain division, qualified for the final of group relay race—we might have came fourth, but I faceplanted near the finish line—and I got the gold in sword kata demonstration for my class!
+    - Wow! That's so cool! I'm not surprised you did so well, your sword technique is just so cool and precise! I know who to go to for pointers.
+        do increment("ta2.points")
+        do increment("ta2.points")
+    -Oh cool! I'm surprised you didn't win more, your skills are impressive. Maybe this year is your year!
+        do increment("ta2.points")
+    -Did you win the medal for being clumsy, too? Sounds like a very stylish flop.
+    Tashigi gets flustered and huffs, embarrassed.
 Tashigi: Well, we better get these medals. I ordered them six weeks ago, so they're ready for pickup.
-
--You already have a lot of ribbons and trophies. Why are we going somewhere else to get medals?
-
-Tashigi: Sengoku gave me a budget to work within, and I like to spread it between stall holders so everyone gets a slice … Plus, this store sold medals cheaper, but didn't skimp on the quality.
-
--Are they actually like … gold?
-
-Tashigi: Of course not. But they are metal. Sengoku said the Navy couldn't afford to skimp on costs by making them plastic. It's a point of pride, after all!
-
-Tashigi holds the door open for you and you walk inside with a quick thanks. The store is neat and orderly. Commemorative coins dazzle the display counter. A sign covers up a collection of coins, saying reserved for T. Law. The seller behind the counter smiles widely at Tashigi and goes out back to fetch the medals, returning with a bag full of them. They jangle as they're handed to Tashigi.
-
-Tashigi: Thanks! They're so nice. I hope you make a lot of sales today! So [name], are their any prizes you're aiming for on Sports day?
-
+- You already have a lot of ribbons and trophies. Why are we going somewhere else to get medals?
+    Tashigi: Sengoku gave me a budget to work within, and I like to spread it between stall holders so everyone gets a slice … Plus, this store sold medals cheaper, but didn't skimp on the quality.
+- Are they actually like … gold?
+    Tashigi: Of course not. But they are metal. Sengoku said the Navy couldn't afford to skimp on costs by making them plastic. It's a point of pride, after all!
+    Tashigi holds the door open for you and you walk inside with a quick thanks. The store is neat and orderly. Commemorative coins dazzle the display counter. A sign covers up a collection of coins, saying reserved for T. Law. The seller behind the counter smiles widely at Tashigi and goes out back to fetch the medals, returning with a bag full of them. They jangle as they're handed to Tashigi.
+Tashigi: Thanks! They're so nice. I hope you make a lot of sales today! So `name`, are their any prizes you're aiming for on Sports day?
 - I'd really love a special achievement award.
-D2Points = +2
-
-Tashigi: It's always so nice to get singled out to have a skill acknowledged! That recognition is very affirming, and I know it helps encourage me to do better to show their faith in me wasn't misplaced!
-
--Going for gold, of course!
-D2Points = +1
-
-Tashigi: Well, you're on for the race to get it! I won't go easy on you.
-
--Honestly, I'm happy just getting a participation medal.
-D2Points = +0
-
-Tashigi: [frowns] Don't talk about yourself like that. Aim for higher, you'll get there!
+    do increment("ta2.points")
+    do increment("ta2.points")
+    Tashigi: It's always so nice to get singled out to have a skill acknowledged! That recognition is very affirming, and I know it helps encourage me to do better to show their faith in me wasn't misplaced!
+- Going for gold, of course!
+    do increment("ta2.points")
+    Tashigi: Well, you're on for the race to get it! I won't go easy on you.
+- Honestly, I'm happy just getting a participation medal.
+    Tashigi: *frowns* Don't talk about yourself like that. Aim for higher, you'll get there!
 
 Tashigi: Alright. Where do you want to go next?
+=> choose_date_part
 
-> TSD2P1_1 Let's get the medals!
-> TSD2P1_2 How ‘bout you show me the ropes?
-> TSD2P1_3 I think we were maid for this.
-
+:: get_maid_outfits
 Tashigi: Excellent! I've been very excited to pick these up.
-
--Wait, wouldn't those working in a maid café already have their uniform?
-
-Tashigi: Yes, the regular workers have their uniforms, but these are custom-made, marine-themed maid uniforms tailored for the day. We had many volunteer to work for short shifts throughout the day to boost morale, work hard, and have some fun. It was very heartening to see so many volunteer their time and services, and in exchange they got their own uniform.
-
--It's gonna be excellent to see so many tough, bear-looking marines showing their soft side! Did any of the admirals volunteer? Will Aramaki have green pleats and Akainu red to match their monikers?
-
-D2Points = +2
-
-Tashigi: [smiles warmly] Unfortunately all Admirals were too busy competing, but we did get some high ranking names. Truthfully, I think Fleet Admiral Sakazuki put his foot down and thought it would make people lose respect for them. But everyone else below that was allowed to give it a go! Vice Admiral Strawberry for example has strawberries patterned on his uniform and it's incredibly delightful.
-
--Does Sengoku's goat get their own uniform? Four legged for their little hoofs. I'd hate for the little fella to miss out. Even if he just ate at his uniform.
-
-D2Points = +1
-
-Tashigi: [tearing up] That would be so adorable. You're so kind to look out for him. Employee of the event hands down!
-
--Will you be wearing a maid uniform? I think you'd look extremely cute. It could have little sword patterns sown into the hemline!
-
-D2Points = +0
-
-Tashigi: [haughtily crossing her arms] I'm not answering that. You'll have to see on the day.
+- Wait, wouldn't those working in a maid café already have their uniform?
+    Tashigi: Yes, the regular workers have their uniforms, but these are custom-made, marine-themed maid uniforms tailored for the day. We had many volunteer to work for short shifts throughout the day to boost morale, work hard, and have some fun. It was very heartening to see so many volunteer their time and services, and in exchange they got their own uniform.
+- It's gonna be excellent to see so many tough, bear-looking marines showing their soft side! Did any of the admirals volunteer? Will Aramaki have green pleats and Akainu red to match their monikers?
+    do increment("ta2.points")
+    do increment("ta2.points")
+    Tashigi: [smiles warmly] Unfortunately all Admirals were too busy competing, but we did get some high ranking names. Truthfully, I think Fleet Admiral Sakazuki put his foot down and thought it would make people lose respect for them. But everyone else below that was allowed to give it a go! Vice Admiral Strawberry for example has strawberries patterned on his uniform and it's incredibly delightful.
+- Does Sengoku's goat get their own uniform? Four legged for their little hoofs. I'd hate for the little fella to miss out. Even if he just ate at his uniform.
+    do increment("ta2.points")
+    Tashigi: [tearing up] That would be so adorable. You're so kind to look out for him. Employee of the event hands down!
+- Will you be wearing a maid uniform? I think you'd look extremely cute. It could have little sword patterns sown into the hemline!
+    Tashigi: [haughtily crossing her arms] I'm not answering that. You'll have to see on the day.
 
 You enter the boutique in high spirits. The tailor takes one look at Tashigi's Hawaiian shirt and gasps, as if offended, before realizing who she is and ducking behind into the back store rooms to bring out at least a dozen uniforms on hangers. You have no idea how you and Tashigi will carry them back to HQ, but between the two of you, you'll figure it out. The frills and petticoats make the uniforms feel bulky, and you're afraid of flattening the dresses.
-
--These look incredible.
-
+`name`: These look incredible.
 Tashigi hums and flicks through some racks of standard sized maid outfits.
 Tashigi: Would you like one? What's your size?
-
-You smile and pick something out that's to your liking.
-
+*You smile and pick something out that's to your liking.*
 Tashigi: Cute! Do you want it?
--No thanks. I'm too macho for this.
+- No thanks. I'm too macho for this.
+    Tashigi: Oh. Okay then. I didn't want to make you uncomfortable.
+    She puts it back, seeming disappointed in herself.
+- Can I model it for you?
+    Tashigi: Sure! I'd love to see how they look on.
+    You go back to the change rooms with the uniform, marching with intent. You get changed.
+    - How do I look?
+    - You come out and do a twirl, posing happily for Tashigi and showing off the outfit.
+        do increment("ta2.points")
+        do increment("ta2.points")
+    - You nervously exit the change room and stand there, stiff as a board, trying not to look like you're enjoying yourself.
+        do increment("ta2.points")
+=> choose_date_part
 
-D2Points = +0
-
-Tashigi: Oh. Okay then. I didn't want to make you uncomfortable.
-
-She puts it back, seeming disappointed in herself.
-
-
--Can I model it for you?
-
-Tashigi: Sure! I'd love to see how they look on.
-
-You go back to the change rooms with the uniform, marching with intent. You get changed.
-
--How do I look?
-
-> You come out and do a twirl, posing happily for Tashigi and showing off the outfit.
-D2Points = +2
-> You nervously exit the change room and stand there, stiff as a board, trying not to look like you're enjoying yourself.
-D2Points = +1
-
-TSD2P2_1
-
+:: date_part_2
 You stroll side by side back through town, towards the route that will take you back to base. You resist the impulse to brush your shoulder against hers or say anything, knowing you're too nervous to break the silence. You pass by a store front selling swords, and Tashigi's breath hitches as she spots a graded, named blade in the display. She looks toward it longingly until the store is out of sight, sighing wistfully with a look of regret.
-
-
 -It's so sad, to see such a beautiful blade stuck behind glass where any common criminal could buy it. I hope it gets liberated by a worthy swordsman.
-D2Points = +2
-
+    do increment("ta2.points")
+    do increment("ta2.points")
 - That was a cool sword. I'm sure one day it'll be yours alongside Shigure!
-D2Points = +1
-
+    do increment("ta2.points")
 - … [You don't comment. It's not your place to pry.]
-D2Points = +0
-
-[if the player has scored 5 points or less, they activate TSD2_E1
-If the player has scored 5-9, they activate TSD2_E2
-If the player has received 9+ points, they activate TSD2E_3, with the potential for TSD2E_4, and TSD2E_4extended if they have achieved a perfect score of 15]
-
 
 It's become late in the afternoon. Tashigi yawns and wipes sweat from her brow. The bags look heavy, even separated between the two of you.
+if is_greater_than("ta2.points", 9)
+    => good_ending
+elif is_greater_than("ta2.points", 5)
+    => middle_ending
+else
+    => bad_ending
 
--It was great to see you today, Captain.
-
+:: bad_ending
+`name`: It was great to see you today, Captain.
 Tashigi looks disappointed and shrugs.
-
--What's wrong?
-
-TSD2E_1
+`name`: What's wrong?
 Tashigi: I felt like you were really distant. You could have at least shown an interest.
-
 She shoves the bags she's holding onto your stack of bags and boxes and is out of sight before you can get your balance back. Guess you'll be taking these back to HQ alone, huh.
+do romance_points(tashigi, 0)
+=> end_date
 
-:: TSD2 Ends
-
-TSD2E_2
+:: middle_ending
 Tashigi: It's getting a bit late. Today was … pleasant. Thank you so much for your help. I think I'll head back to HQ with the bags now. Please, enjoy the rest of your afternoon.
-
 She takes your bags and boxes from you and resolutely walks off to HQ, throwing a smile back over her shoulder that sees her almost tripping over her bags.
+do romance_points(tashigi, 1)
+=> end_date
 
-:: TSD2 Ends
-
-TSD2E_3
+:: good_ending
+do romance_points(tashigi, 2)
 Tashigi: It's getting a bit late but I don't want today to end. Would you like to stop by the park with me?
+*She bites her lip and blushes, looking at her feet.*
+- It was a real pleasure, but I don't want to overstep and take up too much of your time. You should go and enjoy the shade of the park and watch the birds and squirrels there. I'll take the packages back to HQ. Enjoy your afternoon, Captain!
+    You take the bags and boxes from her hands and head back to HQ. You're full of adrenaline and feel like your skin is on fire from elation. You think that went well!
+    You don't look back, so you don't see Tashigi looking after you with an expression of longing and disappointment.
+- I'd truly love that. I don't want to say goodbye yet, either.
+    There's a gentle breeze that blows some leaves up from your pathway in the park while others crinkle underfoot. Tashigi has linked her arm with yours and is leaning into your side, pointing out red cardinals and woodpeckers in the trees. There's a smell like steel, jasmine and oak. You've put the heavy bags of your successful shop on the park bench. Very few people are around, even though it's so pleasant in the shade the park provides. You can afford to rest your arms and backs. Nobody will steal them. But you keep an eye on them throughout your stroll. It's hard to drag your eyes away from your Captain, though, as she's smiling so happily at the sudden sight of a squirrel running through the treetops. Water from the fountain you journey around speckles onto your skin. A nice reprieve from the heat.
+    It's comfortable. You never thought you'd feel so at home with someone only months into your assignment at HQ. You're very reluctant for the day to end, but know it must. But for now, there are squirrels stealing seeds and the sound of her laugh below your ear.
+    if is_greater_than("ta2.points", 14)
+        => bonus_ending
+=> end_date
 
-She bites her lip and blushes, looking at her feet.
-
->TSD2E_3a
--It was a real pleasure, but I don't want to overstep and take up too much of your time. You should go and enjoy the shade of the park and watch the birds and squirrels there. I'll take the packages back to HQ. Enjoy your afternoon, Captain!
-
-You take the bags and boxes from her hands and head back to HQ. You're full of adrenaline and feel like your skin is on fire from elation. You think that went well!
-You don't look back, so you don't see Tashigi looking after you with an expression of longing and disappointment.
-:: TSD2 Ends
-
->TSD2E_3b
--I'd truly love that. I don't want to say goodbye yet, either.
-
-Activates
->TSD2E_4
-
-There's a gentle breeze that blows some leaves up from your pathway in the park while others crinkle underfoot. Tashigi has linked her arm with yours and is leaning into your side, pointing out red cardinals and woodpeckers in the trees. There's a smell like steel, jasmine and oak. You've put the heavy bags of your successful shop on the park bench. Very few people are around, even though it's so pleasant in the shade the park provides. You can afford to rest your arms and backs. Nobody will steal them. But you keep an eye on them throughout your stroll. It's hard to drag your eyes away from your Captain, though, as she's smiling so happily at the sudden sight of a squirrel running through the treetops. Water from the fountain you journey around speckles onto your skin. A nice reprieve from the heat.
-
-It's comfortable. You never thought you'd feel so at home with someone only months into your assignment at HQ. You're very reluctant for the day to end, but know it must. But for now, there are squirrels stealing seeds and the sound of her laugh below your ear.
-
-:: TSD2 Ends
-
-
-
-TSD2E_4extended (if you have achieved a perfect score)
-
+:: bonus_ending
 Tashigi: I know what would make this date even better—
-
 She detaches from your side and rushes off, skidding over leaves but righting her balance. Your eyes widen where you see where she's gone.
-
 It's an Ice-cream cart.
-
 She returns to you with the most decadent cone, topped in chocolate. She has paid for both your cone and hers.
-
 Tashigi: I hope you like it! I thought it was just what the day needed. A refreshing ice-cream with such a kind helper. Thank you so much for today.
+=> end_date
 
-:: TSD2 Ends
-
-
-
-
-
-
-
-
-
-·         If all goes well, Tashigi will ask PC if they'd like to go to the park, since it's such a nice day and all. They take a walk and chat a bit more before returning to HQ.
-·         Bonus ending scene: If PC has a perfect score, Tashigi buys them an ice-cream.
-
-
-
-
-:: TSD2 ends
+:: end_date
 Date 2 ends
-:: TSD2E ends
-
-Date 2 extended ends.
+=> root.main
