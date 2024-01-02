@@ -1,0 +1,388 @@
+:: Part_1
+do set_background("office", show)
+`name`: Another day of work ahead of me… I can’t wait for the weekend!
+*You get to work, and are immediately tasked with moving boxes full of documents from the office to the archive by a very cranky Fleet Admiral.*
+*You try to remember if pirates have been more active lately but other than the general ruckus, there shouldn’t be a reason why he would get mad… Well, not anymore than usual anyway.*
+*Dropping the box at the archive, you catch sight of a familiar person hiding behind a tall shelf… Wait a minute… Is that…*
+`name`: `issho`?!
+`issho`: Oh, hello, `name`. What a coincidence to see you here.
+`name`: Sir, what are you doing here?
+`issho`: [embarrassed/smile] Well, you see–
+*Before `issho` can explain himself, the door swings open and `sakazuki` storms in angrily.*
+`sakazuki`: [angry] Where is he?! The base isn’t that large. He can’t just vanish into thin air!
+`sakazuki`: `name`! Have you seen Fujitora?! That sneaky bastard has snuck off somewhere again!
+*You look around in panic only to notice that `issho` isn’t where you saw him anymore. You look at Fleet Admiral Sakazuki, wondering if you should tell the truth…*
+- Err… I haven’t seen him, sir.
+- He was here just a moment ago!
+`sakazuki`: [judging] Is that so?
+`name`: Y-Yes, sir!
+`sakazuki`: Fine. I’ll keep searching for him. Report to me immediately if you notice where he is, Petty Officer `name`. I’m making him complete his paperwork even if it takes him the entire night or so help me!
+*You nod frantically, watching the Fleet Admiral storm off angrily in his search for the missing Admiral. Scary…!*
+*It’s not until `sakazuki`’s footsteps have faded completely that you look around, trying to search for `issho` yourself. Where could he have disappeared to?*
+`issho`: Well, well, well, he certainly caught on fast…
+`name`: #Aaaahh! `issho`!#
+`issho`: Shhh. You don’t want Saka-san to come back, do you?
+*Carefully lowering your voice, you look at the exit nervously before looking back at `issho`.*
+`name`: Sir! What’s the meaning of this? Are you hiding from the Fleet Admiral? Why?
+`issho`: [embarrassed] Ah well, you know how intense he can get. I have finished my reports, but he wanted me to look into more administrative work, too. And I just *had* to excuse myself…
+`name`: Sir, the Fleet Admiral is on a #warpath…#
+if has_romance_points(issho, 2)
+    `issho`: [smile] Then perhaps my location can remain just a secret between the two of us?
+elif has_romance_points(issho, 1)
+    `issho`: [embarrassed] Ah… he is, isn’t he…? Hmm, what a predicament I’ve found myself in.
+else
+    `issho`: I’m not unfamiliar with the sight. Do not fret.
+`name`: `issho`!
+`issho`: Hmm, I wonder if I should duck out of the base for a while until Saka-san’s temper cools down… He’s certainly going to force me to stay overnight right now… Hmm…
+*You put your hands on your hips, exasperated. However, before you can say anything else, you watch the heavy boxes you are supposed to put away levitate on their own and slide into their proper place.*
+`issho`: Would you like to join me, `name`? Saka-san is going to be in a rotten mood for hours. Anyone who’s around will be subjected to his intense standards. I can help you complete your task tomorrow, and make sure you won’t get into trouble today. What do you say?
+- Oh! Having fun without consequences, my favorite way to spend the day! I’m in!
+    `issho`: [laugh/smile] Well, I wouldn’t say ‘without consequences’, but with how angry Saka-san is right now, it might be best if we wait for him to cool off first.
+    `name`: Mnhm, my arms are all sore from carrying all these boxes.
+    `issho`: Do you have a place you want to go?
+    `name`: You’re asking me? I can decide?
+    `issho`: What I enjoy might not be as fun for you, so it’s only fair you pick this time.
+    `name`: Hmm
+    - Well, we are sneaking out of work. We really should try to be discreet.
+        `issho`: You are very cautious. It’s wise. Let’s try not to draw attention to ourselves. Come, I know a backdoor that Saka-san rarely checks.
+        You follow `issho`, intrigued by his enigmatic smile. There’s indeed a door, just out of sight behind the base. There doesn’t seem to be anyone around.
+        `name`: Wait a minute… I didn’t know this door existed. How do you know, Admiral?
+        `issho`: [smile] Ah… Vice Admiral Garp told me once when I was dodging Saka-san. I believe he told me to forget about it.
+        `name`:... Yeahhhh… That sounds like Vice Admiral Garp… => Route_1
+    - Absolutely not! I can’t believe you are so irresponsible, `issho`!
+        What is `issho` *saying*?! Sneaking out of work?! That’s not how an Admiral should act.
+        You grab the sleeve of his yukata to prevent him from running away again, storming out.
+        `name`: Fleet Admiral Sakazuki! I found `issho`!
+        As if having a 6th sense, Fleet Admiral Sakazuki appears, face stormy. He yells at `issho` for slacking off and points at the clock on the wall.
+        `issho` sullenly walks back to his office, the sounds of his cane louder than usual.
+        The Fleet Admiral turns to you.
+        `sakazuki`: You did well, soldier. Now, back to work with you as well.
+        What an odd day. You’re glad you did the right thing.
+        => DATE_ENDS_EARLY
+
+:: Route_1
+Sneaking out of the base is easier than you expected. `issho` has an amazing sense of danger, and he seems to know when someone is coming and tells you to hide in time. Finally out in the open, you look at the road ahead of you.
+`issho`: Where do you want to go?
+`name`: Hmmm, let’s…
+- Head right!
+    `issho`: Ah, toward the park? That could be fun. We must hurry though, I can feel Saka-san’s presence, he’ll catch up to us soon. => Park
+- Head straight ahead!
+    `issho`: The dock it is. Let’s go, `name`. Saka-san is close by! => Dock
+- Head left!
+    `issho`: Good choice. The town is busy, Saka-san will have a hard time finding us. => Town
+
+:: Next_Route
+if and(visited("Town"),and(visited("Dock"),visited("Park")))
+    => Ending_Route1
+- ... Head toward the town now! [if not(visited("Town"))] => Town
+- ... Leave for the dock! [if not(visited("Dock"))] => Dock
+- ... Go to the park next. [if not(visited("Park"))] => Park
+
+
+:: Park
+--- Date location: Park
+
+*You both head toward the park, as fast as your legs can carry you. Ha! So this is a good use of the training you have undergone!*
+*It’s only morning so the park is quite barren. You can spot a few elderly people hanging out from afar but other than that, it’s quiet. You look around, spotting an empty bench.*
+`name`: That was… exciting.
+`issho`: This should throw Saka-san off for a while, hopefully. Although he tends to have an uncanny instinct for where we run off to. I suppose it comes with the experience over the years.
+`name`: Sir… Is this something that happens often? You and the others running away from Fleet Admiral Sakazuki?
+`issho`: <pause> Hmm… [smile] I suppose we are just an unruly bunch.
+`issho`: If we all worked at Saka-san’s pace, we would never get any rest. He doesn’t believe in rest.
+`name`: Oh yeah… He is really hardcore…
+- It’s nice to take a break every now and then. Admirals are also humans.
+    `issho`: <pause> [smile] Thank you, `name`. Your sympathy goes a long way. Yes, we are humans. We need our breaks, and we make our mistakes, as all humans do…
+- But that’s a good thing! You guys represent the whole Navy!
+    `issho`: <pause> I suppose we do. However, we are not infallible. We are not tireless machines.
+`name`: What do you mean by that, sir?
+`issho`: Hmm? I suppose–
+But before `issho` can elaborate on his answers, you hear loud stomping.
+`sakazuki`: [angry] #Where are those two?!#
+`name`: Oh no! How did the Fleet Admiral know where we are?!
+`issho`: I try not to question the *how*. He’s uncanny like that sometimes. More importantly, we need to find a way to keep ourselves undetected until a chance arises for us to make a run.
+`name`: I have an idea! How about…
+- We disguise ourselves as park goers and trick him like that! (+0)
+    `issho`: I don’t think that’d–
+    It’s too late for any protest, you can catch sight of Fleet Admiral Sakazuki from far away. Hurry!
+    You push `issho` down a bench then panic. You didn’t think about what kind of disguise you will use!
+    You take off your Marine neckerchief and tie it around your face. Now Fleet Admiral Sakazuki can’t see who you are! What about #`issho`!?# What should you do?!
+    Oh that’s right!
+    You take off his scarf and wear it over his head like a headscarf, grandma style. There! Impeccable disguise!
+    `issho`: Saka-san won’t be–
+    `name`: Shhh, sir! We don’t have time! Pretend!
+    You two hold your breath as Fleet Admiral Sakazuki storms into the empty park, his sharp eyes seeking for you.
+    `sakazuki`: Do you think I’m an *idiot*?! What is with this lousy ‘disguise’?! Are you trying to make light of ditching work?!
+    You are #shocked#. Wait, the disguise is perfect! How could he have found out?!
+    --- Go to the corresponding Bad Ending based on the score.
+    => DATE_ENDS_EARLY
+- I create a loud distraction while you run? He only wants you, not me! (Points: +1)
+    `issho`: [frown] That’s risky, `name`! He’s not someone you should mess with!
+    `name`: Don’t worry about me, sir. Doesn’t bravery mean doing something even though you are scared?
+    You don’t get a chance to test how brave you are though, because `issho` takes your hand and tugs you behind a large tree before he hides as well.
+    Your heart pounds. You feel like you can’t breathe. #You can hear the Fleet Admiral’s angry footsteps.#
+    `issho` looks at you, squeezes your hand before releasing it. Rinse and repeat.
+    It takes you a moment to realize he wants you to take deep slow breaths. You try to match the rhythm as best as you can until the Fleet Admiral’s footsteps fade away.
+    `issho`: That was close…
+    `name`: S-Scary…
+    `issho`: And yes, while it’s true bravery is doing things even though you are scared, sometimes doing the boldest thing isn’t the wisest.
+    `name`: Sorry, sir…
+    `issho`: I appreciate it though. Thank you.
+    --- If PC hasn’t completed Town and/or Dock path yet, proceed to this next part
+    `issho`: But we must leave.  He’s going to return soon.
+    `name`: You’re right. We should definitely…
+    => Next_Route
+
+    --- If PC has completed Town and Dock paths, then go to Ending_Route1
+- We hide somewhere and be really quiet until he goes away? (Points: +2)
+    `issho`: Good idea! Hurry!
+    `issho` takes your hand and tugs you behind a large tree before he hides as well.
+    Your heart pounds. You feel like you can’t breathe. #You can hear the Fleet Admiral’s angry footsteps.#
+    `issho` looks at you, squeezes your hand before releasing it. Rinse and repeat.
+    It takes you a moment to realize he wants you to take deep slow breaths. You try to match the rhythm as best as you can until the Fleet Admiral’s footsteps fade away.
+    `issho`: That was close…
+    `name`: S-Scary…
+    `issho`: [smile] I suppose you will have nerves of steel dealing with us all.
+    `name`: I’m going to have a heart attack.
+    `issho`: [smile] I hope not. I’m fond of your work around Marineford.
+    --- If PC hasn’t completed Town and/or Dock path yet, proceed to this next part
+    `issho`: And I hate to bring the mood down… But we must leave.  He’s going to return soon.
+    `name`: You’re right. We should definitely…
+    => Next_Route
+
+--- If PC has completed Park, Town and Dock paths, then go to Ending_Route1
+
+
+:: Town
+--- Date location: Town
+*Running as fast as your legs can carry you, you spot the town ahead, full of people. Perfect! This way you can blend in!*
+*Despite the time of the day, the town is crowded. There are quite a number of Marines with their family enjoying their off day.*
+`name`: I don’t think this will do. We need to try harder.
+`issho`: Hmm? What do you mean, `name`?
+`name`: We are standing out too much from the rest of the crowd. I heard that the key to divert suspicion is if we look like we are meant to be there. Like we have a business to be there!
+`issho`: You said wise words. How did you learn about it?
+`name`: Err, well…
+- *Lie.*
+    `name`: I heard it from other Marine instructors at the Academy! It’s one of the traits to be a good spy!
+    `issho`: Oh, is that so? I didn’t know the Marine Academy is teaching espionage now. That seems more like a Cipher Pol thing.
+    `name`: Um, well, you see, in this age and day, information is everything! S-So they made sure that we can infiltrate the enemy’s rank if we need to.
+    `issho`: <pause>... Right.
+    *Uh oh. `issho` totally doesn’t believe you… But you are in too deep to back out now. You should distract him with something!*
+- *Tell the truth.*
+    `name`: Um, that’s how my siblings and I snuck into the super fancy mall without our parents back when we were younger.
+    `name`: Just pretend like you belong there and if you do it well enough, no one is going to doubt you.
+    `issho`: <pause> …
+    `name`: I’m not… in trouble, right? You aren’t going to tell Fleet Admiral Sakazuki, are you?
+    `issho`: [laugh/smile] Of course not. You aren’t in trouble, `name`. I’m just amused. Seems like you had a lot of adventures.
+    `name`: Maybe when we have time, I can tell you some stories! I have lots! My siblings and I were a riot, according to our parents.
+`name`: Anyway, we probably should try to blend in before Fleet Admiral Sakazuki gets here.
+`issho`: Hmm, I’m at a loss. This isn’t my strongest forte. What do you suggest we should do?
+- There’s an empty alley up ahead! We should hide there until we’re safe.(+0)
+    `issho`: Hmm, I’m not entirely sure if we’d really blend in the crowd that way…
+    `name`: Trust me, sir! I know what I’m doing.
+    `issho`: [doubtful] <pause> …If you say so…
+    Despite `issho`’s skepticism, he follows your lead to the empty alleyway. It’s dirty and shady, and everyone seems to avoid the alley.
+    Surely, this is the perfect place to blend in!
+    You both crouch behind a large trash can, holding your breath from the smell.
+    `name`: Ugh, this is #nasty…# Maybe you were right, sir… Maybe this is a bad idea. Maybe we should–
+    Before you can actually go somewhere, `issho` already puts a finger over his lips, shushing you. You strain your ears to listen..
+    Then you hear it, the sounds of Fleet Admiral Sakazuki’s angry grumble.
+    `sakazuki`: I swear I saw those two just a moment ago!
+    You try to make yourself as small as possible, hoping that he wouldn’t notice.
+    Fleet Admiral Sakazuki walks in front of the alleyway. He stops, then marches right into it.
+    `sakazuki`: How did you expect to hide from me standing out like a sore thumb?! Behind a *trash can?!* Really, Fujitora! You are an Admiral! Have some self respect!
+    `issho`: Saka-san, now you’re being unfair–
+    `sakazuki`: I will not hear about this matter anymore! This whole thing ends here. You are getting back to work!
+    Ouch… Noted: Trash cans make bad hiding places…
+    => DATE_ENDS_EARLY
+- Oh, there’s a dinnerware store up ahead with all the prettiest plates. We can pretend to be looking for something. (Points: +1)
+    `issho`: Hmm, not the worst option, although I’m not sure if we will blend in too well among it.
+    `name`: I spotted a nice tea set earlier… I really want to check it out. Can we please?
+    `issho`: [doubtful] Alright, I suppose it’s not the worst place to be.
+    Eager to check out all the pretty porcelain, you drag `issho` inside.
+    `name`: Wow, all of these are so pretty! This plate has the biggest flowers! Oh and this one’s pattern is so nice! Oh! The tea sets are so well crafted, too! They are handmade!
+    `name`: What do you think, `issho`?
+    `issho`: Hmm, I’m… <pause>happy that you are enjoying yourself, `name`. But Saka-san might see us if we aren’t careful.
+    Speaking of the Devil, your heart leaps to your throat when you spot Fleet Admiral Sakazuki standing just outside the window.
+    `name`: #Oh no!#
+    You trip over a low shelf, hands windmilling before you kick down a whole stack of dishes.
+    `issho`: Be careful, `name`!
+    `issho` manages to catch the first wave of dishes and save them from breaking but when he catches you, your motion sends more crashing on the floor.
+    Shopkeeper: My precious collection! What have you two done?!
+    `issho`: I’m so sorry. I’ll pay the expenses myself. I’m sorry, my companion just gets a bit easily excited.
+    Shopkeeper: You had better!
+    `name`: I am so sorry, sir! I truly am. Please let me help. It’s my fault.
+    `issho`: It’s alright, `name`. I can afford it. Just be careful next time.
+    --- If PC hasn’t completed Park and/or Dock path yet, proceed to this next part
+    `issho`: We probably shouldn’t spend any more time here though.
+    `name`: You’re right, sir. Maybe we should go to…
+    => Next_Route
+- The clothes store! There’s no way Fleet Admiral Sakazuki is going to be able to check it thoroughly. (Points: +2)
+    `issho`: Good idea. Lead the way, `name`.
+    You are very proud of yourself for coming up with a good idea. Leading `issho` to a clothes store, you go as far away from the window as possible, near the scarf section.
+    `name`: Wow, look at some of these selections! They are so warm and comfortable!
+    `issho` touches a scarf, feeling the material.
+    `issho`: You’re right. It feels like it’d be very cozy to wear.
+    `name`: Do you want to get it? It comes with purple, too!
+    `issho`: Oh, thank you, `name`. That’s kind of you but I don’t need one right now. I don’t have any use for it.
+    `name`: But you like it?
+    `issho`: I do. I like how it feels.
+    You nod, remembering the information.
+    Soon enough, you catch sight of Fleet Admiral Sakazuki outside.
+    `name`: Oh no, Fleet Admiral Sakazuki…
+    Miraculously, he walks by the shop without even stopping. That was such a close call.
+    A moment passes…
+    `issho`: He’s gone. I can’t detect his presence anymore.
+    --- If PC hasn’t completed Park and/or Dock path yet, proceed to this next part
+    `issho`: We probably shouldn’t spend any more time here though.
+    `name`: You’re right, sir. Maybe we should go to…
+    => Next_Route
+
+:: Dock
+--- Date location: Dock/ship
+*By the time you reach the Dock, your legs feel like jelly. You sit down on the ground, breathing heavily.*
+`name`: Ahhhh, I can’t run anymore. I’m going to #die# if I have to walk one more step…
+`issho`: Are you okay? I didn’t realize it was such a big distance for you.
+*You stare at `issho`, noticing how his breathing hasn’t changed. He doesn’t even sweat. It feels as if he hasn’t just run all the way to the Dock with you. How?!*
+`name`: How are you not tired after all of that running, sir?
+`issho`: Hmm? [smile] I’m still an Admiral, you know.
+`name`: That’s right… It must take so much effort.
+- I can’t ever imagine myself working that hard.
+    `issho`: It’s true being an Admiral requires an extraordinary amount of work.
+    `name`: Yeah… It’s too much work.
+    `issho`: I see. I know a few Marines from your generation are aiming for the position. I’m looking forward to what the future holds.
+    `name`: Anyway, lemme see where we can dodge Fleet Admiral Sakazuki.
+- I want to be as strong as you one day!
+    `issho`: [laugh/smile] Is that so? You need to train very hard. You still have a long way.
+    `name`: Doesn’t matter. I’ll get there.
+    `issho`: I believe you. But before that, let’s not get caught by Saka-san first.
+*You look around. As expected of a Marineford Dock, it’s full of Marines. Most are moving crates of supplies, but some can be seen speaking to one another.*
+*Warships are constantly coming and leaving. There are even Marine shipwrights checking over damage done by the weather or fights.*
+`name`: Lots of Marines doing their stuff… I can see a lot of ships, too. I know what we should do!
+`issho`: Oh?
+`name`: We should definitely…
+- … create a commotion. That way Fleet Admiral Sakazuki would be too busy to find us!
+    `issho`: I don’t think we should, `name`. There are a lot of weapons and explosives lying around. We might cause an incident.
+    `name`: I’ll be careful! You’ll see, sir! Wait for me right there!
+    Rubbing your hands together mischievously, you go to an unguarded stack of crates. The labels are a bit faded so you aren’t sure what’s really inside, but it must be some kind of food. Not going to be a big deal if it sinks!
+    Gathering all your strength, you start pushing.
+    Marine: Ehem.
+    `name`: Shh, I’m busy.
+    Marine: *Ehem.*
+    A pause.
+    `name`:... Oh shit.
+    Marine: I beg your pardon. What do you think you are doing with those explosions? Are you a spy looking to sabotage us?
+    `name`: Wait… What?! Wait, this is a misunderstanding! I didn’t know there’s explosion inside. I’m just trying to create a distraction. I’m a Marine, too. I swear!
+    Marine: <pause> We’ll see about that once I report you to your superior. Who do you serve under, soldier?
+    You cringe as the obviously high ranking Marine chews you out. Wait a minute. This isn’t according to plan! You want to create a commotion, but not like this!
+    `sakazuki`: What’s going on here?
+    Marine: Fleet Admiral, sir! This suspicious character was trying to sabotage us by destroying our weapon. We stopped it in time though.
+    `sakazuki`: <pause> Explain yourself, soldier. You have 30 seconds.
+    `name`: I’m so sorry, sir! I wasn’t trying to sabotage anything. I was just thinking I could create a commotion so `issho` and I could run away. I didn’t mean to hurt anyone!
+    `sakazuki`: <pause>...
+    `sakazuki`: `name`, you’re a shame to the Marines.
+    `sakazuki`: Stay there. I’m not done with you. I’m going to have a talk with Fujitora first.
+    => DATE_ENDS_EARLY
+- … Slip aboard a ship. We’ll go completely undetected. (Points: +1)
+    `issho`: Hmm, that sounds risky…
+    `name`: Risks are fun though! Besides, there’s no way Fleet Admiral Sakazuki can see us if we sneak aboard, sir.
+    `issho`: [thoughtful] True…
+    With the help of `issho`’s ability to detect people, sneaking into a ship is a child’s play. Hiding at the back of the vessel, you cheer, feeling victorious.
+    `name`: We did it! Now we just need to wait here until the end of the day! Mission accomplished!
+    `issho`: [smile] I don’t think we can do that. Although I don’t oppose going on a trip.
+    `name`: <pause> Um, what do you mean sir?
+    `issho`: Pay attention. Look at the scene around you. Don’t you notice something is happening?
+    You pause and take a look around you. Hmm? What’s wrong? The waves are nice, the sails are unfurled. Marines are waving the ship goodbye. Everything’s totally normal.
+    Wait a minute?! Waving goodbye?!
+    `name`: Are we leaving?!
+    `issho`: [laugh] Yes.
+    `name`: Sir! How can you be so #calm?!# I have to go to work tomorrow, help!
+    `issho`: There’s nothing to worry about, `name`. [laugh] I suppose a trip wasn’t what you had in mind.
+    `name`: N-no… Help…
+    `issho`: [laugh/smile] Alright, alright. Not an impromptu road trip then.
+    You flail gracelessly as `issho` leviates the both of you back to shore. As you land, you touch the ground. You thought you would never see land again!
+    `issho`: [laugh/smile] Perhaps we should plan better next time, hmm? That was fun.
+    --- If PC hasn’t completed Park and/or Town path yet, proceed to this next part
+    `issho`: I don’t think Saka-san will give up on us so easily though. We need to keep moving.
+    `name`: Hmm, maybe our destination can be…
+    => Next_Route
+- … Help the others move some crates. We’ll look right at home. (Points: +2)
+    `issho`: [smile] I have no issue with that. I think it’s a great way to help out, too.
+    `name`: Yay! Lemme ask if they need help.
+    It doesn’t take long for you to find someone who appreciates the extra helping hand. It’s a lot more fun than being stuck in the office writing paperwork. `issho` seems happy to be doing helpful things.
+    It doesn’t take long for you to spot Fleet Admiral Sakazuki coming toward the dock. He approaches a Marine to talk to them. You strain your ears, trying to eavesdrop on the conversation.
+    `sakazuki`: Have you spotted anyone suspicious?
+    Marine: No, sir. Is there a criminal on the loose? Should we put up wanted posters?
+    `sakazuki`: <pause> No. Inform me if you see anything suspicious right away though. I’ll check back with you later.
+    He leaves in apparent frustration. You cringe. That’s close, but you are glad that you picked the right thing to do.
+    Moving the last of the crate, you return to `issho`’s side.
+    --- If PC hasn’t completed Park and/or Town path yet, proceed to this next part
+    `issho`: I don’t think Saka-san will give up on us so easily though. We need to keep moving.
+    `name`: Hmm, maybe our destination can be…
+    => Next_Route
+
+--- If PC has completed Park, Town and Dock paths, then go to Ending_Route1
+
+:: Ending_Route1
+You can’t believe Fleet Admiral Sakazuki is that persistent! He really did chase `issho` and you across the whole island for hours. It’s not until it’s way past lunch that he realizes he has wasted his whole morning chasing after you two.
+From your hiding spot, you watch as Fleet Admiral Sakazuki grumbles and marches off, apparently deciding to go back to work.
+`issho`: That took him longer to give up than I expected.
+`name`: He’s really persistent…
+`issho`: [laugh/smile] Yes, one of his strong suits, but also his shortcoming. I’ll have to make amends with him tomorrow.
+`name`: That would be a good idea. I hope he doesn’t hold a grudge…
+if is_greater_than("id2.points", 4)
+    => Best_Ending_Route1
+elif is_greater_than("id2.points", 2)
+    => Good_Ending_Route1
+elif is_greater_than("id2.points", 1)
+    => Bad_Ending1_Route1
+else
+    => Bad_Ending2_Route1
+
+:: DATE_ENDS_EARLY
+if is_greater_than("id2.points", 1)
+    => Bad_Ending1_Route1
+else
+    => Bad_Ending2_Route1
+
+:: Best_Ending_Route1
+--- (Points needed: 5, 6pts)
+do romance_points(issho, 2)
+*Your stomach suddenly grumbles, loud and clear.*
+`name`: Oh no, I’m sorry. We were just running around and it’s past my usual lunch time…
+`issho`: [smile/apologetic] Don’t apologize. It was my fault for pulling you into this. Is there anything I can treat you with to tie you over and we can have lunch together?
+`name`: There’s a cotton candy vendor…
+`issho`: [smile] I’ll get you one and then let’s have lunch together.
+`issho` buys one for you and one for himself, and as you eat the cotton candy, you reflect on your morning. It was scary running away from the Fleet Admiral, but you had fun! You hope you get to spend more time with `issho`!
+… Maybe not while running away from the Fleet Admiral though. You might be brave, but you are not that bold yet!
+
+:: Good_Ending_Route1
+--- (Points needed 3, 4 pts)
+do romance_points(issho, 1)
+`issho`: He might be grumpy for a few days but he’s not the type to hold a grudge long.
+`name`: If you say so, sir.
+`issho`: [laugh/smile] Thank you for the wonderful day, `name`. I had a lot of fun.
+`name`: Thank you for the adventure, sir! Although maybe next time we should do something a lot less heart attack inducing!
+`issho`: Perhaps next time then. Good bye, `name`.
+`name`: I’ll see you at work tomorrow, sir.
+
+:: Bad_Ending1_Route1
+--- (Date ends with 2, 3 or 4 points)
+do romance_points(issho, 0)
+*Standing just off to the side, you cringe as you listen to Fleet Admiral Sakazuki chewing you both out for ditching work.*
+`sakazuki`: What do you think you two are doing?! Sneaking out of work?! You are not kids trying to sneak out of school! You are Marines with a job!
+`issho`: Saka-san, be reasonable… We all have been working non stop for weeks. Admirals or not, I need my break, too.
+`sakazuki`: Goddamnit, Fujitora! Back to work, both of you! And if I have to hear about one more escapee, I’m going to assign you with a babysitter. Don’t test me!
+`issho` sighs, turning you.
+`issho`: Thank you for trying, `name`. You did your best.
+`name`: It was nothing, sir… We got caught in the end…
+`sakazuki`: Stop dawdling! We don’t have time to waste if you want to eat lunch in time!
+*After that, the Fleet Admiral forces you both to work until lunch. It was a rough day. At least you think it could be worse. At least you tried.*
+
+:: Bad_Ending2_Route1
+--- (Date ends with 0 or 1 points)
+do romance_points(issho, 0)
+*Standing just off to the side, you cringe as you listen to Fleet Admiral Sakazuki chewing you both out for ditching work.*
+`sakazuki`: What do you think you two are doing?! Sneaking out of work?! You are not kids trying to sneak out of school! You are Marines with a job!
+`issho`: Saka-san, be reasonable… We all have been working non stop for weeks. Admirals or not, I need my break, too.
+`sakazuki`: Goddamnit, Fujitora! Back to work, both of you! And if I have to hear about one more escapee, I’m going to assign you with a babysitter. Don’t test me!
+After that, the Fleet Admiral forces you both to work until lunch. It was a rough day. At least you think it could be worse. At least you tried. Perhaps next time…

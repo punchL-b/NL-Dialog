@@ -26,7 +26,7 @@ You place your drink down to get everyone's attention.
 <I don't know how to write the code so that once an option is picked, it can't be picked again. Someone with coding knowledge, send help>
 `kuzan`: So… What do you want to talk about? Don't be shy.
 - How did you guys meet?
-    It might have been the right thing to ask. Admiral Fujitora smiles.
+    It might have been the right thing to ask. `issho` smiles.
     `issho`: [smile sprite] I have known Saka-san for a while. We went far back. He was stationed at a base and… [fade to black]
     `borsalino`: … *~soo~* when he found out I could teleport into the pantry, we became the best of friends…
     `sakazuki`: Ignore them, they are such fools. Do you have any further questions? => Talk_route
@@ -38,7 +38,7 @@ You place your drink down to get everyone's attention.
     `sakazuki`: Shut up! It wasn't like that! I was new at controlling my power, okay?!
     `issho`: Let's not fight in a bar, Saka-san, Kuzan. `name` seems to still have questions for us. What do you want to ask us about? => Talk_route
 - So… what is the deal with Vice Admiral Aramaki?
-    The demeanors of the Admirals change at the question. Admiral Fujitora looks vaguely amused, while the others look annoyed. Finally, Kuzan speaks up.
+    The demeanors of the Admirals change at the question. `issho` looks vaguely amused, while the others look annoyed. Finally, Kuzan speaks up.
     `kuzan`: That Sakazuki groupie? Eurgh. Competed with Issho for the Admiral position but lost. I suppose there's one thing we can all agree on… Screw him.
     `borsalino`: Oh, we ~doo~…
     `sakazuki`: Hmph! He had better not screw up my very clear orders this time!
@@ -56,7 +56,7 @@ How about you start first….
 - Fleet Admiral Sakazuki? => Path_1
 - Admiral Aokiji? => Path_2
 - Admiral Kizaru? => Path_3
-- Admiral Fujitora? => Path_4
+- `issho`? => Path_4
 
 :: Path_1
 `sakazuki`: Me? Tt. <pause> They are qualified Marine soldiers. Hmph.
@@ -71,7 +71,7 @@ Fleet Admiral Sakazuki eyes the other two in annoyance.
 `issho`: Thank you, Kuzan. I'm flattered you think so.
 `borsalino`: Kuzan's temperature is a good thing in the summer, too.
 `kuzan`: And Borsalino is really good… ah what is it… that turns on and off? Forget it.
-Admiral Fujitora laughs good naturedly while Fleet Admiral Sakazuki just scowls.
+`issho` laughs good naturedly while Fleet Admiral Sakazuki just scowls.
 `sakazuki`: [Frown sprite] Annoying. => Date_unlock2
 
 :: Path_3
@@ -90,7 +90,7 @@ Admiral Fujitora laughs good naturedly while Fleet Admiral Sakazuki just scowls.
 Not wanting a fight to start, you decide to step in. Turning to the person you admire the most, you give them a smile.
 - I think Admiral Aokiji is pretty &&cool!&& => Kuzan_unlock
 - You brighten up any room you're in, &&Admiral Kizaru!&& => Bors_unlock
-- Admiral Fujitora, you have such amazing luck! => Issho_unlock
+- `issho`, you have such amazing luck! => Issho_unlock
 - Fleet Admiral Sakazuki, I really admire your tenacity. => Saka_unlock
 
 :: Kuzan_unlock
@@ -151,7 +151,7 @@ Admiral Kizaru takes a dart from your hand and lines up his shot. With a flick o
 `sakazuki`: Hn, don't try and guilt us.
 `kuzan`: Oi, no gravity stuff from you Issho!
 
-You hand the last dart to Admiral Fujitora. He tilts his head a little, leaning on his walking stick. The dart swooshes from his hand. Another bullseye?! Wow all the Admirals are no joke!
+You hand the last dart to `issho`. He tilts his head a little, leaning on his walking stick. The dart swooshes from his hand. Another bullseye?! Wow all the Admirals are no joke!
 
 `issho`: Oh, did this blind old man get a bullseye?
 `sakazuki`: Psh.
@@ -163,7 +163,7 @@ You hand the last dart to Admiral Fujitora. He tilts his head a little, leaning 
     `kuzan`: Told you you were off center Sakazuki.
 - I think Admiral Kizaru had the advantage of going first so…he got the closest sorry.
     `borsalino`: ~Beggars can't be choosers~
-- Admiral Fujitora got the closest!
+- `issho` got the closest!
     `issho`: Thank you `name`.
 - Um, I think the Fleet Admiral is the most center? And maybe the deepest?
     `sakazuki`: Good eye `name`. What did you say about off center Kuzan?

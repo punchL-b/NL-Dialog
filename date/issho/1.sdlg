@@ -4,37 +4,37 @@ Laying in your room, you stare at the transponder snail in complete boredom. You
 do set_background("town", show)
 Walking around aimlessly, you come across a noodlestand, surprisingly cozy. It smells really good too… You spot someone familiar.
 do show_character(issho, center, show)
-`name`: Admiral Fujitora?!
-Issho: Ah, `name`! Have you come to eat as well? The food is excellent here.
+`name`: `issho`?!
+`issho`: Ah, `name`! Have you come to eat as well? The food is excellent here.
 - Is there anything you recommend?
-    Issho: The udon and soba here are a great choice. They're my favorites.
+    `issho`: The udon and soba here are a great choice. They're my favorites.
     Udon and soba, huh? That sounds good, too.
     `name`: I'll have whatever the Admiral is having please.
     The food is delicious. It's warm, comfort food. You enjoy it very much. You note down the address. Perhaps you will visit it again.
     => Part_2
 - Well a stall is a bit too common for me...I prefer something with more class.
-    Issho: Is that so? I suppose I consider having class something different than how luxurious something looks.
+    `issho`: Is that so? I suppose I consider having class something different than how luxurious something looks.
     `name`: Oh, well, I would like to try whatever is good on the menu then.
-    As Admiral Fujitora said, the food is good. You feel a bit embarrassed for having judged it too harshly.
+    As `issho` said, the food is good. You feel a bit embarrassed for having judged it too harshly.
     => Part_2
 
 :: Part_2
-You feel relaxed after finishing the food. Admiral Fujitora is amicable, and he smiles a lot. You both pay for your respective meals and leave the stall.
-Issho: Do you have any plans for the rest of the day?
+You feel relaxed after finishing the food. `issho` is amicable, and he smiles a lot. You both pay for your respective meals and leave the stall.
+`issho`: Do you have any plans for the rest of the day?
 - Let's head to the park! The day is nice! => Part_2A
 - Let's walk and talk! => Part_2B
 - I don't really have any plans. I was just really bored sitting at home. => Part_2C
 
 :: Part_2A
 do set_background("park", show)
-Issho: [smile] I do have some time to spare. Lead the way, `name`.
+`issho`: [smile] I do have some time to spare. Lead the way, `name`.
 Today is a beautiful day and the park is full of people enjoying a dose of fresh air. You notice…
 - ... How beautiful the sky is => Part_2A1
 - ... A group of children playing nearby => Part_2A2
 
 :: Part_2A1
 `name`: The park looks so beautiful. The sky is stunning today…
-Issho: [smile] Is it...? Would you mind describing it to me? I find myself missing the simple things in life.
+`issho`: [smile] Is it...? Would you mind describing it to me? I find myself missing the simple things in life.
 - Even though you're nervous, you decide, you'll try your best!
     do increment("isd1.points")
     => Part_2A1_Describe
@@ -48,28 +48,28 @@ Issho: [smile] Is it...? Would you mind describing it to me? I find myself missi
 :: Part_2A1_Describe
 You take a deep breath.
 `name`: I'm not the best at this, but I'll try!
-Issho: [smile] Thank you for trying. I appreciate it.
+`issho`: [smile] Thank you for trying. I appreciate it.
 - The sky is... like a splash of cold water... with cotton candy clouds. They are white, like... our cloaks.
     do increment("isd1.points")
-    Issho: [smile] White like our cloak, hmm... <pause> Good thing it's a nice day.
+    `issho`: [smile] White like our cloak, hmm... <pause> Good thing it's a nice day.
     => Part_2A3
 - Err... the sky is, y'know, blue like it normally is... but prettier today! Extra pretty!
     do increment("isd1.points")
-    Issho: [laugh] Pffff… Haha
+    `issho`: [laugh] Pffff… Haha
     `name`: ...That wasn't a very good job... was it…?
-    Issho: [smiles] But you tried your best, that's what matters. Thank you. It sounds like a lovely day. => Part_2A3
+    `issho`: [smiles] But you tried your best, that's what matters. Thank you. It sounds like a lovely day. => Part_2A3
 - The sky is a really deep blue with some moving clouds. I think there's a small breeze. It's really calming.
-    Issho: Mmm, it sounds like a very nice day to relax. I can hear a lot of people, too. => Part_2A3
+    `issho`: Mmm, it sounds like a very nice day to relax. I can hear a lot of people, too. => Part_2A3
 
 :: Part_2A1_Joke
 `name`: To tell you the truth, I already know today's going to look good before I go out. You know why, because I take a look in the mirror.
-You stand all proud after your joke. A second passes before Admiral Fujitora chuckles, amused by it.
+You stand all proud after your joke. A second passes before `issho` chuckles, amused by it.
 Oh! He likes your joke! You know what joke to say next then!
 - Okay, I have a better one for you... The weather today's windy. It sure blows!
     do increment("isd1.points")
-    Issho: <pause> [laugh] Pfff… Haha… Thank you, `name`! I haven't laughed so much in a while. You have a good sense of humor => Part_2A3
+    `issho`: <pause> [laugh] Pfff… Haha… Thank you, `name`! I haven't laughed so much in a while. You have a good sense of humor => Part_2A3
 - You know what... The day is nice but you're nicer.
-    Issho: <pause>... That's very flattering…
+    `issho`: <pause>... That's very flattering…
     Oh no, you hope you haven't overstepped your boundaries…
     => Part_2A3
 - ~Do you have sunburns or are you always this hot, Admiral?~
@@ -80,21 +80,21 @@ Oh! He likes your joke! You know what joke to say next then!
 
 :: Part_2A1_Dick
 `name`: Even if I describe it, not like you can see anyway.
-Issho: [frown] Well, that's quite uncalled for.
+`issho`: [frown] Well, that's quite uncalled for.
 - I'm so sorry! That was too rude of me!
-    Issho: ... <pause> Words have power, `name`. Saying without thinking can have devastating effects. => Part_2A3
+    `issho`: ... <pause> Words have power, `name`. Saying without thinking can have devastating effects. => Part_2A3
 - Relax, Admiral! It's just a joke!
     do decrement("isd1.points")
-    Admiral Fujitora doesn't seem to find your joke as funny as you do. Perhaps you should apologize…
+    `issho` doesn't seem to find your joke as funny as you do. Perhaps you should apologize…
     => Part_2A3
 - Tt. I'm just being honest.
     do decrement("isd1.points")
     do decrement("isd1.points")
-    Issho: <pause> [frown] You are not a very kind soul, aren't you? => Part_2A3
+    `issho`: <pause> [frown] You are not a very kind soul, aren't you? => Part_2A3
 
 :: Part_2A2
 `name`: Ah, there are some children flying kites! It looks really fun! They drew faces on the kites!
-Issho: Would you like to join them? They seem to be looking for an extra kite partner.
+`issho`: Would you like to join them? They seem to be looking for an extra kite partner.
 - I think I'd rather stay here, sir. I am a bit too old to fly kites.
     do increment("isd1.points")
     => Part_2A2_Observe
@@ -104,20 +104,20 @@ Issho: Would you like to join them? They seem to be looking for an extra kite pa
     => Part_2A2_Dick
 
 :: Part_2A2_Observe
-Issho: Fair enough, fair enough.
-Issho:  [smile] They are having a lot of fun, aren't they?
+`issho`: Fair enough, fair enough.
+`issho`:  [smile] They are having a lot of fun, aren't they?
 - They give me hope for the future. I really know what I'm protecting looking at them.
     do increment("isd1.points")
     do increment("isd1.points")
-    Issho: [smile] Me, too, `name`, me, too. This position is difficult but moments like these make it worthwhile. => Part_2A3
+    `issho`: [smile] Me, too, `name`, me, too. This position is difficult but moments like these make it worthwhile. => Part_2A3
 - They seem to be, sir. They seem to be good friends. Maybe they come from the same school?
-    Issho: I see, I'm glad to hear that => Part_2A3
+    `issho`: I see, I'm glad to hear that => Part_2A3
 - They are yelling and running around. It's so annoying!
     do decrement("isd1.points")
-    Issho: Ah ah, leave them be, `name`. Childhood is a precious time with no worries. Let them enjoy it for a little longer. => Part_2A3
+    `issho`: Ah ah, leave them be, `name`. Childhood is a precious time with no worries. Let them enjoy it for a little longer. => Part_2A3
 
 :: Part_2A2_Join
-Issho: A boring old man like me? Thank you for your offer. I can just sit at the bench. You go ahead, `name`.
+`issho`: A boring old man like me? Thank you for your offer. I can just sit at the bench. You go ahead, `name`.
 You leave Issho at the bench before joining the kids with a cheerful wave. They are indeed looking for an extra playmate. You're playing for a bit but then…
 do start_effect(shake)
 #SNAP!#
@@ -126,26 +126,26 @@ A kite's line snaps, causing it to snag on a tree. Uh oh. What should you do now
     do increment("isd1.points")
     do increment("isd1.points")
     Swiftly making your way up the tree, you reach for the kite to the children's cheering. Your happiness is short-lived when the branch you are standing on snaps under your weight.
-    You squeeze your eyes shut, expecting to hit the ground with great impact but the pain never comes. Open your eyes, you find yourself floating down gently, Admiral Fujitora slowing your fall.
-    Issho: [smile] Be careful, `name`. => Part_2A3
-- Why should you do anything when you can just ask Admiral Fujitora for help?
+    You squeeze your eyes shut, expecting to hit the ground with great impact but the pain never comes. Open your eyes, you find yourself floating down gently, `issho` slowing your fall.
+    `issho`: [smile] Be careful, `name`. => Part_2A3
+- Why should you do anything when you can just ask `issho` for help?
     do decrement("isd1.points")
     You tell the kids to wait for you while you go back to the Admiral.
     `name`: Sir, can you help us with a stuck kite? The line snaps and I really don't like climbing trees. It's such a hassle! You have a really useful power to help us out!
-    Issho: [surprised] Alright.
-    With Admiral Fujitora's help, the kite is easily unstuck and brought back to ground level. The children cheer happily.
+    `issho`: [surprised] Alright.
+    With `issho`'s help, the kite is easily unstuck and brought back to ground level. The children cheer happily.
     You beam. A good deed without having to expend energy!
     => Part_2A3
 - You probably should leave it. The kid's parents are going to get them a new kite anyway.
     do decrement("isd1.points")
     do decrement("isd1.points")
-    Ignoring the kids' cry, you return to Admiral Fujitora's side.
-    Issho: Did you have fun?
+    Ignoring the kids' cry, you return to `issho`'s side.
+    `issho`: Did you have fun?
     `name`: It went okay, but then the kids started crying. I'm a Marine, not a babysitter.
-    Issho: [frown] … => Part_2A3
+    `issho`: [frown] … => Part_2A3
 
 :: Part_2A2_Dick
-Admiral Fujitora seems to be listening, but he doesn't react visibly either way. You take that as a good sign to continue your idea.
+`issho` seems to be listening, but he doesn't react visibly either way. You take that as a good sign to continue your idea.
 You hide behind a tree, waiting for the unsuspected children to run past you before jumping out with a shout.
 `name`: #BOOO!!!#
 The kids shriek in fear, some running into you in their panic.
@@ -159,7 +159,7 @@ You laugh at the harmless fun. Watching them untangle themselves from you, you d
     do decrement("isd1.points")
     `name`: Watch where you're going, brats! Want me to tell your parents?!
     The kids scramble away in fear. You return to Issho's side, but he doesn't look very happy.
-    Issho: [frown] That wasn't very nice. => Part_2A3
+    `issho`: [frown] That wasn't very nice. => Part_2A3
 - Bully them to take their kites. You want to fly kites but you don't want annoying kids!
     do decrement("isd1.points")
     do decrement("isd1.points")
@@ -194,21 +194,21 @@ You look at the two sides. It's clear to you, what the right decision is:
 You boldly step between the two sides, standing with your back facing the hurt civilian.
 `name`: Have you guys no shame?! You are obviously bullying this man! This is unacceptable behavior! I'll report you if you don't leave him alone. Now!
 Marine: Why won't you trust us? We are on the same side!
-Issho: I sense trouble. <smile> Is there anything I should know?
-Marine: Oh crap, Admiral Fujitora! Um, no troubles! We're just leaving! Good bye!
+`issho`: I sense trouble. <smile> Is there anything I should know?
+Marine: Oh crap, `issho`! Um, no troubles! We're just leaving! Good bye!
 do hide_character(placeholder("Marine"), hide)
 `name`: Cowards.
-You explain to Admiral Fujitora about what you saw. He looks stern for a moment, before smiling at the part where stand up to the right things. Admiral Fujitora apologizes to the civilian on the Marines' behalf, promising he'll get to fixing what's broken.
+You explain to `issho` about what you saw. He looks stern for a moment, before smiling at the part where stand up to the right things. `issho` apologizes to the civilian on the Marines' behalf, promising he'll get to fixing what's broken.
 do hide_character(placeholder("Civilian"), hide)
 You smile as well. You feel like you have done an amazing job.
 => DateEnding
 
 :: Part_2A3_Neutral
-You aren't paid enough to deal with this. You immediately turn tail and run toward Admiral Fujitora.
+You aren't paid enough to deal with this. You immediately turn tail and run toward `issho`.
 `name`: There's a fight going on between a civilian and a bunch of Marines, sir! Please stop them. I don't want to do it!
-Issho: [frown] I'm aware of the situation. I'll deal with it accordingly. <pause> Thank you, `name`.
-Relieved, you hide behind Admiral Fujitora the whole time as he deals with the group of Marines, sounding exactly like how an Admiral should sound. He's really cool!
-Once he has finished chastising those Marines, Admiral Fujitora bows low to the hurt civilian. You watch the guy leave, hoping that his opinion on the Navy hasn't changed.
+`issho`: [frown] I'm aware of the situation. I'll deal with it accordingly. <pause> Thank you, `name`.
+Relieved, you hide behind `issho` the whole time as he deals with the group of Marines, sounding exactly like how an Admiral should sound. He's really cool!
+Once he has finished chastising those Marines, `issho` bows low to the hurt civilian. You watch the guy leave, hoping that his opinion on the Navy hasn't changed.
 do hide_character(placeholder("Marine"), hide)
 do hide_character(placeholder("Civilian"), hide)
 How you're glad you didn't have to deal with *that* mess.
@@ -218,219 +218,219 @@ How you're glad you didn't have to deal with *that* mess.
 You huff, crossing your arms, joining the group of Marines while the civilian tears up.
 `name`: Hey, don't be a jerk to us! We save you from pirates, we can easily kick your ass, too!
 Marine: Bawahaha! See? We are the righteous ones and you are just trash.
-Issho: [smiles] Now, now... That is not a very nice thing to say... Is it? Not the kind of things I expected to hear from Marines.
-`name`: Ad-Admiral Fujitora?!
-But Admiral Fujitora doesn't look at you at all. You have the feeling you have disappointed him.
-Issho: Leave. You have truly failed your vow. This park is a very nice place, and I don't want it tainted by your presence. Proper punishment will await you tomorrow. Think about what you did.
-Admiral Fujitora apologizes to the civilian, still not addressing you. You want to apologize but you feel ashamed of how you act. Perhaps you have ruined today's outing with your unwise choice.
+`issho`: [smiles] Now, now... That is not a very nice thing to say... Is it? Not the kind of things I expected to hear from Marines.
+`name`: Ad-`issho`?!
+But `issho` doesn't look at you at all. You have the feeling you have disappointed him.
+`issho`: Leave. You have truly failed your vow. This park is a very nice place, and I don't want it tainted by your presence. Proper punishment will await you tomorrow. Think about what you did.
+`issho` apologizes to the civilian, still not addressing you. You want to apologize but you feel ashamed of how you act. Perhaps you have ruined today's outing with your unwise choice.
 do hide_character(placeholder("Marine"), hide)
 do hide_character(placeholder("Civilian"), hide)
 => DateEnding
 
 :: Part_2B
 do set_background("town", show)
-Issho: [smile sprite] How has Marineford treated you so far? You did a wonderful job handling the others. I know they can be a handful.
+`issho`: [smile sprite] How has Marineford treated you so far? You did a wonderful job handling the others. I know they can be a handful.
 `name`: They're a bit intimidating, but I'm up to the challenge! I'm here for a reason!
-Issho: That's good to hear. Is there anything you're curious about?
+`issho`: That's good to hear. Is there anything you're curious about?
 `name`: I want to know more about you! What do you do in your free time?
-Issho: What do I do in my free time? Hmm, I do enjoy visiting different islands and bases, perhaps gambling. Work has taken a lot of my free time lately though.
+`issho`: What do I do in my free time? Hmm, I do enjoy visiting different islands and bases, perhaps gambling. Work has taken a lot of my free time lately though.
 `name`: Oh those are some interesting activities but…
 - … I thought Admirals would need to stay in Marineford all the time. => Part_2B1a
 - … Is gambling legal? Won't you get in trouble? => Part_2B1b
 - … How about work? => Part_2B1c
 
 :: Part_2B1a
-Issho: That's where we spend most of our time but to tell you the truth, we leave all the time, either on missions, or just out of our volition. Take Kuzan, for example.
-Issho: Personally speaking, I suppose I still have wanderlust left.
+`issho`: That's where we spend most of our time but to tell you the truth, we leave all the time, either on missions, or just out of our volition. Take Kuzan, for example.
+`issho`: Personally speaking, I suppose I still have wanderlust left.
 - Why do you like to travel?
-    Issho: I want to learn about the impact of the work we do and also… of the hidden rot lurking beneath the surface. => Part_2B2
+    `issho`: I want to learn about the impact of the work we do and also… of the hidden rot lurking beneath the surface. => Part_2B2
 - You must have met a lot of interesting people!
     do increment("isd1.points")
-    Issho: I have.
-    Issho: [Smile] There was a particular pirate that I met on my journey that left quite the impression. Perhaps I'll tell you about him one day. => Part_2B2
+    `issho`: I have.
+    `issho`: [Smile] There was a particular pirate that I met on my journey that left quite the impression. Perhaps I'll tell you about him one day. => Part_2B2
 - Is there any dangerous water? I'll note it down so I won't be stationed there ever.
     do decrement("isd1.points")
     do decrement("isd1.points")
-    Issho: With the era we're in, I think nowhere's safe, `name`. From Paradise to New World, to the four Blues, everything's changing. => Part_2B2
+    `issho`: With the era we're in, I think nowhere's safe, `name`. From Paradise to New World, to the four Blues, everything's changing. => Part_2B2
 
 :: Part_2B1b
-Issho: It's not illegal, although Saka would beg to differ. He doesn't think an Admiral should gamble. Still, as long as I complete my duty. He has to let it go.
+`issho`: It's not illegal, although Saka would beg to differ. He doesn't think an Admiral should gamble. Still, as long as I complete my duty. He has to let it go.
 `name`: I guess so but…
 - ...People try to scam you all the time. Why do you still gamble?
-    Issho: [smile] You're kind, but there's no need to worry. Observation Haki can also detect feelings. I'm gambling, but in a different way. => Part_2B2
+    `issho`: [smile] You're kind, but there's no need to worry. Observation Haki can also detect feelings. I'm gambling, but in a different way. => Part_2B2
 - ... Is it true that you cheat? That's what I heard.
     do increment("isd1.points")
     do increment("isd1.points")
-    Issho: <pause> [laugh]... Ah, whatever do you mean? How could I possibly cheat? => Part_2B2
+    `issho`: <pause> [laugh]... Ah, whatever do you mean? How could I possibly cheat? => Part_2B2
 - ...he's right, y'know! Gambling is a bad habit! You should be an example!
     do increment("isd1.points")
-    Issho: [smile] You sound exactly like Saka. Alas, we each have our quirks. => Part_2B2
+    `issho`: [smile] You sound exactly like Saka. Alas, we each have our quirks. => Part_2B2
 
 :: Part_2B1c
-Issho: I take great joy in helping people, but I find paperwork and protocols rather tedious.
+`issho`: I take great joy in helping people, but I find paperwork and protocols rather tedious.
 You take a moment to think…
 - That makes sense. Paperwork can be a pain!
     do increment("isd1.points")
-    Issho: Quite. I've gotten used to it, but there are days the burden still feels heavy. => Part_2B2
+    `issho`: Quite. I've gotten used to it, but there are days the burden still feels heavy. => Part_2B2
 - If you don't enjoy paperwork, why do you become an Admiral?
-    Issho: For many reasons, `name`. I suppose, mainly, I was hoping my presence would make a difference. => Part_2B2
+    `issho`: For many reasons, `name`. I suppose, mainly, I was hoping my presence would make a difference. => Part_2B2
 - #So you are just lazy! Your poor secretary!#
     do decrement("isd1.points")
-    Issho: [smile] I do try. It's not laziness. I just don't do more than I have to. Not all of us can work year round. => Part_2B2
+    `issho`: [smile] I do try. It's not laziness. I just don't do more than I have to. Not all of us can work year round. => Part_2B2
 
 :: Part_2B2
 You two walk for a while longer before curiosity gets the best of you.
 `name`: What's your relationship like with other Admirals?
-Issho: [smile] Are you curious? I suppose we must appear like a peculiar cast of characters.
-Issho: Which one are you most curious about?
+`issho`: [smile] Are you curious? I suppose we must appear like a peculiar cast of characters.
+`issho`: Which one are you most curious about?
 - The Fleet Admiral! I heard you guys fight all the time! => Part_2B2a
 - `borsalino`! He seems kinda cool. => Part_2B2b
 - `kuzan`! Do you have to drag him to work? => Part_2B2c
 
 :: Part_2B2a
-Issho: [laugh] Haha… You're right, we do disagree a lot.
-Issho: Saka is prideful and strong-willed in ways I cannot accept.
+`issho`: [laugh] Haha… You're right, we do disagree a lot.
+`issho`: Saka is prideful and strong-willed in ways I cannot accept.
 - I see what you mean. They do say pride comes before the fall.
     do increment("isd1.points")
     do increment("isd1.points")
-    Issho: <pause> [sad] They do. We have our differences. I don't hate him though, only his pride. => Part_2B3
+    `issho`: <pause> [sad] They do. We have our differences. I don't hate him though, only his pride. => Part_2B3
 - He's also scary and super strict!
-    Issho: [sad] He does hold himself and others to very high standards. => Part_2B3
+    `issho`: [sad] He does hold himself and others to very high standards. => Part_2B3
 - Why do you fight him? I think he's right!
     do decrement("isd1.points")
     do decrement("isd1.points")
-    Issho: <pause> I simply believe civilian deaths are not acceptable collateral damage in his one track mind crusade. => Part_2B3
+    `issho`: <pause> I simply believe civilian deaths are not acceptable collateral damage in his one track mind crusade. => Part_2B3
 
 :: Part_2B2b
-Issho: [smile] He can be. We get along alright.
-Issho: I don't talk to him very often.
+`issho`: [smile] He can be. We get along alright.
+`issho`: I don't talk to him very often.
 - Really? Are you too different?
     do increment("isd1.points")
-    Issho: Well... <pause> We tend to get assigned in different areas so we don't interact much. => Part_2B3
+    `issho`: Well... <pause> We tend to get assigned in different areas so we don't interact much. => Part_2B3
 - That's a pity! I think you can be great friends!
     do increment("isd1.points")
-    Issho: Is that so? I suppose I should make an effort to talk with him more. => Part_2B3
+    `issho`: Is that so? I suppose I should make an effort to talk with him more. => Part_2B3
 - Well... I guess he *is* pretty cool…
     do decrement("isd1.points")
-    Issho: [smile] Indeed, and I'm just one boring Admiral. => Part_2B3
+    `issho`: [smile] Indeed, and I'm just one boring Admiral. => Part_2B3
 
 :: Part_2B2c
-Issho: [smile] No, I don't. He shows up to work eventually.
-Issho: [sad] The Punk Hazard fight takes its toll on him…
+`issho`: [smile] No, I don't. He shows up to work eventually.
+`issho`: [sad] The Punk Hazard fight takes its toll on him…
 - Oh. I hope he gets better soon.
     do increment("isd1.points")
-    Issho: Me, too, `name`. Me, too. => Part_2B3
+    `issho`: Me, too, `name`. Me, too. => Part_2B3
 - Oh, you mean he's a sore loser?
     do decrement("isd1.points")
     do decrement("isd1.points")
-    Issho: <pause>... No.
-    Issho: I mean there are fights that can shatter relationships. => Part_2B3
+    `issho`: <pause>... No.
+    `issho`: I mean there are fights that can shatter relationships. => Part_2B3
 - I heard they said Akainu got an advantage on land that's why.
     do decrement("isd1.points")
     do decrement("isd1.points")
-    Issho: <pause>... I don't take part in that kind of discussion. => Part_2B3
+    `issho`: <pause>... I don't take part in that kind of discussion. => Part_2B3
 
 :: Part_2B3
 You watch him walk, feeling the ground in front of him. You can't help but wonder…
 `name`: Is it... hard being a Marine while being visually impaired?
-Issho: [smile] There are methods to see without vision. Observation Haki helps tremendously.
+`issho`: [smile] There are methods to see without vision. Observation Haki helps tremendously.
 - But... how do you deal with people treating you differently? => Part_2B3a
 - Does it make reading reports hard? => Part_2B3b
 - Even with Haki, you're still a blind old man though… => Part_2B3c
 
 :: Part_2B3a
-Issho: Mostly, I ignore it. I have nothing to prove. I am an Admiral and the title is earned. Just like others before me, I'm called a monster. It'd do them well to remember it.
-Issho: <pause> `name`, do you find me unworthy of the title?
+`issho`: Mostly, I ignore it. I have nothing to prove. I am an Admiral and the title is earned. Just like others before me, I'm called a monster. It'd do them well to remember it.
+`issho`: <pause> `name`, do you find me unworthy of the title?
 - Of course not, Admiral! You definitely worked really hard to get this far!
     do increment("isd1.points")
     `name`: But I'm also not naive about how mean people can be.
-    Issho: [smile] That they can be, yes. There are battles not worth picking though. Protecting my pride by showing off is one of those.
+    `issho`: [smile] That they can be, yes. There are battles not worth picking though. Protecting my pride by showing off is one of those.
 - I don't think I can make an accurate assessment yet. Perhaps if we spend more time together...?
-    Issho: <pause> [Smile] Perhaps if we run into each other again in the future.
+    `issho`: <pause> [Smile] Perhaps if we run into each other again in the future.
 - I'm sure you're really strong! But you don't have a Logia…
     do decrement("isd1.points")
-    Issho: [frown] Having a Logia... or eyesight for that matter, doesn't grant strength. Sometimes, it's the arrogant Logia that gets defeated first.
+    `issho`: [frown] Having a Logia... or eyesight for that matter, doesn't grant strength. Sometimes, it's the arrogant Logia that gets defeated first.
 => DateEnding
 
 
 :: Part_2B3b
-Issho: [smile] Interesting question. There's actually a form of touch language you can use to read the words without sight.
+`issho`: [smile] Interesting question. There's actually a form of touch language you can use to read the words without sight.
 `name`: Touch language? You can read by touch?
-Issho: Would you like to learn? I can teach you. It's very interesting.
+`issho`: Would you like to learn? I can teach you. It's very interesting.
 - Really?! You'd teach me? I'd love to!
     do increment("isd1.points")
     do increment("isd1.points")
     do get("WantsToLearnBraille")
-    Issho: [smile] I'm glad to hear you are so enthusiastic. I'll teach it to you later.
+    `issho`: [smile] I'm glad to hear you are so enthusiastic. I'll teach it to you later.
 - Maybe another time, sir. I'm still a bit overwhelmed by everything right now.
-    Issho: Fair enough. In that case focusing on yourself first is good.
+    `issho`: Fair enough. In that case focusing on yourself first is good.
 - Learning a whole new language just to *read*? I'll pass, thank you for your offer, Admiral.
     do decrement("isd1.points")
-    Issho: What a pity. I suppose learning a new language is quite intimidating.
+    `issho`: What a pity. I suppose learning a new language is quite intimidating.
 => DateEnding
 
 
 :: Part_2B3c
-Issho: I have heard the same thing from the many pirates I've captured over the years.
-Issho: [frown] Underestimating people like that can get you in serious trouble.
+`issho`: I have heard the same thing from the many pirates I've captured over the years.
+`issho`: [frown] Underestimating people like that can get you in serious trouble.
 - M-My apologies... That was out of line…
-    Issho: It was. The world is full of people who are powerful but don't look like it.
+    `issho`: It was. The world is full of people who are powerful but don't look like it.
 - I'm not worried. I'm a desk jockie! I'll be fine!
     do decrement("isd1.points")
-    Issho: Just because you don't think you'll be on the front line doesn't mean that fight won't come to you eventually.
+    `issho`: Just because you don't think you'll be on the front line doesn't mean that fight won't come to you eventually.
 - I guess, if you say so.
     do decrement("isd1.points")
     do decrement("isd1.points")
-    Issho: [frown] …
+    `issho`: [frown] …
 => DateEnding
 
 
 :: Part_2C
 do set_background("town", show)
 `name`: I don't really have any plans. I was just really bored sitting at home.
-Issho: Life at Marineford is very exciting, isn't it? I understand how a day off feels so jarring in comparison.
-Issho: [smile] In that case, would you like to take a stroll with me?
+`issho`: Life at Marineford is very exciting, isn't it? I understand how a day off feels so jarring in comparison.
+`issho`: [smile] In that case, would you like to take a stroll with me?
 - I'm up for that! It'll be a nice distraction! => Part_2B
 - That doesn't feel very productive. How about we get to the base and see if there's any work to be done? => BadEnd1
 
 :: BadEnd1
-You were expecting Admiral Fujitora to be ecstatic about work just as much as you do, but perhaps that is something more in line with the Fleet Admiral. It's not any immediate reaction but you realize you've picked the wrong activity.
-Issho: Ah, I've completed my duty for the day. It's rare to get days off so I prefer to enjoy it fully. Have fun with your work, `name`. I'm sure Saka would appreciate having another hard working helper.
+You were expecting `issho` to be ecstatic about work just as much as you do, but perhaps that is something more in line with the Fleet Admiral. It's not any immediate reaction but you realize you've picked the wrong activity.
+`issho`: Ah, I've completed my duty for the day. It's rare to get days off so I prefer to enjoy it fully. Have fun with your work, `name`. I'm sure Saka would appreciate having another hard working helper.
 `name`: Oh, okay... See you around, Admiral. Have a good day!
 do romance_points(issho, 0)
 => root.main
 
 :: DateEnding
 if is_greater_than("isd1.points", 3)
-    You two spend the rest of the day together, talking about anything and everything. Admiral Fujitora is a very attentive listener, and a good conversationalist. At last, even good things must end. This is where you two part ways.
+    You two spend the rest of the day together, talking about anything and everything. `issho` is a very attentive listener, and a good conversationalist. At last, even good things must end. This is where you two part ways.
     `name`: Ah, it's getting pretty late. I should get going.
-    Issho: [Smile] Thank you for keeping me company, `name`. I enjoyed our conversation very much.
-    Issho: I'll see you around. Maybe next time, you can show me your favorite place to eat.
+    `issho`: [Smile] Thank you for keeping me company, `name`. I enjoyed our conversation very much.
+    `issho`: I'll see you around. Maybe next time, you can show me your favorite place to eat.
     - You got it, Admiral! See you at work tomorrow!
-        Issho: I'll hold you to it.
-        Admiral Fujitora smiles at you before you both part ways. Wow, what a day!
-    - Perhaps when my schedule permits it, I'm still settling down. Good bye, Admiral Fujitora.
-        Issho: Of course.
-        You watch Admiral Fujitora leave, the sounds of his cane light. He's really an interesting man.
+        `issho`: I'll hold you to it.
+        `issho` smiles at you before you both part ways. Wow, what a day!
+    - Perhaps when my schedule permits it, I'm still settling down. Good bye, `issho`.
+        `issho`: Of course.
+        You watch `issho` leave, the sounds of his cane light. He's really an interesting man.
     do romance_points(issho, 2)
 elif is_greater_than("isd1.points", 2)
-    The conversation flows easily afterward. There were a few moments where you almost said the wrong thing but didn't. Admiral Fujitora is a patient man. You are really glad you got to spend the time with him today.
+    The conversation flows easily afterward. There were a few moments where you almost said the wrong thing but didn't. `issho` is a patient man. You are really glad you got to spend the time with him today.
     `name`: Thank you for the day, sir! It was a lot of fun!
-    Issho: [smile] The pleasure was mine. I look forward to working with you more in the future.
-    Admiral Fujitora waves at you briefly before you go your separate ways. You really look forward to tomorrow's work! Maybe you can come across the Admiral again!
+    `issho`: [smile] The pleasure was mine. I look forward to working with you more in the future.
+    `issho` waves at you briefly before you go your separate ways. You really look forward to tomorrow's work! Maybe you can come across the Admiral again!
     do romance_points(issho, 2)
 elif is_greater_than("isd1.points", 0)
-    Afterward, you spend a little longer talking. There are a few small hiccups here and there. Some you catch; Others you say before you think which ends in awkward pauses. It could be worse. You feel like you make very little progress toward knowing Admiral Fujitora.
-    Issho: I'll see you at work tomorrow, `name`.
+    Afterward, you spend a little longer talking. There are a few small hiccups here and there. Some you catch; Others you say before you think which ends in awkward pauses. It could be worse. You feel like you make very little progress toward knowing `issho`.
+    `issho`: I'll see you at work tomorrow, `name`.
     `name`: Yes, sir. I'll try my best at work!
-    Admiral Fujitora nods with a smile. You watch him leave before going home yourself. Tomorrow is going to be a busy day!
+    `issho` nods with a smile. You watch him leave before going home yourself. Tomorrow is going to be a busy day!
     do romance_points(issho, 1)
 else
-    There's now a tense awkwardness between you two. You want to start a conversation but you don't know how to. Admiral Fujitora doesn't treat you badly but there's no chemistry between you two either. After another fifteen minute of futility…
-    Issho: I should leave. I have a few more business to attend to.
+    There's now a tense awkwardness between you two. You want to start a conversation but you don't know how to. `issho` doesn't treat you badly but there's no chemistry between you two either. After another fifteen minute of futility…
+    `issho`: I should leave. I have a few more business to attend to.
     So soon? Don't you want to hang out some more?
     - As pleasant as today has been, I will have to cut it short, unfortunately. Maybe another time.
     - Um, see ya, Admiral. Thank you for the day.
-    Admiral Fujitora nods politely. You watch him as he leaves. Perhaps you'll be more prepared next time you talk to him...
+    `issho` nods politely. You watch him as he leaves. Perhaps you'll be more prepared next time you talk to him...
     do romance_points(issho, 0)
 => root.main
