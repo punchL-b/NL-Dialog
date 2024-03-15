@@ -246,7 +246,7 @@ Garp seems to be content with sticking around, even helping a little, as you two
 
 You walk quietly until you reach Sengoku's office. You knock on the door.
 Sengoku: Come in!
-`name`: Good afternoon, Inspector General.
+`name`: Good afternoon, Inspector General. Commander.
 Unexpectedly, Rosinante is also in the office. You couldn't hear what they were talking about before you entered, but you can see a wanted poster on the table between them. Peaking closer, you notice it is the poster of Trafalgar Law.
 Sengoku: `name`, Tsuru sent you?
 `name`: Yes.
@@ -350,7 +350,7 @@ The way Rosinante is talking about the pirates is odd, but you also can't help b
 	`name`: I bet! You two have a great relationship. I haven't been here for long and I can already tell.
 	Sengoku: Eh...
 	Rosinante: Don't mind him, don't mind him. => CS1C
-- Why is Rosinante-san defending the pirates so much?
+- Why are you defending the pirates so much, Commander?
 	do hate(sengoku)
 	do hate(rosinante)
 	Sengoku: Ah... don't take it so seriously.
@@ -364,7 +364,7 @@ The way Rosinante is talking about the pirates is odd, but you also can't help b
 
 :: CS1C
 `name`: Oh! I can't just sit around and chat, I have to go back to Tsuru-san!
-`name`: Goodbye, Sengoku-san! Rosinante-san!
+`name`: Goodbye, Inspector! Commander!
 They bid their farewell to you and you leave, your mood lifting considerably after the conversation with the two.
 => EndOfWorkday
 
