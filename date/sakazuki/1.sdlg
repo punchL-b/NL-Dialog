@@ -1,13 +1,16 @@
 :: start
 do set_background("bedroom", show)
 do hide_characters(hide)
-It's been a long day at work. I sit in my room, looking out the window to a beautiful sky. I search my bag for my favorite pen in order to write a few more lines in the letter I'm going to send to my family…
+---I'd just like to note before I start that the writing is supposed to be in second person, not first person. I'll point out as many things that need changing due to this as I can, but you might want to look it over again yourself to double check
+---There also doesn't seem to be any point modifiers here. I do like how varied the endings are and the myriad of paths to reach them, but there still needs to be points along the way. I feel absolute justice responses are big pluses, moral are average pluses, and no justice is negatives
+It's been a long day at work. You sit in your room, looking out the window at a beautiful sky. After a moment's pause, you search your bag for your favorite pen in order to write a few more lines in the letter you're going to send to your family…
 do start_effect(shake)
-But the pen is missing. #It's my lucky pen!# My brother gave it to me before I came to New Marineford! Oh no… Did I forget it at the office? There was a meeting earlier… I need to go back. The HQ might close at any moment now! I can't lose that pen!
-I race to the Headquarters in a hurry, heart pounding in my ear. As I fling the door to the meeting room open, I stop short at the threshold, breathing heavily. Fleet Admiral Sakazuki. I didn't expect to find him here at this hour. Shouldn't he already be home by now?
+But the pen is missing. #My lucky pen!# Your brother gave it to you before you came to New Marineford! Oh no… did you forget it at the office? There was a meeting earlier… you need to go back. The HQ might close at any moment now! You can't lose that pen!
+---I don't think I've seen a direct contradiction yet, but giving the PC a brother is something that could potentially cause an issue with other writers. Make sure to check in with everyone else on how they're handling family!
+You race to the Headquarters in a hurry, heart pounding in your ears. As you fling the door to the meeting room open, you stop short at the threshold, breathing heavily. Fleet Admiral Sakazuki. You didn't expect to find him here at this hour. Shouldn't he already be home by now?
 do set_background("office", fade)
 do show_character(sakazuki, center, show)
-Fleet Admiral Sakazuki looks up from his position at the head of the table, puzzled by my appearance. Next to him, a pile of paperwork needing to be tended to.
+Fleet Admiral Sakazuki looks up from his position at the head of the table, puzzled by your appearance. Next to him sits a pile of paperwork needing to be tended to.
 - I'm so sorry to intrude! I thought everyone went home!
     `sakazuki`: It's fine. I decided to stay after the meeting to finish up some paperwork.
     => Justice_test
@@ -16,12 +19,13 @@ Fleet Admiral Sakazuki looks up from his position at the head of the table, puzz
     => Justice_test
 - They say being the Fleet Admiral never pays enough and you still want to do overtime? That's unpaid work!
     `sakazuki`: [Frown sprite] Unpaid work or not, I signed up for the job. I have a responsibility to it.
+---Would signed up be the best way to put it? I'd say it's a role you work for or earn more than 'sign up'. Plus given how he GOT the job... yeah, sign up feels a bit of an understatement
     => Justice_test
 
 :: Justice_test
 `sakazuki`: You are looking for your pen, aren't you? It's on the table, where you left it.
-Indeed I spot it immediately, laying neatly where I sat earlier. I hurry over to grab it and put it back in my backpack, letting out a sigh of relief. I look at the Fleet Admiral, noticing how he's scrutinizing me carefully. I wonder what he's thinking…
-`sakazuki`: Tell me, Petty Officer `name`… What does Justice mean to you?
+Indeed, you spot it immediately, laying neatly where you sat earlier. You hurry over to grab it and return it to your backpack, letting out a sigh of relief. You look at the Fleet Admiral, noticing how he's scrutinizing you carefully. You wonder what he's thinking…
+`sakazuki`: Tell me, Petty Officer `name`… what does Justice mean to you?
 - For me, Justice means doing whatever it takes to make a difference. => AJ_path
 - It is protecting the innocent and opposing the corrupt. => MJ_path
 - Huh? Justice? What are you talking about? I'm just in the Marines to find a date.
@@ -29,17 +33,17 @@ Indeed I spot it immediately, laying neatly where I sat earlier. I hurry over to
     `sakazuki`: [Frown sprite] A Marine without ideology is nothing but a mercenary for hire. => Part_2
 
 :: AJ_path
-Fleet Admiral Sakazuki's intense look doesn't lessen. He seems to weigh my words as if testing my resolve.
+Fleet Admiral Sakazuki's intense look doesn't lessen. He seems to weigh your words as if testing your resolve.
 `sakazuki`: That's a bold statement to make. ‘Whatever it takes' is not something you say lightly.
 - I know, sir. I joined the Navy to be the change I want to see. => AJ_a
-- I guess so… But I stand by my words! => AJ_b
+- I guess so… but I stand by my words! => AJ_b
 - It-it's not? I mean, you say it, right? Isn't it something everyone says? => AJ_c
 
 :: AJ_a
 `sakazuki`: And what if being that change takes you down a path of isolation? What if people hate you for it?
 - Then so be it.
     do get("AbsoluteJustice")
-    I thought the Fleet Admiral would praise me hearing those words spoken with such determination. But he says nothing, his expression remains unreadable.
+    You thought the Fleet Admiral would praise you, hearing those words spoken with such determination. But he says nothing — his expression remains unreadable.
     `sakazuki`: <pause> You've picked a lonely road to travel, `name`. I'd know. I'm walking the path. => Part_2
 - I'll just have to find people who understand me. That way I won't be alone.
     do get("AbsoluteJustice")
@@ -54,13 +58,13 @@ Fleet Admiral Sakazuki's intense look doesn't lessen. He seems to weigh my words
     do get("AbsoluteJustice")
     `sakazuki`: A non-answer, but I'll accept it. There'll come a time you'll need to make hard choices. I'll know your limitations then. => Part_2
 - A reasonable amount. I have to weigh the pros and the cons, of course.
-    He doesn't look very impressed with my unclear answer. Another moment stretches out before…
-    `sakazuki`: Elaborate
+    He doesn't look very impressed with your unclear answer. Another moment stretches out before…
+    `sakazuki`: Elaborate.
     - Like how steep the price is in comparison to the good it does in the long run.
         do get("AbsoluteJustice")
-        `sakazuki`: You'll be facing very tough choices. Any leaders, be it Sengoku or I, always have to weight the good and the bad. Remember to follow the correct path no matter how difficult it is. => Part_2
-    - I know the brass doesn't like it when things are messy. It might affect my promotion if I go too far… □
-        `sakazuki`: <pause> Your priorities are skewed. If the ‘difference' you want to make is your status, then you need to think hard about what the Navy stands for. => Part_2
+        `sakazuki`: You'll be facing very tough choices. Any leaders, be it Sengoku or I, always have to weigh the good and the bad. Remember to follow the correct path no matter how difficult it is. => Part_2
+    - I know the brass doesn't like it when things are messy. It might affect my promotion if I go too far… 
+        `sakazuki`: <pause> Your priorities are skewed. If the ‘difference' you want to make is to your status, then you need to think hard about what the Navy stands for. => Part_2
 
 :: AJ_c
 `sakazuki`: Yes, I do say that. And I believe in it.
@@ -73,37 +77,38 @@ Fleet Admiral Sakazuki's intense look doesn't lessen. He seems to weigh my words
     - Not at all! It's treasonous to think otherwise!
         do get("NoJustice")
         `sakazuki`: <pause> Once you gain true understanding of Justice, you'll be surprised at how different we are. Being loyal and being true aren't the same thing. => Part_2
-- ...no?... Yes? ...I know it's something everyone says so it must be right!
+- ...No?... Yes? ...I know it's something everyone says, so it must be right!
     do get("NoJustice")
     `sakazuki`: It doesn't matter what anyone says. You have to determine what the right thing is for yourself. Only then can you make the decision when there's no one to tell you how to act. True Justice comes from within. => Part_2
 
 :: MJ_path
-The Fleet Admiral's expression doesn't change. I thought he would be angry, but he doesn't yell. He doesn't break anything. He lets the tension build and build until…
+The Fleet Admiral's expression doesn't change. You thought he would be angry, but he doesn't yell. He doesn't break anything. He lets the tension build and build until…
 `sakazuki`: What if protecting the people means letting evil escape? Your failure would come back to haunt you.
 - Sir, you can lose a battle but win the war. But if you lose innocent lives, you are never getting them back. => MJ_a
 - In that case, I just need to do both: protecting the innocent and also defeating evil. Why not? => MJ_b
+---Why do they think he would be angry with that response?
 
 :: MJ_a
 `sakazuki`: Everyone has a duty to justice. If sacrifice has to be made to prevent an even bigger catastrophe, don't you think it's worth it?
 - I respectfully disagree. Civilians don't sign up to become sacrifices.
     `name`: First, I want to uphold Justice by not treating people like they're expendable.
     do get("MoralJustice")
-    Fleet Admiral Sakazuki looks at me for a very long time, but I refuse to take back my words or apologize for them. Eventually, he sighs. There's a ghost of a smile.
-    `sakazuki`: [smile sprite] <pause> Hmph. I can't say I agree with your thinking but I can spot stubbornness when I see it. I can go far for my belief. I'm curious to see how far you'll go for yours. => Part_2
+    Fleet Admiral Sakazuki looks at you for a very long time, but you refuse to take back your words or apologize for them. Eventually, he sighs. There's a ghost of a smile.
+    `sakazuki`: [smile sprite] <pause> Hmph. I can't say I agree with your thinking, but I can spot stubbornness when I see it. I can go far for my belief. I'm curious to see how far you'll go for yours. => Part_2
 - I guess you have a point. However, I still think it depends.
     `sakazuki`: Depends on what?
     - It depends on the exact situation. I don't think it's fair to generalize as if everything is the same. Each scenario requires flexibility!
         do get("MoralJustice")
         `sakazuki`: [smile sprite] Spoken like that damn Issho and Kuzan. Very well. Justice is Justice. I accept your conviction. => Part_2
-    - Like… the directives of the World Government and stuff… If they'd let you do that…
+    - Like… the directives of the World Government and stuff… if they'd let you do that…
         do get("NoJustice")
         `sakazuki`: [frown sprite] I think you have a misunderstanding of how our goals align. If you value the World Government's directives more than your own sense of right and wrong, you should be their agent instead. => Part_2
 
 :: MJ_b
 `sakazuki`: That's naive thinking. There'll be a time where you have to choose.
-- Maybe… Have you ever had to make a choice like that…?
+- Maybe… have you ever had to make a choice like that?
     `sakazuki`: <pause> Yes. Many times.
-    `sakazuki`: It's easy to think when you're at my strength and position that you have the power to remove the difficult choices. But I find myself with harder and harder choices more than ever.
+    `sakazuki`: It's easy to think someone at my strength and position would have the power to remove the difficult choices. But I find myself with harder and harder choices more than ever.
     `sakazuki`: <pause> As the Fleet Admiral of the Marines, the only choice I can make is pushing forward.
     `sakazuki`: A great deal of people would have and **did** argue against my choice to look at the big picture though. What about you?
     - ...Maybe they didn't so much as disagree with you as they thought you had forgotten about the people when you looked down on a map.
@@ -113,18 +118,18 @@ The Fleet Admiral's expression doesn't change. I thought he would be angry, but 
     - That makes sense. I heard Absolute Justice is evil and Moral Justice is righteous.
         do get("NoJustice")
         `sakazuki`: [Frown sprite] You determine what's right and what's wrong based on what other people tell you? Observe and make your own choice yourself. => Part_2
-    - Ack I don't know! Why are you asking me these hard questions?!
+    - Ack, I don't know! Why are you asking me these hard questions?!
         do get("NoJustice")
         `sakazuki`: [Frown sprite] Hm. Perhaps there's a better question to ask instead… ‘Why can't you answer them?' => Part_2
-- That sounds scary… Is there a position where I don't have to make that kind of decision…?
+- That sounds scary… is there a position where I don't have to make that kind of decision…?
     do get("NoJustice")
     `sakazuki`: Frankly, there isn't. Even as a foot soldier, you have to make choices between staying behind to help civilians or pursuing pirates. If you don't want to make hard choices, then this job isn't for you. => Part_2
 
 :: Part_2
-Mind reeling from the sudden questioning about Justice from the Fleet Admiral, I stand there for a moment. I eye the paperwork on the table, knowing I could offer my help. I don't know if I want to.
+Mind reeling from the sudden questioning about Justice from the Fleet Admiral, you stand there for a moment. You eye the paperwork on the table, knowing you could offer your help. You don't know if you want to.
 - Do you… need help, sir? People say I'm pretty good with paperwork! It doesn't sit right with me not helping you when I know I can do it!
     `sakazuki`: <pause> …Alright. Take a seat. It's going to be a long night. => Dedication_test
-- Um, thank you, sir, for pointing out where my pen was and for the… conversation. Actually, I have to leave now. Good luck with your work!
+- Um... thank you, sir, for pointing out where my pen was and for the… conversation. Actually, I have to leave now. Good luck with your work!
     if or(has_item("MoralJustice"),has_item("AbsoluteJustice"))
         do give("MoralJustice")
         do give("AbsoluteJustice")
@@ -133,14 +138,14 @@ Mind reeling from the sudden questioning about Justice from the Fleet Admiral, I
         => Bad_ending_1
 
 :: Dedication_test
-As soon as I sit down, the Fleet Admiral hands me a stack of papers so full of words I have to squint to see. Oh boy, what have I gotten myself into?
+As soon as you sit down, the Fleet Admiral hands you a stack of papers so full of words you have to squint to see. Oh boy, what have you gotten yourself into?
 - Work hard
     do get("VeryDedicated")
-    As expected, the work is tedious and boring. I can feel everything blur together after a while. I keep pushing through. I want to do my best!
+    As expected, the work is tedious and boring. You can feel everything blur together after a while. You keep pushing through. You want to do your best!
 - Slack off
     do get("NotDedicated")
-    The work is too boring so I start making spit balls and flicking them at the Fleet Admiral while he's trying to work. Entertainment!
-Eventually, I fall asleep, sometime after midnight has passed. All I can recall is the pen falling from my slackened fingers and was caught by a warm hand. I remember nothing else afterwards…
+    The work is too boring, so you start making spit balls and flicking them at the Fleet Admiral while he's trying to work. Entertainment!
+Eventually, you fall asleep sometime after midnight has passed. All you can recall is the pen falling from your slackened fingers and being caught by a warm hand. You remember nothing else afterwards…
 if and(or(has_item("MoralJustice"),has_item("AbsoluteJustice")),has_item("VeryDedicated"))
     => Good_ending
 elif and(or(has_item("MoralJustice"),has_item("AbsoluteJustice")),has_item("NotDedicated"))
@@ -149,32 +154,34 @@ elif and(has_item("NoJustice"),has_item("VeryDedicated"))
     => Neutral_ending_3
 else
     => Bad_ending_2
+---Did Sakazuki catch the pen, or the PC?
 
 
 :: Neutral_ending_1
-It's getting really late and I don't want to work overtime. I salute smartly, excusing myself. Fleet Admiral Sakazuki gives me a nod but he doesn't stop me from leaving. The last thing I notice as I close the door behind me is how lonely he appears to be.
+It's getting really late and you don't want to work overtime. You salute smartly, excusing yourself. Fleet Admiral Sakazuki gives you a nod, but he doesn't stop you from leaving. The last thing you notice as you close the door behind you is how lonely he appears to be.
 => root.main
 
 :: Bad_ending_1
-It's getting really late and I don't want to work overtime. I salute smartly, excusing myself. Fleet Admiral Sakazuki doesn't acknowledge me but he doesn't stop me from leaving, either. I go home and think about the strange conversation we had.
+It's getting really late and you don't want to work overtime. You salute smartly, excusing yourself. Fleet Admiral Sakazuki doesn't acknowledge you, but he doesn't stop you from leaving, either. You go home and think about the strange conversation you had.
 => root.main
 
 :: Good_ending
-When I wake up early the next morning, Fleet Admiral Sakazuki was long gone. Someone has taken the time to close the office window for me though. Covered my body is a large white jacket, the fabric smelling faintly of cigars. There's a note next to me. In blocky letters, it reads…
+When you wake up early the next morning, Fleet Admiral Sakazuki is long gone. Someone has taken the time to close the office window for you, though. Covering your body is a large white jacket, the fabric smelling faintly of cigars. There's a note next to you. In blocky letters, it reads…
 Note: SLEEP DEPRIVATION WILL DULL EVEN THE MINDS OF GOOD MARINES. THANK YOU.
 => root.main
+---Awwwww. Coming from him, this is the sweetest thing he could say
 
 :: Neutral_ending_2
-When I wake up the next morning, I find myself all alone. Someone has taken the time to close the office window for me though. There's a note next to me. In blocky letters, it reads…
+When you wake up the next morning, you find yourself all alone. Someone has taken the time to close the office window for you, though. There's a note next to you. In blocky letters, it reads…
 Note: YOUR CONVICTION IS IMPRESSIVE, BUT A MARINE WITH ONLY CONVICTION ALONE ISN'T ENOUGH. YOU NEED SOME SELF-DISCIPLINE.
 => root.main
 
 :: Neutral_ending_3
-When I wake up the next morning, I find myself all alone. Someone has taken the time to close the office window for me though. There's a note next to me. In blocky letters, it reads…
+When you wake up the next morning, you find yourself all alone. Someone has taken the time to close the office window for you, though. There's a note next to you. In blocky letters, it reads…
 Note: I HAVE NOTED YOUR DEDICATION FOR THE JOB. BUT RIGHT NOW, YOU LACK A PURPOSE. SEEK YOUR OWN JUSTICE. ASK YOURSELF WHY YOU CHOOSE TO BE A MARINE.
 => root.main
 
 :: Bad_ending_2
-When I wake up the next morning, I find myself all alone. Someone has taken the time to close the office window for me though. There's a note next to me. In blocky letters, it reads…
-Note: YOU NEED TO SHAPE UP, SOLDIER. YOUR SELF DISCIPLINE IS LACKING AND YOU DON'T HAVE A CLEAR PURPOSE. BEING IN THE NAVY IS NOT A SAFE OCCUPATION SO MAKE SURE YOU KNOW WHY YOU CHOSE THIS PATH IN THE FIRST PLACE.
+When you wake up the next morning, you find yourself all alone. Someone has taken the time to close the office window for you, though. There's a note next to you. In blocky letters, it reads…
+Note: YOU NEED TO SHAPE UP, SOLDIER. YOUR SELF DISCIPLINE IS LACKING AND YOU DON'T HAVE A CLEAR PURPOSE. BEING IN THE NAVY IS NOT A SAFE OCCUPATION, SO MAKE SURE YOU KNOW WHY YOU CHOSE THIS PATH IN THE FIRST PLACE.
 => root.main
