@@ -5,7 +5,7 @@ do show_character(bellemere, a, show)
 do show_character(tashigi, b, show)
 do show_character(hina, c, show)
 do show_character(smoker, d, show)
-    //need to specify sprite no. & placement
+    --- need to specify sprite no. & placement
 On that note, you sit down next to the group of four, all of them eating in relative silence despite the loud cacophony of voices echoing in the busy space.
 Bellemere: Hey look! The newbie finally showed! Don't worry kid, I hate getting up at the crack of dawn, too.
 Tashigi: You are a bit late, but the compound can be difficult to navigate at first.
@@ -42,13 +42,13 @@ Bellemere grins, though Tashigi seems less pleased with your blaise attitude.
 Tashigi: That is no way to address your superior officers, Marine.
 do decrement("wd1.tashigi")
 Bellemere: Well, they have a realistic attitude, at least. Geez, Tashi-chan, you don't have to get on the kid's case on day one.
-Tashigi: There is a difference between realistic and insubordinate. We won't be doing `player_gender` any favors by being so lax.
+Tashigi: There is a difference between realistic and insubordinate. We won't be doing `pronoun_them` any favors by being so lax.
 Bellemere rolls her eyes behind Captain Tashigi's back, but otherwise does not respond.
 => Days_Duty
 
 :: Days_Duty
 Smoker: So, we're going to be splitting up into a couple of different groups. `name`, you can come with me and Hina to do some drills by the docks…
-Hina: (explains Tashigi's option (swordplay) and Bellemere's (training grounds/obstacle course). Maybe hint that they could be good for the new recruit, too?) //unwritten
+Hina: (explains Tashigi's option (swordplay) and Bellemere's (training grounds/obstacle course). Maybe hint that they could be good for the new recruit, too?) --- unwritten
 Bellemere: Uh, right. Training grounds. That's totally where I plan to spend my time today.
 She winks your way, unseen by the others, and you're not sure what to make of that.
 `name`: All of these things seem like they'd be really useful training for an actual battle. Do you all always separate like that?
@@ -76,7 +76,8 @@ Smoker: We've got the first plan, naval drills with me and Hina. Tashigi and her
 - I like the original plan- I'd love to try naval drills!
     => Part_2A
 - I'm a fan of swords…. Captain Tashigi, would you teach me a few moves?
-    do increment("wd1.tashigi") //should we add points for each option? seems unfair to just add to tashigi
+    do increment("wd1.tashigi")
+    --- should we add points for each option? seems unfair to just add to tashigi
     => Part_2B
 - An obstacle course seems interesting!
     => Part_2C
@@ -86,9 +87,9 @@ do hide_characters(hide)
 do set_background("ship", show)
 do show_character(hina, left, fade)
 do show_character(smoker, right, fade)
-//going with smoker and hina doesn't give PC an item - unlike with bellemere. oversight?
+--- going with smoker and hina doesn't give PC an item - unlike with bellemere. oversight?
 Smoker and Hina lead the way to the docks, keeping a quick pace with each other. The three of you arrive at a large warship. Several unfamiliar people who look to be trainees look as if they're expecting Smoker and Hina. Once you board the deck, they motion for everyone to gather around.
-    //description a little confusing
+    --- description a little confusing
 Smoker: You'll be fighting a mock battle together. Hina and I are in command, so listen up.
 Hina: A decoy ship armed with your fellow Marines posing as its attending crew will be attempting to storm the deck, just as you might encounter in a real naval battle. Your objective will be to work as a team to hold them off and detain their captain.
 Smoker: I'm sure some of you have done this before, and I think this is in a manual.
@@ -102,7 +103,7 @@ Hina: The plan we're adapting is in the Standard Warship Drills section of your 
     do increment("wd1.smoker")
 
 Smoker: The winner here is the first team to knock the other team's captain into the water. For the purposes of the drill, I'm your commanding officer. Any questions?
-    //requires clarification: win state contradicts what Hina said earlier.
+    --- requires clarification: win state contradicts what Hina said earlier.
 - Nope, I got it.
 - What happens if we knock people who aren't the captain into the water?
     Smoker: Good question. Nothing, except they get wet– you don't get points for that.
@@ -139,8 +140,8 @@ Smoker: Don't just sit back and wait for them to come to you. In a real battle, 
 You rush from your position at the cannon, aiming your watergun at the ship's captain!
 Hina: Soldier! Get back in position!
 do lock_out_date(hina)
-//does this command lock PC out of hina's path 100%, or just date1? not questioning the writing choice (it'd be funny and on brand if insubordination makes hina hate you), just asking if lock_out_date is the command for locking out an entire route.
-//perhaps this could be a larger decrement instead of a hard lock?
+--- does this command lock PC out of hina's path 100%, or just date1? not questioning the writing choice (it'd be funny and on brand if insubordination makes hina hate you), just asking if lock_out_date is the command for locking out an entire route.
+--- perhaps this could be a larger decrement instead of a hard lock?
 Smoker: Yeah, that's it, `name`! Way to think on your feet!
 do increment("wd1.smoker")
 The other ship's captain topples from his perch at the ship's helm as a water balloon hits him in the face, leaving his crew stunned, which affords your crew the opportunity to open fire. The drill is over!
@@ -148,7 +149,7 @@ The other ship's captain topples from his perch at the ship's helm as a water ba
 
 :: B
 do unlock_date(hina)
-//it seems a bit unfair for hina's date to be a binary, seeing as other characters' unlock_date are point-dependent
+--- it seems a bit unfair for hina's date to be a binary, seeing as other characters' unlock_date are point-dependent
 You hold your ground at the ship's cannon, waiting for the right moment.
 Hina: That's right crew, hold her steady! Ready, fire!
 Smoker: Well, I can't fault you for going that way when you know their battle plan…
@@ -161,7 +162,7 @@ Hina: The purpose of a drill, however, is to learn to follow orders.
 if has_date_unlocked(hina)
     => date.hina.1.start
 elif is_greater_than("wd1.smoker", 1)
-    TRANSITION TO SMOKER DATE //is this text printed?
+    TRANSITION TO SMOKER DATE --- is this text printed?
     => date.smoker.1.start
 else
     You failed to unlock a date.
@@ -210,7 +211,7 @@ Bellemere: I brought a couple trees from my family orchard when I found out I'd 
 
 :: Part_4
 Bellemere: Well, too bad for you! I brought a couple trees from my family orchard when I found out I'd be shipped to this island for training- I plan on checking on them and hiding out in the shade. Not too late to go find Captain Tashigi if you feel like overworking yourself and getting sweaty.
-- Yeah, I'll go find her. 
+- Yeah, I'll go find her.
     do decrement("wd1.bellemere")
     => tash_transition
 - No way! It's like 100 degrees out here! => Mikan
@@ -257,7 +258,8 @@ You size up the little cans, not too sure of your chances. She didn't say you ha
     do increment("wd1.bellemere")
     => continue
 - Nah- this is a waste of time.
-    do lock_out_date(bellemere) //same question as with Hina.
+    do lock_out_date(bellemere)
+    --- same question as with Hina.
     => boo
 
 :: continue
@@ -271,7 +273,7 @@ You're pretty sure you've offended her, but there's not much you can do about it
 WORK DAY ENDS
 => root.main
 
-:: Strength
+:: Physical_Strength
 Bellemere: Oh, really? Well then, if muscles are all that you won't mind helping a lady out with something heavy, will you?
 You can't help but feel that there is something devious in her tone, but you're left with little options. You nod.
 Bellemere directs you to a plot near the back of her trees.
@@ -359,7 +361,8 @@ You do hear it. The sound of footsteps approaching.
 Bellemere nods, standing up and giving you a hand to follow suit (again) just as the Captain rounds the bend of short orange trees and spots the two of you… not at the obstacle course. You tense, suddenly concerned about getting in trouble on your first day.
 => TB
 
-:: Part_2B //connecting from Tash_transition to here is smooth, but connecting from Days_Duty isn't. 
+:: Part_2B
+--- connecting from Tash_transition to here is smooth, but connecting from Days_Duty isn't.
 do set_background("garden", show)
 Tashigi leads you to an empty space in the gardens. She signs out two practice swords from the armory on your way out, but even if they are made of wood, you have the feeling that you might end up in the infirmary if you're not careful.
 The Captain takes up her position at one end of the grounds.
@@ -393,8 +396,10 @@ Tashigi: If Vice Admiral Smoker finds out I lost another pair, I won't hear the 
     After Captain Tashigi dismisses you, you are left to wander around the garden alone. If you remember correctly, Captain Bell-mere should be at the training grounds…
     Bellemere: Hey, [name]... Woah, why so grim?
     You tell Captain Bell-mere all about your incident with Captain Tashigi, as you walk together.
-    Bellemere: Ha! —--- //unwritten?
-    => Part_3 //there is a lot of criss-crossing, but the dialogue is does not account for and makes little reference to PC's actions. i think this will need more writing, (if/else lines), if we want to preserve the non-linear progression
+    Bellemere: Ha! —
+     --- unwritten?
+    => Part_3
+    --- there is a lot of criss-crossing, but the dialogue is does not account for and makes little reference to PC's actions. i think this will need more writing, (if/else lines), if we want to preserve the non-linear progression
 - [Brush it off and lighten the mood]
     `name`: The Vice Admiral would probably just be glad he doesn't have to deal with the paperwork of my demise in the line of duty. You totally had me there!
     Captain Tashigi lets out a laugh.
@@ -405,7 +410,8 @@ Tashigi: If Vice Admiral Smoker finds out I lost another pair, I won't hear the 
     Captain Tashigi picks up her glasses and blows on the lenses, trying to get most of the dirt off them. She accepts your hand when you offer it, and you help her stand up.
     Tashigi: Thanks. Now, where were we?
     do increment("wd1.tashigi")
-    do increment("wd1.tashigi") //originally, was a '+2'. unsure how do put that in. is <do increment("wd1.tashigi", 2)> a valid command?
+    do increment("wd1.tashigi")
+    --- originally, was a '+2'. unsure how do put that in. is <do increment("wd1.tashigi", 2)> a valid command?
 => PostTraining
 
 :: Route2
@@ -413,7 +419,8 @@ You spar for a while. Despite your background training, your breathing becomes e
 - This is just the workout I needed!
     Tashigi: You're not half as bad as I thought. There is certainly some potential!
     do increment("wd1.tashigi")
-    do increment("wd1.tashigi") //originally, was a '+2'. unsure how do put that in. is <do increment("wd1.tashigi", 2)> a valid command?
+    do increment("wd1.tashigi")
+    --- originally, was a '+2'. unsure how do put that in. is <do increment("wd1.tashigi", 2)> a valid command?
 - My hand is about to fall off, can we take a break soon?
     Tashigi: One more round, and we'll move on to perfect your technique. Great job so far!
     do increment("wd1.tashigi")
@@ -447,7 +454,7 @@ Tashigi: I'm sure you must have some questions for me, I can tell. Let's hear th
 You prepare yourself for the next round, but Captain Tashigi's sword stops mid-swing. She frowns as she looks at something behind you.
 You turn around, and you spot a red haired figure in the Commodore's coat reclining underneath the shade of a couple of trees.
 Captain Tashigi motions for you to follow her, and together you make your way towards the seated figure.
-As you approach, you recognize Commodore Bellemere, who is quick to stand up the moment you are within earshot. //awkward phrasing. perhaps 'once she sees your approach'?
+As you approach, you recognize Commodore Bellemere, who is quick to stand up the moment you are within earshot. --- awkward phrasing. perhaps 'once she sees your approach'?
 => TB
 
 :: TB

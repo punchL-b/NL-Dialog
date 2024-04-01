@@ -1,7 +1,7 @@
 :: start
 do set_background("office", show)
-do show_character(bellmere, center, show)
-do context("bellmere_2")
+do show_character(bellemere, center, show)
+do context("bellemere_2")
 It isn't often that your free days fall in line with Belle-mére's, but you find that that often doesn't matter much. After you pick up your bi-weekly allowance from the correct office, you pass by the woman's desk, and sure enough find her sitting around looking annoyed. She's the only one in the room just then, smoking and staring at a memo clutched too-tight.
 `name`: Uh… Belle-mére? Doing alright?
 Belle-mére: Just the other day I had to carry god-knows how many boxes all for the sake of that fucking goat…
@@ -208,7 +208,7 @@ Ah, right. The folder you were supposed to store. Belle-mére pulls it from her 
 Belle-mére: I don't even want to know. I'm just going to turn it in to Smoker and you can back me up if he tries to say I didn't attempt the job.
 The two of you walk together from the facility, and then to your own temporary apartments on this little island. You suppose there's one silver lining to this weird day: You got to spend more time with your superior.
 You *think* it was worth it.
-do romance_points(bellmere, 1)
+do romance_points(bellemere, 1)
 => END
 
 :: final_2
@@ -234,7 +234,7 @@ The two of you get something stronger than a soda at the mess hall, clinking gla
 Belle-mére: Hey, thank `name`! No one's calling me lazy on this one. Every once in a while you have to do your job, you know?
 `name`: Glad I could help.
 And you mean it. Seeing Belle-mére smile and spending the evening drinking with her was worth the spelunking journey. You hope there are many more such journeys in the future.
-do romance_points(bellmere, 2)
+do romance_points(bellemere, 2)
 => END
 
 :: final_3
@@ -271,7 +271,7 @@ Tashigi: I can't believe I'm saying this, but maybe you've been working too hard
 Belle-mére: Hey!
 They don't believe you, even as you tell the rest of your story from the catacombs below. In fact, while you can't imagine either of your stoic superiors gossiping, by the next day the story of the “basement bear” seems to spread. Everyone from Rosinante to Kuzan seem to find their way into your office to make a comment (though the latter could possibly be hanging around because your unit has the most ladies he can hit on).
 In any case, the whole adventure could have gone better.
-do romance_points(bellmere, 1)
+do romance_points(bellemere, 1)
 => END
 
 :: final_5
@@ -311,7 +311,7 @@ Belle-mére: Hey: you did the right thing back there, by the way. Relying on me,
 The drink, as it turned out, was from a vending machine. By the time the two of you climb out of that basement, exhausted but chatting casually, the sun is just beginning to fall behind the treeline, casting long shadows against the pavement.
 Belle-mére pops the berries into the machine, pulling out a cold soda and tossing it your way. You smile gratefully, and the two of you sit and talk until your drinks are gone.
 The day was weird and stressful… but ultimately, you'd probably rank it in your best ones. A calm moment spent with the Captain was worth a little life-or-death struggle.
-do romance_points(bellmere, 2)
+do romance_points(bellemere, 2)
 => END
 
 :: right
@@ -331,7 +331,7 @@ Belle-mére: Broken? Can you move your fingers?
 You can not. She sighs.
 Belle-mére: Alright, let's go to the infirmary.
 The night ends with a trip to the doctor, a dubious cover-up story, and a cast. Not how you saw your time alone with the Captain ending…
-do romance_points(bellmere, 0)
+do romance_points(bellemere, 0)
 => END
 
 :: B
@@ -465,7 +465,7 @@ Belle-mére: Look, you dressed to impress, and then brought me to the cheapest p
 You wouldn't say you expected her to eat cheap… but yeah, you could have maybe set the expectation to something more casual.
 `name`: Uh, yeah, sorry…
 The night ends rather quickly, the meal not taking long to eat and Belle-mére loaded with take-out boxes for later. She thanks you with a casual salute and a teasing stuck-out tongue, and leaves you standing, confused, outside the door to the restaurant.
-do romance_points(bellmere, 0)
+do romance_points(bellemere, 0)
 => END
 
 :: fav_2
@@ -481,7 +481,7 @@ Belle-mére: Well… you know how to treat a girl right, anyway. Not bad!
 The night extends as the two of you laugh and eat, getting drinks afterwards and talking. When you part at the end of the night, Belle-mére gathers you up in her arms to hug you.
 You're not sure about the vibe; is it a romantic hug? A friendly one?
 In any case, you're sure you've made a good impression.
-do romance_points(bellmere, 1)
+do romance_points(bellemere, 1)
 => END
 
 :: fav_3
@@ -498,7 +498,7 @@ Drunk Belle-mére is an incredible sight, the eccentric woman doubling-down and 
 The night extends as the two of you laugh and eat, drink and talk. When you part at the end of the night, Belle-mére gathers you up in her arms to pull you into a big, drunken, bear-hug.
 You're not sure about the vibe; is it a romantic hug? A friendly one? A *violent* one?
 In any case, you're sure you've made a good impression.
-do romance_points(bellmere, 2)
+do romance_points(bellemere, 2)
 => END
 
 :: fav_4
@@ -510,7 +510,7 @@ Oh, no… did you mess it up?
 As expected, Belle-mére orders the most expensive things on the menu (which isn't saying much), and the two of you chat in the relaxed atmosphere of the cafe. It's not a bad night, overall, but you can feel that little bit of distance there. Casual. Not a date.
 Maybe next time it will be. Maybe next time you can put yourself out there more.
 For now, the two of you part when finished with your modest meals, and Belle-mére gives you a friendly wave before heading back to her apartment.
-do romance_points(bellmere, 1)
+do romance_points(bellemere, 1)
 => END
 
 :: fav_5
@@ -525,7 +525,7 @@ The night extends as the two of you laugh and eat. You leave after eating, getti
 When you part at the end of the night, Belle-mére gathers you up in her arms to give you a hug.
 You're not sure about the vibe; is it a romantic hug? A friendly one?
 In any case, you're sure you've made a good impression.
-do romance_points(bellmere, 2)
+do romance_points(bellemere, 2)
 => END
 
 :: fav_6
@@ -542,7 +542,7 @@ Drunk Belle-mére is an incredible sight, the eccentric woman doubling-down and 
 The night extends as the two of you laugh and eat, drink and talk. When you part at the end of the night, Belle-mére gathers you up in her arms to hug you in a big, drunken, bear-hug.
 You're not sure about the vibe; is it a romantic hug? A friendly one? A *violent* one?
 In any case, you're sure you've made a good impression.
-do romance_points(bellmere, 2)
+do romance_points(bellemere, 2)
 => END
 
 :: fav_7
@@ -561,7 +561,7 @@ She's being awfully snarky. You're guessing that she is, in fact, annoyed with y
 Belle-mére: You can do better next time. For now- you're buying me twelve kinds of biscottis.
 That just about confirms it: she's not happy with you.
 The night ends early, as soon as Belle-mére get's her food, and the two of you part ways outside the restaurant. It definitely could have gone better…
-do romance_points(bellmere, 0)
+do romance_points(bellemere, 0)
 => END
 
 :: fav_8
@@ -579,7 +579,7 @@ This was probably not the best way to dress for this location, but at least the 
 At the end of the night, the two of you part on good terms, though Belle-mére still seems to have a bit of humor for you, punching you lightly on the arm as she departs.
 Belle-mére: Next time, make sure you prepare to have fun and not just to look stuck-up, `name`!
 Well… maybe she had a point. Maybe you were trying too hard to impress her. Next time, you should tone it down.
-do romance_points(bellmere, 1)
+do romance_points(bellemere, 1)
 => END
 
 :: fav_9
@@ -602,7 +602,7 @@ As the two of you depart from the restaurant and part ways, Belle-mére turns to
 Belle-mére: Look, next time dress for fun in your off-time! At least it seems like you know how to live a little, picking a place like this- totally contradicts you're "all work and no play" fashion sense.
 You're not sure how to take that. About half insult, half compliment?
 At least the night wasn't a total bust, though you're still not sure if this could ever qualify as an actual “date.”
-do romance_points(bellmere, 1)
+do romance_points(bellemere, 1)
 => END
 
 :: END

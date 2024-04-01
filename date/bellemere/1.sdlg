@@ -2,7 +2,7 @@
 do set_background("ship", show)
 
 You're mopping the deck of the large battleship parked at the island, when you smell the sharp-sweet scent of cigarette smoke. You follow it in a comical line: straight to an unassuming supply closet.
-do show_character(bellmere, center, show)
+do show_character(bellemere, center, show)
 `name`: Do... do you always do this?
 Belle-mére: Do what? Oh, avoid menial labor? Damn right I do! Hey, don't look at me like that! You think I'm lazy?
 - Yes...
@@ -195,13 +195,13 @@ Belle-mére: Too bad, `name`! You'll just have to try harder to win my affection
 Belle-mére: Look at the time! I better get started pretending to be busy. Unless you want Tashigi on your case, you'd best go finish your mopping.
 You realize with a little jump that she's right: you had been holding a mop, before finding the Captain! Now where did that go...?
 if is_greater_than("bm1.points", 1)
-    do romance_points(bellmere, 2)
+    do romance_points(bellemere, 2)
     Belle-mére: Hey newbie, this was fun. If you wanna grill me again, you'll have to pay for it. Literally. Buy me dinner some time- I also accept bribes as payment for my presence: books, guns, gems, gold. You know, the usual.
 elif is_greater_than("bm1.points", 0)
-    do romance_points(bellmere, 1)
+    do romance_points(bellemere, 1)
     Belle-mére: Hey, you're a bit of a square but I don't hate chatting. Get more interesting or buy me something pretty, and maybe we'll do it again sometime.
 else
-    do romance_points(bellmere, 0)
+    do romance_points(bellemere, 0)
     Belle-mére: Next time stick to mopping, kid. Leave smoking in the closet to the cool moms.
 You'll keep that in mind.
 => root.main
