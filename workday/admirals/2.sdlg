@@ -1,0 +1,795 @@
+
+:: start
+--- Work Day 2: Gardening Edition  Thoughts from a few weeks prior:
+--- The group does Saka's activity. They go to a semi-public garden.  Location: Garden!
+--- Suggested activities:  Saka teaching group to garden (big activity, all other activities can happen during this activity?)
+--- -Preventing a napping Kuzan from getting eaten by a large venus fly trap (points with kuzan)  -Stacking things on Kuzan (Prank route lol) (Bors points gain)
+--- -Meditating with Issho while Saka goes on and on about gardening (issho points)  -Actually pay attention to Saka about gardening (Saka points)
+--- Intro  Workday-specific introduction after picking today's activity.
+--- All characters meet up in the garden. Maybe `name` can choose to help Saka with the supplies (S+) or get delayed by (random butterfly/anxiety/etc) and show up late (K+)  Choosing a route
+--- First choice is to decide what to do in the garden:  - Garden (S, B)
+--- -Try to garden and fail (prank) (K, B +)  -Meditate (I, K+)
+--- Gardening route  Following Sakazuki's instructions/wishes leads to:
+--- -Talking about bootcamp (S, B+)/memory (I, B+)/outdoor hobby (K, S+)  -Planting a tree together (points depending on assignment)
+--- Kuzan and bors are like "ew fuck heavy lifting" and bors might not want to get his suit dirty so digging the hole hes like -2 Issho is probably happy to lift the tree, and saka is probably happy with placement Bors and "yeah cool ill water the tree" and Kuzan like "anything but fucking heavy lifting"So I think a section where they kinda argue about how to plan the tree and have the `name` decide would be good Cause then we can have the characters give hints of what they do/dont want to do So its like "dig hole, put tree, fill hole back up, water tree"  Napping/Pranking route
+--- Ignoring Sakazuki's instructions, `name` will notice Kuzan napping:  Unlocked if/when Kuzan falls asleep, `name` pays attention to him and keeps a large Venus Fly trap plant from trying to eat him (K+)
+--- OR `name` can wait until he's sleeping to stack things on him (B+) –> `name` can try to convince I and S to join in with the stacking prank.  options = A) stop Bors from prank, B) Join prank (with options to convince S & I to join), or C) dont stop prank but dont join in either
+--- K+ for A & C  S/I + for A & B
+--- B+ for B & C  If `name` chooses to prank, can then decide who has the tallest tower (can help one of the admirals or help themselves). Gets points depending on who they say is the winner.
+--- Meditation route  Following Sakazuki's instructions, ignoring and talking to Issho.
+--- After some gardening, Issho can comment on how relaxing and yet requiring concentration gardening is. `name` agrees & they can practice a meditation technique.  `name` can choose to hum, properly meditate, be distracted by bors or fall asleep!
+
+--- PART 1:  Chi's section: Intro + Gardening Route
+--- Note:  I bolded character's names, as well as highlighting scores gained/loss for readability during editing. Can unbold/un-hightlight it if you think it's wrong or not needed.
+--- Highlighted “if you can't take the heat, get outta the kitchen” because Idk if it's too modern of a term or not. Do I need to fix it?  Def too long, needs some trimming
+--- Still need to assign a score system for these answers and decide how to unlock a date. Gotta talk to Ham n Myst abt this  Idk how to code the thing where each time you assign a task to an Admiral, you can't pick that Admiral again until there's only left with one person
+[`name` & Admirals interacting here]
+`kuzan`: So… what do you guys want to do today? `name`, who should decide the activity for the day?
+- It's your turn, Admiral Aokiji! => kuzan_route
+- Admiral Fujitora, do you have anything you want to do? => meditation_route
+- Admiral Kizaru, it's your time to ~shine~! => dancing_path
+- Fleet Admiral Sakazuki, you get to pick our activity! => gardening_path
+
+:: dancing_path
+--- [Zip] I don't know what this is referring to
+=> outro
+
+:: gardening_path
+`kuzan`: Ugh… why him, `name`? You know he's just going to make us all do *paperwork*...
+`name`: I thought everyone should have a fair shot at picking an activity…
+`sakazuki`: [angry] What's wrong with doing paperwork? It's perfectly acceptable to engage in! We are Marines. *Admirals* at that! We have to set an example!
+[]
+`kuzan`: … <pause> … My point right there.
+`issho`: Saka-san, given the amount of work we have to do, do you think, realistically speaking, we would have any time to bond?
+`sakazuki`: [angry]...
+`borsalino`: ~Eeh...~ Did you say something the other day about wanting to plant a new tree in the garden, Sakazuki?
+`name`: Gardening? That could work!
+`sakazuki`: You all are just going to mess around and in the end, I'll just have to do it myself anyway!
+`kuzan`: Not feeling 'doing paperwork' as a bonding exercise.
+`name`: Fleet Admiral, we all agreed to give this a shot… right?
+`sakazuki`: …
+`sakazuki`: *Fine*. I suppose at least it's a fairly productive activity, unlike anything the others can come up with.
+`kuzan`: Oi…
+You cheer inside. Making the Fleet Admiral do anything non-work related is like wrangling cats. Fleet Admiral Sakazuki sends the entire group a disgruntled look before walking ahead, leaving the rest behind.
+Glancing between the Admirals still chatting leisurely and the Fleet Admiral who's already walking way ahead, you decide that…
+- It's best to be on time.(S+1) => on_time
+- There's plenty of time left to walk to the garden. Why don't you stay behind to hear what the others have to say? (B+1; I+1; K+1) => procrastinate
+
+:: on_time
+Fleet Admiral Sakazuki is already unhappy that 'working' isn't a valid 'bonding exercise'. You really don't want to make this harder on all involved parties. Doing your best to catch up, you're surprised to see that it is just you and him.
+`name`: Sir… Is no one else here yet? We all started at the same place at the same time.
+`sakazuki`: … <pause> No. <pause> You're here on time.
+`name`: I am. Shouldn't I be?
+`sakazuki`: …
+`name`: …
+`name`: Sir, are you preparing the tools for gardening? Earlier we decided we'd be planting a tree?
+`sakazuki`: Yes, I don't know when the other three will get here and I'd rather not pointlessly waste time.
+- Good luck, sir! I'll just wait near the gate for the others. (S-1)
+    The Fleet Admiral says nothing as you march to the gate as fast as your legs can carry you. You breathe out a sigh of relief. Well, you won't have to move a bunch of shovels and cans around. You're winning!
+    You wait and wait at the gate for what seems like forever, yawning in boredom. From afar, you can see Fleet Admiral Sakazuki set out the tools and retrieve the tree - a scrawny thing with barely any leaves.
+- Please let me help you! It doesn't sit right with me, standing around while you work! (S+1)
+    `sakazuki`: <pause>... Alright. You can take the watering can while I carry the shovels. And, `name`?
+    `name`: Yes, sir?
+    `sakazuki`: You arrived on time and offered help. Thank you.
+    He doesn't seem to have much else to say to you after that. You roll up your sleeves, determined to get to work. You carry the watering can while he takes the shovels out of a nearby shed.
+    The minutes are spent in silence, but it's a lot less awkward than before. It seems he's just a man with few words.
+Finally, when you think no one is going to actually show up, you spot the group from afar.
+=> garden_lecture
+
+:: procrastinate
+`issho`: … That went well.
+`kuzan`: You think so?
+`issho`: He could've decided to be really stubborn about this. [smile] Thank you, `name`. I know it's difficult but you are doing a good job.
+`name`: Ah, thank you, sir. Fleet Admiral Sakazuki is… really intense…
+`kuzan`: You mean he acts like he has a stick–
+`issho`: Kuzan.
+`kuzan`: –You know what I meant.
+`borsalino`: He sure is a *sca~ary* man… You made a good choice by staying with us, `name`...
+`issho`: Shall we depart? Saka-san won't be happy if we get there too late.
+`kuzan`: Let's go, I guess… Don't get there too early though… He'll make us move things around.
+You and the three Admirals start walking toward the garden at a sedated pace, talking among yourselves. They are all very kind to you.
+You finally arrive at the garden, half an hour later. The Fleet Admiral has laid the tools out and is moving the tree by himself, his cloak folded neatly on a nearby bench. He appears unsurprised at the time it took you four to arrive. It's not an unusual occurrence.
+=> garden_lecture
+
+:: garden_lecture
+`sakazuki`: You're late.
+`issho`: I'm sorry about that, Saka-san. You were just walking really fast.
+`sakazuki`: …
+`sakazuki`: There's no time to waste. I want this tree planted today.
+`sakazuki`: Sit. I'll explain to you what needs to be done.
+`kuzan`: Sitting? Well, you won't hear any complaints about that from me.
+As the other Admirals find their preferred seats, you find one as well. Once seated, you study the tree carefully. It really doesn't look remarkable in any discernible way to you.
+`sakazuki`: It's a fig tree. It might not look like much now, but it grows fast. It enjoys sunlight, and likes to spread its roots far and wide. If you plant it too closely to fences or walls, it might feel crowded…
+The Fleet Admiral doesn't seem to notice or care whether everyone is listening to him or not. He's passionate about his subject, speaking with the confidence of someone who has done their research.
+From the corner of your eye, you notice that Admiral Kizaru is up to something. You want to:
+- Ignore the ongoing mischief and pay attention to Fleet Admiral Sakazuki (S+1; I+1) => listen
+- Tune out the Fleet Admiral's words and check out something more fun! (B+1; K+1) => ignore
+
+:: ignore
+--- [Zip] Don't know what this is supposed to be either
+You listen anyway
+=> listen
+
+:: listen
+Listening to Fleet Admiral Sakazuki's explanation is helpful. You didn't know planting was such a delicate task or that different trees need such specific care. The Fleet Admiral doesn't strike you as that type of person but he must like plants a lot.
+Admiral Aokiji is dozing on and off by the end of the lecture, while Admiral Kizaru is entertaining himself by creating fun light patterns on the ground.
+`issho`: [smile] Gardening is quite the relaxing activity. It reminds me of meditation. It can be tedious to get started, but quite rewarding when you finish it. It also offers clarity of the mind.
+- Eh… No offense, Admiral Fujitora, but I think gardening is a lot more fun. (S+1) => gardening_route
+- Yeah, you're right! I have tried meditation before. I have never succeeded doing it but it seems so relaxing! (I+1) => meditation_route
+
+:: gardening_route
+`issho`: [smile] I understand. It takes a lot of skill and patience to be a good gardener. It's a good hobby to pursue.
+Speaking about hobbies gets you really curious. You don't know much about the four men sitting around you, all very unique in their own way. Everyone seems fairly relaxed right now, even the Fleet Admiral can't seem to stay mad for long in the peaceful garden. You really want to get to know them better. This is the best time to do it.
+`name`: I'm really curious, having been a Marine for so long and seen so many incredible things…
+- … Do you all have any happy memories that stay with you? => memory
+- … What are all your favorite outdoor activities? => activity
+- … What was boot camp like back in the day? Was it easier? Tougher? => bootcamp
+
+:: memory
+`issho`: [smile] Happy memories? Oh there are plenty of them. I still vividly remember the first time Saka-san lost to me in a dice game. The memory still makes me laugh.
+`sakazuki`: I didn't lose, you were definitely using your power.
+`issho`: Ah, Saka-san, I have not the slightest clue what you are talking about. [smile] Why would I use my power? What would I gain?
+`sakazuki`: I don't believe you. The odds of you rolling one ten times in a row is statistically impossible.
+`borsalino`: What a conundrum. What do you think, `name`?
+- I think the Fleet Admiral is telling the truth! (S+1)
+    `sakazuki`: <pause> I appreciate you trusting my words, `name`.
+    `borsalino`: How sweet. Sakazuki, you have an admirer.
+    `sakazuki`: [angry] Stop saying foolish things, Borsalino!
+    `issho`: Are you embarrassed, Saka-san?
+    `sakazuki`: Stop messing around! We need to get back to planting the tree!=> assign_task
+- Admiral Fujitora is so nice, there's no way he would cheat! (I+1)
+    `issho`: [smile] Thank you for believing in me, `name`.
+    `kuzan`: It's true, your luck is incredible.
+    `issho`: You flatter me, Kuzan. Saka-san, I suppose the win belongs to me this time?
+    `sakazuki`: [judging] I have my eyes on you, Issho.
+    `sakazuki`: Hmm. Enough talking, we have other things to get to. => assign_task
+- I don't have any opinion. I wasn't there.
+    `sakazuki`: <pause>... That's a fair enough answer.
+    `sakazuki`: You won't be able to change my mind on this matter though, Issho.
+    `issho`: [smile] You believe whatever you want to believe, Saka-san.
+    `sakazuki`: Hmph!
+    `borsalino`: *So~o*... about that tree we were going to plant…? => assign_task
+
+:: activity
+`sakazuki`: <pause>... <pause>... Gardening.
+`kuzan`: Ignore that grump, `name`. Ararara… Well, that's an easy one. I love biking. There's nothing quite like going on a ride in the middle of the sea, just you and the waves…
+`borsalino`: Aw, but riding on a cannonball is… *o~oh* a lot more exciting.
+`kuzan`: But only you can do that, Borsalino.
+`borsalino`: *Ma~aybe* you should give it a try sometimes. You can *pro~obably* do it too.
+`kuzan`: So `name`, what do you think, riding a cannonball or riding a bike, what's better?
+`name`: That's so difficult! Both are interesting options. But I guess if I must pick one then…
+- …Riding  a cannonball is clearly the winner! It's so cool! (B+1)
+    `borsalino`: [smile/flirty] Kuzan, `name` agreed with me. You should *de~efinitely* try it sometime…
+    `kuzan`: Eh… I'll pass… I like biking just fine.
+    `borsalino`: Aww, oh well…
+- I will take the regular classic bike ride. I love how calming it is… (K+1)
+    `kuzan`: It's really nice… I've met many interesting people.
+    `issho`: Did you? Traveling is very nice.
+    `borsalino`: Mm, I still prefer how I do it.
+`sakazuki`: Enough chit chatting, we have a tree to plant. => assign_task
+
+:: bootcamp
+`sakazuki`: [Judging] Hmph. Nowadays boot camp is far too lenient for the time we're living in.
+`borsalino`: Mm? Is that a *ve~ery* long way of saying that… We had it harder?
+`sakazuki`: No. I'm saying the standards need to be much higher. These pirates are getting resourceful.
+`sakazuki`: The Navy can't afford equal footing with pirates. We have to come out on top. That's the only way to win.
+`kuzan`: Oi, don't scare the rookie…
+`sakazuki`: If you can't take the heat, get out of the kitchen.
+`borsalino`: Aww, I don't think that's what `name` is asking… Don't you mean the fun times we had? I do remember a certain cadet trying to master Master Zephyr's extreme training course… And failing.
+`borsalino`: Do you remember that guy, Sakazuki…?
+- O-oh yes, that's what I meant, Admiral Kizaru! The fun memories! Not the um, standards… (B+1)
+    `borsalino`: See, Sakazuki…? Today is a day to relax.
+    `sakazuki`: Hmph!
+    `borsalino`: Well, `name`, let me tell you a fun story. Back when we were rookies, you see…? Master Zephyr, our instructor, used to have an *infamous* obstacle course. Anyone who could complete it could request extra training with him, as a reward…
+    `kuzan`: And of course no one was mad enough to do it, except for one.
+    `borsalino`: Sakazuki is very familiar with that guy, of *co~ourse*…
+    `sakazuki`: I don't know what you are talking about, Borsalino. Cease this nonsensical story, now.
+    `issho`: [laugh/smile] What's wrong, Saka? Too familiar with him? I haven't heard this story. I'm very interested, Borsaino.
+    `sakazuki`: We should get back to the task at hand! Planting the tree before it's too late!=> assign_task
+- Um, actually, I was asking about the standards, sir. How high do you think they should be, Fleet Admiral Sakazuki? (S+1)
+    `kuzan`: [surprise]...
+    `issho`: [surprise]...
+    `borsalino`: [surprise]...
+    `sakazuki`: [surprise]...
+    `sakazuki`: [neutral] <pause>... I have always thought the Four Blues Marines should meet current Marineford standards. Increase training for this current Marineford batch of soldiers. We also should–
+    `kuzan`: Not again, we are supposed to relax.
+    `sakazuki`: [angry] Evil doesn't rest!
+    `borsalino`: Or, no rest for the wicked…
+    `kuzan`: Sure sounds like it.
+    `sakazuki`: [angry] What are you trying to say, jerk?
+    `issho`: Gentlemen, please. We can argue about this during work hours… I heard there's a tree that still needs planting? => assign_task
+
+:: assign_task
+The five of you stare at each other silently for a moment before looking at the fig tree.
+`name`: So… planting a tree, right, Fleet Admiral?
+`kuzan`: Like you, you know, do your thing and we watch? 'Cause I could… [sleepy?] use a nap right about now…
+`sakazuki`: Like hell you are just going to sit around and watch! You are helping too, Kuzan!
+`kuzan`: Can't you just do it yourself…?
+
+`name`: If I may… We should definitely do this together! It'll be a fun activity! When was the last time you guys planted a tree ~together~?
+`borsalino`: <pause> ...
+`sakazuki`: <pause> ...
+`kuzan`: <pause> ...
+`issho`: <pause> ...
+`name`: You can't remember? Well! Then this is the perfect time to do it! Fleet Admiral, what are the steps to plant a ~tree~?
+`sakazuki`: <pause>... <pause>We need to pick the appropriate spot, dig a hole, put the plant in the hole, fill it up, and then water it afterward. It's a simple procedure.
+`kuzan`: I take dibs picking a spot.
+`borsalino`: ~Aah,~ I think watering the plant for me then…
+`sakazuki`: You guys are picking the easy jobs! That's unacceptable!
+`borsalino`: Aww... But what's wrong with that…?
+`sakazuki`: How can you say something like that! You are Marines! Don't take the easy way out!
+`issho`: Saka-san, there's no need to get heated. I'm sure we can divide the tasks among ourselves. I have an idea. How about we let `name` decide who should do what?
+`name`: Me? You want me to decide, sir?
+`issho`: [smile] It's only fair. We won't reach an agreement any time soon and fighting in such close proximity with civilians is not recommended. You have an unbiased view of this. What do you say, gentlemen?
+`sakazuki`: [angry] Hmph.
+`kuzan`: [wink/flirty] You've got this, `name`. Just let me pick a spot for the tree.
+`borsalino`: [flirty/smile] I'm *~suure~* `name` will make very sound decisions.
+`issho`: [smile] Let's start with the first task. => choose_spot
+
+:: choose_spot
+`kuzan`: Well, `name`, you can be the judge. Who should be the one picking the right spot to plant a tree?
+- I think the answer is obvious. It should be you, Admiral Aokiji! (K+2)
+    `kuzan`: Ararara, you're indeed very wise. See, Sakazuki, I'm the best fit for the job. Hmm… Maybe that spot… Oh no, just a bit more to the left. Perfect. Lots of sunlight… Good for a nap…
+    Admiral Aokiji scratches his head for a moment, before creating a small X with ice on the ground to mark the spot.
+    => dig_hole
+- Maybe you would be good for the task, Admiral Fujitora… (I-1)
+    `issho`: [surprise] <pause>...
+    It takes you a moment to realize you have assigned a blind man to pick a spot… You don't have a chance to take it back though. You watch Admiral Fujitora hold out a hand as he feels for the sunlight while he feels the ground with his cane.
+    He finally stops at a spot with relative sunlight and taps his cane on the ground.
+    `issho`: This one should do.
+    Borsaino: <smile> *So~o* good that it's a sunny day today, isn't that right, `name`?
+    => dig_hole
+- Admiral Borsalino, blow us all ~away~! (B+1)
+    `borsalino`: O~oh? Me? How ~surprising~~ How about where Sakazuki is standing? It looks like a *go~od* spot.
+    `sakazuki`: [annoyed/angry] Where *I'm* standing? It's in the shade. It's going to kill the tree!
+    `borsalino`: Well… I'm sure there will be ~some~ sun eventually. `name` trusted me.
+    `sakazuki`: [angry/annoyed] !!
+    Borsaino: [smile] ~...~
+    `sakazuki`: That tree is going to die!
+    `kuzan`: Arara, Sakazuki, can't take a loss?
+    `sakazuki`: [angry] Fine! Suit yourselves.
+    => dig_hole
+- Fleet Admiral Sakazuki, you know a lot about gardening, maybe you'll be the best fit. (S+0)
+    `sakazuki`: Me? Picking a spot?... [frown] <pause> There. The spot without any other plants. Only when it stands alone can it do the most good.
+    `issho`: I hardly agree, Saka-san but `name` has picked you for the task…
+    => dig_hole
+
+:: dig_hole
+`issho`: Now that task is assigned, who do you think should be the one to dig a hole?
+- Hmm, I think Admiral Aokiji is going to be great at it. Trust me on this. (K-1)
+    `kuzan`: <pause> Ararara… I don't think I'm… What's the word… Hmm… Well, you know what I mean.
+    `name`: You mean you're super ~enthusiastic~ about this?
+    `kuzan`: <pause>... Mmm… no, I wouldn't go that far…
+    `kuzan`: [unhappy]<pause> Do I have to…?
+    `sakazuki`: Yes.
+    `borsalino`: ~Yes~
+    `issho`: We agreed to this, Kuzan.
+    `kuzan`: <pause> Fine…
+    With a heavy, unhappy groan, Admiral Aokiji picks up the shovel and starts digging. He appears to take a nap half way through and has to be woken up by Admiral Kizaru poking him with a stick. It takes a long time but it's finally done.
+    Admiral Aokiji blinks sleepily at his work before he goes straight back to his nap, this time with extra loud snores. His work is done.
+    => lift_tree
+- Admiral Fujitora, you can do it! (I+0)
+    `issho`: Alright.
+    Admiral Fujitora holds up his walking cane but before he can do whatever he intended to, the Fleet Admiral already stops him.
+    `sakazuki`: No, Issho. You're going to rip the garden apart with your power.
+    `issho`: Saka-san, it'd be faster.
+    `sakazuki`: [angry] Use the damn shovel.
+    `issho`: <pause> Alright…
+    Admiral Fujitora picks up the shovel and starts digging. He says nothing else but you have the feeling that doing this without power isn't his first choice at all.
+    => lift_tree
+- Admiral Kizaru, time to get your hands #dirty~# (B-1)
+    `borsalino`: [pout/unhappy] *Hm~m*... Mmm… Can I get a pass on this? I don't… want to…
+    `sakazuki`: You seemed plenty agreeable to the last decision made by `name`, Borsalino.
+    `borsalino`: Oh I just remembered that I forgot something at the off–
+    `issho`: Ah, ah, you should just do it. We all agreed that `name` is going to be the judge for this.
+    `borsalino`: <pause>... Aw…
+    Despite the rocky start, Admiral Kizaru reluctantly picks up the shovel, his lips twisting at the dirt clinging to his expensive suit and hands. You are pretty certain he's taking at least three times as long as it should take, but none of the others relent, leaving Admiral Kizaru to his suffering.
+    You almost feel bad enough to offer a hand but before you can do it, Admiral Kizaru has stuck the shovel to the ground, still looking at you unhappily.
+    `borsalino`: [pout/unhappy] It's done…
+    => lift_tree
+- Can you help us with this task, Fleet Admiral Sakazuki? (S+2)
+    `sakazuki`: ... <pause> Alright.
+    Without any complaints, the Fleet Admiral rolls up his sleeves, picks up the shovel and starts digging up a hole at the previously chosen spot. You look back at the other three who discreetly give you thumb-ups. It seems you have done a good job!
+    => lift_tree
+
+:: lift_tree
+`borsalino`: Only two choices left. Who do you think should do the heavy lifting, `name`?
+- No more sleeping. It's your turn, Admiral Aokiji! (K-1)
+    `kuzan`: Arara… This task is too… Well… You get what I wanna say…
+    `sakazuki`: [angry] Just do it. It's not that hard.
+    `kuzan`: Ugh… Fine.
+    Admiral Aokiji keeps sending the Fleet Admiral unhappy looks, sighing every time he has to take a step. He picks up the tree, puts it down, sighs again. Finally he picks up the shovel and starts filling the hole, stopping every few seconds to have a break.
+    => water_plant
+- Who else is better than you, Admiral Kizaru? (B-1)
+    `borsalino`: <pause>... Is this a joke?
+    [pout/unhappy] This suit I'm wearing is *so~o* nice…
+    `name`: Nope! No mistakes! It's time to roll in the dirt with everyone, Admiral! C'mon it'll be so much fun!
+    `borsalino`: [pout/unhappy] <pause> … <pause> Issho, *maybe*…?
+    `sakazuki`: Stop complaining, Borsalino. It's only going to take longer. Take the tree, put it in the hole, cover it up. You have done harder jobs.
+    `borsalino`: [pout/unhappy]...
+    Admiral Kizaru drags one foot forward, then the other, picking up the fig by his thumb and index finger.
+    Admiral Kizaru drops the fig in the newly dug hole, grimaces at the shovel before picking it up and covering the hole. The Admiral's pristine white shoes are dirty with mud by the time the task is done. At least he was fast!
+    => water_plant
+- Ah, I didn't forget about you, Admiral Fujitora. Your power is going to be great for this! (I+2)
+    `issho`: [smile] It'd be my pleasure to help out. Please stand aside.
+    You gasp in awe when Admiral Fujitora unsheathes his sword. The plant leviates in the air for a moment before gently lowers into the designated spot. The mound of dirt that has been dug up follows after as well, covering up the roots. You knew it! You made the right choice!
+    => water_plant
+- Fleet Admiral Sakazuki is so strong, I bet you can do it in no time! (S+0)
+    `kuzan`: Haha, not so fun when you have to do the hard work, huh, Sakazuki?
+    `sakazuki`: I don't mind.
+    Fleet Admiral Sakazuki carefully moves the tree to the hole and places it down, getting on his knees to make sure the dirt is packed just tight enough. He stands up, dusts his hands and knees, glancing at the only remaining Admiral.
+    => water_plant
+
+:: water_plant
+`sakazuki`: I see, so that leaves one person left…
+`name`: Yes, sir! The last one in charge of the utmost important task of watering the plant will be…
+- …Admiral Aokiji! (K+1)
+    `kuzan`: Ararara… I guess this would do…
+    With a heavy groan like it takes him great effort, Admiral Aokiji walks over to pick up the watering can and trudges over to the plant, pouring the water unenthusiastically.
+    `kuzan`: There you go…
+- …Admiral Kizaru! (B+2)
+    `borsalino`: [smile/flirty] Thank you, `name`. I shall do my best…
+    With a flourish, Admiral Kizaru brandishes the watering can, humming under his breath. He returns a moment later, dropping the can where he picked it up.
+- … Admiral Fujitora! (I+0)
+    `issho`: Oh, me? [smile] Of course.
+    With a smile, Admiral Fujitora unsheathes his cane and leviates the can over to the fig tree, tilting it expertly in an impressive display of control.
+    `kuzan`: Nice.
+- … Fleet Admiral Sakazuki! (S+0)
+    `borsalino`: [pout/unhappy] Naww, I could've done this task, too…
+    `sakazuki`: Drop it, Borsalino. We said we'd agree to this.
+    Fleet Admiral Sakazuki picks up the watering can and walks toward the tree. He inspects the leaves for a moment before pouring water to the ground. All in all, it's pretty anticlimactic.
+You step back, inspecting the tree. It looks fragile, like one heavy wind is going to topple it but the Fleet Admiral has given a curt “Acceptable work” once he checks the plant over. You mentally cheer. You hope that means you have managed to assign everyone to their strongest forte!
+=> outro
+
+:: meditation_route
+`issho`: That would be lovely.
+`issho`: Are there any techniques that you are fond of? Should I take the lead?
+- Let Issho decide.
+    `issho`: That is not a problem.
+- Decide for yourself. (I+)
+    `name`: I'd like to do focus meditation.
+    `issho`: Oh. In for a challenge, are we?
+`sakazuki`: Hm. Are you dodging work already?
+- Oh, n..no, Sir! (S+)
+    `sakazuki`: It looked that way. For a moment.
+    `issho`: Perhaps another time, then.
+    => gardening_route
+- No, we too are working!  (I+)
+    test
+    `issho`: Very good point, `name`.
+    `issho`: As you know, dear Sakazuki, meditation is not a relaxation exercise…
+    `issho`: It requires attention and strength.
+    `sakazuki`: …
+You both close your eyes and sit in an upright, comfortable position.
+- Start by controlling your breathing.
+    You picture sea waves, timing your breathing with their sway.
+    When your thoughts distract you, you contemplate them and let them go.
+    `issho`: I can perceive your focus. It's powerful.
+    `issho`: I think you will master haki before long, `name`.
+    - Thank you…
+        Issho chuckles.
+        `issho`: You're welcome.
+    - Say nothing. (I+)
+        Issho smiles like he has a secret.
+- Focus on your surroundings.
+    You listen to the sounds around yourself, breathing in and out.
+    The sound of birds chirping… Leaves shivering… The distant breeze above your head.
+    It feels good.
+    - Relax a bit more… => meditation_asleep
+    - Stay focused on the sounds around you…
+        A voice rings out.
+`kuzan`: Hey, what are you guys doing?
+That startled you! And maybe Issho, too…
+`issho`: Ah, Admiral Aokiji. We wanted to–
+`kuzan`: Oh, you guys were gonna sleep too, huh?
+K lowers his sleeping mask and starts snoring (again?) as if on cue.
+- (That doesn't sound like a bad idea after all.) (K+)
+    Still, you said you would meditate with Issho.
+    => meditation_asleep
+- Ignore him. (I+)
+    You close your eyes.
+    You feel your lungs, your heartbeat. A flame grows inside you.
+    `issho`: You are doing a good job, `name`.
+You feel the world around you, and yet you are an observer. You try to focus on your breathing and not to get distracted by your thoughts.
+Huh! What was that?
+Is the sun shining directly on your face?
+- Ignore it.
+    Like all thoughts, you let it pass like a bird across the–
+    Ah! That shining again!
+    Now it's kind of annoying.
+    `issho`: Is all well, `name`?
+    - Remain concentrating. (I+) => meditation_successful
+    - Open your eyes. => meditation_distract
+- Open your eyes. => meditation_distract
+
+:: meditation_successful
+You stay in this state for some time. A few minutes go by.
+You can almost start to feel the grounded auras around you…
+S:...
+`sakazuki`: Are you done?
+`issho`: Do you want to stop now?
+- Yes, that was enough.
+    `issho`: I agree. I feel quite renewed! (I+)
+- I'd like to continue. (S+)
+    `issho`: It's good to give the mind a break, too.
+    `sakazuki`: ...You saw it through to the end. Well done.
+    `issho`: Oh, Saka-san? I did think you took this as dodging work.
+    `sakazuki`: I owe you no explanations.
+=> outro
+
+:: meditation_asleep
+You do feel like letting your thoughts go. It will be only a moment.
+`name`: .....
+`name`: Zzzz…
+…
+`issho`: Psst… `name`!
+You jerk awake.
+- I'm so sorry!
+    `issho`: That can happen sometimes, dear `name`.
+    `issho`: We'll meditate when you've had better sleep.
+- Where am I? Who are you? (B+)
+    `borsalino` chuckles.
+    `borsalino`: Oh, dear. Were you having sweet dreams…?
+`kuzan` yawns awake.
+`kuzan`: Oh, hey.
+`issho`: You two make a dashing pair.
+`sakazuki`: Well, gardening is over now. Thank you for getting them to sleep.
+`kuzan`: Oh, that was just `name`. I didn't need Issho's help.
+- Right? It wasn't that interesting anyway.  (S-, K+)
+    `sakazuki`: …!!
+    `issho`: Now now, that's just mean-spirited…
+    `borsalino`: Oh! Best bonding activity ~eever…~
+- I'm so embarrassed. (K-, I+)
+    `kuzan`: Right… whatever…
+    `issho`: It can happen to anybody, `name`.
+    S turns around sharply, turning his back on you.
+=> outro
+
+:: meditation_distract
+Of course, it's `borsalino` trying to distract you.
+When you look at him, `borsalino` winks at you.
+- Wiggle your eyebrows. (B+)
+    `name`: *He~ello…*
+    `borsalino`: Oh… How charming…
+    He's not making it easier to concentrate…
+    => meditation_interrupted
+- (Issho, Borsalino is being his usual annoying self.) (B-, I+)
+    `issho`: Oh…
+    An acorn flies right through B.
+    `borsalino`: I ne~ever saw that coming…~
+    Issho chuckles.
+    `issho`: Are you implying I did?
+    => meditation_interrupted
+- Can you stop?!
+    `borsalino`: Me…? I don't know what you're talking about…
+    `issho`: Try to focus, `name`…
+    => meditation_successful
+
+:: meditation_interrupted
+`sakazuki`: Tsk.
+`sakazuki`: While you are there playing around, I'll just get the work done.
+`issho`: Splendid, Sakazuki.
+`borsalino`: I *wo~ouldn't* have expected any less…
+K…is just snoring and mumbling in his sleep.
+=> outro
+
+:: kuzan_route
+As fascinating as it is to listen to a long lecture about soil types and nutrients, you find your mind wandering. Mainly off to the left when a low snore is coming from.
+- look at the sound => sound_route
+- No you shouldn't! You should focus! FOCUS! =>
+
+:: sound_route
+Oh man you just can't not look for the source of that sound and oop! Guess who is the source!
+- Issho, 100% him. No doubt
+    You look and OH MY GOODNESS IT IS ADMIRAL FUJI- nope. It's Admiral Aokiji.
+    => find_sound_source
+- Borsalino, he… he sleeps right? …Right?
+    You look and find Borsalino looking you dead in the eyes. He doesn't move, doesn't even blink. Is…Is he alive? Oh, and the sound is Admiral Aokiji. He is napping.
+    => find_sound_source
+- Hmm… no it couldn't be. Could it?? No. No. Okay, it's Admiral Aokiji. => find_sound_source
+
+:: find_sound_source
+Admiral Aokiji is flat on his back in the shade beneath some kind of large tropical looking plant. He looks so comfortable…and…flat.
+`borsalino`: Oh `name`, it appears Kuzan has fallen asleep ~doesn't it~
+`issho`: I marvel at his ability to sleep anywhere, quite useful. Though in this case…
+The large plant Kuzan is sleeping beneath begins moving and– OH. It's a very large venus fly trap, and it seems to think Admiral Aokiji is its lunch!
+- Swat the plant away
+    It hisses but retreats for the moment. Admiral Aokiji continues to sleep. You envy this for a moment. (+1 K)
+    `borsalino`: Hmmm… you're so fast coming to his defense… he's making us look bad, isn't he…?
+    - Like… weak you mean?
+        `borsalino`: ~Perhaps~
+        `issho`: Borsalino my friend, I fear you are up to something.
+        `borsalino`: Are you up for a challenge, `name`?
+        => challenge_time
+    - Yeah, he totally is.
+        `borsalino`: We can't have that now can we?
+        `borsalino`: Are you up for a challenge, `name`?
+        => challenge_time
+- Survival of the fittest as they say
+    The plant almost seems to grin evilly and dives straight for him-! Admiral Fujitora's cane comes out of nowhere and whacks it away. It slinks off with a sad hiss. Admiral Aokiji survives another day, you guess.
+    `borsalino`: Ohh quick reflexes ~Issho-san~
+    `issho`: …I fear you are planning something, my lightning fast friend. Your compliments are always a double edged sword.
+    `borsalino`: So mean Issho-san~ Buttttt you aren't wrong~ >:3 Kuzan is making us look bad with all this sleeping… Perhaps we should make an example of him, hm?
+    - *Ask what that means*
+        Erm… Admiral Kizaru, um, what are you planning?
+        `borsalino`: Are you up for a challenge, `name`?
+        => challenge_time
+    - *Don't ask what that means*
+        `issho`: What did you have in mind, and should I get Sakazuki's attention?
+        `borsalino`: Just a little challenge, ~I'm sure Sakazuki-san won't mind~
+        `issho`: Hmm, are you up for this “challenge”, `name`?
+        => challenge_time
+
+:: challenge_time
+- Alright what does this challenge involve?
+    `borsalino`: I'll give a little…demonstration. He vanishes in a burst of sparkles then reappears not a second later holding a couple of flat-ish looking rocks. With a suave grin at you, he places them upon Admiral Aokiji's thigh, building… a tower.
+- Not gonna lie, I don't like the sound of this…
+    `borsalino`: “How about I give a little…demonstration?” He vanishes in a burst of sparkles then reappears not a second later holding a couple of flat-ish looking rocks. With a suave grin at you, he places them upon Admiral Kuzan's thigh, building… a tower.
+He's stacking rocks upon his fellow Admiral.
+`borsalino`: Care to try your hand, `name`?
+- Hell Yes. I am a rock stacking CHAMP. (B++, K-) => champ_route
+- …Maybe. I don't know. I kinda wanna see how tall you can make that stack…(B+/K-) => bystander_route
+- No way, what if they fall? I don't think we should be so mean. (K+, B-) => no_prank_route
+
+:: champ_route
+`issho`: Oho, I admire your spirit.
+`borsalino`: Whoever gets the tallest tower ~wins~
+- Wins what?
+- Just you against me, or are you joining us Fujitora-san?
+    `issho`: Hmmm…I do enjoy a good gamble, but I may enjoy watching from afar as much as I would participating.
+    Please?? Pretty please? I bet you stack rocks like nobody else! (I+)
+    `issho`: …Since you asked so nicely, yes, I will join you in this tomfoolery.
+    - Great! Then what are we playing for?
+    - Alright, then, just you and me Admiral Kizaru! What are we playing for?
+- You may be made of light, but I will put you out.
+    `borsalino`: Oh my how scaaaaary
+    `issho`: Word play, haha! The stakes must be high to match.
+    - Yeah! What are we playing for?
+`borsalino`: …Issho-san do you have any suggestions?
+`issho`: Hmmm…perhaps the loser must do the winner's paperwork.
+`sakazuki`: What are you fools up to? Crap he appears to have noticed that none of us were paying attention to his lecture. Whoops!
+- Tell him the truth
+    `name`: We are stacking rocks on Admiral Aokiji because he is sleeping and making the Navy look weak Sir.
+    `sakazuki`: ...
+    `borsalino`: ...
+    `issho`: ...
+    `sakazuki`: You are idiots.
+    - Would you like to join in, Sir?
+        `sakazuki`: No.
+        `issho`: Sakazuki…are you perhaps afraid that we can all outperform you?
+        `borsalino`: You can spend a whole afternoon gardening instead of paperwork ~if you win~
+        `sakazuki`: …
+        - You can stack them on his head!
+            `sakazuki`: …Fine.
+        - I'm sure Admiral Aokiji would appreciate your non-participation.
+            `sakazuki`: I will join in this stupidity, if only to teach Kuzan a lesson.
+    - …That's not inaccurate BUT, we are supposed to be working better together and since you're now the odd duck out… care to join us?
+        `issho`: `name` has a compelling argument.
+        `borsalino`: Oh yes, join us for the sake of ~duty Sakazuki~
+        `sakazuki`: …This is idiotic.
+        - …So is that a yes?
+            `sakazuki`: …
+            …
+            `sakazuki`: Fine.
+        - I'm sure Admiral Aokiji would appreciate your non-participation.
+            `sakazuki`: I will join in this stupidity, if only to teach Kuzan a lesson.
+- Apologize and try to get back to the lecture
+    We're sorry, we were um, distracted and got uh…carried away.
+    `sakazuki`: “You should all be ashamed of yourselves. Especially Kuzan.” At this point, the venus fly trap decides to try to take advantage of our distraction to make a go at Admiral Aokiji again! And FAILED, because the Fleet Admiral sent it the most withering glare you had ever seen ever. Wow, you are surprised the plant isn't dead from that look.
+    `sakazuki`: …The idiot deserves this. Continue with your dumb plans.
+    `borsalino`: Ohhh Saka-san, ~I'll let you join in~
+    `issho`: Haha this has turned into a group affair! Good job `name`.
+    `sakazuki`: Shut up and get to it.
+=> stack_time
+
+:: bystander_route
+`name`: …Maybe. I don't know. I kinda wanna see how tall you can make that stack…(B+/K-)
+`borsalino`: You want to see how big it gets `name`?
+`issho`: It may be dependent upon where you place it.
+- Are you going to try too, Fujitora-san?
+- That is true. It's probably more stable on the chest…but it'll be more impressive if you build it on the leg, or…or his forehead!
+    `issho`: Hm, there could be more than one tower to determine this.
+`issho`: I cannot deny the appeal.
+`borsalino`: Oh, you against me Issho-san? Maybe we'll determine which of us is stronger ~at last~
+`sakazuki`: What are you fools up to? Crap he appears to have noticed that none of us were paying attention to his lecture. Whoops!
+- Tell him the truth
+    `name`: Admiral Kizaru and Admiral Fujitora have decided to determine who is stronger in a stacking battle, using Admiral Aokiji as their battle ground.
+    `borsalino`: Haven't you ever wondered which one of us is stronger ~Sakazuki~?
+    `issho`: Sakazuki-san is also a contender… would you like to prove yourself?
+    `sakazuki`: What?
+    - Oh that's a good idea. I can judge which of you has the biggest one.
+        `sakazuki`: …
+        `borsalino`: *...*
+        `issho`: … The losers must do the winners paperwork, how about that?
+        `sakazuki`: …Fine, I'll show you fools how it is done.
+    - A good old fashioned competition is a great chance for strengthening bonds!
+        `borsalino`: Oh, going against the two of you, ~how scary~
+        `issho`: I believe a proper competition has stakes, I propose that the losers must do the winner's paperwork.
+        `sakazuki`: …Fine, I'll show you fools how it is done.
+- *LIE*
+    I am watching Admiral Kizaru and Admiral Fujitora debate the merits of gardening while this plant seems to be burying Admiral Aokiji in rocks. (I+)
+    `borsalino`: … I believe the ~keeey~ to a good garden is a tall cairn to bring everything together.
+    `issho`: … I enjoy a nice rock garden myself.
+    `sakazuki`: “…Do you take me for a fool?” At this point, the venus fly trap decides to try to take advantage of our distraction to make a go at Admiral Aokiji again! And FAILED, because the Fleet Admiral sent it the most withering glare you had ever seen ever. Wow, you are surprised the plant isn't dead from that look.
+    Issho: We are all fools in our own way.
+    `borsalino`: Oh yes, the folly of man.
+    - Well now that you're here…want to join this competition and punish the losers?
+        `borsalino`: You do enjoy a good punishment ~Sakazuki~
+        `issho`: A bold assumption that he will win.
+        `sakazuki`: What are the stakes?
+        `issho`: The losers must do the winner's paperwork.
+        `sakazuki`: …Fine. I will join this farce.
+    - We are but the sum of our flaws, and as such, we must endure and take pleasure where we can. Like in this competition.
+        `borsalino`: I look forward to ~winning~
+        `issho`: I don't see that in your future.
+        `sakazuki`: I don't care anymore, do what you want.
+        - Join us and show us the power of the Fleet Admiral!
+            `sakazuki`: …*sigh* It appears the act of gardening is wasted upon the lot of you. Fine, I will join your stupid competition.
+        - But don't you want to build a stack of rocks on Admiral Aokiji's forehead?
+            `sakazuki`: …Winner gets to knock over the other stacks?
+            `borsalino`: …Yes.
+            `issho`: Let's get started then.
+            `name`: Uh…o-okay then.
+=> judging
+
+:: no_prank_route
+`issho`: You are very kind, `name`. (I+)
+`borsalino`: ~Well Kuzan, looks like you have a little champion~
+Do you wake up Admiral Aokiji?
+- *Yes*
+    *You gently shake his shoulder until he cracks an eye open at you. You point to the Fleet Admiral and give him a disapproving look.*
+    => gardening_path
+- *No*
+    *You spend the rest of the lecture swatting the venus fly trap away from Admiral Aokiji, until the Fleet Admiral requests help with planting. Uh oh, he's noticed Admiral Aokiji is asleep!*
+    `sakazuki`: Wake up Idiot!
+    `kuzan`: Nah, I'm good.
+    You were awake this whole time?!
+    `borsalino`: Oh…?
+    `kuzan`: “Hey Borsalino…” A ball of ice comes flying towards the light Admiral!
+    `borsalino`: “Now now Kuzan!” He keeps vanishing into sparks as Admiral Aokiji begins hurling ice at him all around the garden.
+    `issho`: Well.
+    `sakazuki`: I'm going back to the office.
+    => outro
+
+:: stack_time
+*Looks like the competition is on! Now to find rocks. And WIN.*
+
+:: rock_hunt
+- Check the West side of the garden [if not(visited("rock_hunt_west"))]
+    do visit("rock_hunt_west")
+    You head West, grabbing flat rocks as you go, shoving them in your pockets!
+    `borsalino`: “~Oooh~ `name`, I see you've found a few rocks.”
+    *He has one really nice flat rock in his hand.*
+    - Yes, and I'm going to destroy you with them. (B-)
+        `borsalino`: Oh, guess you won't be needing this one then. Or this one. ~Or this one~ He keeps disappearing and reappearing, taking rocks! Ugh, better check elsewhere.
+    - I guess so, I need to find more though. How about you?
+        `borsalino`: “I think I've found enough. Here, you can take this nice long one.”
+        *He hands you the smooth rock in his hand. It's flat and seems perfect for stacking on top of a precarious tower! He winks and leaves. Time to continue the hunt.*
+- Check the East side of the Garden [if not(visited("rock_hunt_east"))]
+    do visit("rock_hunt_east")
+    You go east, finding a few rocks, but this area seems a bit more sandy.
+    `sakazuki`: You spot the Fleet Admiral looking a little…silly in his suit as he dusts off a chunky looking rock. “`name`.” He nods at you.
+    - Having much luck finding rocks?
+        `sakazuki`: …Some.
+    - Are you really going to build a tower on Admiral Aokiji's forehead?
+        `sakazuki`: Yes.
+        - Awesome. (S+)
+            *He ignores you and continues choosing rocks until suddenly a rock is tossed your way.*
+            `sakazuki`: “I don't need this one.”
+            *Great, it looks nice and solid for the base of your tower! Time to keep looking.*
+        - Are…are you worried he'll retaliate?
+            `sakazuki`: “He can try, and lose like he always does, the Fool.”
+            *It suddenly gets very warm and the Fleet Admiral might be smoking a little. Maybe… maybe you should look elsewhere.*
+- Check the South Side of the Garden [if not(visited("rock_hunt_south"))]
+    do visit("rock_hunt_south")
+    You go south, nudging a few pebbles with your foot, but there seem to be more plants than rocks here.
+    `issho`: “Be careful `name`!” Suddenly a small rock comes flying down from the sky and makes a small crater near your feet!
+    - HOLY CRAP?
+        `issho`: I apologize. Please, take this, I'll get another.
+    - Hey, that's cheating!
+        `issho`: Is it? I cannot search for rocks as easily as you, you know.
+        Oh. Right. Uh.
+        `issho`: “Perhaps you should look elsewhere so I don't injure you in my search.” Yeah that's a good idea.
+        Yes
+        `issho`: “Hm.” All the rocks in the area begin floating up and out of your reach. “Good luck, `name`.”
+    --- [ZIP] This needs to be reachable from both branches above, but it dosn't quite make sense for the second one
+    He hands you the rock that nearly killed you. It's flat on two opposing sides. That would make it sturdy for the middle of your tower. You should leave before you get hit by another rock.
+
+if and(visited("rock_hunt_east"),and(visited("rock_hunt_west"),visited("rock_hunt_south")))
+    => competition_time
+else
+    => rock_hunt
+
+:: competition_time
+do get_local("in competition")
+It seems like you are all done gathering your rocks and return to a still sleeping Admiral Aokiji. He looks so peaceful.
+`sakazuki`: Let's finish this.
+Guess that means it's time to start! Which rock do you start with?
+- The rock from the Fleet Admiral
+    Which rock next?
+    - The rock from Admiral Kizaru
+        *You place that rock, followed by the rock from fujitora*
+    - The rock from Admiral Fujitora
+        *You place that rock, followed by the rock from kizaru*
+        --- If you get the stack in the right order, (S, I, B) then it stays sturdy. Otherwise, it falls over and wakes Kuzan after you judge.
+        do get_local("sturdy stack")
+- The rock from Admiral Kizaru
+    Which rock next?
+    - The rock from the Fleet Admiral
+        *You place that rock, followed by the rock from fujitora*
+    - The rock from Admiral Fujitora
+        *You place that rock, followed by the rock from the fleet admiral*
+- The rock from Admiral Fujitora
+    Which rock next?
+    - The rock from the Fleet Admiral
+        *You place that rock, followed by the rock from kizaru*
+    - The rock from Admiral Kizaru
+        *You place that rock, followed by the rock from the fleet admiral*
+
+:: judging
+if has_item("in competition")
+    It takes some time, all of you carefully stacking rocks. You feel the sweat running down the back of your neck, the strain in your muscles from making such delicate motions. Admiral Kizaru steps away first, the rest of you following suit. There are 4 precarious rock towers balanced on Admiral Aokiji.
+else
+    Looks like the competition is on! You watch them put their towers together, all the while Admiral Aokiji sleeps on blissfully. After a little while, they finish their cairns and step away. Three different towers, and now to determine the winner. Hopefully before Aokiji awakens!
+
+`borsalino`: So… which is the biggest?
+`issho`: `name` What do you think?
+- The Fleet Admiral's (S++, B-, K-, I-)
+    `sakazuki`: Of course it is. He then proceeds to knock over his tower. Kuzan shatters into pieces and reforms, glaring. Uh oh, time to go!
+    => outro
+- Admiral Fujitora's (I+, S-, B-)
+    `issho`: Oho thank you. I look forward to a free afternoon. He lifts all the rocks off Admiral Aokiji at once and dumps them on the ground. Admiral Aokiji wakes up from the sound!
+    `kuzan`: Uh…I wasn't dead, you don't need to bury me.
+    At this the Fleet Admiral huffs and walks off. Guess it's back to the office.
+    => outro
+- Admiral Kizaru's (B+, S-, I-)
+    `borsalino`: “Mine? ~How flattering~” He smiles at his colleagues and disappears.
+    `issho`: Well Sakazuki, I suppose we best get going on that additional paperwork.
+    `sakazuki`: “Why did I agree to this?!” He stomps off.
+    Wait… what about Admiral Aokiji and the rocks all over him?! With just you standing there, the venus fly trap makes one last attempt! Oh no! Admiral Aokiji turns to ice the moment the plant touches him and cracks an eye open, rocks spilling everywhere. You stare at one another.
+    - Run
+        You run off yelling about paperwork, but get the feeling that Admiral Aokiji will get revenge, and it will be served cold.
+    - Scold Admiral Aokiji
+        This is why you shouldn't sleep just anywhere, you could get eaten by something!
+        `kuzan`: “…Arara maybe you're right, but uh, what's with all the rocks? Oh well.” He falls back asleep. You give up and head back to the office.
+- Yours OBVIOUSLY [if has_item("in competition")]
+    `borsalino`: So much chutzpah.
+    `issho`: Hm, I did not consider bias.
+    `sakazuki`: You can clean up the mess then.
+    They all give you a little wave and leave you with the sleeping Admiral and a bunch of rocks!!!!
+    - Leave as quickly as you can before Admiral Aokiji wakes up.
+        As you turn to leave, the venus fly trap makes one last attempt! Oh no! Admiral Aokiji turns to ice the moment the plant touches him and cracks an eye open, rocks spilling everywhere. You stare at one another.
+        - Run
+            You run off yelling about paperwork, but get the feeling that Admiral Aokiji will get revenge, and it will be served cold.
+        - Scold Admiral Aokiji
+            This is why you shouldn't sleep just anywhere, you could get eaten by something!
+            `kuzan`: “…Arara maybe you're right, but uh, what's with all the rocks? Oh well.” He falls back asleep. You give up and head back to the office.
+    - Carefully remove the rocks before leaving.
+        if has_item("sturdy stack")
+            *You carefully remove the rocks, one by one, holding your breath and hoping he doesn't move or wake up! At last, you remove the last rock! Phew! Suddenly you are engulfed in something sticky and lifted off your feet! Uh oh, the Venus Fly Trap!!!!*
+            `kuzan`: “Arara, that's not food, plant.” A moment later you are spit out on the ground, the plant slinking away. Admiral Aokiji stands over you, fingers icy.
+            `kuzan`: Are you alright `name`?
+            Yes. Thanks.
+            `kuzan`: Anytime. Oh, where are the others? Whatever. I'll see you around `name`.
+            I think I'm done with gardening for the foreseeable future. (K++)
+            `kuzan`: Yeah, it's pretty boring huh? Let's get outta here `name`.
+        else
+            --- [ZIP] NEED CONSEQUENCE HERE
+=> outro
+
+:: outro
+You are back at the office after another intense workday.
+
+--- [ZIP] I DON"T KNOW WHAT THE RIGHT/WRONG CHOICES ARE HERE???
+
+If you made all the right choices:
+(*I: Well, that was surprisingly fun.
+`borsalino`: Ah, yes… I know you think the same, gentlemen…
+Sakazuki and Kuzan grunt their reluctant approval.)
+If not:
+You are back at the office after another intense workday.
+`borsalino`: Oh, that was great. Let's do it again soon…
+`kuzan`: Let's not and say we did…
+`sakazuki`: You can keep your sarcasm to yourself.
+`issho`: I hope you, at least, had a nice time, `name`.
+`issho`: Have a nice rest of the day…
