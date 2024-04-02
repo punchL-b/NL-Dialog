@@ -4,14 +4,14 @@ do set_background("office", show)
 do show_character(coby, center, show)
 Sure enough, he's there and looking rather... frazzled, to say the least.
 do increment("cd1_possible")
-- Captain? Is everything ok? => Coby_notice1
+- Captain? Is everything OK? => Coby_notice1
 - Excuse me, sir, is now a good time? => Coby_notice1
 - What's got you in a twist?
     do increment("cd1_points")
     => Coby_casual1
 
 :: Coby_notice1
-Coby: Oh! `name`! I didn't see you there. Yes, I'm just trying to get a handle on all of this... Though now that you're here I may take this opportunity to take a bit of a break. And please, there's no need for formalities.
+Coby: Oh! `name`! I didn't see you there. Yes, I'm just trying to get a handle on all of this... Though now that you're here, I may take this opportunity to take a bit of a break. And please, there's no need for formalities.
 - You certainly look like you need one...
     Coby: Oh boy, do I? => Coby_choice
 - Are you sure that's alright?
@@ -28,7 +28,7 @@ Coby: Paperwork. As usual. I really don't understand how others get theirs done 
     Coby: Thanks. I'm going to need it... => End_Date
 
 :: Coby_choice
-Coby: It's funny, even though I need a break I have no idea what we should do...
+Coby: It's funny. Even though I need a break, I have no idea what we should do...
 - Have you had anything to eat?
     Coby: Not for a while... Food sounds really good right now, though... => Coby_food1
 - I've been interested in training with you. Could be good to stretch your legs.
@@ -40,17 +40,17 @@ You walk with him down to the mess hall, listening to Coby's stomach growl. He s
 - Do you know what they're serving today?
     Coby: No idea... Something good, I hope. => Coby_food2
 - How did you manage to forget to eat for so long?
-    Coby: I tend to lose track of time while I'm working. There's usually someone to remind me but he's had other things to do.
+    Coby: I tend to lose track of time while I'm working. There's usually someone to remind me, but he's had other things to do.
     `name`: Helmeppo?
     Coby: Helmeppo... => Coby_food2
 - How did you end up with so much paperwork anyways?
     Coby: I have no idea! I don't remember there being so much...
-    Coby: Honestly I wouldn't put it past Garp to have mixed his in with mine... It would certainly explain some things... => Coby_food2
+    Coby: Honestly, I wouldn't put it past Garp to have mixed his in with mine... It would certainly explain some things... => Coby_food2
 
 :: Coby_food2
 do set_background("mess-hall", fade)
 You both enter the mess hall and are met with a delightful smell.
-Coby: Oh! Buttered potatoes! I would've come down earlier if I knew this is what they had today!
+Coby: Oh! Buttered potatoes! I would've come down earlier if I'd known this is what they had today!
 do increment("cd1_possible")
 - Oh man, now I'm hungry too!
     do increment("cd1_points")
@@ -59,7 +59,7 @@ do increment("cd1_possible")
     Coby: They're my favorite! => Coby_foodchoice
 - Ew. I hope they have something else.
     do decrement("cd1_points")
-    Coby: Yeah they usually have options. => Coby_foodchoice
+    Coby: Yeah, they usually have options. => Coby_foodchoice
 
 :: Coby_foodchoice
 He leads the way up to the counter and grabs two trays, handing one back to you as he looks over the choices. You look as well, weighing your food options from what is available.
@@ -77,7 +77,7 @@ do increment("cd1_possible")
 - Wow, they are really good!
     do increment("cd1_points")
     Coby: I'm glad you like them! => Coby_food3
-- They're ok. Not my favorite, but I'm glad I tried them.
+- They're OK. Not my favorite, but I'm glad I tried them.
     Coby: Fair enough. I know it's not everyone's thing. => Coby_food3
 - Eugh. I really should've gotten something else...
     do decrement("cd1_points")
@@ -120,23 +120,23 @@ Both of you eat in silence for a little while. The captain seems content to stay
 - Your friend Helmeppo is kind of a bitch. => Coby_Helmeppo
 
 :: Coby_Captain
-Coby: It's hard work, but I really enjoy it. My crew has been amazing and it's nice to be able to trust them to have my back. I don't think I'll ever get used to the paperwork, though...
+Coby: It's hard work, but I really enjoy it. My crew has been amazing, and it's nice to be able to trust them to have my back. I don't think I'll ever get used to the paperwork, though...
 do increment("cd1_possible")
 - It may be a pain, but it does have its uses. Things would be a mess without any.
     do increment("cd1_points")
     Coby: Of course. But sometimes it feels like I'm filling out the same information over and over... => Coby_food4
-- Yeah the paperwork sucks. Most of the time it just feels redundant.
+- Yeah, the paperwork sucks. Most of the time it just feels redundant.
     Coby: It does. I don't see why departments can't just use one form so we can fill it out once and copy it... => Coby_food4
 - Don't you have better things to do than complain about paperwork?
     do decrement("cd1_points")
     Coby: Yes. But I've learned that venting can be a bit therapeutic.  => Coby_food4
 
 :: Coby_Goat
-Coby: Sometimes. Usually it stays with Sengoku, but it seems to be getting a bit more adventurous lately. Especially since Drake has come back. I think it missed him a bit...
+Coby: Sometimes. Usually, it stays with Sengoku, but it seems to be getting a bit more adventurous lately. Especially since Drake has come back. I think it missed him a bit...
 - That's so sweet!
-    Coby: Yeah. Of course I can't exactly say if it's true or not, since I'm pretty sure Helmeppo's also been feeding it old paperwork... => Coby_food4
+    Coby: Yeah. Of course, I can't exactly say if it's true or not, since I'm pretty sure Helmeppo's also been feeding it old paperwork... => Coby_food4
 - Understandable. I'd probably miss him too.
-    Coby: Same here if I knew him that long. => Coby_food4
+    Coby: Same here, if I'd known him that long. => Coby_food4
 - Do you really think a goat can miss someone like that?
     Coby: I don't know enough goats to know overall, but this one most definitely would. => Coby_food4
 
@@ -152,7 +152,7 @@ do increment("cd1_possible")
     Coby: That's all I can ask. => Coby_food4
 - And that's a taste I'd rather not acquire.
     do decrement("cd1_points")
-    Coby: Well you don't need to be rude about it. => Coby_food4
+    Coby: Well, you don't need to be rude about it. => Coby_food4
 
 :: Coby_food4
 Coby: What about you? How are you liking working here so far?
@@ -181,7 +181,7 @@ Coby: I guess I should get back to work now, though, shouldn't I?
 
 :: Coby_food6
 do set_background("park", fade)
-You walk with Coby back towards his office. On the way he tells you a story from his early days as a Marine.
+You walk with Coby back towards his office. On the way, he tells you a story from his early days as a Marine.
 Coby: Helmeppo and I are still paying off that building, since we were the ones to destroy it... But we're getting close!
 do set_background("office", fade)
 Coby: Oh, it looks like we're already here...
@@ -194,7 +194,7 @@ do increment("cd1_possible")
 
 :: Coby_food_ending
 if check_ratio("cd1_points","cd1_possible",0.5)
-    Coby: Well, `name`, thanks for letting me take a bit of a break with you. It was a lot of fun talking with you. And, well, if you ever want a break buddy again you know where to find me.
+    Coby: Well, `name`, thanks for letting me take a bit of a break with you. It was a lot of fun talking with you. And, well, if you ever want a break buddy again, you know where to find me.
 else
     Coby: Thanks for letting me join you for lunch. I really appreciate it. I'll see you around.
 => root.main
@@ -203,7 +203,7 @@ else
 do set_background("park", fade)
 He leads the way to the training grounds. They are almost empty when you arrive, with only the occasional sparring pair scattered around the open area.
 do set_background("training-grounds", fade)
-Coby: Right. I'll be sure to go easy on you, no need for anyone to get hurt during a friendly sparring match.
+Coby: Right. I'll be sure to go easy on you. No need for anyone to get hurt during a friendly sparring match.
 do increment("cd1_possible")
 - Sounds good to me!
     do increment("cd1_points")
@@ -214,7 +214,7 @@ do increment("cd1_possible")
     Coby: I'm sure you aren't. But it would make *me* feel better. => Coby_training2
 
 :: Coby_training2
-You both stand facing each other, and get into fighting stances. He seems to be having a great time already, and you haven't even started.
+You both stand facing each other and get into fighting stances. He seems to be having a great time already, and you haven't even started.
 => ThePunch
 
 :: ThePunch
@@ -227,9 +227,9 @@ do increment("coby.attacks")
 
 :: Coby_Punch
 do visit("Coby_Punch")
-You take a swing at his face and he leans to the side, reaching up to quickly grab your arm and flip you on your back. As soon as he does, Coby cringes.
+You take a swing at his face, and he leans to the side, reaching up to quickly grab your arm and flip you on your back. As soon as he does, Coby cringes.
 Coby: I'm so sorry! Are you alright?
-He pulls you back onto your feet
+He pulls you back onto your feet.
 do increment("cd1_possible")
 - You *have* to teach me how to do that.
     do increment("cd1_points")
@@ -254,8 +254,8 @@ do increment("cd1_possible")
 
 :: Coby_Kick
 do visit("Coby_Kick")
-You spin, your heel lashing out at his side. Before it can connect he catches it.
-Coby: That was great! If you'd been a little faster you probably would've hit me.
+You spin, your heel lashing out at his side. Before it can connect, he catches it.
+Coby: That was great! If you'd been a little faster, you probably would've hit me.
 do increment("cd1_possible")
 - Thanks! My brother taught me that move forever ago. I need to practice it more, though...
     do increment("cd1_points")
@@ -273,9 +273,9 @@ do increment("cd1_possible")
 - And here I was thinking I was doing something special.
     do increment("cd1_points")
     Coby: Aw, don't worry. I'm sure you'll find a new way to fight dirty. => Coby_training3
-- Wait- your friend tries that move on you?
+- Wait—your friend tries that move on you?
     Coby: Well, he usually goes the throwing dirt in my eyes route.
-    Coby: But the point is he's not above cheap shots. => Coby_training3
+    Coby: But the point is, he's not above cheap shots. => Coby_training3
 - One officer taking cheap shots at another... I thought the Marines were better than that.
     do decrement("cd1_points")
     Coby: You *just* tried to do the same thing... => Coby_training3
