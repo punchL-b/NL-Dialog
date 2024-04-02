@@ -7,10 +7,10 @@ As the remainder of your fellow Marines drift off to the mess hall or other task
 Hina: Hina was impressed with your conduct today, `name`. Hina values someone who can obey and execute orders.
 
 - Well, it was easy when they're given by someone so competent.
-    Hina: Tch, you think Hina is susceptible to flattery? Hina has little tolerance for sycophancy and simpering. If you want to impress Hina, let your actions and obedience to the Marines speak for themselves, not try to cozy up to your superiors. 
+    Hina: Tch, you think Hina is susceptible to flattery? Hina has little tolerance for sycophancy and simpering. If you want to impress Hina, let your actions and obedience to the Marines speak for themselves, not try to cozy up to your superiors.
     Hina: You're dismissed. => DateEndsEarly
 - Thanks! You and Smoker are really cool!
-    Hina: Hina appreciates your, err... enthusiasm. Work hard and you'll see that the Marines reward obedience and talent. 
+    Hina: Hina appreciates your, err... enthusiasm. Work hard and you'll see that the Marines reward obedience and talent.
     Hina: You're dismissed. --- => DateEndsEarly
 - *salute* Thank you, I did my best, Rear Admiral.
     Hina: Fufufu, at ease, sailor. Work hard and you'll see that the Marines reward obedience and talent. Come, join Hina in the garden. We will discuss your performance.
@@ -27,37 +27,37 @@ Hina: Hina is curious what made you want to join the Marines, `name`. It is clea
 - It's been my dream since I was a child.
     Hina: Fufufufu, a childhood dream of heroic deeds and pursuing villains across the seas? Fufufufu, how charming. Hina is amused.
     - Well, why did you join the Marines?
-        Hina: Why did Hina become a Marine? Nobody has asked Hina that in quite some time. 
+        Hina: Why did Hina become a Marine? Nobody has asked Hina that in quite some time.
         Hina: Fufufu, that is a question for another day perhaps, if you prove yourself worthy of Hina's time and attention; prove that you're more than childish dreams and idealism.
         - How can I do that? => HowCanIProveMyself
         - I would do anything to prove myself to you! => NoSimps
         - Are you making fun of my dreams? => AreYouMakingFun
     - Why do you talk like that?
-        Hina: Excuse me? Talk like what? Has no one taught you how to speak to your superiors? You will be scrubbing the deck for the rest of the week for your impertinence. 
+        Hina: Excuse me? Talk like what? Has no one taught you how to speak to your superiors? You will be scrubbing the deck for the rest of the week for your impertinence.
         Hina: You're dismissed. => DateEndsEarly
     - Are you making fun of my dreams? => AreYouMakingFun
 
 - I want to protect and help innocent people.
     Hina: Fufufufu. Innocence. Such a concept. Hina is amused.
     - Well, why did you join the Marines?
-        Hina: Why did Hina become a Marine? Nobody has asked Hina that in quite some time. 
+        Hina: Why did Hina become a Marine? Nobody has asked Hina that in quite some time.
         Hina: Fufufu, that is a question for another day perhaps, if you prove yourself worthy of Hina's time and attention.
         - How can I do that? => HowCanIProveMyself
         - I would do anything to prove myself to you! => NoSimps
         - What's so amusing about it?
             Hina: Hina has heard stories like yours before, `name`. Young recruits who believe in naive ideas of noble deeds and heroics on the high seas. --- following sentences doesn't make sense: If you became a Marine for a charming life of adventure and noble heroics. The sea and what you will encounter out there is far crueler than that. //  rephase as "If ..., then ..." or something else to juxtapose "...far crueller than that"
             - I'm absolutely prepared for whatever is out there.
-                Hina: Hina has seen this kind of naivety get young recruits killed. Don't think for a moment that because you aced Hina's drill, you're untouchable out there in a real battle. Deflate your ego, `name`, and come seek Hina again when you are ready to submit yourself to her guidance. 
+                Hina: Hina has seen this kind of naivety get young recruits killed. Don't think for a moment that because you aced Hina's drill, you're untouchable out there in a real battle. Deflate your ego, `name`, and come seek Hina again when you are ready to submit yourself to her guidance.
                 Hina: You're dismissed. => DateEndsEarly
             - I know that I have a lot to learn. => Part2
     - Why do you talk like that?
-        Hina: Excuse me? Talk like what? Has no one taught you how to speak to your superiors? You will be scrubbing the deck for the rest of the week for your impertinence. 
+        Hina: Excuse me? Talk like what? Has no one taught you how to speak to your superiors? You will be scrubbing the deck for the rest of the week for your impertinence.
         Hina: You're dismissed. => DateEndsEarly
     - What's so amusing about it?
         Hina: Hina has heard stories like yours before, `name`. Young recruits who believe in naive ideas of noble deeds and heroics on the high seas. --- same issue as before. If you became a Marine for a charming life of adventure and noble heroics. The sea and what you will encounter out there is far crueler than that. // perhaps "the sea will disabuse you of that quickly"?
         - I know that I have a lot to learn => Part2
         - I'm absolutely prepared for whatever is out there
-            Hina: Hina has seen this kind of naivety get young recruits killed. Don't think for a moment that because you aced Hina's drill, you're untouchable out there in a real battle. Deflate your ego, `naame`, and come seek Hina again when you are ready to submit yourself to her guidance. 
+            Hina: Hina has seen this kind of naivety get young recruits killed. Don't think for a moment that because you aced Hina's drill, you're untouchable out there in a real battle. Deflate your ego, `name`, and come seek Hina again when you are ready to submit yourself to her guidance.
             Hina: You're dismissed. => DateEndsEarly
 
 - It seemed like a stable career.
@@ -71,16 +71,16 @@ Hina: Hina is curious what made you want to join the Marines, `name`. It is clea
             - Yes. Without punishment, justice is meaningless.
                 Hina: Fufufu, Hina has friends in Impel Down with similar values. She almost worked there, you know? But Hina's power is meaningless once evil has already been locked up and contained. What Hina excels in is pursuit and capture. It is... one of the many benefits of this job.
                 - That sounds kind of intense.
-                    Hina: If you find the pursuit of justice and its ensuing punishment *intense*, perhaps this is not the career for you, `name`. Hina has high hopes for you, `name`, and Hina does not like to be disappointed. 
+                    Hina: If you find the pursuit of justice and its ensuing punishment *intense*, perhaps this is not the career for you, `name`. Hina has high hopes for you, `name`, and Hina does not like to be disappointed.
                     Hina: You're dismissed, `name`. Thank you for your time. Hina will be watching you. => DateEndsEarly
                 - That sounds great.
-                    Hina: Fufufufu, Hina appreciates enthusiasm in the ranks. It is a perk of the job that many simply do not appreciate and may even avoid. Captains Coby or Tashigi prefer to resolve things peacefully with little conflict. 
+                    Hina: Fufufufu, Hina appreciates enthusiasm in the ranks. It is a perk of the job that many simply do not appreciate and may even avoid. Captains Coby or Tashigi prefer to resolve things peacefully with little conflict.
                     Hina: Tch, such naivety. Hina finds such restraint tiresome. => Part2
         - I want to have a good relationship with my superiors.
-            Hina: You would be wise to be mindful of trying to curry favor with those above you, `name`. While respect for one's superiors is admirable, you will find that Hina is not so easily swayed by simpering compliments and eager smiles. 
+            Hina: You would be wise to be mindful of trying to curry favor with those above you, `name`. While respect for one's superiors is admirable, you will find that Hina is not so easily swayed by simpering compliments and eager smiles.
             Hina: You're dismissed. => DateEndsEarly
     - Why did you join the Marines?
-        Hina: Why did Hina become a Marine? Nobody has asked Hina that in quite some time. 
+        Hina: Why did Hina become a Marine? Nobody has asked Hina that in quite some time.
         Hina: Fufufu, that is a question for another day perhaps, if you prove yourself worthy of Hina's time and attention.
         - How can I do that? => HowCanIProveMyself
         - I would do anything to prove myself to you! => NoSimps
@@ -90,9 +90,9 @@ Hina: Tch, many young recruits come to the Marines brimming with idealistic chil
 => Part2
 
 :: HowCanIProveMyself
-Hina: Listen. 
-Hina: Obey. 
-Hina: Submit. 
+Hina: Listen.
+Hina: Obey.
+Hina: Submit.
 Hina: This advice will serve you well, should you wish to progress in the Marines.
 => Part2
 
@@ -103,7 +103,7 @@ She regards you coolly from behind her cigarette, the smallest of smirks playing
 Hina: Well, if you are here to learn, Hina is curious what you are hoping to gain from your time in the Marines. Daydreaming and fantasizing about adventures of grandeur will only get you so far, `name`. All recruits come to us for one reason or another. Hina is curious about is what it is you are looking for.
 - I'm looking to find a date!
     --- special mention: definitely needs character transition of hina_disgust.png or smth here x3
-    Hina: Hina has never heard something so asinine in her life. If Hina hears you speak such drivel again you will be keelhauled. Of all absurd things to say, the pursuit of justice is not... not a *dating game*. 
+    Hina: Hina has never heard something so asinine in her life. If Hina hears you speak such drivel again you will be keelhauled. Of all absurd things to say, the pursuit of justice is not... not a *dating game*.
     Hina: You're dismissed, `name`. And you will be on galley duty the rest of the week. => DateEndsEarly
 - I value any opportunities that might be available to me.
     Hina: Good. Hina is pleased to see your willingness to acknowledge the need for growth in order to be successful. If you wish to administer justice to those deserving of punishment, you cannot be blinded by silly, naive ideas of heroics. Hina appreciates those who are ready to learn.
@@ -112,7 +112,7 @@ Hina: Well, if you are here to learn, Hina is curious what you are hoping to gai
         - I'll always obey you, Rear Admiral. Let me prove myself to you! => NoSimps
         - I can follow any order you give me. => Part3
         - What kind of Marine is unquestioningly obedient?
-            Hina: You question Hina's definition of justice? Tch, Hina had high hopes for you, `name`. You will be scrubbing the deck for the rest of the week for your impertinence. 
+            Hina: You question Hina's definition of justice? Tch, Hina had high hopes for you, `name`. You will be scrubbing the deck for the rest of the week for your impertinence.
             Hina: You're dismissed. => DateEndsEarly
     - What would you suggest that I learn, Rear Admiral? => Part3
 - I want to punish those who would hurt innocent people.
@@ -138,7 +138,7 @@ Hina: Well, if you are here to learn, Hina is curious what you are hoping to gai
 Hina: Fufufu. Hina appreciates your dedication. You see, `name`, Hina has strong Marines. Hina has fearless Marines. Hina has experienced Marines. What Hina values most is a Marine who knows their place. One who listens and obeys. Hina is pleased you have already demonstrated this value at training today.
 - Yes, it is important to listen and obey. (+)
 --- do increment ("hina.date.points")
-    Hina: Fufufufu, Hina appreciates knowing that she will not have to be looking over her shoulder for you. 
+    Hina: Fufufufu, Hina appreciates knowing that she will not have to be looking over her shoulder for you.
     Hina: Thank you for your time today, `name`. You're dismissed.
     do romance_points(hina, 2)
     => root.main
@@ -148,13 +148,13 @@ Hina: Fufufu. Hina appreciates your dedication. You see, `name`, Hina has strong
     - What is between the two of you? (-)
     --- do decrement ("hina.date.points")
     --- absolutely love how commenting on her and smoker will throw the date
-        Hina: *sigh* Are those asinine rumors still floating about? You have been here less than a day, `name`, and you already believe such idle gossip? 
-        Hina: Unlike you, `name`, Hina does not engage in idle gossip about her colleagues or their relationships. You would do well to bear that in mind. 
+        Hina: *sigh* Are those asinine rumors still floating about? You have been here less than a day, `name`, and you already believe such idle gossip?
+        Hina: Unlike you, `name`, Hina does not engage in idle gossip about her colleagues or their relationships. You would do well to bear that in mind.
         Hina: Thank you for your time. You're dismissed, `name`. => DateEndsEarly
     - Absolutely not, I would never disobey you. (+)
     --- do increment ("hina.date.points")
     --- why have an increment here when the option throws the date?
-        Hina: Fufufufu, Hina appreciates knowing that she will not have to be looking over her shoulder for you. 
+        Hina: Fufufufu, Hina appreciates knowing that she will not have to be looking over her shoulder for you.
         Hina: Thank you for your time, `name`. Hina will be watching your career very closely. You're dismissed. => DateEndsEarly
 
 :: DateEndsEarly
