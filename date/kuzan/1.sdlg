@@ -1,57 +1,62 @@
 :: start
 do hide_characters(hide)
-`kuzan` is napping in the park on the day the PC has off.
+You decide to go for a walk in the park on your day off. It's too lovely out to stay cooped up. To your surprise, though, you not only stumble across an admiral there... but they're also outright napping in the open.
+---Feels like a rather jarring and telly introduction. Alternative suggestion provided.
 do set_background("park", show)
-PC: It's a beautiful day, the sun is bright, there's a nice breeze…“Oh is that Admiral Aokiji?”
+PC: "Is that Admiral Aokiji?”
+---Adjusted to fit alternate intro suggestion
 do show_character(kuzan, center, fade)
 The Admiral lifts his sleeping mask to eye the PC.
 `kuzan`: Arara, it's `name`.
 - Good afternoon sir! (2)
     `kuzan`: What are you doing here?
     - It's my day off! (1)
-        `kuzan`: Good for you, wanna join me? => SitOrNo
-    - Taking a walk but…the grass sure looks comfy. (2)
+        `kuzan`: Good for you. Care to join me? => SitOrNo
+    - Taking a walk, but… the grass sure looks comfy. (2)
         `kuzan`: Sit down, join me. => SitOrNo
     - Stuff… what are YOU doing here? (0)
         `kuzan`: Relaxing, gonna get back to that. See ya around. => END
+---Seems like a rather quick shut down to the date, I'd advise against that - or at least make it a LOT more obvious
 - Hello! Uh, you doing okay down there? (1)
-    `kuzan`: Yup, care to join me?
-    - Yeah sure! (1)
+    `kuzan`: Yup. Care to join me?
+    - Yeah, sure! (1)
         `kuzan`: -raises an eyebrow- Alright. => SitOrNo
-    - Mmmm… no I'm okay thanks. (0)
+    - Mmmm… no, I'm okay, thanks. (0)
         `kuzan`: Alright. -Goes back to sleep- => END
     - Was that...a proposition? (2)
-        `kuzan`: Arara that's a big word. -He pats the grass beside him- => SitOrNo
-- It's 11am and you're napping? (0)
+        `kuzan`: Arara, that's a big word. -He pats the grass beside him- => SitOrNo
+- It's 11 AM and you're napping? (0)
     `kuzan`: Yup, gonna get back to that. See ya around. => END
+---Same critique as above
 
 :: END
 THE DATE ENDS
 => root.main
 
 :: SitOrNo
-- Sit Down
-- Nah, I'm good thanks.
+- Sit down
+- Nah, I'm good, thanks.
     `kuzan`: Suit yourself, I'm going back to sleep. => END
 
-As you are sitting there, a whooshing sound reaches your ears before...
+As you are sitting there, a whooshing sound reaches your ears just before...
 do start_effect(shake)
-WHAM! Something whacks you in the back of the head! Ow! You turn, seeing a group of kids staring before turning tail and running. You look down to see a bright red frisbee.
+WHAM! Something whacks you in the back of the head! Ow! You turn, seeing a group of kids staring at you before they turn tail and run. You look down to see a bright red frisbee.
 
-- Well that hurt. I need a nap to recover. => TakeNap
+- Well, that hurt. I need a nap to recover. => TakeNap
 - Huh, neat, free frisbee. => PlayFrisbee
-- Oh no they forgot their frisbee! => HuntKids
+- Oh no, they forgot their frisbee! => HuntKids
 
 :: TakeNap
 do get("TookNapWithKuzan")
 `kuzan` scoots over to give you space.
 You and `kuzan` settle back down on the grass and nap. The breeze ruffles some leaves and grass. The sun moves across the sky. It's calm and quiet and warm. A perfect activity after a busy week. (4 pts)
+---I've never seen anything give such a huge score change before. Might need to be toned down?
 `kuzan`: ~*yawns*~
-`kuzan`: You know, nobody has ever taken me up on a nap before. Thanks for joining me `name`, you hungry?
+`kuzan`: You know, nobody has ever taken me up on a nap before. Thanks for joining me, `name`. You hungry?
 
 - Dinner and sleeping together? ~My my~ (2)
-    `kuzan`: Arara, bold one huh? Alright, let's see how long that holds up.
-- I um, I could eat Sir! (1)
+    `kuzan`: Arara. Yyou're bold one, huh? Alright, let's see how long that holds up.
+- I, um, I could eat Sir! (1)
     `kuzan`: Let's go then.
 - Mmmm...think I'm gonna keep napping actually. (0)
     `kuzan`: Huh, see ya around then. => END
@@ -59,45 +64,46 @@ You and `kuzan` settle back down on the grass and nap. The breeze ruffles some l
 => GoToLunch
 
 :: PlayFrisbee
-`name`: Hey free Frisbee. Wanna play?
+`name`: Hey, free frisbee. Wanna play?
 `kuzan`: …Uhh…
 - C'mon when was the last time you played frisbee?
-    `kuzan`: …Too long ago, damn now I feel old.
-    - Oof sorry old man. (0)
+    `kuzan`: …Too long ago. Damn, now I feel old.
+    - Oof, sorry old man. (0)
         `kuzan`: Well this old man is going back to sleep. See ya. => END
     - Frisbee will fix that (1)
         `kuzan`: On whose authority?
-        - Mine, now c'mon let me be able to say I beat an Admiral at something (2)
-            `kuzan`: Alright, let's play `name`
-        - PC: …If you don't want to play that badly, I can't force you, but it'll be fun, promise! (1)
+        - Mine, now c'mon! Let me be able to say I beat an Admiral at something. (2)
+            `kuzan`: Alright, let's play, `name`
+        - …If you don't want to play that badly, I can't force you, but it'll be fun, promise! (1)
             `kuzan`: Alright, let's play.
-    - Age is what you make of it? Or something? It's frisbee c'mon. (2)
+    - Age is what you make of it? Or something? It's frisbee, c'mon. (2)
         `kuzan`: Alright alright, let's play.
 - Let's make use of my suffering.
     `kuzan`: You want to suffer more from losing?
     - Oh, confidence. I'll enjoy destroying that. (2)
         `kuzan`: Alright, let's put that to the test then.
-    - Hey hey it'll be fun even if I lose! (1)
+    - Hey hey, it'll be fun even if I lose! (1)
         `kuzan`: Huh, guess that's a good attitude.
     - Maybe you're right, I don't know if I can handle that kind of blow to my self esteem… (0)
-        `kuzan`: Know your limits, now I'm gonna get back to napping. See ya around. => END
+        `kuzan`: Know your limits. I'm gonna get back to napping, now. See ya around. => END
 - The nap will feel way better after losing to me in Frisbee!
-    `kuzan`: Arara confident huh?
+    `kuzan`: Arara, confident, huh?
     - Bring it on! (1)
         `kuzan`: Alright, let's play.
     - Well, I won't know until I try! (2)
         `kuzan`: Alright, let's do this I guess.
     - Why shouldn't I be? Losing is your thing right?
-        `kuzan`: … So that's how it is huh? You know, I got some place to be. Bye. => END
+        `kuzan`: …So that's how it is, huh? You know, I've got some place to be. Bye. => END
 
 The Admiral takes a position a bit of a ways away from you, waiting for you to hurl the frisbee with all your might! He is an Admiral after all! Although… that might be a little mean.
 => FrisbeeThrow
+---Why is it a little mean?
 
 :: FrisbeeThrow
 do increment("frisbees")
 - Throw with every ounce of strength you possess. (2) [if not(visited("frisbee.strong"))]
     do visit("frisbee.strong")
-    You throw that frisbee like your life depends on it. It soars, so fast it's hard to see. A speeding disc of death! Hey, you could turn that into an attack! `kuzan` doesn't catch it. In fact, it goes right through him! OH NO WHAT HAVE YOU DONE?!
+    You throw the frisbee like your life depends on it. It soars, so fast it's hard to see. A speeding disc of death! Hey, you could turn that into an attack! `kuzan` doesn't catch it. In fact, it goes right through him! OH NO, WHAT HAVE YOU DONE?!
     The frisbee freezes in midair. `kuzan` reforms, ice filling in the frisbee gap. Uh oh. You… may have bitten off more than you can chew.
     `kuzan`: So that's how it is `name`...? Catch.
     The frisbee comes flying at you. It gleams in the sun. It's like a tiny flat meteor,and you are the nearest gravitational body.
@@ -105,11 +111,11 @@ do increment("frisbees")
         You take a stance, readying yourself to absorb the full force of the moving object. It's coming, hurdling toward you. Is that boom the sound of it breaking the sound barrier or just your heart beat?! All your senses come alive, you can taste the heat of the air as it grows enormous in front of your face! Your neurons fire, fingers flexing!
         You catch it! Oh. It was actually just a normal throw. That wasn't even hard. The Admiral is laughing at the look on your face.
     - Dodge the frisbee. (0)
-        You barely duck in time, diving into the grass as the frisbee soars past you and all the way to the other side of the park. `kuzan` chuckles at you as you have to go get it.-
+        You barely duck in time, diving into the grass as the frisbee soars past you and all the way to the other side of the park. `kuzan` chuckles at you as you have to go get it.
     - Close your eyes and pray. (0)
         You hear the wind rushing and know the end is nigh. Goodbye sweet world, hello obliv–!
-        A rush of cold races over your face! You open your eyes! `kuzan` is standing in front of you, holding the frisbee in place, an inch from your face. You stare at each other for a long second.-
-    `kuzan`: You wanna try that again `name`?
+        A rush of cold races over your face! You open your eyes. `kuzan` is standing in front of you, holding the frisbee in place, an inch from your face. You stare at each other for a long second.
+    `kuzan`: You wanna try that again, `name`?
     => FrisbeeThrow
 
 - Throw it normally. (1) [if not(visited("frisbee.normal"))]
@@ -118,15 +124,15 @@ do increment("frisbees")
     - PC: Catch it. (0)
         You catch it! Good job! Someone is proud of you, somewhere.
     - PC: Catch it with *style*. (1)
-        You leap into the air, spinning like a dancer, hands outstretched! You look awesome! You are putting those bootcamp skills to use, go you! You grab it grinning then- yeah. You fumbled the landing and drop the frisbee. Don't even look at `kuzan`. The blow to your self esteem may kill you.
-    `kuzan` holds his hands up, waiting for you to toss it back. So what you gonna do champ?
+        You leap into the air, spinning like a dancer, hands outstretched! You look awesome! You are putting those bootcamp skills to use, go you! You grab it grinning, then - oops. You fumbled the landing and drop the frisbee. Don't even look at `kuzan`. The blow to your self esteem may kill you.
+    `kuzan` holds his hands up, waiting for you to toss it back. So what you gonna do, champ?
     => FrisbeeThrow
 
 - Throw it like a baseball. (0) [if not(visited("frisbee.baseball"))]
     do visit("frisbee.baseball")
-    You grab the corner? Of the frisbee, pull your arm back with great might and swing forward! Smoothly, you release the disc and it crashes right into the ground. Yeah not sure what your plan was there. `kuzan` stares at you.
+    You grab the corner(?) of the frisbee, pull your arm back with great might, and swing forward! Smoothly, you release the disc and it crashes right into the ground. Yeah, not sure what your plan was there. `kuzan` stares at you.
     - Stare back. (0)
-        The wind blows, a crow caws. Time elongates. Your eyes strain with the urge to blink. You will not look away! You have to assert your…dominance somehow! It is only after a minute or two has passed that you realize `kuzan` has fallen asleep! Oi! He wakes up when you look away.
+        The wind blows, a crow caws. Time elongates. Your eyes strain with the urge to blink. You will not look away! You have to assert your dominance... somehow! It is only after a minute or two has passed that you realize `kuzan` has fallen asleep! Oi! He wakes up when you look away.
     - Strike a pose. (1)
         It's super effective! At making you look like an idiot. `kuzan` gives you a sort of concerned thumbs up. AWESOME.
     `kuzan`: You gonna throw it for real or…?
@@ -137,26 +143,28 @@ do increment("frisbees")
     You limp wrist it. A gentle flick. It's a leaf upon the wind! It wobbles and sinks toward the earth. `kuzan` looks surprised but moves forward, diving to catch it, rolling and coming back up with it in his hands. Wow, so smooth! He tosses it back towards you.
     - Try to copy his catch.
         You dive for the frisbee! Except the Admiral did not throw it gently. It hits you right in the forehead. You lay on the grass, dazed.
-        `kuzan`: You okay `name`?
+        `kuzan`: You okay, `name`?
         You get up and give him a thumbs up, trying to hide your regrets behind a bright smile.
     - Catch it regularly.
-        You catch it. Aw yeah frisbee!
+        You catch it. Aw yeah, frisbee!
+---Were there supposed to be points here? All the other ones have them.
     `kuzan`: Alright, make it a challenge this time.
     => FrisbeeThrow
 
 - Throw it really high! (THIS OPTION ENDS THE FRISBEE STUFF) [if is_greater_than("frisbees", 2)]
-    You eject the frisbee skyward! It soars up, up and up! And-! HEY BIRD THAT'S NOT YOURS! A crow flies away with your ill gotten frisbee. The two of you watch it disappear into the distance.
+    You eject the frisbee skyward! It soars up, up and up! And-! HEY, BIRD, THAT'S NOT YOURS! A crow flies away with your ill gotten frisbee. The two of you watch it disappear into the distance.
     `kuzan`: Well, that was something. You hungry?
     => GoToLunch
 
 :: HuntKids
 `name`: Better go find those kids to give this back…
-`kuzan`: Good Luck with that `name`.
+`kuzan`: Good Luck with that, `name`.
 - Want to help me? (0)
-    `kuzan`: This grass is pretty comfy…oh c'mon don't give me that look. You're still doing it. Alright fine, fine.
+    `kuzan`: This grass is pretty comfy… oh, c'mon, don't give me that look. You're still doing it. Alright fine, fine.
     You didn't give him a look…
 - As a marine, you're supposed to help people. Sir. (1)
     `kuzan`: Sir? On my day off? Guess you're never really off duty… let's go find those kids.
+---I see what you're going for here - option 1 kinda forces him, and option 2 convinces him. If I was playing blind, though, I'd expect the opposite reaction, with the first letting him choose and the second bringing work into it (which his lax side may clash with). Might just be a personal issue, but worth thinking about
 - Alright, bye Admiral Aokiji! => END
 
 You walk around, checking the garden, the park again, the nearest popular street, even the docks! `kuzan` tags along with you, yawning, hands in his pockets. But you don't have much luck.
@@ -164,7 +172,7 @@ You walk around, checking the garden, the park again, the nearest popular street
 Your stomach rumbles, loud enough to be heard by anyone nearby.
 `kuzan`: Oh well, their loss. Wanna get something to eat?
 - Oooh, you buying? With your superior Admiral paycheck and all? (1)
-    `kuzan`: I'm more than just money…but yeah sure.
+    `kuzan`: I'm more than just money… but yeah sure.
 - Yeah, I could eat. (1)
     `kuzan`: I know a noodle place, c'mon.
 - No, I'm tired and want to go home. => END
@@ -173,20 +181,21 @@ Your stomach rumbles, loud enough to be heard by anyone nearby.
 
 :: GoToNoodle
 
-`kuzan`: You did good or whatever today by the way.
+`kuzan`: You did good or whatever today, by the way.
 - Did good on what? Failing to return a frisbee? (1)
-    `kuzan`: You tried to do a good thing, that counts on the…big scale or whatever it's called.
+    `kuzan`: You tried to do a good thing, that counts on the… grand scale, or whatever it's called.
     - Uh… I guess? (1)
     - You mean like the cosmic scale? Like the concept? (2)
-        `kuzan`: Yeah that. The little things add up, or I hope they do. I guess we don't really know huh `name` Ah, the noodles are here.
+        `kuzan`: Yeah, that. The little things add up, or I hope they do. I guess we don't really know, huh, `name` Ah, the noodles are here.
     - Still failed though. (0)
-        `kuzan`: Yeah well that happens.
+        `kuzan`: Yeah, well, that happens.
 - Thanks. (0)
     `kuzan`: Yep.
-- I try to do the right thing and fail…(2)
-    `kuzan`: Yeah… it's rough. Sometimes you give it your all and still don't make it. He looks far away and you get the feeling he isn't really talking about the frisbee.
+- I try to do the right thing and fail… (2)
+    `kuzan`: Yeah… it's rough. Sometimes you give it your all and still don't make it. 
+He looks far away and you get the feeling he isn't really talking about the frisbee.
     - I think you did good today too, Sir. (2)
-        `kuzan`: Thanks `name`.
+        `kuzan`: Thanks, `name`.
     - Um, it's… it's just a frisbee. (0)
         `kuzan`: …Hm.
 `kuzan`: Well, let's eat!
@@ -196,34 +205,37 @@ Your big bowl of noodles arrives, steaming hot and full to the brim. All that wa
 
 :: GoToLunch
 `kuzan`: This is more my style.
-- Um…Drinking in the afternoon? (1)
+- Um… drinking in the afternoon? (1)
     `kuzan`: A drink after a hard day is always good.
     if has_item("TookNapWithKuzan")
-        `name`: But we only napped???
+        `name`: But we only just napped???
         `kuzan`: Yep, hard day.
 - Yes, this is how to spend a day! (2)
     `kuzan`: I'll toast to that.
     YOU TOAST
 - Figures. (0)
-    `kuzan`: Oi. Don't be rude to your superior officer. I was gonna pay but you can pay for your own drinks.
+    `kuzan`: Oi. Don't be rude to your superior officer. I was gonna pay, but you can pay for your own drinks.
 
-`kuzan`: So what do you think of Marineford `name`?
+`kuzan`: So what do you think of Marineford, `name`?
 - I like it, I work hard and play hard. (0)
     `kuzan`: Good for you.
 - There's a lot to learn. (2)
     `kuzan`: Yeah, that's the world though. Keep it up, you're doing fine.
 - Looking forward to retirement. (1)
-    `kuzan`: Then we can nap and drink all we want huh?
+    `kuzan`: Then we can nap and drink all we want, huh?
 
 You drink and eat some bar food, smooth jazz plays in the background. The bar slowly fills up with people, soldiers and workers. Cigarette smoke fills the air overhead, and the clinking of glasses lulls you into a contemplative state. No one sits near the two of you, leaving you in a peaceful bubble.
 
-`kuzan`: Listen `name`, don't let go of your principles. This place can…change you or something. But if you stick to your guns you'll uh…you'll… you know what I mean.
+`kuzan`: Listen, `name`, don't let go of your principles. This place can… change you or something. But if you stick to your guns you'll, uh… you'll… you know what I mean.
 `kuzan` taps his gloved fingers against the side of his glass, the amber liquid rippling just a little.
 - Um, I'll do my best Sir? (0)
-    `kuzan`: Good, keep it up.-Throws some money on the counter and heads out. What a strange guy.- => END
+    `kuzan`: Good, keep it up. -Throws some money on the counter and heads out. What a strange guy.- => END
+---Seems like a bit sudden of an exit
 - You're “harshing the vibes”, Sir. (2)
-    `kuzan`: -He laughs lowly and finishes his drink.- Alright `name` thanks for the day, I'll see you around. => END
-- Yeah okay, no more drinks for you. Let's get you home. (1)
+    `kuzan`: -He laughs lowly and finishes his drink.- Alright, `name`, thanks for the day. I'll see you around. => END
+- Yeah, okay, no more drinks for you. Let's get you home. (1)
     `kuzan`: Home, been a long time since I've been there… -He looks into the bottom of his glass, eyes far away.- You're right `name`, I'm heading out. See ya later. He tosses some money on the counter and heads out. What a strange guy.- => END
 
 => END
+
+---Nothing here seems to give score decreases?
