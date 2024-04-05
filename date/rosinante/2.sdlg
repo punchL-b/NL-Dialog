@@ -1,160 +1,160 @@
 :: start
 do set_background("mess hall", fade)
-It’s late at night. You are planning on sleeping soon, but the idea of a midnight snack has been keeping you up for a while now. The mess hall is empty at this hour and you walk up to the vending machine to buy a pack of rice crackers.
+It's late at night. You are planning on sleeping soon, but the idea of a midnight snack has been keeping you up for a while now. The mess hall is empty at this hour and you walk up to the vending machine to buy a pack of rice crackers.
 You pick up the bag full of snacks just as you hear a powerful crashing sound right outside the door. You tense up. Did enemies infiltrate?
-You don’t have any weapons on you but you still decide to investigate. You peek outside the door only to see…
+You don't have any weapons on you but you still decide to investigate. You peek outside the door only to see…
 *Rosinante?*
 do show_character(rosinante, center, show)
-He’s lying on the floor, fallen over, with many cardboard boxes spread out around him. You run to help.
+He's lying on the floor, fallen over, with many cardboard boxes spread out around him. You run to help.
 `name`: Sir! Are you alright? What happened?
 Rosinante: No need to worry, `name`.
-Rosinante: I tripped on something, it’s fine.
-You look around the hallway, but there seems to be nothing to trip over. You don’t dwell on it and instead help Rosinante stand up.
+Rosinante: I tripped on something, it's fine.
+You look around the hallway, but there seems to be nothing to trip over. You don't dwell on it and instead help Rosinante stand up.
 `name`: Are you hurt?
-Rosinante: No, no. It’s all good.
-`name`: Come on, let’s sit down.
-You help him pick up the boxes and you carry them to a table in the mess hall. Despite saying he wasn’t hurt, you are still worried. It looked like a nasty fall.
+Rosinante: No, no. It's all good.
+`name`: Come on, let's sit down.
+You help him pick up the boxes and you carry them to a table in the mess hall. Despite saying he wasn't hurt, you are still worried. It looked like a nasty fall.
 `name`: What were you doing?
 `name`: Carrying all these boxes in the dark is just a recipe for disaster.
-Rosinante: You’re right, but I wanted to finish moving into my new office.
+Rosinante: You're right, but I wanted to finish moving into my new office.
 `name`: New office?
 Rosinante: Yes, Sengoku-san offered me one, now that I got promoted.
-Rosinante: But I feel like it’s a lot more trouble than it’s worth.
-`name`: Don’t say that! You worked hard, it’s well deserved.
+Rosinante: But I feel like it's a lot more trouble than it's worth.
+`name`: Don't say that! You worked hard, it's well deserved.
 Rosinante: Heh, thank you.
-Rosinante: Still it’s a lot of work.
+Rosinante: Still it's a lot of work.
 `name`: I can help you if you want!
-You look towards the boxes. They seem to be filled with Rosinanate’s personal belongings but one of them catches your attention.
-`name`: What’s that?
-The moment you finish speaking, you snap your mouth shut. You didn’t mean to inquire about his personal business. He’s of a way higher rank now and asking this type of questions is just not done.
-He doesn’t seem to mind and instead picks up the object you referred to.
-Rosinante: My makeup palette! Haven’t used it in ages though.
+You look towards the boxes. They seem to be filled with Rosinanate's personal belongings but one of them catches your attention.
+`name`: What's that?
+The moment you finish speaking, you snap your mouth shut. You didn't mean to inquire about his personal business. He's of a way higher rank now and asking this type of questions is just not done.
+He doesn't seem to mind and instead picks up the object you referred to.
+Rosinante: My makeup palette! Haven't used it in ages though.
 `name`: I had no idea makeup is one of your hobbies.
 Rosinante: I picked it up over the years.
-Rosinante: It’s quite fun and it’s often a good distraction.
+Rosinante: It's quite fun and it's often a good distraction.
 - How did you learn? => Part_1A
 - Could you teach me? => Part_1B
-- It doesn’t suit you at all. => Part_1C
+- It doesn't suit you at all. => Part_1C
 
 :: Part_1A
-Rosinante: Back on my last undercover mission I didn’t have many things to do before I became an executive.
+Rosinante: Back on my last undercover mission I didn't have many things to do before I became an executive.
 Rosinante: I started doing it to kill some time in the mornings.
-- Your mission in the Donquixote Family, right? You’re legendary for that. => Part_1_5A
+- Your mission in the Donquixote Family, right? You're legendary for that. => Part_1_5A
 - Are you any good at it? => Part_1_5B
 
 :: Part_1_5A
 Rosinante: Please… Everyone had their parts, I just did mine.
-`name`: Don’t be so humble! You worked hard.
+`name`: Don't be so humble! You worked hard.
 `name`: Do you think just anyone would be capable of pulling that off?
-Rosinante: I might have had an advantage, being Doflamingo’s brother and all, but other than the infiltration, any good agent could pull it off I’m sure.
+Rosinante: I might have had an advantage, being Doflamingo's brother and all, but other than the infiltration, any good agent could pull it off I'm sure.
 `name`: …
-- Wasn’t it difficult? Fighting against your brother, I mean. (+1 Point) => Part_3A
-- You are shocked hearing the information. You have never seen the former Warlord in person but old wanted posters are still around and easily accessible. The resemblance is there, but you don’t want to put the vice-admiral in a bad position by asking difficult questions and instead keep silent. => Part_3B
-- You’re related to that monster? (-1 Point) => Part_3C
+- Wasn't it difficult? Fighting against your brother, I mean. (+1 Point) => Part_3A
+- You are shocked hearing the information. You have never seen the former Warlord in person but old wanted posters are still around and easily accessible. The resemblance is there, but you don't want to put the vice-admiral in a bad position by asking difficult questions and instead keep silent. => Part_3B
+- You're related to that monster? (-1 Point) => Part_3C
 
 :: Part_3A
-For a few moments, it’s silent, Rosinante smiling wistfully while avoiding your gaze.
-Rosinante: You’re the first person to ask me that…
+For a few moments, it's silent, Rosinante smiling wistfully while avoiding your gaze.
+Rosinante: You're the first person to ask me that…
 `name`: …
-Rosinante: It wasn’t… It wasn’t easy.
+Rosinante: It wasn't… It wasn't easy.
 Rosinante: I never hated him. He did despicable things but I could never truly hate him.
 Rosinante: He was still my brother after all… In the end, the only thing I could do for him was stop him from committing any more wickedness.
 `name`: Did you two see each other, since it all happened?
-Rosinante: I couldn’t bring myself to do it. I know he hates me, he thinks I’ve betrayed him.
-Rosinante: He’s not wrong but… it’s for the best this way.
-`name`: Maybe one day, he’ll see it that way too.
-Rosinante: Heh, unlikely but let’s stop all this melancholic talk.
-`name`: Of course. If you’d like to take your mind off things we should decide on an activity! The weekend is tomorrow, right? We don’t need to sleep any time soon.
+Rosinante: I couldn't bring myself to do it. I know he hates me, he thinks I've betrayed him.
+Rosinante: He's not wrong but… it's for the best this way.
+`name`: Maybe one day, he'll see it that way too.
+Rosinante: Heh, unlikely but let's stop all this melancholic talk.
+`name`: Of course. If you'd like to take your mind off things we should decide on an activity! The weekend is tomorrow, right? We don't need to sleep any time soon.
 He seems to think it over for a moment.
 Rosinante: Do you have anything in mind?
 You look around for a few moments, your eyes finally landing on the make-up palette that previously started the conversation.
-`name`: You could teach me how to do make-up. If you’d like => Part_1B
+`name`: You could teach me how to do make-up. If you'd like => Part_1B
 
 :: Part_3B
 Rosinante: Is it such a hard thing to believe?
 Rosinante: That he is my brother?
-- You didn’t want to say it, but…(-1 Point) => Part_3B2
+- You didn't want to say it, but…(-1 Point) => Part_3B2
 - Try to explain. (+1 Point) => Part_3B1
 
 :: Part_3B2
 `name`: The two of you are so different… I could have never guessed.
-Rosinante: Maybe you’re right.
-`name`: Being related to someone like him… It is hard to believe, when you’re such a kind and careful person…
-Rosinante: Everyone has done things they’re not proud of. Even me.
+Rosinante: Maybe you're right.
+`name`: Being related to someone like him… It is hard to believe, when you're such a kind and careful person…
+Rosinante: Everyone has done things they're not proud of. Even me.
 `name`: You must have had a reason!
-Rosinante: That’s true… Everyone has their reasons. Even my brother, and he was able to make his own choices.
-Rosinante: Each choice has a different consequence. We’re all aware of them.
-Rosinante: It’s not as simple as black and white justice.
+Rosinante: That's true… Everyone has their reasons. Even my brother, and he was able to make his own choices.
+Rosinante: Each choice has a different consequence. We're all aware of them.
+Rosinante: It's not as simple as black and white justice.
 Rosinante: But you seem like the kind of person who knows that.
-- It’s not something I considered. => Part_4A
-- Of course, but it’s still surprising… => Part_4B
+- It's not something I considered. => Part_4A
+- Of course, but it's still surprising… => Part_4B
 - What about the other members of the family? What were they like? => Part_4C
 
 :: Part_3B1
 `name`: No! Of course not!
-`name`: Wait! Not that I mean to say it’s believable because you’re like him…
-`name`: Because you’re not at all like him!
-`name`: You’re completely different!
-You pause… Your words don’t make sense at all and you don’t want Rosinante to get the wrong idea.
-`name`: What I meant to say… You can’t be responsible for your brother’s actions, so being compared to him is not fair. You’re an amazing person, but not even the most skilled marines are exempt from the family drama. Look at Vice-Admiral Garp for example!
-Rosinante laughs at that. You’re still on edge and you’re not sure if you managed to say everything you wanted to.
+`name`: Wait! Not that I mean to say it's believable because you're like him…
+`name`: Because you're not at all like him!
+`name`: You're completely different!
+You pause… Your words don't make sense at all and you don't want Rosinante to get the wrong idea.
+`name`: What I meant to say… You can't be responsible for your brother's actions, so being compared to him is not fair. You're an amazing person, but not even the most skilled marines are exempt from the family drama. Look at Vice-Admiral Garp for example!
+Rosinante laughs at that. You're still on edge and you're not sure if you managed to say everything you wanted to.
 Rosinante: You think too highly of me.
-`name`: That’s not true. You’re hardworking, kind and honest, you should give yourself more credit.
+`name`: That's not true. You're hardworking, kind and honest, you should give yourself more credit.
 `name`: These days those are rare attributes to have.
-Rosinante: You’re right, but I’ve done my fair share of bad things over the course of my life.
-Rosinante: I’d like to say I did them to keep my cover, but that’s not entirely true.
-Rosinante: Despite all that, I had the chance to make my own choices, so I can’t begrudge my brother for his own.
-Rosinante: It’s not as simple as black and white justice.
+Rosinante: You're right, but I've done my fair share of bad things over the course of my life.
+Rosinante: I'd like to say I did them to keep my cover, but that's not entirely true.
+Rosinante: Despite all that, I had the chance to make my own choices, so I can't begrudge my brother for his own.
+Rosinante: It's not as simple as black and white justice.
 Rosinante: But you seem like the kind of person who knows that.
-- It’s not something I considered. => Part_4A
-- Of course, but it’s still surprising… => Part_4B
+- It's not something I considered. => Part_4A
+- Of course, but it's still surprising… => Part_4B
 - What about the others? What were they like? => Part_4C
 
 :: Part_3C
-Rosinante raises an eyebrow. He doesn’t seem to like your wording, but you stand by it. There is nothing wrong with what you said.
-`name`: What? He’s an awful person, you can’t deny that.
-Rosinante: You’re right, maybe.
+Rosinante raises an eyebrow. He doesn't seem to like your wording, but you stand by it. There is nothing wrong with what you said.
+`name`: What? He's an awful person, you can't deny that.
+Rosinante: You're right, maybe.
 Rosinante: He tried to kill me more than once, I should hate him but…
-Rosinante: I just don’t.
-`name`: You’re defending him?
+Rosinante: I just don't.
+`name`: You're defending him?
 Rosinante: No. He made his choices and he got what he deserved for them.
-Rosinante: But it’s still difficult to hear strangers speak about this.
-Stranger… Right, because that’s all you are to him.
+Rosinante: But it's still difficult to hear strangers speak about this.
+Stranger… Right, because that's all you are to him.
 - Apologize, maybe you can fix this. => Part_3_1C
 - Speak up more, maybe he will understand your point of view. => Part_3_2C
 
 :: Part_3_1C
-`name`: You’re right. Forgive me, Vice-Admiral. I didn’t mean to put you in a bad position.
-`name`: I didn’t realize…
-`name`: I mean, if my brother got in trouble with the law I wouldn’t want to hear others speak about it either…
-Rosinante: It’s alright. Thank you for understanding.
+`name`: You're right. Forgive me, Vice-Admiral. I didn't mean to put you in a bad position.
+`name`: I didn't realize…
+`name`: I mean, if my brother got in trouble with the law I wouldn't want to hear others speak about it either…
+Rosinante: It's alright. Thank you for understanding.
 …
 A silence befalls the mess hall and it seems like neither of you know what to say. Maybe you should try to make conversation again.
 `name`: So, Vice-Admiral. Your makeup hobby, are you any good at it? => Part_1_5B
 
 :: Part_3_2C
-`name`: Still, I believe that we shouldn’t be afraid to speak out against evil.
+`name`: Still, I believe that we shouldn't be afraid to speak out against evil.
 `name`: Even if they are our loved ones.
 Rosinante: I never said that we should stay quiet in the face of wickedness.
-Rosinante: I’m a marine just like you, right?
-Rosinante: However, I believe we shouldn’t speak in situations that don’t concern us.
-Rosinante: Don’t you think so, recruit?
-You’ve really done it now. He seems angry.
+Rosinante: I'm a marine just like you, right?
+Rosinante: However, I believe we shouldn't speak in situations that don't concern us.
+Rosinante: Don't you think so, recruit?
+You've really done it now. He seems angry.
 Rosinante: Thank you for carrying the boxes here. I need to set up my office now.
-Rosinante: If you’ll excuse me. => DATE_ENDS_BADLY
+Rosinante: If you'll excuse me. => DATE_ENDS_BADLY
 
 :: Part_1_5B
 Rosinante: I would like to think so.
-`name`: Maybe you could teach me if you’ve got time! => Part_1B
+`name`: Maybe you could teach me if you've got time! => Part_1B
 
 :: Part_1B
 Rosinante: Teach you?
-`name`: On my island, make-up wasn’t that popular when I was growing up so I never had the chance.
+`name`: On my island, make-up wasn't that popular when I was growing up so I never had the chance.
 `name`: I always thought it would be interesting though.
-Rosinante: I’m not that good at traditional make-up. I just learnt how to do face painting.
-- Oh! That’s even better, it sounds fun (+1 Point) => Part_2
-- Hmm, not quite what I was expecting but it’s still a new skill to learn. => Part_2
-- That’s lame… What’s even the point? (-1 Point) => Part_2_1
+Rosinante: I'm not that good at traditional make-up. I just learnt how to do face painting.
+- Oh! That's even better, it sounds fun (+1 Point) => Part_2
+- Hmm, not quite what I was expecting but it's still a new skill to learn. => Part_2
+- That's lame… What's even the point? (-1 Point) => Part_2_1
 
 :: Part_2_1
 Rosinante: I guess there is no point to it…
@@ -164,18 +164,18 @@ Rosinante: Just a little bit of fun, I suppose.
 - Fun is enough of a reason! => Part_2_1B
 
 :: Part_2_1A
-Rosinante: Maybe you’re right. It’s similar to the way this conversation doesn’t have a point either.
+Rosinante: Maybe you're right. It's similar to the way this conversation doesn't have a point either.
 He gets up and begins picking up the boxes.
-Rosinante: I’ll see you on our next assignment, recruit.
+Rosinante: I'll see you on our next assignment, recruit.
 Rosinante: Good night.
-You don’t manage to get a word in and you’re left alone with your rice-crackers. Maybe you were too harsh, but there is nothing you can do about it now. You go back to your room.
+You don't manage to get a word in and you're left alone with your rice-crackers. Maybe you were too harsh, but there is nothing you can do about it now. You go back to your room.
 => DATE_ENDS_BADLY
 
 :: Part_2_1B
 There is a tentative smile tugging at his lips.
 Rosinante: You think so?
-`name`: Of course! I’m sorry, I didn’t realize it earlier, I said something rude.
-Rosinante: It’s alright. I appreciate the apology.
+`name`: Of course! I'm sorry, I didn't realize it earlier, I said something rude.
+Rosinante: It's alright. I appreciate the apology.
 `name`: Maybe I could understand it better if I knew some things about it.
 `name`: Would you be willing to teach me? => Part_2
 
@@ -185,30 +185,30 @@ Rosinante: You think so?
 Rosinante: If only you could see me back then… you would take back your words in an instant.
 `name`: Back then?
 Rosinante: Ah… well, I mean back on my mission.
-- You mean the Donquixote mission, right? You’re legendary for that. => Part_1_5A
-- So that’s how you learned… Are you any good at it? => Part_1_5B
+- You mean the Donquixote mission, right? You're legendary for that. => Part_1_5A
+- So that's how you learned… Are you any good at it? => Part_1_5B
 
 :: Part_2
 Rosinante: Actually, why not?
 Rosinante: It could be a good way to fill the time.
-- Of course, let’s do it! => Part_2A
+- Of course, let's do it! => Part_2A
 - I just remembered I have something else to do. I have to go. => DATE_IS_OVER
 
 :: Part_2A
 Rosinante opens his kit and you notice a mess of colors, reds and purples and blues, some more bright, others more muted and all of them well-used. All of them well-loved.
-`name`: I didn’t expect this, I’ll be honest.
+`name`: I didn't expect this, I'll be honest.
 Rosinante: The family used to be quite eccentric.
-Rosinante: It’s funny, I used to fit right in.
-- Really? I can’t imagine that. => Part_2B
+Rosinante: It's funny, I used to fit right in.
+- Really? I can't imagine that. => Part_2B
 - I can totally see that. => Part_2D
 - Did you enjoy your time there?=> Part_2C
 
 :: Part_2B
 Rosinante: Why not?
-His tone isn’t offended, just slightly amused.
+His tone isn't offended, just slightly amused.
 `name`: Well…
-`name`: As a marine you are so orderly and Inspector General Sengoku always talks so highly of you! He’s always giving you as an example all of the time. From what I’ve seen the DonQuixote Family isn’t like that at all.
-Rosinante: You’re right, but there are certain things expected of me, especially now that I’m a vice-admiral.
+`name`: As a marine you are so orderly and Inspector General Sengoku always talks so highly of you! He's always giving you as an example all of the time. From what I've seen the DonQuixote Family isn't like that at all.
+Rosinante: You're right, but there are certain things expected of me, especially now that I'm a vice-admiral.
 Rosinante: While I was undercover there were hardly any restrictions.
 `name`: Must be nice…
 `name`: Did you enjoy your time there? At least a little bit?
@@ -217,16 +217,16 @@ Rosinante: While I was undercover there were hardly any restrictions.
 :: Part_2D
 Rosinante: Oh? How come?
 He seems genuinely curious to hear your answer
-`name`: Maybe at first I couldn’t tell, but the more I get to know you… You seem like the type of person that stands out in a crowd.
+`name`: Maybe at first I couldn't tell, but the more I get to know you… You seem like the type of person that stands out in a crowd.
 Rosinante: You think so?
-`name`: You’re clever and well-trained, you use a devil fruit that others would deem useless in a very efficient way, and you have distinct hobbies!
+`name`: You're clever and well-trained, you use a devil fruit that others would deem useless in a very efficient way, and you have distinct hobbies!
 You gesture to the boxes in front of you.
-`name`: It’s impressive really!
+`name`: It's impressive really!
 He is definitely embarrassed after hearing your praise.
-Rosinante: That’s too much…
-`name`: It’s true though!
+Rosinante: That's too much…
+`name`: It's true though!
 Rosinante: I just do what I can. I appreciate your kind words, though…
-Rosinante: You’re very persistent and ambitious.
+Rosinante: You're very persistent and ambitious.
 Rosinante: Those are good qualities for a marine to have.
 `name`: Ah, thank you. But I still have a lot to learn!
 Rosinante: We all do.
@@ -236,32 +236,32 @@ Rosinante: We all do.
 :: Part_2C
 Rosinante breathes deeply, a furrow appearing between his eyebrows. His next words are hesitant.
 Rosinante: Not all the time I spent there was bad.
-Rosinante: Living with someone for so long… It’s impossible to not get attached.
+Rosinante: Living with someone for so long… It's impossible to not get attached.
 Rosinante: Even among pirates there are good people.
 Rosinante: The same way there are bad people among the marines.
 Rosinante: But you seem like the kind of person who knows that.
-- It’s not something I considered. => Part_4A
-- Of course, but it’s still surprising… => Part_4B
+- It's not something I considered. => Part_4A
+- Of course, but it's still surprising… => Part_4B
 - How were they like? => Part_4C
 
 :: Part_4A
 He seems surprised by your admission. He still smiles in understanding
 Rosinante: Maybe the world would be a different place if pirates were always bad, and marines always good, don't you think?
 Rosinante: Everyone has their reasons.
-- I still don’t understand. => Part_5A
+- I still don't understand. => Part_5A
 - It does make sense… => Part_5B
 
 :: Part_5A
 `name`: How can that be? Pirates kill people, they pillage and steal. How can there be good people among them?
 Rosinante: The same way marines are supposed to protect people and yet so many of them are corrupt.
-`name`: But we’re weeding them out! They’re not allowed to keep their positions.
-Rosinante: Sometimes it takes months or even years before they’re found out. Until then they do what they want with no repercussions.
+`name`: But we're weeding them out! They're not allowed to keep their positions.
+Rosinante: Sometimes it takes months or even years before they're found out. Until then they do what they want with no repercussions.
 Rosinante: The system allows it.
 `name`: The system…
-`name`: The system that we’re a part of…
-Rosinante: As much as I’d like to say we can cut out the rotten from within, many people have tried before… and failed
-Rosinante: The system is also why good people become pirates. I’ve seen it happen all too many times…
-- You think his words over. It’s like he opened your eyes. => Part_5_1B
+`name`: The system that we're a part of…
+Rosinante: As much as I'd like to say we can cut out the rotten from within, many people have tried before… and failed
+Rosinante: The system is also why good people become pirates. I've seen it happen all too many times…
+- You think his words over. It's like he opened your eyes. => Part_5_1B
 - You think his words over. You disagree completely. => Part_5_2B
 
 :: Part_5_1B
@@ -269,22 +269,22 @@ Rosinante: The system is also why good people become pirates. I’ve seen it hap
 => Part_5B
 
 :: Part_5_2B
-`name`: That makes no sense… The system exists to punish the wicked. Sure some may still infiltrate the marine ranks, but they’re eventually kicked out! Maybe we don’t notice them soon enough sometimes, but when we do, it’s over for them. We don’t tolerate their existence.
+`name`: That makes no sense… The system exists to punish the wicked. Sure some may still infiltrate the marine ranks, but they're eventually kicked out! Maybe we don't notice them soon enough sometimes, but when we do, it's over for them. We don't tolerate their existence.
 He smiles the same way one would in front of a naive child.
 Rosinante: If only it was that simple…
-`name`: It is! Bad people are punished, it doesn’t matter their reason, a bad marine will be kicked out and there is no such thing as a good pirate.
+`name`: It is! Bad people are punished, it doesn't matter their reason, a bad marine will be kicked out and there is no such thing as a good pirate.
 Rosinante: I suppose nothing I say will change your mind.
-You shake your head. You’re not that easily swayed.
+You shake your head. You're not that easily swayed.
 `name`: No, sir.
-Rosinante: Very well. I’ll see you on our next assignment, recruit.
+Rosinante: Very well. I'll see you on our next assignment, recruit.
 He picks up the boxes.
 Rosinante: Have a good evening.
-He leaves. You are left alone with nothing but your rice-crackers. After protecting your ideals, you think it’s worth it. You go back to your room.
+He leaves. You are left alone with nothing but your rice-crackers. After protecting your ideals, you think it's worth it. You go back to your room.
 => DATE_ENDS_BADLY
 
 :: Part_5B
-Rosinante: But that doesn’t mean we don’t have our roles to play!
-Rosinante: If we do good things that are within our power then we are on our way to make the world a better place. So don’t worry too much about it.
+Rosinante: But that doesn't mean we don't have our roles to play!
+Rosinante: If we do good things that are within our power then we are on our way to make the world a better place. So don't worry too much about it.
 He gives an encouraging smile.
 `name`: I understand, sir. Thank you.
 There is still something that has been weighing on your mind…
@@ -293,63 +293,63 @@ There is still something that has been weighing on your mind…
 
 :: Part_4B
 Rosinante: Is it?
-`name`: I guess it’s not something I think about often. It’s not what they teach new marines either.
-Rosinante: You’re right. They don’t teach it. That’s why it’s important to think about it more, what do you say?
-`name`: I suppose you are right. I’m glad I got to have this sort of conversation with you.
-Rosinante: I’m happy we could see eye-to-eye. Maybe we’ve got more in common than we thought.
+`name`: I guess it's not something I think about often. It's not what they teach new marines either.
+Rosinante: You're right. They don't teach it. That's why it's important to think about it more, what do you say?
+`name`: I suppose you are right. I'm glad I got to have this sort of conversation with you.
+Rosinante: I'm happy we could see eye-to-eye. Maybe we've got more in common than we thought.
 -You glance at the make-up palette. => Part_6D
 - What about the Family? Could you see eye-to-eye with them? What were they like? => Part_4C
 
 :: Part_6D
-`name`: We could create more if you’d like. Maybe you could teach me how to do make-up.
+`name`: We could create more if you'd like. Maybe you could teach me how to do make-up.
 He is surprised by your request.
 Rosinante: Are you sure?
-`name`: Of course! I’d love to share one of your hobbies. Plus, I always wanted to learn.
+`name`: Of course! I'd love to share one of your hobbies. Plus, I always wanted to learn.
 => Part_6B
 
 :: Part_4C
-He doesn’t respond immediately. It’s like he’s trying to find the best answer.
+He doesn't respond immediately. It's like he's trying to find the best answer.
 Rosinante: Just like any other pirate group, I guess.
 Rosinante: Just a bunch of different, eccentric people coming together and doing whatever they please, whenever they please.
 That makes you laugh a little
 `name`: Sounds messy…
 Rosinante: It was.
-Rosinante: Some of them were wicked, awful people. I’m not proud of the things I did to earn their trust.
-`name`: I can’t imagine what you went through, but good things probably came out of it.
+Rosinante: Some of them were wicked, awful people. I'm not proud of the things I did to earn their trust.
+`name`: I can't imagine what you went through, but good things probably came out of it.
 There is a distant look in his eyes, almost as if he is pondering over your words. Soon there is a smile tugging at the corner of his lips.
-Rosinante: That’s true! Like Law and this silly hobby of mine.
+Rosinante: That's true! Like Law and this silly hobby of mine.
 - Law?
-    Rosinante: AH! I probably shouldn’t have said that.
+    Rosinante: AH! I probably shouldn't have said that.
     Rosinante: Whatever, it should be fine.
     `name`: Is this about the pirate Trafalgar Law?
     Rosinante: Yeah!
     He leans in to whisper the next words, even though no one else was around to hear them.
-    Rosinante: I’ll tell you but don’t tell anyone.
+    Rosinante: I'll tell you but don't tell anyone.
     `name`: Alright…
-    Rosinante: Well, he’s sort of like… my son! I suppose.
-    He laughs, he truly does look like a proud father at that moment. Although you’re surprised at the revelation, you don’t have the heart to interrupt him.
+    Rosinante: Well, he's sort of like… my son! I suppose.
+    He laughs, he truly does look like a proud father at that moment. Although you're surprised at the revelation, you don't have the heart to interrupt him.
     Rosinante: We took care of each other many years ago! He saved my life.
     `name`: How did he do that?
-    Rosinante: Well, you know that Ope-Ope fruit he’s got? That’s driving all the other marines crazy.
-    `name`: Of course. I heard it’s very troublesome and difficult to fight against…
+    Rosinante: Well, you know that Ope-Ope fruit he's got? That's driving all the other marines crazy.
+    `name`: Of course. I heard it's very troublesome and difficult to fight against…
     Rosinante: I gave it to him! But my brother was really mad about that, he had other plans for it. In the end we came up with a plan, where I pretended to be tricked by him and Doflamingo forgave me. It took a while but I managed to earn his trust again.
     `name`: And you continued to feed all his information to the marines which led to his downfall.
     `name`: To think that Trafalgar Law would aid us like this…
-    Rosinante: He’s not as bad as they say, don’t worry,
-    You’re not so sure about that… All the stories about him are very morbid to say the least. But you couldn’t possibly ruin Rosinante’s joy right now.
-    `name`: Thank you for trusting me with this, sir… I won’t tell a soul.
+    Rosinante: He's not as bad as they say, don't worry,
+    You're not so sure about that… All the stories about him are very morbid to say the least. But you couldn't possibly ruin Rosinante's joy right now.
+    `name`: Thank you for trusting me with this, sir… I won't tell a soul.
     You know it could be bad for him if word of this got out.
-    Rosinante: I know that! You’re alright.
-    The conversation comes to a stand still again. Good thing, you know exactly what’s next.
+    Rosinante: I know that! You're alright.
+    The conversation comes to a stand still again. Good thing, you know exactly what's next.
     `name`: Would you be willing to show me how to do make-up?
-    Rosinante: It’s not that big of a deal, but if you’re sure…
-    `name`: I’m sure!
+    Rosinante: It's not that big of a deal, but if you're sure…
+    `name`: I'm sure!
     => Part_6B
 - Speaking of which, show me how to do it! => Part_6C
 
 :: Part_6C
 Rosinante: Do you really want to learn?
-`name`: Definitely! I’m always open to new things.
+`name`: Definitely! I'm always open to new things.
 
 
 :: Part_6B
@@ -357,27 +357,27 @@ Rosinante: Alright, if you really want to.
 `name`: Of course, it seems like a great thing to learn.
 He seems amused by your praise, but you truly mean every word.
 Soon enough, he begins giving short explanations about how he combines colors and the general designs he usually does.
-Rosinante: Why don’t you try it out?
-`name`: Are you sure? I don’t wanna mess it up.
+Rosinante: Why don't you try it out?
+`name`: Are you sure? I don't wanna mess it up.
 Rosinante: Even if you mess it up, we can just wash it, don't worry too much!
 `name`: Alright!
-Feeling more encouraged, you pick up the brush he hands you, your fingers touching slightly. You’re way too aware of contact but you try your best to avert your attention from it. You start drawing on his face.
+Feeling more encouraged, you pick up the brush he hands you, your fingers touching slightly. You're way too aware of contact but you try your best to avert your attention from it. You start drawing on his face.
 - You did great! It looks amazing. => Part_7A
-- It’s not the best you could have done, but it’s not half-bad… => Part_7B
-- You knew you were a beginner but you didn’t think it would end up quite so bad. => Part_7C
+- It's not the best you could have done, but it's not half-bad… => Part_7B
+- You knew you were a beginner but you didn't think it would end up quite so bad. => Part_7C
 
 :: Part_7A
-After you’re done he looks in a tiny mirror. The lines are neat and the colors match well to create a beautiful design.
+After you're done he looks in a tiny mirror. The lines are neat and the colors match well to create a beautiful design.
 Rosinante: Wow! This is incredible, `name`.
 `name`: Thank you…
-The praise is unexpected, you’re not sure what to say.
+The praise is unexpected, you're not sure what to say.
 Rosinante: I mean it! My first attempt was awful, but this??
 Rosinante: This is great! You have a natural talent for this.
 `name`: I just did whatever came to my mind…
 Rosinante: Give yourself more credit, `name`.
 `name`: I appreciate your kind words, sir.
 Rosinante: Hey, just call me Rosinante, okay?
-Rosinante: We’re way past that sir, recruit stuff, don’t you agree?
+Rosinante: We're way past that sir, recruit stuff, don't you agree?
 That makes you happy.
 `name`: Of course, Rosinante.
 The name is unfamiliar on your tongue but you could easily get used to it.
@@ -385,15 +385,15 @@ And so, with a new found friendship, the two of you continue to chat long into t
 => DATE_IS_OVER
 
 :: Part_7B
-Once that’s done and over with, he picks up a small mirror to check your work. It’s not bad at all! There are some small mistakes here and there but unless you look closely they’re almost unnoticeable. He nods in approval.
-Rosinante: `name`, I must say I’m impressed. For your first attempt it looks great!
+Once that's done and over with, he picks up a small mirror to check your work. It's not bad at all! There are some small mistakes here and there but unless you look closely they're almost unnoticeable. He nods in approval.
+Rosinante: `name`, I must say I'm impressed. For your first attempt it looks great!
 `name`: Thank you…
 Rosinante: With a little bit of practice you could improve a lot!
 `name`: You think so?
-Rosinante: Of course.  It’s clear you have talent. I can give you some tips if you ever decide to try again.
-`name`: I’d love that, sir.
+Rosinante: Of course.  It's clear you have talent. I can give you some tips if you ever decide to try again.
+`name`: I'd love that, sir.
 Rosinante: Hey, just call me Rosinante, okay?
-Rosinante: We’re way past that sir, recruit stuff, don’t you agree?
+Rosinante: We're way past that sir, recruit stuff, don't you agree?
 That makes you happy.
 `name`: Of course, Rosinante.
 The name is unfamiliar on your tongue but you could easily get used to it.
@@ -404,18 +404,18 @@ And so, with a new found friendship, the two of you continue to chat long into t
 He looks in a small mirror, judging the messy colours and twisted lines carefully. He checks every angle for a while before…
 He promptly bursts into a raucous laughter.
 Rosinante: `name`! AHAHAHAHAHA
-He clutches his sides and laughs. You’re not sure how to feel.
+He clutches his sides and laughs. You're not sure how to feel.
 `name`: Is this sort of reaction necessary?
-Rosinante: I’m sorry- hahahaha
+Rosinante: I'm sorry- hahahaha
 He keeps laughing and laughing. You cover your face in shame. That seems to make him calm down a little.
-Rosinante: I’m sorry, `name`. I didn’t mean to laugh… It looks great!
-`name`: Please don’t lie to me, sir, I have more pride than that.
-Rosinante: Sorry, sorry. But I mean it! It’s alright! You could practice a bit more, but other than that…
+Rosinante: I'm sorry, `name`. I didn't mean to laugh… It looks great!
+`name`: Please don't lie to me, sir, I have more pride than that.
+Rosinante: Sorry, sorry. But I mean it! It's alright! You could practice a bit more, but other than that…
 `name`: I know the truth…
-Rosinante: Hey… It’s fine! For a first attempt, it’s not that bad. I’ll let you try again and I’ll give you some tips this time, alright?
-`name`: I’m not sure I wanna try again, but if I change my mind I’ll ask for your help. Thank you, sir.
+Rosinante: Hey… It's fine! For a first attempt, it's not that bad. I'll let you try again and I'll give you some tips this time, alright?
+`name`: I'm not sure I wanna try again, but if I change my mind I'll ask for your help. Thank you, sir.
 Rosinante: Hey, just call me Rosinante, okay?
-Rosinante: We’re way past that sir, recruit stuff, don’t you agree?
+Rosinante: We're way past that sir, recruit stuff, don't you agree?
 That makes you happy.
 `name`: Of course, Rosinante.
 The name is unfamiliar on your tongue but you could easily get used to it.

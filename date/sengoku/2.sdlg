@@ -10,7 +10,7 @@ Sengoku: Oh, hello `name`.
         Sengoku: …
         Sengoku: I can order you to go into the office right now.
     - Ah, yeah, sorry.
-        Sengoku: It’s alright. I suppose I cannot blame you for noticing my dedication to my duties. He looks contemplative and stares up at the sign above the bookstore and frowns.
+        Sengoku: It's alright. I suppose I cannot blame you for noticing my dedication to my duties. He looks contemplative and stares up at the sign above the bookstore and frowns.
     => sengoku_is_concern
 - Hello Sengoku-san! (++)
     Sengoku: Out shopping, `name`?
@@ -18,14 +18,14 @@ Sengoku: Oh, hello `name`.
     Sengoku: Yes, though I am not seeing the sights so much as trying to accomplish something…He looks contemplative and stares up at the sign above the bookstore and frowns.
     => sengoku_is_concern
 - Uh… hi, Sir. (+)
-    Sengoku: No need to be so formal, we’re off duty, `name`.
+    Sengoku: No need to be so formal, we're off duty, `name`.
     `name`: Oh right. Sorry Sir. Er, I mean Sengoku-san.
-    Sengoku: -smile- Nice day to be out isn’t it?
-    - Ask him what he’s up to
+    Sengoku: -smile- Nice day to be out isn't it?
+    - Ask him what he's up to
         `name`: Yep, are you shopping Sengoku-san?
         Sengoku: …Yes, though it is proving difficult. He looks contemplative and stares up at the sign above the bookstore and frowns.
         => sengoku_is_concern
-    - Go about your day. You’ll see him in the office later. => DATE_ENDS_EARLY
+    - Go about your day. You'll see him in the office later. => DATE_ENDS_EARLY
 
 :: sengoku_is_concern
 - Ask if something is wrong
@@ -34,29 +34,29 @@ Sengoku: Oh, hello `name`.
         `name`: But? --- test
         Sengoku: I am having a bit of trouble with something. I need a gift for Rosinante, his birthday is coming up. -sigh- But I have no clue what to get him.
         - Offer to help him (++) => GIFT_HUNT
-        - Leave him to it. He’s sure to find something, he knows his son best after all!
+        - Leave him to it. He's sure to find something, he knows his son best after all!
             => DATE_ENDS_EARLY
-- Go about your day. You’ll see him in the office later.
-    `name`: Well… it’s my day off and I have plans to attend. I’ll see you later!
+- Go about your day. You'll see him in the office later.
+    `name`: Well… it's my day off and I have plans to attend. I'll see you later!
     => DATE_ENDS_EARLY
 
 :: GIFT_HUNT
 --- Fireproof jacket (++), lighter (++), Sora book
 `name`: Would you like some help?
 Sengoku: -surprise- Actually, yes. I would appreciate that.
-`name`: Okay let’s find that gift! Did you have any ideas in mind?
+`name`: Okay let's find that gift! Did you have any ideas in mind?
 Sengoku: No, that is the trouble. I was hoping one of the shops here would inspire me.
 => GIFT_HUNT_OPTIONS
 
 :: GIFT_HUNT_OPTIONS
 if and(and(has_item("jacket"),has_item("lighter")),has_item("book"))
     => GIFT_CHOICE
-`name`: Alright, let’s see what our options are…
+`name`: Alright, let's see what our options are…
 - Bookstore [if not(has_item("book"))]
-    `name`: Let’s check the bookstore. The two of you enter the shop. It smells like ink and paper and a little bit of coffee. The store is a little chaotic, aisles of book shelves somewhat like a forest.
+    `name`: Let's check the bookstore. The two of you enter the shop. It smells like ink and paper and a little bit of coffee. The store is a little chaotic, aisles of book shelves somewhat like a forest.
     => BOOKSTORE_CHOICES
 - Clothing Store [if not(has_item("jacket"))]
-    `name`: Let’s check out that clothing shop! The shop smells like leather and textiles. Mannequins show off the latest outfits and suits. An attendant stares at the two of you, rubbing their hands together.
+    `name`: Let's check out that clothing shop! The shop smells like leather and textiles. Mannequins show off the latest outfits and suits. An attendant stares at the two of you, rubbing their hands together.
     => CLOTHING_OPTIONS
 - General Store [if not(has_item("lighter"))]
     `name`: When in doubt, check out a place with a lot of different things! The general store apparently named Wapol Emporium, is cluttered with tchokies, shoes, kitchen appliances, fabric, and many other things. And people. A LOT of people.
@@ -70,7 +70,7 @@ Sengoku: Where would you like to start?
     Sengoku: Hmm… he used to enjoy those Sora Warrior of the Sea stories when he was younger.
     - Grab a collection of Sora Warrior of the Sea
         `name`: Those are always good, and look! They have a brand new collection which has all the volumes from the last five years!
-        Sengoku: Hmm… Perhaps. He is no longer a child though, and may appreciate something else. Let’s bring it with us for now.
+        Sengoku: Hmm… Perhaps. He is no longer a child though, and may appreciate something else. Let's bring it with us for now.
         do get_local("book")
         => BOOKSTORE_END
     - Try the right side of the store [if not(visited("bookstore right"))] => BOOKSTORE_RIGHT
@@ -80,9 +80,9 @@ Sengoku: Where would you like to start?
 
 :: BOOKSTORE_END
 `name`: Alright, so do you think this book is the right gift?
-Sengoku: Hm. If it’s not too much trouble, I would like to keep looking. I will leave this at the front desk however.
+Sengoku: Hm. If it's not too much trouble, I would like to keep looking. I will leave this at the front desk however.
 PC:
-This is the right gift, I’m sure. (-)
+This is the right gift, I'm sure. (-)
 Sengoku: Hm…perhaps you are right. I will get this for Rosinante. Thank you for your input, `name`.
 He gives you a wave and heads off, leaving you to the rest of your day.
 `name`: Okay, where to next?
@@ -96,7 +96,7 @@ Sengoku: He did mention that he was looking for a new hobby.
 => BOOKSTORE_RIGHT_CHOICES
 
 :: BOOKSTORE_RIGHT_CHOICES
-`name`: Hm, okay well they’ve got uh…
+`name`: Hm, okay well they've got uh…
 - Make-up for Morons [if not(visited("makeup for morons"))]
     do visit("makeup for morons")
     Sengoku: -grimace-
@@ -104,7 +104,7 @@ Sengoku: He did mention that he was looking for a new hobby.
     => BOOKSTORE_RIGHT_CHOICES
 - Learn How to Juggle Your Life Away [if not(visited("juggle away"))]
     do visit("juggle away")
-    `name`: Huh, there’s weirdly solid financial advice in here. Next to a chapter about juggling chainsaws.
+    `name`: Huh, there's weirdly solid financial advice in here. Next to a chapter about juggling chainsaws.
     Sengoku: I…would prefer to keep him away from chainsaws.
     Pc: Good point.
     => BOOKSTORE_RIGHT_CHOICES
@@ -114,9 +114,9 @@ Sengoku: He did mention that he was looking for a new hobby.
     `name`: Uh, are you alright?
     Sengoku: …
     Sengoku: …
-    Sengoku: I apologize, I was… imagining a world without him. Terrible. Let’s choose something else.
+    Sengoku: I apologize, I was… imagining a world without him. Terrible. Let's choose something else.
     => BOOKSTORE_RIGHT_CHOICES
-- Nevermind let’s try somewhere else
+- Nevermind let's try somewhere else
     => BOOKSTORE_CHOICES
 
 :: CLOTHING_OPTIONS
@@ -124,11 +124,11 @@ Sengoku: Thoughts?
 - The shirts and jackets [if not(has_item("jacket"))]
     Jackets of all shapes and colors hang from hangers. Shirts sit nicely folded on shelves. It smells like opportunities and detergent.
     `name`: Okay, see anything?
-    Sengoku: Rosinante goes through clothing faster than anyone I have ever known, save Garp. Though Garp’s mishaps involve less fire.
-    `name`: Alright let’s see…
+    Sengoku: Rosinante goes through clothing faster than anyone I have ever known, save Garp. Though Garp's mishaps involve less fire.
+    `name`: Alright let's see…
     - Grab a jacket whose label says FIRE PROOF in bright red letters
         `name`: Huh, speaking of fire, this here is a fire proof jacket! You tug a black jacket off a hanger, holding it up.
-        Sengoku: Hm, that might actually last. He does seem to like black. Let’s hold on to that.
+        Sengoku: Hm, that might actually last. He does seem to like black. Let's hold on to that.
         do get_local("jacket")
         => GIFT_HUNT_OPTIONS
     - Check the other side of the store
@@ -146,40 +146,40 @@ Sengoku: Thoughts?
     `name`: We are looking for a gift for a uh, beloved son.
     Attendant: Excellent, I have just the thing. He disappears for a few moments. Sengoku looks a little…uncomfortable.
     Attendant: This is sure to bring joy to any beloved child! It is all the rage these days. In their hands is… a pink feather boa.
-    Sengoku: … No. Never. We’ll keep looking by ourselves. Thank you. He walks away.
+    Sengoku: … No. Never. We'll keep looking by ourselves. Thank you. He walks away.
     `name`: That was quick.
     Sengoku: If I never see another pink boa, it will be too soon.
     => CLOTHING_OPTIONS
 - I think we're done here [if has_item("jacket")]
     `name`: Okay, do you think this jacket is the right gift?
-    Sengoku: Perhaps. If it’s not too much trouble, I would like to keep looking. I will leave this at the front desk however.
+    Sengoku: Perhaps. If it's not too much trouble, I would like to keep looking. I will leave this at the front desk however.
     PC:
-    This is the right gift, I’m sure. (-)
+    This is the right gift, I'm sure. (-)
     Sengoku: Hm…perhaps you are right. I will get this for Rosinante. Thank you for your input, `name`.
     He gives you a wave and heads off, leaving you to the rest of your day.
     Okay, where to next?
     => GIFT_HUNT_OPTIONS
 
 :: HAT_CHOICES
-`name`: Alright, hats. They’ve got a bunch of those!
+`name`: Alright, hats. They've got a bunch of those!
 - Look at a Fish Fear My Fashion Sense hat [if not(visited("fish fashion"))]
     do visit("fish fashion")
     Sengoku: Ha! This is near spot on!
-    `name`: You think he’d like it?
+    `name`: You think he'd like it?
     Sengoku: God no.
     => HAT_CHOICES
 - Look at a fluffy black and white polka dot hat [if not(visited("polka dot"))]
     do visit("polka dot")
     Sengoku: -glares-
     `name`: Uh, this hat do something to you?
-    Sengoku: …No, just reminds me of someone. He pats the hat. It’s far too small for Rosinante’s head anyway.
+    Sengoku: …No, just reminds me of someone. He pats the hat. It's far too small for Rosinante's head anyway.
     => HAT_CHOICES
 - Look at a supposedly FLEET ADMIRAL replica hat [if not(visited("admiral hat"))]
     do visit("admiral hat")
     Sengoku: The wings are in the wrong position.
     `name`: Uh?
-    Sengoku: I have a far better one he can have. With the correct wings, and it’s no “replica”.
-    `name`: …Wait, then why don’t you just give him that one?
+    Sengoku: I have a far better one he can have. With the correct wings, and it's no “replica”.
+    `name`: …Wait, then why don't you just give him that one?
     Sengoku: …One day I hope to.
     => HAT_CHOICES
 - Nevermind...
@@ -191,10 +191,10 @@ Sengoku: This is a lot to tackle. Ideas?
     Blankets, paper goods, and oddly enough, lighters grace the back shelves. Seems like a fire hazard but okay.
     `name`: Anything sparking the imagination back here?
     Sengoku: You know, I gave him a lighter when he graduated from the academy, but unfortunately, he lost it on his last assignment. Perhaps I could replace it.
-    `name`: Let’s look!
+    `name`: Let's look!
     - A simple lighter with a Navy Logo
         `name`: This one is a great brand. Free refills for life and you can get it engraved!
-        Sengoku: Hm, he smokes nearly as much as Vice Admiral Smoker, so that’s actually a very practical gift. Let’s hold on to that for now.
+        Sengoku: Hm, he smokes nearly as much as Vice Admiral Smoker, so that's actually a very practical gift. Let's hold on to that for now.
         do get_local("lighter")
     - Go to another section of the store => GEN_STORE_OPTIONS
 - Kitchen section
@@ -202,18 +202,18 @@ Sengoku: This is a lot to tackle. Ideas?
     `name`: Everyone needs kitchen things!
     Sengoku: I suppose that is true.
     => KITCHEN_SECTION
-- This is a lot. Let’s go somewhere else first.
+- This is a lot. Let's go somewhere else first.
     => GIFT_HUNT_OPTIONS
 
 :: KITCHEN_SECTION
 - A collection of mugs patterned with flamingos [if not(visited("flamingos"))]
     do visit("flamingos")
-    Sengoku: He’ll break all of these in less than a week.
-    `name`: …Yeah that’s true.
+    Sengoku: He'll break all of these in less than a week.
+    `name`: …Yeah that's true.
     => KITCHEN_SECTION
 - A tea kettle in the shape of a submarine [if not(visited("sub kettle"))]
     do visit("sub kettle")
-    Sengoku: He’ll burn himself every time he’ll use it.
+    Sengoku: He'll burn himself every time he'll use it.
     `name`: Yeah, fun design though. LOOP to 3ii4
     => KITCHEN_SECTION
 - A salad spinner [if not(visited("salad spinner"))]
@@ -226,16 +226,16 @@ Sengoku: This is a lot to tackle. Ideas?
 
 :: GEN_STORE_END
 `name`: So, do you think this lighter is the right gift?
-Sengoku: A solid contender. If it’s not too much trouble, I would like to keep looking. I will leave this at the front desk however.
+Sengoku: A solid contender. If it's not too much trouble, I would like to keep looking. I will leave this at the front desk however.
 PC:
-This is the right gift, I’m sure. (-)
+This is the right gift, I'm sure. (-)
 Sengoku: Hm…perhaps you are right. I will get this for Rosinante. Thank you for your input, `name`.
 He gives you a wave and heads off, leaving you to the rest of your day.
 Okay, where to next?
 => GIFT_HUNT_OPTIONS
 
 :: GIFT_CHOICE
-`name`: Well, we’ve checked out a few places now and there are a few really good options. What do you think?
+`name`: Well, we've checked out a few places now and there are a few really good options. What do you think?
 Sengoku: Which option says… I care about you, uh, the most?
 - The jacket (+)
     Sengoku: That is true, I do want him to be safe.
@@ -248,9 +248,9 @@ Sengoku: Which gift expresses my desire for him to be happy and enjoy life?
 - The jacket
     Sengoku: A jacket can be… joyous?
 - The book (+)
-    Sengoku: This does evoke happy times, and well, he’d probably enjoy it.
+    Sengoku: This does evoke happy times, and well, he'd probably enjoy it.
 - The lighter
-    Sengoku: A vice isn’t necessarily happiness…
+    Sengoku: A vice isn't necessarily happiness…
 
 Sengoku: Which one best says that I am thinking of him always?
 - The jacket
@@ -258,44 +258,44 @@ Sengoku: Which one best says that I am thinking of him always?
 - The book
     Sengoku: He might think I still think of him as a child…
 - The lighter (+)
-    Sengoku: I suppose that he’ll think of me as well whenever he uses the lighter.
+    Sengoku: I suppose that he'll think of me as well whenever he uses the lighter.
 
 Sengoku: This is a tough decision.
 - He will like whichever you choose, but the book is the sweetest. (+)
-    Sengoku: You’re right, `name`. Thank you for your help. I hope I did not take up too much of your time.
+    Sengoku: You're right, `name`. Thank you for your help. I hope I did not take up too much of your time.
     - I had fun! (++)
-        Sengoku: Y-you did? -smile- I’m glad. Perhaps I will call on you again the next time I need help.
+        Sengoku: Y-you did? -smile- I'm glad. Perhaps I will call on you again the next time I need help.
         `name`: Anytime!
-        Sengoku smiles and scratches the back of his head. Is he perhaps…being bashful? That’s so sweet.
+        Sengoku smiles and scratches the back of his head. Is he perhaps…being bashful? That's so sweet.
         Sengoku: Well, I must be on my way to buy that gift. Have a good afternoon! He gives you a small wave and leaves you about your day.
     - Shopping is never a waste of time.
         Sengoku: I may disagree with you, but in this case, you have a point. -smile- I had a good time, thank you for accompanying me, `name`. I will see you later. He gives you a small wave and leaves you about your day.
     - Helping my boss is always the right decision. (-)
         Sengoku: Ah, I apologize for taking up your free time. I will get out of your hair. See you at the office. He looks a little sad as he leaves you to go about your day.
-- Just choose the one your heart says is right, but he’ll love a new lighter. (+)
-    Sengoku: You’re right, `name`. Thank you for your help. I hope I did not take up too much of your time.
+- Just choose the one your heart says is right, but he'll love a new lighter. (+)
+    Sengoku: You're right, `name`. Thank you for your help. I hope I did not take up too much of your time.
     - I had fun! (++)
-        Sengoku: Y-you did? -smile- I’m glad. Perhaps I will call on you again the next time I need help.
+        Sengoku: Y-you did? -smile- I'm glad. Perhaps I will call on you again the next time I need help.
         `name`: Anytime!
-        Sengoku smiles and scratches the back of his head. Is he perhaps…being bashful? That’s so sweet.
+        Sengoku smiles and scratches the back of his head. Is he perhaps…being bashful? That's so sweet.
         Sengoku: Well, I must be on my way to buy that gift. Have a good afternoon! He gives you a small wave and leaves you about your day.
     - Shopping is never a waste of time.
         Sengoku: I may disagree with you, but in this case, you have a point. -smile- I had a good time, thank you for accompanying me, `name`. I will see you later. He gives you a small wave and leaves you about your day.
     - Helping my boss is always the right decision. (-)
         Sengoku: Ah, I apologize for taking up your free time. I will get out of your hair. See you at the office. He looks a little sad as he leaves you to go about your day.
-- Choose the practical one, he’ll appreciate that you care so much about his comfort and safety. (++)
-    Sengoku: You’re right, `name`. Thank you for your help. As a parent, it is always my duty to care about the well being of my child. I hope I did not take up too much of your time.
+- Choose the practical one, he'll appreciate that you care so much about his comfort and safety. (++)
+    Sengoku: You're right, `name`. Thank you for your help. As a parent, it is always my duty to care about the well being of my child. I hope I did not take up too much of your time.
     - I had fun! (++)
-        Sengoku: Y-you did? -smile- I’m glad. Perhaps I will call on you again the next time I need help.
+        Sengoku: Y-you did? -smile- I'm glad. Perhaps I will call on you again the next time I need help.
         `name`: Anytime!
-        Sengoku smiles and scratches the back of his head. Is he perhaps…being bashful? That’s so sweet.
+        Sengoku smiles and scratches the back of his head. Is he perhaps…being bashful? That's so sweet.
         Sengoku: Well, I must be on my way to buy that gift. Have a good afternoon! He gives you a small wave and leaves you about your day.
     - Shopping is never a waste of time.
         Sengoku: I may disagree with you, but in this case, you have a point. -smile- I had a good time, thank you for accompanying me, `name`. I will see you later. He gives you a small wave and leaves you about your day.
         Helping my boss is always the right decision. (-)
         Sengoku: Ah, I apologize for taking up your free hours. I will get out of your hair. See you at the office. He looks a little sad as he leaves you to go about your day.
-    - Call on me any time for help. I think it’s sweet that you care so much! SPECIAL OPTION if all gift decisions are right
-        Sengoku: -blush- Well, uh… thank you. Perhaps I will call on you again. I don’t…recall the last time I had such a good time shopping. He looks bashful! How sweet!
+    - Call on me any time for help. I think it's sweet that you care so much! SPECIAL OPTION if all gift decisions are right
+        Sengoku: -blush- Well, uh… thank you. Perhaps I will call on you again. I don't…recall the last time I had such a good time shopping. He looks bashful! How sweet!
         Sengoku: Anyway, I shall be going. I must purchase that gift. I look forward to seeing you later. Have a good afternoon, `name`! He gives you a small wave and leaves you about your day.
 
 :: DATE_ENDS_EARLY
