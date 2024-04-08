@@ -1,22 +1,25 @@
 :: start
+--- hmmm ... torn betweem the system in smoker's date and this system of points!! both seem really good for different reasons...
+--- unsure about what the square brackets mean, so i didn't touch them. they make editing real easy to keep track of though!
 do set_background("mess-hall", show)
 It's late in the afternoon, and even if dinner is already being served at the Mess Hall, you decide to stop by the Office and file the last of the paperwork.
+--- whether locations are capitalized will need to be standardized across the game, so i didn't down-case any of them in this date. will need to be fixed later on.
 do set_background("office", show)
 There's so much paperwork, it's a wonder Marines get anything else done.
 You open the door, only to find Captain Tashigi bent over a desk on the far end of the room.
 do show_character(tashigi, center, show)
 She is surrounded by mountains and mountains of paper, a deeply concentrated look on her face. Yet, the moment you step into the room, she looks up and smiles as she nods your way.
 
-Tashigi: Oh, hello there.
+Tashigi: Oh, `name`, hello there.
 Tashigi: How is it going? Are you done for the day?
-- Yes, all done! I was about to go grab a bite after filling these papers.
+- Yes, all done! I was about to go grab a bite after filing these papers.
     do increment("ta1.points")
     do increment("ta1.points")
 - I'm good, Captain. How about you?
     do increment("ta1.points")
 - Yeah, finally done.
-Captain Tashigi opens her mouth, but before she can say a word, there is a low, menacing growl that gives you goose bumps.
-You look around trying to ascertain the source of such sound. Then, it hits you: it was Captain Tashigi's stomach. She blushes violently as she tries to hide behind a pile of papers.
+Captain Tashigi opens her mouth, but before she can say a word, there is a low, menacing growl that gives you goosebumps.
+You look around trying to ascertain the source of such a sound. Then, it hits you: it was Captain Tashigi's stomach! She blushes violently as she tries to hide behind a pile of papers.
 - It's getting late. Why don't you take a little break?
     do increment("ta1.points")
     do increment("ta1.points")
@@ -24,7 +27,7 @@ You look around trying to ascertain the source of such sound. Then, it hits you:
 - Paperwork can wait for a while, go get something to eat.
     do increment("ta1.points")
     => TSD1P1_1
-- (Say nothing)
+- [Say nothing]
     => TSD1P1_2
 
 :: TSD1P1_1
@@ -42,7 +45,8 @@ Tashigi: I have no time to get down to the Mess Hall, I'm already behind as is.
     => TSD1P1_3
 - Aw, that sucks!
     Tashigi: Actually, I could use the help, if you're free.
-    It has been a long day. New recruits don't exactly have it easy, and you are so tired.
+    It has been a long day. New recruits don't exactly have it easy, and you are very tired.
+    --- this option doesn't lead anywhere
 - Sure thing, I'll stay and help.
     do increment("ta1.points")
     => TSD1P2
@@ -52,7 +56,7 @@ Tashigi: I have no time to get down to the Mess Hall, I'm already behind as is.
     => TSD1E
 
 :: TSD1P1_2
-There's an awkward silence, you don't really know what to do. She is obviously hungry, but there isn't really much you can do about that.
+There's an awkward silence. You aren't sure what to do. She is obviously hungry, but there isn't really much you can do about that.
 Tashigi: [Pause]
 Tashigi: You should head to the mess hall. It's dinner time already.
 - I'm not all that hungry. Would you like some help?
@@ -62,8 +66,8 @@ Tashigi: You should head to the mess hall. It's dinner time already.
     => TSD1E
 
 :: TSD1P1_3
-Captain Tashigi seems surprised. Perhaps it's not that often that new recruits volunteer to work even more.
-Tashigi: Oh! You don't have to do that. You should go to the Mess Hall, or they'll run out of dessert.
+Captain Tashigi seems surprised. Perhaps it's not often that new recruits volunteer to work even more than they already do?
+Tashigi: Oh! You don't have to do that. You should go to the Mess Hall, before they run out of dessert.
 - No problem, we'll finish faster together, and then we'll both get dessert.
     Tashigi: Okay, then. I appreciate the help.
     She waves for you to join her.
@@ -71,41 +75,41 @@ Tashigi: Oh! You don't have to do that. You should go to the Mess Hall, or they'
 - Can't have my superior officer working harder than me!
     You work in a professional manner the rest of the evening.
     Even if you want to get to know more of Captain Tashigi, there's just not a single opportunity to get personal, or at least none that you can see.
-    You finish all the paperwork fairly quick, and each go on your separate ways.
+    Between the two of you, the paperwork is finished fairly quickly, and you each go on your separate ways.
     => TSD1E
 - If you say so. Good luck.
     Captain Tashigi probably doesn't like you, anyway.
-    You go down to the Mess Hall for dinner. Perhaps you can try again some other time.
+    You go down to the Mess Hall for dinner. Maybe you can try again some other time.
     => TSD1E
 
 :: TSD1SB
 do set_background("office", show)
-When you get back, Captain Tashigi has already cleared up enough space on the desk.
-As you eat dinner, the Captain clearly regains some of her energy. She talks with you more openly, and even makes a joke or two. The jokes aren't very good, but you can appreciate the spirit behind them.
+When you get back, Captain Tashigi has cleared up some space on the desk.
+As you eat dinner, the Captain clearly regains some of her energy. She talks with you more openly, and even cracks a joke or two. The jokes aren't very good, but you appreciate the spirit behind them.
 Tashigi: This just what I needed, thank you. You're my hero!
 Tashigi: Be careful not to get sauce on the papers, or we'll have to start over.
 - Not to worry, I brought napkins too.
     Tashigi: Good thinking!
     do increment("ta1.points")
-- Oh. It may be a little too late for that.
-    Captain Tashigi takes the piece of paper from your hands, and her fingers brush yours for an instant.
-    Tashigi: It's just a copy of a memo, so all good.
+- Er, it may be a little too late for that.
+    Captain Tashigi takes the stained piece of paper from your hands, and her fingers brush yours for an instant.
+    Tashigi: It's just a copy of a memo, so all's good.
     Captain Tashigi is great company. As you eat dinner, you get a little closer together, and you could swear she is leaning forward in her seat, even if just slightly.
     She seems more interested in you than before.
-    PC:  Oh, before I forget. I also brought you this.
+`name`:  Oh, before I forget! I also brought you this. --- i think the original indentation of LN100 and LN104 was done wrong, so i shifted them. am still unfamiliar with the system, so please double check to make sure the options [hot coffee] and [hot tea] comes after this.
 - Hot coffee.
     Tashigi: Hmm. This smells delicious.
     She takes a sip of the steaming cup, and her cheeks flush a pretty pink.
     do increment("ta1.points")
 - Hot tea.
     Tashigi takes the cup, a shy smile on her mouth as she thanks you.
-Once dinner ends, you put away the plates and get back to work.
+Once dinner ends, you help put away the plates and get back to work.
 => TSD1P2
 
 :: TSD1P2
-You sit right in front of Captain Tashigi, and grab a big bunch of papers from the pile closest to you. You work in silence for a while, but you can feel her gaze on you from time to time.
+You sit right in front of Captain Tashigi and start working from the pile closest to you. You work in silence for a while, and every so often, you can feel her gaze on you.
 Tashigi: I'm curious, why did you become a Marine?
-Tashigi: [Pause]
+Tashigi: [Pause] --- will this be printed?
 Tashigi: Everyone here has varying backgrounds and dreams, yet we all chose to join the Marines. Opinions clash all the time, and if you climb through the ranks you'll probably be asked to make some tough decisions.
 Tashigi: So, what is *your* motivation for being here?
 - I want the opportunity to help protect the innocent. Perhaps I won't always see eye to eye with fellow Marines, but I'll do my best to act as my heart tells me to.
@@ -113,8 +117,8 @@ Tashigi: So, what is *your* motivation for being here?
     do increment("ta1.points")
     do increment("ta1.points")
 - Training as a Marine will grant me power and influence. That way, I could make sure that the world turns into a better place for everyone.
-    Tashigi: Seeking power is all good, especially since it's for the reasons you mention.
-    Tashigi: However, be sure not to get corrupted—falling into temptation is easier than you think.
+    Tashigi: Seeking power is all good, especially since it's for the reasons you say.
+    Tashigi: However, be sure not to get corrupted— falling to temptation is easier than you think.
     do increment("ta1.points")
 - Respect and esteem go hand in hand with being a Marine, plus it pays better than most jobs and I get to travel.
     Tashigi lifts her eyebrows, but doesn't say anything. She simply nods politely.
@@ -123,24 +127,24 @@ Tashigi: So, what is *your* motivation for being here?
     You go back to working in silence after that.
     => TSD1E
 Tashigi: I myself am from the East Blue, you know, and I've seen first thing how catastrophic pirate activity can be. Ever since I got promoted to the G-5 I haven't been able to go home and visit, but I've always kept my hometown in my thoughts.
-Tashigi: I have a brother that still lives there, and I miss dearly, but there's so much work to do here. We send each other letters from time to time, but it's not the same. It is worth it, though, if I can help keep him safe.
-
+Tashigi: I have a brother that still lives there, and I miss him dearly, but there's so much work to do here. We send each other letters from time to time, but it's not the same. It is worth it, though, if I can help keep him safe.
+--- this was originally a line break. does this disrupt the flow of the game?
 - [Offer details about your family.]
-    PC: I understand the feeling, I have a brother, too, and a sister. They both live with my parents, even though my brother is getting a little old for that.
-    PC: I suspect he stays because of my mom's cooking, she is a terrific baker!
-    PC: We haven't been corresponding much, though, there's barely enough hours in the day to get the work done as it is.
+    `name`: I understand the feeling, I have a brother, too, and a sister. They both live with my parents, even though my brother is getting a little old for that.
+    `name`: I suspect he stays because of my mom's culinary skills. She is a terrific baker!
+    `name`: We haven't been corresponding much, though, there's barely enough hours in the day to get the work done as it is.
     do increment("ta1.points")
     do increment("ta1.points")
     Tashigi: Time does fly by.
-    It is getting late. You're having a very nice time with Captain Tashigi, but perhaps it is time to call it a night.
+    It is getting late. You're having a very nice time with Captain Tashigi, but perhaps it is time to call it a night?
     - [Offer another fact]
-        PC: Tell me about it, last time I stayed up so late was when my sister had a nightmare and refused to go to sleep until I read her favorite story.
+        `name`: Tell me about it, last time I stayed up so late was when my sister had a nightmare and refused to go to sleep until I read her favorite story.
         do increment("ta1.points")
         do increment("ta1.points")
         Tashigi: Children can be difficult, but they are also the most resilient. Remind me to tell you some other time about this group of children that stole both pirates and marines hearts.
-        A few hours go by, and when Captain Tashigi finally puts down her pen, she lets's out a relieved sigh.
+        A few hours go by, and when Captain Tashigi finally puts down her pen, she lets out a relieved sigh.
         Tashigi: Thank you for all the help. It's been a while since I had such a delightful time while doing paperwork.
-        PC: Me too!
+        `name`: Me too!
         - [Smile]
             do increment("ta1.points")
         - [Wink]
@@ -152,21 +156,21 @@ Tashigi: I have a brother that still lives there, and I miss dearly, but there's
         => TSD1E
 
 - [Offer details about your hometown.]
-    PC: I grew up on the South Blue, and it was always one of my dreams to travel around the world. My little village always felt a little too small for me.
-    PC: Don't get me wrong, I love my home, but I've gotten to know so many great people and places since I became a Marine.
-    PC: My brother and sister were so jealous when I told them I would be going to all four seas soon.
-    PC: They made me promise to bring them souvenirs next time I visit.
+    `name`: I grew up on the South Blue, and it was always one of my dreams to travel around the world. My little village always felt a little too small for me.
+    `name`: Don't get me wrong, I love my home, but I've gotten to know so many great people and places since I became a Marine.
+    `name`: My brother and sister were so jealous when I told them I would be going to all four seas soon.
+    `name`: They even made me promise to bring them souvenirs next time I visit.
     Tashigi: Then you better go into town one of these days. There are many places where you can find perfect gifts.
     do increment("ta1.points")
-    You keep working for a while longer, the ticking of the clock getting louder the more times passes and the base grows silent. Almost everyone must be asleep by now.
+    You keep working for a while longer, the ticking of the clock getting louder as time passes and the base grows silent. Almost everyone must be asleep by now.
     Tashigi: Almost done. I can finish up in here if you are too tired. You've already helped me out a great deal.
     - [Stay until the end]
-        PC: I like to finish what I start.
-        When you finally finish, you feel so tired you practically drag yourself to your room. You climb onto bed, knowing that in a couple of hours another day will start anew.
+        `name`: I like to finish what I start.
+        When you finally finish, you feel so tired you practically drag yourself to your room. You climb into bed, knowing that in a couple of hours another tiring day will start anew.
         do increment("ta1.points")
     - [Go to bed]
-        PC: I think I'll go catch some sleep. Hope you finish soon!
-        You go, and the moment you put my head on your pillow, all lights go out.
+        `name`: I think I'll go catch some sleep. Hope you finish soon!
+        You go, and the moment your head hits the pillow, all lights go out.
     => TSD1E
 
 
