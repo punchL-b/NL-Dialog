@@ -1,76 +1,104 @@
 :: start
-*After you return from dropping off the “documents” to Fleet Admiral Sengoku, you are surprised to see Hina waiting for you in the stairwell.*
-Hina: Ah, `name`. Well done today. Hina was impressed with the level of professionalism you demonstrated at such an arduous and meaningless task. Even Hina's patience was tried. Why don't you join Hina in her office to finish your report? Hina also has tasks to attend to.
-- Maybe some other time. I should get to my paperwork. (-1 Hina)
-    While Hina admires your dedication `name`, Hina also appreciates those who know the value of collaboration. Do not be late for drills tomorrow morning, Marine. She turns away, cooly tossing her long pink hair behind her.
-    DATE ENDS (PC has chosen not to pursue the date with Hina)
+--- character and location aren't added yet
+--- points system is not implemented in this date, i didn't edit anything except standardize the notations
+--- strange creative choice for all the narration to be done in italics. have to standardize it across the whole game. did not change anything, as it reads to mee to require extensive edits.
+
+*After you return from dropping off the "documents" to Fleet Admiral Sengoku, you are surprised to see Hina waiting for you by the stairwell.*
+Hina: Ah, `name`. Well done today. Hina is impressed with the level of professionalism you demonstrated at such an arduous and meaningless task. Even Hina's patience was tried. Why don't you join Hina in her office to finish your report? Hina also has tasks to attend to.
+- Maybe some other time. I should get to my paperwork. (-)
+    Hina: While Hina admires your dedication `name`, Hina also appreciates those who know the value of collaboration. Do not be late for drills tomorrow morning, Marine. 
+    *She turns away, cooly tossing her long pink hair behind her.*
+    DATE ENDS (PC has chosen not to pursue the date with Hina) --- if iterated this way, needs standardization across game/route
     => date_ends_early
-- Yes, that would be nice. There sure are a lot of items to document.
-    Hina smiles, cooly exhaling her cigarette, her dark eyes glittering. Lovely, `name`. Follow Hina, we will attend to our tasks together.
+- Yes, that would be nice. There sure are a lot of items to document!
+    Hina smiles, cooly exhaling her cigarette, her dark eyes glittering. 
+    Hina: Lovely, `name`. Follow Hina, we will attend to our tasks together.
 *She turns, tossing her long, cherry-blossom hair over her shoulders. It occurs to you that despite how much you have worked with Hina over the past few months, you have never seen her office. The request seems routine and mundane enough, and after all, she said she was pleased with your performance today.*
 *But you still cannot shake that feeling you get around her that you have done something wrong.*
-*You're not quite sure what you would prefer from her…praise? Or a scolding? Both have a certain appeal.*
+*You're not quite sure what you would prefer from her... Praise? Or a scolding? Both have a certain appeal.*
 *She opens a heavy oaken door. It looks like a typical office in Marine headquarters, however you are surprised to see several ornate cages, housing a variety of pigeons. She gestures to them, a surprisingly fond smile on her face.*
-Hina: Hina's personal fleet of carrier pigeons, for when information is too confidential to be sent via den den mushi. Even the most secure connection can be jeopardized. Sometimes the old ways are the best. I will be sending one of them to Impel Down regarding the information we recovered. Now then…
+Hina: Hina's personal fleet of carrier pigeons, for when information is too confidential to be sent via den den mushi. Even the most secure connection can be jeopardized. Sometimes the old ways are the best. I will be sending one of them to Impel Down regarding the information we recovered. Now then...
 * She crosses to a cage by the window, and you are surprised to see the pigeon hop from its perch to the bars in greeting, cooing and chirping warmly as she approaches.*
-* Hina gently strokes one of the pigeons with surprising tenderness. You have a sudden thought that perhaps you might not mind being a pigeon, tended to by Hina's leather-clad hands, and kept snugly in a cage, and aren't quite sure what to say.*
+*Hina gently strokes one of the pigeons with surprising tenderness. You have a sudden thought that perhaps you might not mind being a pigeon, tended to by Hina's leather-clad hands, and kept snugly in a cage, and aren't quite sure what to say.*
 - They're cute! (+)
     Hina: Fufufufu, Hina thinks so too. Hina is pleased you are a fellow columbidae appreciator!
-- What are their names?
-- Eww pigeons poop everywhere (-)
+    => cont
+- What are their names? => cont
+- Eww, pigeon poop everywhere. (-)
     Hina: Then Hina will not make you suffer being with them any longer. You're dismissed, `name`. You will report to record-keeping at 5:00am for the rest of the week, for your insolence.
     => date_ends_early
 - I wish I was a pigeon!
     Hina: Get out of Hina's office, you simpering piece of trash. Hina would send you for disciplinary action, but your libidinous little mind would probably enjoy it too much. You'll have to settle for a month's worth of galley duty. Do not make such concupiscent comments near Hina again. Get out.
     => date_ends_early
-- *You go to pet one of the pigeons*
-    *Hina swoops to intercept you, her face livid* You do not touch Hina's pigeons without her permission. Get out!
+- *You go to pet one of the pigeons.*
+    Hina swoops to intercept you, her face livid.
+    Hina: You do not touch Hina's pigeons without her permission. Get out!
     => date_ends_early
-Hina: This is Nawashi, he is my oldest and wisest, he knows the ropes better than anyone else in my fleet. Bakushi is his younger brother. And this is Gregor, he knows his place and is eager to serve; does best with a female handler. And lastly Wanda, a bit of a princess, fancies herself the leader. Gregor is especially fond of her.
+
+:: cont
+Hina: This is Nawashi, he is my oldest and wisest, he knows the ropes better than anyone else in my fleet. Bakushi is his younger brother. 
+Hina: And this is Gregor, he knows his place and is eager to serve; does best with a female handler. 
+Hina: Lastly, Wanda. A bit of a princess, fancies herself the leader. Gregor is especially fond of her.
 Hina smiles, her cheeks flushing to a shade that matches her hair, as she extinguishes her cigarette and removes her gloves, to stroke the cheek of the pigeon called Nawashi.
-- It's surprising to see a different side of you, Vice-Admiral (-)
+- It's surprising to see a different side of you, Rear Admiral. (-)
     Hina: Excuse me, what is that supposed to mean, `name`?
     Hina: What has possessed you to speak so out of turn? Get out of Hina's office, `name`. You will be on galley duty for the rest of the week.
     => date_ends_early
-- Those are unusual names…what do they mean?
+- Those are unusual names... What do they mean?
     Hina: Fufufu, well aren't you curious. Well, Hina would gladly lend you some books sometime if you would like to learn more about them.
     - More about pigeons?! (-)
-        Hina: No, just…nevermind. Come, have a cup of tea.
+        Hina: No, just... Never mind. Come, have a cup of tea.
     - No thanks, I'm good. (-)
         Hina: Tch, how disappointing. Well, if you change your mind Hina would gladly show you the ropes.
     - I'm always looking for a good read. (+)
-        Hina: Excellent. And Hina is always looking to share her knowledge with those who appreciate the art of confinement. *She crosses to a bookshelf and selects a handful of volumes. Practical Kinbaku. Advanced Hojojutsu. Semenawa.* Fufufu, it is important that a sailor knows their knots, yes? Oh, and Hina will throw in some leisure reading as well. She hands you a copy of something called “Venus in Furs.”
+        Hina: Excellent. 
+        Hina: Hina is always looking to share her knowledge with those who appreciate the art of confinement. 
+        *She crosses to a bookshelf and selects a handful of volumes. Practical Kinbaku. Advanced Hojojutsu. Semenawa.* 
+        Hina: Fufufu, it is important that a sailor knows their knots, yes? Oh, and Hina will throw in some leisure reading as well. 
+        She hands you a copy of something called *Venus in Furs*.
+        --- wait. what has these got to do with pigeons. i don't get it? still, if it's smth in canon, i say keep this without edits.
         - I will study these carefully, Rear Admiral.
             Hina: Excellent. Hina appreciates a Marine who is willing to harness new skills. Now, you will join Hina for tea.
-        - Ummm….you know what, I think I'll pass. (-)
-            Hina: If you do not appreciate the valuable skills Hina is willing to share, Hina sees no reason to detain you further. Thank you for your work on today's assignment, PC. You're dismissed.
+            => tea
+        - Ummm...you know what? I think I'll pass. (-)
+            Hina: If you do not appreciate the valuable skills Hina is willing to share, Hina sees no reason to detain you further. Thank you for your work on today's assignment, `name`. You're dismissed.
             => date_ends_early
         - Would you give me a demonstration, Rear Admiral?
             Hina: Have some restraint, `name`. Perhaps if your further performance merits it, Hina would be willing to show you the ropes. Now, you will join Hina for tea as we tend to our documentation.
+            => tea
 - How long have you had them?
-    Hina: Since Hina enlisted, she was entrusted with them. It is her job to keep them safe. You know, there is a CP9 agent who has a carrier pigeon assigned to him, and he lets it fly about his shoulder in battle. Can you believe such negligence? It could be injured!  Hina would never allow her charges to be so vulnerable like that.
-    - You clearly care about them a lot. (+1 Hina)
-        She gives you a brief smile, eyes lidded as she strokes Niwashi.  People often think Hina simply enjoys the art of imprisonment. Cages are meant for protection as much as capture. Hina always ensures that the charges in her care are safe. Come, `name`. Some tea while we complete our paperwork..
+    Hina: Since Hina enlisted, she was entrusted with them. It is her job to keep them safe. 
+    Hina: You know, there is a CP9 agent who has a carrier pigeon assigned to him, and he lets it fly about his shoulder in battle. Can you believe such negligence? It could be injured!  Hina would never allow her charges to be so vulnerable like that.
+    - You clearly care about them a lot. (+)
+        She gives you a brief smile, eyes lidded as she strokes Niwashi. 
+        Hina: People often think Hina simply enjoys the art of imprisonment. Cages are meant for protection as much as capture. Hina always ensures that the charges in her care are safe. Come, `name`. Some tea while we complete our paperwork...
+        => tea
     - Only a beast of a man would be so uncaring.
-        Hina: You're not half wrong. If Hina had her way he would be dismissed for well - ah, you must forgive Hina. She is passionate about those she protects. Come `name`, let us have some tea.
-    - I mean, they're just pigeons. You could always train more. (-1 Hina)
-        Hina: Do you think the lives of your fellow Marines are that expendable too? You come to Hina's office and speak of the charges in her care this way, in front of them? She gestures at the cages indignantly, before composing herself. Since you so easily dismiss their value, Hina will extend the same courtesy to you. You are dismissed, `name`. You will be on cartography duty at 5:00am for the rest of this month. Get ouut.
+        Hina: You're not half wrong. If Hina had her way he would be dismissed for well - 
+        Hina: Ah, you must forgive Hina. She is passionate about those she protects. Come `name`, let us have some tea.
+        => tea
+    - I mean, they're just pigeons. You could always train more. (-)
+        Hina: Do you think the lives of your fellow Marines are that expendable too? You come to Hina's office and speak of the charges in her care this way, in front of them? 
+        She gestures at the cages indignantly, before composing herself. 
+        Hina: Since you so easily dismiss their value, Hina will extend the same courtesy to you. You are dismissed, `name`. You will be on cartography duty at 5:00am for the rest of this month. Get out. --- some of these date-ending statements need to be standardized across this date.
         => date_ends_early
-- *You go to pet one of the pigeons*
-    *Hina swoops to intercept you, her face livid* You do not touch Hina's pigeons without her permission. Get out!
+- *You go to pet one of the pigeons.*
+    Hina swoops to intercept you, her face livid.
+    Hina: You do not touch Hina's pigeons without her permission. Get out!
     => date_ends_early
 
+:: tea
 *Hina crosses to a pot on her desk, somehow already warm, and pours you a cup of tea. It's black tea. You don't particularly care for black tea. There's no cream or sugar either. Hina sits with her cup of tea and begins composing a message that appears to be for Impel Down. You look at your cup of tea.*
 - Can I have cream or sugar?
-    No.
+    Hina: No.
 - Do you have any other tea?
-    No.
+    Hina: No.
 - Um, this isn't really my cup of tea. (-)
-    Hina has gone out of her way to accommodate you in her office and serve you tea. You will drink it `name`.
+    Hina: Hina has gone out of her way to accommodate you in her office and serve you tea. You will drink it `name`.
 *You tentatively take a sip of the bitter tea. It is smokey and dark. Like Hina. There's a certain allure in being denied by her, even if it's just over a cup of tea.*
-=> observe_pidgeons
+=> observe_pigeons
 
-:: observe_pidgeons
+:: observe_pigeons
 *You look over at the pigeons in their extravagant, dark cages.*
 - Do they get sad being kept in cages all the time?
     Hina: Why would they be sad? Their needs are met. They have food, shelter, safety, and Hina's care and affection.
@@ -79,61 +107,89 @@ Hina smiles, her cheeks flushing to a shade that matches her hair, as she exting
         - Freedom?
             Hina: Tch, such idealism `name`. Which would you prefer, hmm? Freedom or protection?
             - Freedom (-)
-                Hina: Tch, pirates cling to a similar naivety. That freedom is everything in this world. Yes, the freedom to just do whatever you please, how lovely. I'm sure my delicate birds would be delighted to be tossed out the window without a care in the world, no message on their leg, absolutely free. How long do you think they'd last `name`, without a task to keep them on course or a cage to keep them safe? A week? A few days? Before a predator devoured them? Before they got crushed in a storm? Ah, but…at least they had freedom. Tch.
+                Hina: Tch, pirates cling to a similar naivety. That freedom is everything in this world. Yes, the freedom to just do whatever you please, how lovely. 
+                Hina: I'm sure my delicate birds would be delighted to be tossed out the window without a care in the world, no message on their leg, absolutely free. 
+                Hina: How long do you think they'd last `name`, without a task to keep them on course or a cage to keep them safe? A week? A few days? Before a predator devoured them? Before they got crushed in a storm? Ah, but... At least they had freedom. 
+                Hina: Tch.
+                --- which does this go to when the options are exhausted? unclear. i suggest it loop back to LN108 with 'freedom' disappearing as an option.
             - Protection (+)
-                Hina: Exactly `name`. In a world where the innocent are harmed and exploited, it is Hina's job…that is…our job as Marines, to protect. Like us Marines, my birds have a duty to perform. A duty that could put them in harm's way. Hina can control nothing once they leave her window ledge. She can control how they are cared for when they return - and Hina ensures that they are protected in their cages, always. She gives you an unusual, steely smile from beneath her curtain of hair. The same applies to Hina's fellow Marines you know.
+                Hina: Exactly `name`. In a world where the innocent are harmed and exploited, it is Hina's job- that is, our job- as Marines, to protect. 
+                Hina: Like us Marines, my birds have a duty to perform. A duty that could put them in harm's way. Hina can control nothing once they leave her window ledge. 
+                Hina: She can control how they are cared for when they return- and Hina ensures that they are protected in their cages, always. 
+                She gives you an unusual, steely smile from beneath her curtain of hair. The same applies to Hina's fellow Marines you know.
                 - Are you going to put me in a cage? => put_in_cage
-                - I don't particularly want to be in a cage. I wouldn't mind being in a cage, if you were the one holding the key Rear-Admiral. => want_cage
+                - I don't particularly want to be in a cage. I wouldn't mind being in a cage, if you were the one holding the key, Rear-Admiral. => want_cage
             - Why can't we have both?
                 Hina: Your guileless optimism will be the death of you, `name`. Yes, the freedom to do whatever we please, lawlessness and chaos, and somehow we will also all be safe? Tch. Hina will have to put you in a cage to protect you from yourself.
                 - Are you going to put me in a cage? => put_in_cage
                 - I don't particularly want to be in a cage. => dont_want_cage
-                - I wouldn't mind being in a cage, if you were the one holding the key Rear-Admiral. => want_cage
+                - I wouldn't mind being in a cage, if you were the one holding the key, Rear-Admiral. => want_cage
         - Nothing.
-            Hina: Exactly. You understand `name`, the world is full of evildoers and scum that would harm the innocent, like these gentle creatures in Hina's care. Hina can control nothing once they leave her window ledge. She can control how they are cared for when they return - and Hina ensures that they are protected and safe in their cages. She gives you an unusual, steely smile from beneath her curtain of hair. The same applies to Hina's fellow Marines you know.
+            Hina: Exactly. You understand, `name`, the world is full of evildoers and scum that would harm the innocent, like these gentle creatures in Hina's care. Hina can control nothing once they leave her window ledge. 
+            Hina: She can control how they are cared for when they return- and Hina ensures that they are protected and safe in their cages. 
+            She gives you an unusual, steely smile from beneath her curtain of hair. The same applies to Hina's fellow Marines you know.
             - Are you going to put me in a cage? => put_in_cage
             - I don't particularly want to be in a cage. => dont_want_cage
             - I wouldn't mind being in a cage, if you were the one holding the key Rear-Admiral. => want_cage
     - But that's not freedom.
-        Hina: Tch, freedom. Pirates cling to a similar naivety, `name`. That freedom is everything in this world. Yes, the freedom to just do whatever you please, how lovely. I'm sure my delicate birds would be delighted to be tossed out the window without a care in the world, no message on their leg, absolutely free. How long do you think they'd last `name`, without a task to keep them on course or a cage to keep them safe? A week? A few days? Before a predator devoured them? Before they got crushed in a storm? Ah, but…at least they had freedom.
-        - You can't control everything, Rear Admiral. (-1)
-            No, but Hina can control how long she has to listen to your idealistic drivel about freedoms and liberty. You are free to leave, `name`. Hina will see you tomorrow for drills. DATE ENDS.
+        Hina: Tch, freedom. Pirates cling to a similar naivety, `name`. That freedom is everything in this world. Yes, the freedom to just do whatever you please, how lovely. I'm sure my delicate birds would be delighted to be tossed out the window without a care in the world, no message on their leg, absolutely free. 
+        Hina: How long do you think they'd last `name`, without a task to keep them on course or a cage to keep them safe? 
+        Hina: A week? 
+        Hina: A few days? 
+        Hina: How long before a predator devours them? Before they are crushed in a storm? 
+        Hina: Ah, but... at least they had freedom.
+        --- following options don't have a plus option, only minus. seems unfair...
+        - You can't control everything, Rear Admiral. (-)
+            Hina: No, but Hina can control how long she has to listen to your idealistic drivel about freedoms and liberty. 
+            Hina: You are free to leave, `name`. Hina will see you tomorrow for drills. 
             => date_ends_early
         - I understand, I know you only want to protect them.
-            Hina: Exactly. You understand `name`, the world is full of evildoers and scum that would harm the innocent, like these gentle creatures in Hina's care. Hina can control nothing once they leave her window ledge. She can control how they are cared for when they return - and Hina ensures that they are protected and safe in their cages. She gives you an unusual, steely smile from beneath her curtain of hair. The same applies to Hina's fellow Marines you know.
+            Hina: Exactly. You understand `name`, the world is full of evildoers and scum that would harm the innocent, like these gentle creatures in Hina's care.
+            Hina: Hina can control nothing once they leave her window ledge. She can control how they are cared for when they return- and Hina ensures that they are protected and safe in their cages. 
+            She gives you an unusual, steely smile from beneath her curtain of hair. 
+            Hina: The same applies to Hina's fellow Marines you know.
             - Are you going to put me in a cage? => put_in_cage
             - I don't particularly want to be in a cage. => dont_want_cage
-            - I wouldn't mind being in a cage, if you were the one holding the key Rear-Admiral => want_cage
+            - I wouldn't mind being in a cage, if you were the one holding the key, Rear Admiral. => want_cage
         - Why can't we have freedom and protection?
-            Your guileless optimism will be the death of you, `name`. Yes, the freedom to do whatever we please, lawlessness and chaos, and somehow we will also all be safe? Tch. Hina will have to put you in a cage to protect you from yourself.
+            Hina: Your guileless optimism will be the death of you, `name`. 
+            Hina: Yes, the freedom to do whatever we please, lawlessness and chaos, and somehow we will also all be safe? Tch. Hina will have to put you in a cage to protect you from yourself.
             - Are you going to put me in a cage? => put_in_cage
             - I don't particularly want to be in a cage. => dont_want_cage
             - I wouldn't mind being in a cage, if you were the one holding the key Rear-Admiral. => want_cage
 - Don't you ever let them out when they're not on duty?
     Hina: Only with Hina's very careful supervision. Hina wants to ensure always that they are safe.
-    Don't they get sad being kept in cages all the time
-    => observe_pidgeons
-- *You go to pet one of the pigeons*
-    *Hina swoops to intercept you, her face livid* You do not touch Hina's pigeons without her permission. Get out!
+    `name`: Don't they get sad being kept in cages all the time?
+    => observe_pigeons
+    --- i don't understand this option. implemented as is, it has the potential to loop this section endlessly. up to you how to edit this.
+- *You go to pet one of the pigeons.*
+    Hina swoops to intercept you, her expression livid. 
+    Hina: You do not touch Hina's pigeons without her permission. Get out!
     => date_ends_early
 
 
 :: date_ends_early
-Date ends early
+Date ends early.
 => end
 
 :: put_in_cage
-Hina: Fufufu - that remains to be seen, PC, depending on if you behave yourself, or if you prove yourself of Hina's care and attention. Hina has her eye on you, PC. Hina crosses to one of the cages, stroking the pigeon within, but her steely eyes remain on you. Thank you for joining Hina for some tea. You're dismissed, PC.
+Hina: Fufufu- that remains to be seen, `name`, depending on if you behave yourself, or if you prove yourself worthy of Hina's care and attention. Hina has her eye on you, `name`. 
+Hina crosses to one of the cages, stroking the pigeon within, but her steely eyes remain on you. 
+Hina: Thank you for joining Hina for some tea. You're dismissed, `name`.
 => end
 
 :: dont_want_cage
-Hina: Fufufufu, look at Hina's dear birds, `name`. Look what they have. Safety, control, and above all, my protection. Not a bad arrangement if you ask Hina. Think about it, PC.
-Hina crosses to one of the cages, stroking the pigeon within, but her steely eyes remain on you. Thank you for joining Hina for some tea. You're dismissed, PC.
+Hina: Fufufufu, look at Hina's dear birds, `name`. Look what they have. Safety, control, and above all, my protection. Not a bad arrangement if you ask Hina. Think about it, `name`.
+Hina crosses to one of the cages, stroking the pigeon within, but her steely eyes remain on you. 
+Hina: Thank you for joining Hina for some tea. You're dismissed, `name`.
 => end
 
 :: want_cage
-Hina presses her fingers to the knot at her brow, irritably. Hina: PC, you philandering popinjay. One day you will learn the time and the place for such comments. You are embarrassing yourself in front of Hina's birds. Please leave. -DATE ENDS.
+Hina presses her fingers to the knot at her brow, irritably. 
+Hina: `name`, you philandering popinjay. One day you will learn the time and the place for such comments. 
+Hina: You are embarrassing yourself in front of Hina's birds. Please leave.
 => end
 
 :: end
+--- this section doesn't tally up date points to separate into good/neutral/bad endings. the tally is missing.
 => root.main
